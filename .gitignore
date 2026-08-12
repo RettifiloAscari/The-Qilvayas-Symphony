@@ -1,0 +1,18 @@
+# OS / editor cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+*.swp
+*~
+
+# Google Drive artifacts
+*.gdoc
+*.gsheet
+*.gslides
+.tmp.drivedownload/
+.tmp.driveupload/
+
+# Generated exports
+/export/
+*.docx
+*.pdf
