@@ -179,8 +179,8 @@ Paths (DM Only)** section recording what each significant outcome changes downst
 reputations, available allies, closed doors, altered later scenes.
 
 The **Branch Ledger** lives in the DM Reference Guide: a table of every tracked
-divergence across Sessions 1–6, with a blank column for what actually happened at Josh's
-table. Sessions Seven and beyond are built against this ledger. This is what keeps the
+divergence across Sessions 1–8, with a blank column for what actually happened at Josh's
+table. Sessions Nine and beyond are built against this ledger. This is what keeps the
 campaign replayable rather than a railroad with scenery.
 
 ---

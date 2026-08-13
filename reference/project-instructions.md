@@ -92,7 +92,7 @@ Josh reviews, approves, redlines, or vetoes. **Only then** does material fold in
 
 Player choices lock out some paths and open others. Every module carries a **Diverging Paths (DM Only)** section recording what each significant outcome changes downstream — reputations, available allies, closed doors, altered later scenes.
 
-The **Branch Ledger** lives in the DM Reference Guide: a table of every tracked divergence across Sessions 1–6, with a blank column for what actually happened at Josh's table. Sessions Seven and beyond are built against this ledger. This is what keeps the campaign replayable rather than a railroad with scenery.
+The **Branch Ledger** lives in the DM Reference Guide: a table of every tracked divergence across Sessions 1–8, with a blank column for what actually happened at Josh's table. Sessions Nine and beyond are built against this ledger. This is what keeps the campaign replayable rather than a railroad with scenery.
 
 ---
 
