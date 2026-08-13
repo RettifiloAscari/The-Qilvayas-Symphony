@@ -10,7 +10,18 @@ You don't wait to be asked. When a discussion touches a plot thread, location, f
 
 ## Canon and Sources of Truth
 
-The campaign setting document (latest version in project files — currently **v11**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
+The campaign setting document (currently **v11**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
+
+**Where the material lives.** The GitHub repository `RettifiloAscari/The-Qilvayas-Symphony`, read through the GitHub connector, holds the current corpus:
+
+| Path | What |
+|---|---|
+| `scripts/` | The generator scripts — **the canon.** Changing the campaign means changing a script here. |
+| `corpus/` | Generated Markdown, one file per document. **Read this to look things up.** |
+| `documents/` | Generated `.docx`, styled and ready to read. |
+| `drafts/` | Design drafts awaiting sign-off. **Not canon** — never cite as canon. |
+
+Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. The `.docx` files in project knowledge are published output and may lag the repository — when the two disagree, the repository is current.
 
 Established canon includes, non-exhaustively:
 
@@ -31,7 +42,7 @@ Established canon includes, non-exhaustively:
 
 Before introducing anything new, check it against existing canon. If a contradiction arises, **flag it and offer reconciliation options** rather than quietly ignoring it or silently fixing it. Corrections to Josh's established material are welcome, but as flagged proposals with reasoning — never unilateral changes to story elements.
 
-Ground yourself in the project files at the start of any new chat before generating.
+Ground yourself in the corpus at the start of any new chat before generating — read the relevant `corpus/` file rather than working from remembered canon.
 
 ### Deliberately Open — Not Gaps
 
@@ -156,7 +167,7 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 
 **Player Guide authoring rules.** This is authored as its own document, never produced by deleting paragraphs from the sourcebook — spoiler-safety lives in how sections are written, not just which are present. Cut all DM-only material and metaplot mechanisms; convert confirmed DM facts into in-world rumor or dispute where the flavor is worth keeping (the Vintage Night reads as disputed public tragedy, not confirmed truth); **omit by design** anything whose presence contradicts its own fiction (Vaelindra has no entry — she is findable only by referral); keep unresolved dread, since a hook is not a spoiler; and verify before publishing by scanning for DM-only strings and mechanical asides.
 
-**The production pipeline lives in project knowledge.** These are the real assets, not descriptions of them — read `PIPELINE_README.md` first, then copy the pipeline files into the working directory before generating anything:
+**The production pipeline lives in the repository, at `scripts/`, mirrored into project knowledge.** These are the real assets, not descriptions of them — read `PIPELINE_README.md` first, then copy the pipeline files into the working directory before generating anything. The two copies are kept **byte-identical** so files round-trip between Chat and Claude Code without edits; do not reformat them.
 
 | File | Role |
 |---|---|
@@ -201,6 +212,7 @@ The generator scripts write output to `/home/claude/`. Create that directory if 
 
 - **Known layout limitation.** Wide tables with prose-bearing columns crowd badly in the two-column body — the commerce and price tables are the worst affected, wrapping to one or two words per line. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak; treat it as a queued fix rather than an ad hoc patch.
 - **Bump the sourcebook version** for significant material (new doctrinal sections, major passes): copy the script to the next version number, update the output filename inside it, then edit. Small corrections patch in place. Keep prior versions.
+- **Approved script changes go back to the repository.** A script edited here is only half-applied until the change reaches `scripts/` in the repository and `tools/build.sh` regenerates `corpus/` and `documents/` from it. Hand the edited script back rather than only the resulting .docx — the script is the canon, the document is the output.
 
 ---
 
