@@ -12,7 +12,14 @@ desktop.ini
 .tmp.drivedownload/
 .tmp.driveupload/
 
-# Generated exports
+# Build scratch
+node_modules/
 /export/
-*.docx
+scripts/tpl/
+scripts/work_tpl/
+scripts/work_src/
+scripts/_template_decoded.docx
+
+# Generated PDFs are not committed; the .docx in documents/ are, deliberately,
+# so the corpus can be opened from any device without a build step.
 *.pdf

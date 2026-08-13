@@ -10,7 +10,7 @@ You don't wait to be asked. When a discussion touches a plot thread, location, f
 
 ## Canon and Sources of Truth
 
-The campaign setting document (latest version in project files — currently **v10**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
+The campaign setting document (latest version in project files — currently **v11**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
 
 Established canon includes, non-exhaustively:
 
@@ -27,7 +27,7 @@ Established canon includes, non-exhaustively:
 - **Wolf customs** — the Willing Shape (wildshape), the Wolf-Price, the Chosen Beast
 - **Social foundations** — the Packlaw, the four-tier bound labor framework, marriage-as-oath and the Denmother's Choice, and the twelve-month Imperial Calendar
 - **The three dragons** — Vessarkath, the Saltmaw, the Fjell Whites
-- All named NPCs, settlements, and creatures from the sourcebook and the six session modules
+- All named NPCs, settlements, and creatures from the sourcebook and the nine session modules
 
 Before introducing anything new, check it against existing canon. If a contradiction arises, **flag it and offer reconciliation options** rather than quietly ignoring it or silently fixing it. Corrections to Josh's established material are welcome, but as flagged proposals with reasoning — never unilateral changes to story elements.
 
@@ -149,17 +149,58 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 
 **Living documents, all published in the shared visual template:**
 
-1. **The Qilvayas Symphony Campaign Setting** (currently v10) — the canonical sourcebook. Version-numbered; prior versions retained.
-2. **Session modules** — Sessions 0 through 6 (Sessions 3–4 combined as The Proving Below).
+1. **The Qilvayas Symphony Campaign Setting** (currently v11) — the canonical sourcebook. Version-numbered; prior versions retained.
+2. **Session modules** — Sessions 0 through 8 (Sessions 3–4 combined as The Proving Below).
 3. **QS DM Reference Guide** — quick-lookup cheat sheet in table form: Atlas regions, districts, NPCs by circle, the Powers, magic and faith, peoples, dragons, core mythology, timeline, items and threads, the Branch Ledger, and the deliberately-open list. Canon-derived, never a separate source of truth. **Update it in the same pass as any canon change** — when in doubt, include it. A stale reference guide is worse than none.
 4. **QS Player Guide** — the sanitized, shareable edition.
 
 **Player Guide authoring rules.** This is authored as its own document, never produced by deleting paragraphs from the sourcebook — spoiler-safety lives in how sections are written, not just which are present. Cut all DM-only material and metaplot mechanisms; convert confirmed DM facts into in-world rumor or dispute where the flavor is worth keeping (the Vintage Night reads as disputed public tragedy, not confirmed truth); **omit by design** anything whose presence contradicts its own fiction (Vaelindra has no entry — she is findable only by referral); keep unresolved dread, since a hook is not a spoiler; and verify before publishing by scanning for DM-only strings and mechanical asides.
 
+**The production pipeline lives in project knowledge.** These are the real assets, not descriptions of them — read `PIPELINE_README.md` first, then copy the pipeline files into the working directory before generating anything:
+
+| File | Role |
+|---|---|
+| `PIPELINE_README.md` | Full usage instructions — read this first |
+| `QS_Style_Template_encoded.md` | The visual template (Alegreya SC Medium headings in deep book-red, Alegreya Sans SC and Lato body text, A4, page-number footers), base64-encoded because project storage converts .docx uploads to text. `transplant.py` decodes it automatically. |
+| `transplant.py` | Applies the template; self-bootstrapping |
+| `campaign_v11.js` | Sourcebook generator (current version) |
+| `sessions.js` | Sessions 0–2 |
+| `session34.js` | Sessions 3–4 |
+| `s56.js` | Sessions 5–6 |
+| `s78.js` | Sessions 7–8 |
+| `refguide.js` | DM Reference Guide |
+| `playerguide.js` | Player Guide |
+
+**Environment prerequisites.** Before generating, confirm the toolchain is present — several of these are absent from a default sandbox and fail in ways that look like content bugs:
+
+| Requirement | Install / check | Why it matters |
+|---|---|---|
+| Node + `docx` | `npm install docx` | The generator scripts |
+| Python 3 | stdlib only — no packages needed | `transplant.py` uses `zipfile`/`base64` |
+| LibreOffice **Writer** | `apt-get install libreoffice-writer` | `libreoffice-core` alone loads *nothing* — every document silently fails with "source file could not be loaded" |
+| poppler-utils | `apt-get install poppler-utils` | Supplies `pdftotext`, `pdffonts`, `pdftoppm` for verification |
+| Fonts: **Alegreya SC**, **Alegreya Sans SC**, **Lato** | Google Fonts TTFs into `~/.local/share/fonts`, then `fc-cache -f` | The template requests exactly these three. Missing fonts substitute silently and **change pagination** — verifying layout without them is meaningless |
+
+The generator scripts write output to `/home/claude/`. Create that directory if it does not exist, or the write fails.
+
 **Production practice:**
-- **Generation scripts are the source of truth.** Documents are generated programmatically (docx-js scripts in the working directory) so the corpus regenerates consistently and content splices between documents without transcription drift. Never hand-edit a published .docx — edit the script.
-- **All documents pass through the template pipeline** — the /u/YaAlex-derived 5e style template (Alegreya SC Medium headings in deep book-red, Alegreya Sans body, A4, page-number footers), applied via the transplant script. Full-width masthead, continuous two-column body for the sourcebook and modules; **single-column for the DM Reference Guide**, whose value is wide scannable tables.
-- **Verify rendering before publishing.** Convert to PDF and inspect pages — check for escape-sequence artifacts (`\u2014` leaking as literal text), broken tables, and layout failures. Rendering bugs are invisible in source.
+- **The generation scripts are the source of truth.** The published .docx files are output. Never hand-edit a published document — edit the script and regenerate. This is what keeps the corpus consistent and lets content splice between documents without transcription drift.
+- **Every document passes through the template pipeline:** `node <script>.js` to generate, then `python3 transplant.py <in>.docx <out>.docx` to apply the template. Full-width masthead, continuous two-column body for the sourcebook and modules; **the DM Reference Guide takes `--single`**, since its value is wide scannable tables.
+- **Verify rendering before publishing.** Convert to PDF and inspect:
+
+  ```bash
+  soffice --headless --convert-to pdf --outdir . out.docx
+  pdftotext out.pdf - | grep -c '\\u'    # MUST be 0 — catches escape-sequence leaks
+  pdffonts out.pdf | grep -c DejaVu      # MUST be 0 — nonzero means a font is missing
+  pdftoppm -jpeg -r 80 out.pdf page      # then actually look at several pages
+  ```
+
+  Note the **doubled backslash** in the `grep` pattern. Single-quoted `'\u'` matches the plain letter *u* and reports every ordinary word containing one, so it can never return 0 on real prose — the check only works as `'\\u'`.
+
+  The `pdffonts` check is the companion failure mode: when a template font is absent, rendering succeeds but substitutes a fallback, and line breaks, table fits, and total page count all shift. A layout inspected under substituted fonts is not the layout that will publish.
+
+- **Known layout limitation.** Wide tables with prose-bearing columns crowd badly in the two-column body — the commerce and price tables are the worst affected, wrapping to one or two words per line. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak; treat it as a queued fix rather than an ad hoc patch.
+- **Bump the sourcebook version** for significant material (new doctrinal sections, major passes): copy the script to the next version number, update the output filename inside it, then edit. Small corrections patch in place. Keep prior versions.
 
 ---
 

@@ -8,53 +8,66 @@ rebuilding, and diplomatic reunification. The player characters are final-year
 students at the Imperial Academy of the Lupine Throne, drawn out of their intended
 futures by a shared prophetic vision of the capital burning.
 
-This repository is the external source of truth for the campaign. Everything here is
-plain Markdown so that revisions are diffable and the history is readable.
+This repository is the source of truth for the campaign.
 
-## Repository structure
+## How this repository works
 
-`setting/` holds the campaign setting document, split by section. `sessions/` holds
-prepared session material in play order. `reference/` holds the DM and player guides
-plus the project instructions used when developing this material.
+The **generator scripts are the canon.** Everything else is input to them or output
+from them. To change the campaign, edit a script in `scripts/` and run `tools/build.sh`;
+never edit the generated files directly, because the next build discards those edits.
 
-## Setting
+| Directory | What it is |
+|---|---|
+| `scripts/` | **The canon.** docx-js generators, `transplant.py`, and the encoded visual template. |
+| `corpus/` | **Generated Markdown** — readable and greppable on any device. Start here. |
+| `documents/` | **Generated `.docx`** — styled, and what you read at the table. |
+| `tools/` | `build.sh` regenerates and verifies everything; `docx-md-shim/` emits the Markdown. |
+| `reference/` | The mirrored instructions for the Claude Chat project. |
+| `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
 
-- [The Qilvayas Symphony](setting/00-front-matter.md)
-- [Campaign Overview](setting/01-campaign-overview.md)
-- [Historical Background](setting/02-historical-background.md)
-- [The Empire of Zhuvedus: Current State](setting/03-the-empire-of-zhuvedus-current-state.md)
-- [Dragons of the Fractured Age](setting/04-dragons-of-the-fractured-age.md)
-- [Commerce: Shops and Price Tables](setting/05-commerce-shops-and-price-tables.md)
-- [The Lupine Matron and Imperial Faith](setting/06-the-lupine-matron-and-imperial-faith.md)
-- [Magic and the Word](setting/07-magic-and-the-word.md)
-- [Peoples of the Empire](setting/08-peoples-of-the-empire.md)
-- [The Founding Myth: Zhuvedus and the Broken Oath](setting/09-the-founding-myth-zhuvedus-and-the-broken-oath.md)
-- [Emperor Qilvayas and the Lupine Throne](setting/10-emperor-qilvayas-and-the-lupine-throne.md)
-- [The Imperial Academy of the Lupine Throne](setting/11-the-imperial-academy-of-the-lupine-throne.md)
-- [The Player Characters](setting/12-the-player-characters.md)
-- [The Inciting Incident: The Shared Vision](setting/13-the-inciting-incident-the-shared-vision.md)
-- [Campaign Themes and Potential Directions](setting/14-campaign-themes-and-potential-directions.md)
-- [Key NPCs and Factions](setting/15-key-npcs-and-factions.md)
-- [Geography and Locations](setting/16-geography-and-locations.md)
-- [Plot Hooks and Adventure Seeds](setting/17-plot-hooks-and-adventure-seeds.md)
-- [The Imperial Calendar](setting/18-the-imperial-calendar.md)
-- [Campaign Timeline and Pacing](setting/19-campaign-timeline-and-pacing.md)
-- [Appendix I — The Roster: Races and Classes](setting/20-appendix-i-the-roster-races-and-classes.md)
-- [Appendix II — Stat Blocks of the Powers](setting/21-appendix-ii-stat-blocks-of-the-powers.md)
-- [Appendix III — Homebrew Items of Record](setting/22-appendix-iii-homebrew-items-of-record.md)
-- [Development Roadmap — Post-Beta Status](setting/23-development-roadmap-post-beta-status.md)
+`corpus/` and `documents/` are produced from the same untouched scripts in the same
+build, so the Markdown and the published documents cannot drift apart.
 
-## Sessions
+## The documents
 
-- [Session Zero: Foundations](sessions/00-session-zero-foundations.md)
-- [Session One: The Silent Road](sessions/01-the-silent-road.md)
-- [Session Two: The Road Back](sessions/02-the-road-back.md)
-- [Sessions Three & Four: The Proving Below](sessions/03-04-the-proving-below.md)
-- [Session Five: Dead Letters](sessions/05-dead-letters.md)
-- [Session Six: The Second Seal](sessions/06-the-second-seal.md)
+### Sourcebook
 
-## Reference
+- [The Qilvayas Symphony Campaign Setting (v11)](corpus/The_Qilvayas_Symphony_Campaign_Setting_v11.md) — the canonical sourcebook · [.docx](documents/The_Qilvayas_Symphony_Campaign_Setting_v11.docx)
 
-- [DM Reference Guide](reference/dm-reference-guide.md)
-- [The Qilvayas Symphony](reference/player-guide.md)
-- [The Qilvayas Symphony — Project Instructions](reference/project-instructions.md)
+### Session modules
+
+| Session | Title | Markdown | Document |
+|---|---|---|---|
+| 0 | Foundations | [md](corpus/QS_Session_0_Primer.md) | [docx](documents/QS_Session_0_Primer.docx) |
+| 1 | The Silent Road | [md](corpus/QS_Session_1_The_Silent_Road.md) | [docx](documents/QS_Session_1_The_Silent_Road.docx) |
+| 2 | The Road Back | [md](corpus/QS_Session_2_The_Road_Back.md) | [docx](documents/QS_Session_2_The_Road_Back.docx) |
+| 3–4 | The Proving Below | [md](corpus/QS_Sessions_3-4_The_Proving_Below.md) | [docx](documents/QS_Sessions_3-4_The_Proving_Below.docx) |
+| 5 | Dead Letters | [md](corpus/QS_Session_5_Dead_Letters.md) | [docx](documents/QS_Session_5_Dead_Letters.docx) |
+| 6 | The Second Seal | [md](corpus/QS_Session_6_The_Second_Seal.md) | [docx](documents/QS_Session_6_The_Second_Seal.docx) |
+| 7 | The Turning Away | [md](corpus/QS_Session_7_The_Turning_Away.md) | [docx](documents/QS_Session_7_The_Turning_Away.docx) |
+| 8 | The Unkept Vigil | [md](corpus/QS_Session_8_The_Unkept_Vigil.md) | [docx](documents/QS_Session_8_The_Unkept_Vigil.docx) |
+
+### Guides
+
+- [DM Reference Guide](corpus/QS_DM_Reference_Guide.md) — quick-lookup tables, the Branch Ledger, the deliberately-open list · [.docx](documents/QS_DM_Reference_Guide.docx)
+- [Player Guide](corpus/QS_Player_Guide.md) — the sanitized, shareable edition · [.docx](documents/QS_Player_Guide.docx)
+
+## Rebuilding
+
+```bash
+npm install docx
+tools/build.sh
+```
+
+`build.sh` regenerates both outputs, applies the visual template, renders every
+document to PDF, and **fails the build** on escape-sequence leaks or font substitution.
+It refuses to run at all if the template's three fonts — Alegreya SC, Alegreya Sans SC,
+and Lato — are not installed, because layout verified under substituted fonts is not the
+layout that gets published.
+
+See [`PIPELINE_README.md`](PIPELINE_README.md) for the full pipeline reference and
+[`CLAUDE.md`](CLAUDE.md) for the working instructions and canon rules.
+
+## Working notes
+
+- [Timeline arithmetic audit](drafts/timeline-arithmetic-audit.md) — findings by severity, awaiting sign-off.
