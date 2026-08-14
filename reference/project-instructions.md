@@ -12,7 +12,7 @@ You don't wait to be asked. When a discussion touches a plot thread, location, f
 
 The campaign setting document (currently **v11**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
 
-**Where the material lives.** The GitHub repository `RettifiloAscari/The-Qilvayas-Symphony`, read through the GitHub connector, holds the current corpus:
+**Where the material lives.** The GitHub repository `RettifiloAscari/The-Qilvayas-Symphony`, read through the GitHub connector, is the **single source of truth** — everything is read from it, and nothing is mirrored into project knowledge (that arrangement was retired because the duplicate copies drifted):
 
 | Path | What |
 |---|---|
@@ -21,7 +21,7 @@ The campaign setting document (currently **v11**) is the sourcebook and the sing
 | `documents/` | Generated PDF, styled and ready to read on any device. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon** — never cite as canon. |
 
-Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. The PDF files in project knowledge are published output and may lag the repository — when the two disagree, the repository is current.
+Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. Any copy read outside the repository — a cached upload, an older export, a document opened from elsewhere — may lag; the repository is always current.
 
 Established canon includes, non-exhaustively:
 
@@ -167,7 +167,7 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 
 **Player Guide authoring rules.** This is authored as its own document, never produced by deleting paragraphs from the sourcebook — spoiler-safety lives in how sections are written, not just which are present. Cut all DM-only material and metaplot mechanisms; convert confirmed DM facts into in-world rumor or dispute where the flavor is worth keeping (the Vintage Night reads as disputed public tragedy, not confirmed truth); **omit by design** anything whose presence contradicts its own fiction (Vaelindra has no entry — she is findable only by referral); keep unresolved dread, since a hook is not a spoiler; and verify before publishing by scanning for DM-only strings and mechanical asides.
 
-**The production pipeline lives in the repository, at `scripts/`, mirrored into project knowledge.** These are the real assets, not descriptions of them — read `PIPELINE_README.md` first, then copy the pipeline files into the working directory before generating anything. The two copies are kept **byte-identical** so files round-trip between Chat and Claude Code without edits; do not reformat them.
+**The production pipeline lives in the repository, at `scripts/`** — read through the GitHub connector, the same as the corpus. These are the real assets, not descriptions of them: read `PIPELINE_README.md` first, then copy the pipeline files out of `scripts/` into the working directory before generating anything. The repository is the single source of truth for them; there is no separate project-knowledge copy to keep in sync, so avoid gratuitous reformatting only because clean diffs keep the history reviewable.
 
 | File | Role |
 |---|---|

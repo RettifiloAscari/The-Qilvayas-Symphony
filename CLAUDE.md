@@ -44,10 +44,10 @@ gitignored.
 - **Regenerate in the same commit as the script change.** Run `tools/build.sh` and commit
   `scripts/`, `corpus/`, and `documents/` together. A corpus that disagrees with its
   generator is worse than no corpus.
-- **Keep `scripts/` byte-identical to the Chat project copies.** Files round-trip between
-  the two surfaces; gratuitous reformatting breaks that. This is why the generators still
-  write to a hardcoded `/home/claude` and `build.sh` accommodates the path rather than
-  patching seven scripts.
+- **The generators write to a hardcoded `/home/claude`.** `build.sh` accommodates that
+  path rather than patching it out of seven scripts — a historical quirk from when the
+  scripts round-tripped to a second surface, now simply not worth disturbing. Avoid
+  gratuitous reformatting of `scripts/` regardless: clean diffs keep canon changes reviewable.
 - **Canon changes propagate in one pass.** A change to the sourcebook that affects the
   DM Reference Guide, the Player Guide, or any session module updates all of them in
   the same commit. A stale reference guide is worse than none.
