@@ -20,6 +20,6 @@ scripts/work_tpl/
 scripts/work_src/
 scripts/_template_decoded.docx
 
-# Generated PDFs are not committed; the .docx in documents/ are, deliberately,
-# so the corpus can be opened from any device without a build step.
-*.pdf
+# .docx is a build intermediate only — never committed. The deliverable is the
+# PDF in documents/, which embeds its fonts and reads identically on any device.
+*.docx

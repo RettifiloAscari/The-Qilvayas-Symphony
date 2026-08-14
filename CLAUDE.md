@@ -19,18 +19,20 @@ either input to them or output from them.
   base64-encoded visual template. Editing canon means editing a script here.
 - `corpus/` — **generated Markdown**, one file per document. Diffable, greppable, and
   what the Claude Chat GitHub connector reads. Every file carries a DO-NOT-EDIT banner.
-- `documents/` — **generated `.docx`**, styled and ready to read. Committed
-  deliberately, against the usual rule about build output, so the corpus can be opened
-  from any device without a build step.
-- `tools/` — `build.sh` (regenerates everything and verifies it) and `docx-md-shim/`,
-  a stub of the `docx` package that emits Markdown instead of OOXML.
+- `documents/` — **generated PDF**, styled and ready to read. Committed deliberately,
+  against the usual rule about build output, so the corpus can be opened from any device
+  without a build step. PDF embeds its fonts, so it renders identically everywhere.
+- `tools/` — `build.sh` (regenerates everything and verifies it), `docx-md-shim/`
+  (a stub of the `docx` package that emits Markdown instead of OOXML), and
+  `normalize_pdf.py` (makes the rendered PDF byte-reproducible).
 - `reference/project-instructions.md` — the mirrored instructions for the Chat project.
 - `drafts/` — design drafts awaiting sign-off. Not canon; never read as canon.
 - `README.md` — repository index with links to every document.
 
 `corpus/` and `documents/` come from the same untouched scripts in the same build, so
-they cannot drift apart. PDFs, `node_modules/`, `/export/`, and `scripts/tpl/` (template
-extraction scratch) are gitignored.
+they cannot drift apart. The `.docx` is a build intermediate only and is never committed;
+`node_modules/`, `/export/`, and `scripts/tpl/` (template extraction scratch) are also
+gitignored.
 
 ## Working in This Repository
 
@@ -284,11 +286,15 @@ and verify before publishing by scanning for DM-only strings and mechanical asid
 
 - **Generation scripts are the source of truth.** Documents are generated programmatically
   (docx-js) so the corpus regenerates consistently and content splices between documents
-  without transcription drift. Never hand-edit a published .docx — edit the script.
+  without transcription drift. Never hand-edit a published document — edit the script.
 - **One command rebuilds everything:** `tools/build.sh`. It regenerates `corpus/` and
-  `documents/`, applies the template, renders every document, and fails the build on
+  `documents/`, applies the template, renders each document to PDF, and fails the build on
   escape leaks or font substitution. Use `--no-verify` only when the render toolchain is
   genuinely unavailable.
+- **The deliverable is PDF; the .docx is a build intermediate.** The pipeline runs
+  docx-js → `transplant.py` (template) → LibreOffice (PDF) → Ghostscript → `normalize_pdf.py`.
+  The final two passes strip per-run randomness (timestamps, IDs, font-subset tags) so an
+  unchanged document produces a byte-identical file and the git history stays clean.
 - **All documents pass through the template pipeline** — the /u/YaAlex-derived 5e style
   template (Alegreya SC Medium headings in deep book-red, **Alegreya Sans SC and Lato**
   body text, A4, page-number footers), applied via `transplant.py`. Full-width masthead,

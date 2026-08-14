@@ -18,10 +18,10 @@ The campaign setting document (currently **v11**) is the sourcebook and the sing
 |---|---|
 | `scripts/` | The generator scripts — **the canon.** Changing the campaign means changing a script here. |
 | `corpus/` | Generated Markdown, one file per document. **Read this to look things up.** |
-| `documents/` | Generated `.docx`, styled and ready to read. |
+| `documents/` | Generated PDF, styled and ready to read on any device. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon** — never cite as canon. |
 
-Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. The `.docx` files in project knowledge are published output and may lag the repository — when the two disagree, the repository is current.
+Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. The PDF files in project knowledge are published output and may lag the repository — when the two disagree, the repository is current.
 
 Established canon includes, non-exhaustively:
 
@@ -189,21 +189,32 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 | Node + `docx` | `npm install docx` | The generator scripts |
 | Python 3 | stdlib only — no packages needed | `transplant.py` uses `zipfile`/`base64` |
 | LibreOffice **Writer** | `apt-get install libreoffice-writer` | `libreoffice-core` alone loads *nothing* — every document silently fails with "source file could not be loaded" |
+| Ghostscript | `apt-get install ghostscript` | Rewrites the render into a reproducible PDF; without it the deliverable churns on every build |
 | poppler-utils | `apt-get install poppler-utils` | Supplies `pdftotext`, `pdffonts`, `pdftoppm` for verification |
 | Fonts: **Alegreya SC**, **Alegreya Sans SC**, **Lato** | Google Fonts TTFs into `~/.local/share/fonts`, then `fc-cache -f` | The template requests exactly these three. Missing fonts substitute silently and **change pagination** — verifying layout without them is meaningless |
 
 The generator scripts write output to `/home/claude/`. Create that directory if it does not exist, or the write fails.
 
 **Production practice:**
-- **The generation scripts are the source of truth.** The published .docx files are output. Never hand-edit a published document — edit the script and regenerate. This is what keeps the corpus consistent and lets content splice between documents without transcription drift.
-- **Every document passes through the template pipeline:** `node <script>.js` to generate, then `python3 transplant.py <in>.docx <out>.docx` to apply the template. Full-width masthead, continuous two-column body for the sourcebook and modules; **the DM Reference Guide takes `--single`**, since its value is wide scannable tables.
-- **Verify rendering before publishing.** Convert to PDF and inspect:
+- **The generation scripts are the source of truth.** The published PDFs are output. Never hand-edit a published document — edit the script and regenerate. This is what keeps the corpus consistent and lets content splice between documents without transcription drift.
+- **The deliverable is PDF; the .docx is a build intermediate.** Generate, apply the template, render to PDF, then make the PDF reproducible:
 
   ```bash
-  soffice --headless --convert-to pdf --outdir . out.docx
-  pdftotext out.pdf - | grep -c '\\u'    # MUST be 0 — catches escape-sequence leaks
-  pdffonts out.pdf | grep -c DejaVu      # MUST be 0 — nonzero means a font is missing
-  pdftoppm -jpeg -r 80 out.pdf page      # then actually look at several pages
+  node <script>.js                                         # writes a plain .docx
+  python3 transplant.py <in>.docx <styled>.docx            # applies the template
+  soffice --headless --convert-to pdf --outdir . <styled>.docx
+  gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true \
+     -dSubsetFonts=true -dNOPAUSE -dBATCH -dQUIET -o final.pdf <styled>.pdf
+  python3 normalize_pdf.py final.pdf                        # strips per-run randomness
+  ```
+
+  Full-width masthead, continuous two-column body for the sourcebook and modules; **the DM Reference Guide takes `--single`** on the `transplant.py` step, since its value is wide scannable tables. PDF is the deliverable because it embeds its fonts — it reads identically on any device, which the `.docx` does not, since the template ships with its fonts stripped. The `gs` and `normalize_pdf.py` passes make the PDF byte-reproducible, so an unchanged document rebuilds to an identical file.
+- **Verify the final PDF before publishing:**
+
+  ```bash
+  pdftotext final.pdf - | grep -c '\\u'    # MUST be 0 — catches escape-sequence leaks
+  pdffonts final.pdf | grep -c DejaVu      # MUST be 0 — nonzero means a font is missing
+  pdftoppm -jpeg -r 80 final.pdf page      # then actually look at several pages
   ```
 
   Note the **doubled backslash** in the `grep` pattern. Single-quoted `'\u'` matches the plain letter *u* and reports every ordinary word containing one, so it can never return 0 on real prose — the check only works as `'\\u'`.
@@ -212,7 +223,7 @@ The generator scripts write output to `/home/claude/`. Create that directory if 
 
 - **Known layout limitation.** Wide tables with prose-bearing columns crowd badly in the two-column body — the commerce and price tables are the worst affected, wrapping to one or two words per line. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak; treat it as a queued fix rather than an ad hoc patch.
 - **Bump the sourcebook version** for significant material (new doctrinal sections, major passes): copy the script to the next version number, update the output filename inside it, then edit. Small corrections patch in place. Keep prior versions.
-- **Approved script changes go back to the repository.** A script edited here is only half-applied until the change reaches `scripts/` in the repository and `tools/build.sh` regenerates `corpus/` and `documents/` from it. Hand the edited script back rather than only the resulting .docx — the script is the canon, the document is the output.
+- **Approved script changes go back to the repository.** A script edited here is only half-applied until the change reaches `scripts/` in the repository and `tools/build.sh` regenerates `corpus/` and `documents/` from it. Hand the edited script back rather than only the resulting PDF — the script is the canon, the document is the output.
 
 ---
 

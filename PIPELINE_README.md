@@ -1,6 +1,8 @@
 # QS Document Pipeline — How to Regenerate the Corpus
 
-These files are the **actual production assets** for The Qilvayas Symphony. The published .docx documents in project knowledge are *output*; the scripts here are the source of truth. Never hand-edit a published .docx — edit the script and regenerate.
+These files are the **actual production assets** for The Qilvayas Symphony. The published documents are *output*; the scripts here are the source of truth. Never hand-edit a published document — edit the script and regenerate.
+
+**The deliverable is PDF.** The `.docx` that `transplant.py` produces is a build intermediate — it is rendered to PDF and discarded. PDF embeds its fonts, so it reads identically on any device (the `.docx` does not — see the note on the encoded template below), and the render is post-processed to be byte-reproducible so unchanged content never churns the repository.
 
 ## Files
 
@@ -23,6 +25,7 @@ Copy these files into the working directory (`/home/claude`). Several prerequisi
 ```bash
 npm install docx                              # generator dependency
 apt-get install -y libreoffice-writer         # see note below — core alone is not enough
+apt-get install -y ghostscript                # reproducible PDF rewrite (gs)
 apt-get install -y poppler-utils              # pdftotext, pdffonts, pdftoppm
 mkdir -p /home/claude                         # scripts write here; missing dir = write failure
 ```
@@ -51,31 +54,45 @@ The encoded template has **embedded fonts stripped** to keep it small (58 KB rat
 
 ## Regenerating a document
 
-Two steps, always in this order — generate, then apply the template:
+In the repository, one command does everything below for all documents at once —
+`tools/build.sh` regenerates the markdown corpus and the PDFs and verifies them. The
+steps here are what it runs per document, useful when working one document at a time.
+
+Generate the plain `.docx`, apply the template, render to PDF, then make the PDF
+reproducible:
 
 ```bash
-node campaign_v11.js                                    # writes a plain .docx
-python3 transplant.py <input>.docx <output>.docx        # applies the template
+node campaign_v11.js                                        # writes a plain .docx
+python3 transplant.py <in>.docx <styled>.docx               # applies the template
+soffice --headless --convert-to pdf --outdir . <styled>.docx
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true \
+   -dSubsetFonts=true -dNOPAUSE -dBATCH -dQUIET -o final.pdf <styled>.pdf
+python3 normalize_pdf.py final.pdf                          # strips per-run randomness
 ```
+
+The `.docx` is discarded once the PDF exists. The `gs` pass re-embeds the fonts and
+collapses LibreOffice's nondeterministic font subsetting into a stable form;
+`normalize_pdf.py` then zeroes the timestamps, IDs, checksum, and subset tags so the same
+content always yields the same bytes.
 
 **The DM Reference Guide is the one exception** — it stays single-column, because its value is wide scannable tables:
 
 ```bash
 node refguide.js
 python3 transplant.py QS_DM_Reference_Guide.docx out_RG.docx --single
+# ...then the same soffice / gs / normalize_pdf.py steps
 ```
 
 Everything else uses the default: full-width masthead, then continuous two-column body.
 
 ## Verify before publishing
 
-Rendering bugs are invisible in the source. Always convert and inspect:
+Rendering bugs are invisible in the source. Always inspect the final PDF:
 
 ```bash
-soffice --headless --convert-to pdf --outdir . out.docx
-pdftotext out.pdf - | grep -c '\\u'     # MUST be 0 — escape-sequence leaks
-pdffonts out.pdf | grep -c DejaVu       # MUST be 0 — a missing template font
-pdftoppm -jpeg -r 80 out.pdf page       # then actually view several pages
+pdftotext final.pdf - | grep -c '\\u'     # MUST be 0 — escape-sequence leaks
+pdffonts final.pdf | grep -c DejaVu       # MUST be 0 — a missing template font
+pdftoppm -jpeg -r 80 final.pdf page       # then actually view several pages
 ```
 
 **On the `grep` pattern:** the doubled backslash is required. Single-quoted `'\u'` matches the plain letter *u*, so it reports a hit on nearly every line of ordinary prose and can never return 0. Only `'\\u'` matches a literal `\u` escape.

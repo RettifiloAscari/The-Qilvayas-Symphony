@@ -2,11 +2,17 @@
 #
 # Regenerate the entire Qilvayas Symphony corpus from the generator scripts.
 #
-#   documents/   styled .docx  — docx-js, then the template via transplant.py
-#   corpus/      markdown      — the same scripts run through tools/docx-md-shim
+#   corpus/      markdown  — the scripts run through tools/docx-md-shim
+#   documents/   PDF       — docx-js -> template (transplant.py) -> LibreOffice
+#                            -> Ghostscript -> tools/normalize_pdf.py
+#
+# The .docx is a build intermediate, never committed. PDF is the deliverable:
+# it embeds its fonts, so it reads identically on any device, and the gs +
+# normalize passes make it byte-reproducible, so an unchanged document produces
+# an unchanged file and the git history stays clean.
 #
 # Both outputs come from the same untouched scripts, so they cannot drift apart.
-# Nothing in documents/ or corpus/ is ever edited by hand: edit scripts/ instead.
+# Nothing in corpus/ or documents/ is ever edited by hand: edit scripts/ instead.
 #
 # Usage:  tools/build.sh [--no-verify]
 #
@@ -17,6 +23,7 @@ SCRIPTS="$ROOT/scripts"
 SHIM="$ROOT/tools/docx-md-shim"
 DOCS="$ROOT/documents"
 CORPUS="$ROOT/corpus"
+NORMALIZE="$ROOT/tools/normalize_pdf.py"
 VERIFY=1
 [[ "${1:-}" == "--no-verify" ]] && VERIFY=0
 
@@ -30,6 +37,9 @@ GENERATORS=(campaign_v11 sessions session34 s56 s78 refguide playerguide)
 # Only the DM Reference Guide stays single-column; its value is wide tables.
 SINGLE_COL_MATCH="QS_DM_Reference_Guide"
 
+GS_ARGS=(-sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true
+         -dSubsetFonts=true -dNOPAUSE -dBATCH -dQUIET)
+
 banner() { # $1 = source script basename
   printf '%s\n' '<!-- GENERATED FILE - DO NOT EDIT.'
   printf '%s\n' "     Source:     scripts/$1"
@@ -42,9 +52,10 @@ echo "==> checking prerequisites"
 command -v node >/dev/null    || { echo "FATAL: node not found"; exit 1; }
 command -v python3 >/dev/null || { echo "FATAL: python3 not found"; exit 1; }
 node -e "require('docx')" 2>/dev/null || { echo "FATAL: 'docx' not installed - run: npm install docx"; exit 1; }
+command -v soffice >/dev/null || { echo "FATAL: soffice not found - apt-get install libreoffice-writer"; exit 1; }
+command -v gs >/dev/null      || { echo "FATAL: gs not found - apt-get install ghostscript"; exit 1; }
 if [[ $VERIFY -eq 1 ]]; then
-  command -v soffice >/dev/null    || { echo "FATAL: soffice not found - apt-get install libreoffice-writer"; exit 1; }
-  command -v pdftotext >/dev/null  || { echo "FATAL: pdftotext not found - apt-get install poppler-utils"; exit 1; }
+  command -v pdftotext >/dev/null || { echo "FATAL: pdftotext not found - apt-get install poppler-utils"; exit 1; }
   for f in "Alegreya SC" "Alegreya Sans SC" "Lato"; do
     fc-match "$f" 2>/dev/null | grep -qi dejavu && \
       { echo "FATAL: font '$f' is not installed - layout verification would be meaningless"; exit 1; }
@@ -71,31 +82,32 @@ for g in "${GENERATORS[@]}"; do
 done
 echo "    $(ls -1 "$CORPUS"/*.md | wc -l) markdown files -> corpus/"
 
-echo "==> generating documents (docx-js + template transplant)"
-rm -f "$STAGE"/*.docx
+echo "==> generating documents (docx-js -> template -> PDF)"
+WORK="$(mktemp -d)"; trap 'rm -rf "$WORK"' EXIT
+rm -f "$STAGE"/*.docx "$DOCS"/*.docx "$DOCS"/*.pdf
 for g in "${GENERATORS[@]}"; do
   ( cd "$SCRIPTS" && node "$g.js" >/dev/null )
 done
 for f in "$STAGE"/*.docx; do
-  base="$(basename "$f")"
+  base="$(basename "${f%.docx}")"
   args=()
   [[ "$base" == *"$SINGLE_COL_MATCH"* ]] && args+=(--single)
-  ( cd "$SCRIPTS" && python3 transplant.py "$f" "$DOCS/$base" "${args[@]}" >/dev/null )
+  ( cd "$SCRIPTS" && python3 transplant.py "$f" "$WORK/$base.docx" "${args[@]}" >/dev/null )
+  # styled docx -> PDF (LibreOffice) -> reproducible PDF (gs + normalize)
+  soffice --headless -env:UserInstallation="file://$WORK/lo" \
+          --convert-to pdf --outdir "$WORK" "$WORK/$base.docx" >/dev/null 2>&1 || true
+  gs "${GS_ARGS[@]}" -o "$DOCS/$base.pdf" "$WORK/$base.pdf" >/dev/null 2>&1
+  python3 "$NORMALIZE" "$DOCS/$base.pdf"
 done
 rm -rf "$SCRIPTS/work_tpl" "$SCRIPTS/work_src" "$SCRIPTS/_template_decoded.docx"
-echo "    $(ls -1 "$DOCS"/*.docx | wc -l) documents -> documents/"
+echo "    $(ls -1 "$DOCS"/*.pdf | wc -l) PDFs -> documents/"
 
 if [[ $VERIFY -eq 0 ]]; then echo "==> verification skipped"; exit 0; fi
 
-echo "==> verifying renders"
-TMP="$(mktemp -d)"; trap 'rm -rf "$TMP"' EXIT
+echo "==> verifying the published PDFs"
 fail=0
-for f in "$DOCS"/*.docx; do
-  base="$(basename "${f%.docx}")"
-  soffice --headless -env:UserInstallation="file://$TMP/lo" \
-          --convert-to pdf --outdir "$TMP" "$f" >/dev/null 2>&1 || true
-  pdf="$TMP/$base.pdf"
-  if [[ ! -f "$pdf" ]]; then echo "    FAIL  $base - did not render"; fail=1; continue; fi
+for pdf in "$DOCS"/*.pdf; do
+  base="$(basename "${pdf%.pdf}")"
   leaks=$(pdftotext "$pdf" - 2>/dev/null | grep -c '\\u' || true)
   subst=$(pdffonts "$pdf" 2>/dev/null | grep -c DejaVu || true)
   pages=$(pdfinfo "$pdf" 2>/dev/null | awk '/^Pages/{print $2}')
