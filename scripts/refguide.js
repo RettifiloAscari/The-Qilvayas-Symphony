@@ -43,7 +43,7 @@ c.push(table(
     ["Principality of Tarnovar", "Voivode Ysavet Morn; Ban Dregan Morn (Eastmarch)", "Independent (100 yrs)", "DM ONLY: descended from Threnvos's people. Oath-culture; \"Vosthren\" ballads. Dregan's Fence holds the Brekeland border. Do not spend early."],
     ["Velmareth / Delta Compact", "The Harborlords (incl. House Meldane)", "Neutral / disorder-preferring", "Merchant republic; Exchange delegations answer here. Meldane money reaches into the Suthmark."],
     ["The Brekelands", "Warlords Bettra Skarn & Ilmarch Voss (shrinking)", "Fractured / being absorbed", "Granary War produced the Halvenne refugees. Squeezed between Norr's Reckoning Book (west) and Dregan's Fence (east)."],
-    ["The See of Orlath", "Saint-Regent Olvesa the Reconciled", "Schismatic \u2014 coronation pending", "Founded ~45 yrs ago by Olvesa. Preparing to crown Karvel Emperor of the True Rite within the year."],
+    ["The See of Orlath", "Saint-Regent Olvesa the Reconciled", "Schismatic \u2014 coronation pending", "Founded ~58 yrs ago by Olvesa. Preparing to crown Karvel Emperor of the True Rite this Solacre (~9 mo out)."],
     ["Kingdom of Ardven", "King Karvel", "Rival power (north)", "Twelve crowns unified in 15 yrs. Monastery schools, working restoration. Olvesa's grandson; coronation imminent."],
     ["The Skellvard", "Sea-King Aldrec the Landless", "Hostile \u2014 but persuadable", "Displaced ship-clans, pushed south by Ardven. Aldrec wants a march and a title; refused four times; dying slowly."],
     ["Duchy of Normere", "Duke Garvin Norr, the Bastard", "Rival power (west)", "Conquest + the Reckoning Book + personal oaths. Absorbing the Brekelands. Qilvayas's dark mirror. The Harrowing of the Weld, 4 yrs ago."]
@@ -176,7 +176,7 @@ c.push(BUL("Roster race calls:", "Vell hill dwarf; Mosse rock gnome; Halloc half
 
 c.push(H1("Dragons of the Fractured Age"));
 c.push(table(["Dragon","Where","The Short Version"],[20,18,62],[
- ["Vessarkath the Patient","Silvasse Weald","Ancient green; TRUE author of the Silvasse Disaster; sleeps on the lost eagles; let Dane's standard leave \u2014 why is open. Receives; never treats."],
+ ["Vessarkath the Patient","Silvasse Weald","Ancient green; TRUE author of the Silvasse Disaster; sleeps on the lost eagles; let Dane's standard leave \u2014 why now settled (DM): she felt the Acceleration. Receives; never treats."],
  ["The Saltmaw","Weeping Strait","Dragon turtle; the Skell pay the salt-tithe. Adopted option: it is what the admiral's squadrons fled \u2014 Aldrec's people were spent as distraction."],
  ["The Fjell Whites","Ardven ranges","Young white brood, ranger-culled; adult matriarch unconfirmed \u2014 the north's quiet dread and a ready escalation near the coronation."]
 ]));
@@ -205,16 +205,18 @@ c.push(BUL("The Proving:", "Real academy tradition \u2014 a staged final exam mi
 
 // ============ TIMELINE ============
 c.push(H1("Timeline at a Glance"));
+c.push(P("DM-only anchor (computational baseline; the in-world Reckoning figure stays soft and never appears player-facing): present day \u2248 YR 2000, the founding at YR 0 \u2014 so every '~N years ago' resolves to YR (2000 \u2212 N)."));
 c.push(table(
   ["When", "Event"],
   [22, 78],
   [
     ["~2,000 yrs ago", "The founding. Zhuvedus breaks the oath, destroys Threnvos. Binding site sealed. Threnvos's people scatter west \u2192 Tarnovar."],
     ["~200 yrs ago", "The fracture begins; two centuries of provinces peeling away, feeding the shadow."],
+    ["Across the 2 centuries", "The Lupine Throne turns over faster than a Drow line should \u2014 fever, faction, twice to child-heirs and their regents; the court names a cause for each and never counts them. Nyreeza (own right, no regent) is the first steadiness in generations. DM: The Throne's Short Reigns."],
     ["~60 yrs ago", "The Silvasse Disaster: three legions and their standards lost in the west."],
-    ["~60\u201345 yrs ago", "Olvesa's lord murdered; her four vengeances; her conversion; founding of the See of Orlath (~45)."],
+    ["~60\u201358 yrs ago", "Olvesa's lord murdered; her four vengeances; her conversion; the See of Orlath founding itself around her (~58)."],
     ["~50 yrs ago", "Vaelindra's career-ending vision; quiet removal from the Church."],
-    ["~40 yrs ago", "Dregan Morn arrives at the academy as a Tarnovari hostage-student."],
+    ["~40 yrs ago", "Dregan Morn arrives at the academy as a Tarnovari hostage-student; stays past his studies, returns home a decade later."],
     ["~20 yrs ago", "The Weeping Strait (Aldrec's betrayal). Norr takes Normere in fact."],
     ["~15 yrs ago", "Karvel begins unifying Ardven; the Skell clans lose their fjords and turn south."],
     ["~12 yrs ago", "Nyreeza begins the academy revival and institutional reforms."],
@@ -222,8 +224,10 @@ c.push(table(
     ["6 yrs ago", "The Vintage Night (Suthmark massacre of Orlathines; Vasq owns it)."],
     ["4 yrs ago", "The Harrowing of the Weld (Norr ends a rebellion, and a district)."],
     ["3 yrs ago", "Nyreeza's final meeting with Vaelindra; disappearance. Visions accelerate \u2014 Vaelindra's AND Olvesa's (which sets the coronation moving)."],
+    ["~3 yrs ago (DM)", "Vessarkath lets one wolf-standard leave her hoard \u2014 she felt the stir under the capital; the Ninth's eagle starts its slow way home via the Brekelands."],
     ["~2.5 yrs ago", "Qilvayas's coronation; restoration begins in earnest."],
-    ["Within the year", "TWO CLOCKS, ONE SEASON: Zhuvedian Laws promulgation (Aenodira) + Karvel's coronation as Emperor of the True Rite (Orlath)."],
+    ["~1 yr ago", "Marshal Dane recovers the Ninth's standard, nearly 60 yrs after Silvasse. The Ostmark's wound starts to close; the empire gets its Young Wolf."],
+    ["This Solacre (~9 mo)", "TWO CLOCKS, ONE SEASON: Zhuvedian Laws promulgation (Aenodira) + Karvel's coronation as Emperor of the True Rite (Orlath)."],
     ["Present day", "Party's field exercise \u2192 vision \u2192 return to Aenodira \u2192 the Proving."]
   ]
 ));
@@ -298,6 +302,7 @@ c.push(BUL(null, "Nyreeza's exact fate \u2014 dead, transformed, or trapped: to 
 c.push(BUL(null, "Countess Ory's blood-rite mechanism \u2014 decide when the Greywell module is built (hag-bargain / fiendish compact / inherited rite)."));
 c.push(BUL(null, "The coronation's metaphysical consequence \u2014 a founding covenant sworn while the shadow listens: design when the arc approaches."));
 c.push(BUL(null, "The Piso gun \u2014 whether Marshal Dane's sudden death ever occurs is a standing DM option, never an obligation."));
+c.push(BUL(null, "The throne's short reigns \u2014 the Lupine line cannot hold its throne; mundane on the surface (fever, faction, regency), any deeper cause open by design. Do not resolve at the table."));
 c.push(BUL(null, "What lies past the Second Seal \u2014 the next major build (see Roadmap)."));
 
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 300, after: 100 }, children: [new TextRun({ text: "~", size: 24 })] }));

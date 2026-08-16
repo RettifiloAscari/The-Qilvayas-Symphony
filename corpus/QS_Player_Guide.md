@@ -68,7 +68,7 @@ The borders are fluid and contested. Alliances shift, minor wars flare and sputt
 
 **The Brekelands:** The broken middle-west: a patchwork of warlord holdings where imperial administration simply stopped. The local trouble is the Granary War between warlords Bettra Skarn and Ilmarch Voss, which has produced refugees and burned villages this season. From the west, Duke Garvin Norr absorbs holding after holding into his Reckoning Book; along the eastern hills runs Ban Dregan’s Fence, which no Brekeland company raids past twice.
 
-**The See of Orlath:** A breakaway patriarchate in the north claiming the purer doctrine of the Matron — founded some forty-five years ago by Saint-Regent Olvesa the Reconciled. Orlath recognizes neither the Matriarchate’s authority nor the Office of Omens’ monopoly on the divine will, and refugees of conscience drift there still.
+**The See of Orlath:** A breakaway patriarchate in the north claiming the purer doctrine of the Matron — founded nearly sixty years ago by Saint-Regent Olvesa the Reconciled. Orlath recognizes neither the Matriarchate’s authority nor the Office of Omens’ monopoly on the divine will, and refugees of conscience drift there still.
 
 **Kingdom of Ardven:** The young power of the far north: a dozen quarrelsome kingdoms and clan-lands hammered into one crown over fifteen years by King Karvel. Ardven is expansionist, literate, and increasingly confident — Karvel plants monastery schools the way other kings plant fortresses.
 
@@ -180,7 +180,7 @@ In person, Qilvayas is precise, courteous, and quietly relentless. He speaks sof
 
 Qilvayas’s plan for imperial restoration rests on several pillars:
 
-**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code—the “Zhuvedian Laws”—that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. Their promulgation is anticipated within the year.
+**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code—the “Zhuvedian Laws”—that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. Their promulgation is anticipated this coming Solacre, some nine months out.
 
 **Administrative Revival:** He is rebuilding imperial institutions that have atrophied or disappeared. The Imperial Academy is central to this effort.
 
@@ -194,7 +194,7 @@ Zhuvedian law is old and clear on the worst of it: owning a person outright is i
 
 ## The Mystery of Empress Nyreeza
 
-Qilvayas’s mother, Empress Nyreeza, disappeared three years ago under circumstances that remain unclear. She was the one who began revitalizing the Imperial Academy and took the first steps toward institutional reform. Her sudden absence created a power vacuum that Qilvayas filled, but it also left questions the capital still asks quietly: Was her disappearance natural, political, or something more sinister? Did she flee, was she taken, or is she dead? Does the Emperor know more than he admits? No answer has ever been confirmed.
+Qilvayas’s mother, Empress Nyreeza, disappeared three years ago under circumstances that remain unclear. She was the one who began revitalizing the Imperial Academy and took the first steps toward institutional reform. Her sudden absence created a power vacuum that Qilvayas filled, but it also left questions the capital still asks quietly: Was her disappearance natural, political, or something more sinister? Did she flee, was she taken, or is she dead? Does the Emperor know more than he admits? No answer has ever been confirmed. Her loss landed the harder because of what she had been. For a line as long-lived as the Founder’s Blood, the Lupine Throne has been an unlucky seat: within living memory its rulers turned over surprisingly fast — fever, faction, a pair of child-heirs and the regents who ruled for them — and Nyreeza, holding it in her own right until a grown son could follow her, was the steadiest the empire had known in generations. That the throne now rests on Qilvayas alone, with no heir yet named, is a thing the capital discusses only in low voices.
 
 ## The Court
 
@@ -214,11 +214,11 @@ The rulers and commanders who define the territories of the Atlas.
 
 ### Sea-King Aldrec the Landless — Lord of the Skellvard Clans
 
-Aldrec, in his fifties now, served the empire in his youth — Skell oarsmen and shock-fighters were cheap, and at the Weeping Strait, twenty years ago, an imperial admiral spent three thousand of them to save his own squadrons and logged it as victory. Aldrec survived, was denied the coastal command he had been promised, and went home to find Ardven’s expansion swallowing the fjords. He has led the ship-clans ever since as a king without a country, raiding the coast of the empire he would rather serve. His demands have never changed: a coastal march to hold, a title to hold it by, and his people’s names entered in the empire’s rolls as subjects rather than vermin. He speaks fluent, formal Imperial — better than most courtiers’ — which unsettles people who expected a savage. Skell kings are buried under rivers, in secret, so that no enemy may ever stand on a Skell king’s grave.
+Aldrec, in his fifties now, served the empire as a young man, and for twenty years after — Skell oarsmen and shock-fighters were cheap, and at the Weeping Strait, twenty years ago, an imperial admiral spent three thousand of them to save his own squadrons and logged it as victory. Aldrec survived, was denied the coastal command he had been promised, and went home to find the fjords already under pressure from the northern crowns as they then were; Karvel’s consolidation of them into Ardven, some five years later, only finished it. He has led the ship-clans ever since as a king without a country, raiding the coast of the empire he would rather serve. His demands have never changed: a coastal march to hold, a title to hold it by, and his people’s names entered in the empire’s rolls as subjects rather than vermin. He speaks fluent, formal Imperial — better than most courtiers’ — which unsettles people who expected a savage. Skell kings are buried under rivers, in secret, so that no enemy may ever stand on a Skell king’s grave.
 
 ### Marshal Gavric Dane — the Young Wolf of the Ostmark
 
-Not yet thirty-five and already the most beloved soldier in the empire: the man who led the expedition that recovered the wolf-standard of the Ninth from the Brekelands, sixty years after the Silvasse Disaster swallowed three legions and every banner they carried. He weeps openly at soldiers’ funerals, remembers the names of privates’ children, and has never once expressed an ambition beyond his command. The legions call him the Young Wolf. The court hears that name and thinks of succession.
+Not yet thirty-five and already the most beloved soldier in the empire: the man who led the expedition that recovered the wolf-standard of the Ninth from the Brekelands little more than a year ago, nearly sixty years after the Silvasse Disaster swallowed three legions and every banner they carried. He weeps openly at soldiers’ funerals, remembers the names of privates’ children, and has never once expressed an ambition beyond his command. The legions call him the Young Wolf. The court hears that name and thinks of succession.
 
 ### Ban Dregan Morn — Warden of the Eastmarch, Lord of the Fence
 
@@ -226,7 +226,7 @@ Kinsman to Voivode Ysavet Morn, sent to the capital academy as a hostage-student
 
 ### Duchess Emerenn Vasq, née Meldane — the Dowager of the Suthmark
 
-Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line, widowed at forty, and ruler in all but name ever since through her sons. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, priests’ housekeepers, and wine-factors, which knows what the Suthmark is thinking before the Suthmark does. Six years ago, Orlathine congregations were massacred in three Suthmark towns during the harvest festival — the Vintage Night. What she ordered, and what it became, are not agreed upon even now; she has never corrected the record, and the south fears her for it.
+Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line, widowed at forty some fifteen years ago, and ruler in all but name ever since through her sons. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, priests’ housekeepers, and wine-factors, which knows what the Suthmark is thinking before the Suthmark does. Six years ago, Orlathine congregations were massacred in three Suthmark towns during the harvest festival — the Vintage Night. What she ordered, and what it became, are not agreed upon even now; she has never corrected the record, and the south fears her for it.
 
 ### Saint-Regent Olvesa the Reconciled — Founder of the See of Orlath
 
@@ -234,11 +234,11 @@ Sixty years ago she was the young widow-regent of a northern principality whose 
 
 ### King Karvel of Ardven
 
-Grandson of Saint-Regent Olvesa, king of a realm he assembled himself: fifteen years of war, marriage, and administration that turned a dozen northern crowns and clan-lands into Ardven. Karvel is broad, loud, semi-lettered and obsessed with letters — he reads slowly and has founded forty monastery schools; he sleeps four hours and audits his reeves personally. Within the year, if nothing intervenes, his grandmother’s church intends to crown him Emperor of the True Rite — a second empire, sanctified by a second church, in direct denial of the Lupine Throne’s mandate.
+Grandson of Saint-Regent Olvesa, king of a realm he assembled himself: fifteen years of war, marriage, and administration that turned a dozen northern crowns and clan-lands into Ardven. Karvel is broad, loud, semi-lettered and obsessed with letters — he reads slowly and has founded forty monastery schools; he sleeps four hours and audits his reeves personally. This coming Solacre, if nothing intervenes, his grandmother’s church intends to crown him Emperor of the True Rite — a second empire, sanctified by a second church, in direct denial of the Lupine Throne’s mandate.
 
 ### Duke Garvin Norr — the Bastard of Normere
 
-Baseborn son of the old Duke of Normere, acknowledged but never legitimized, who survived three assassination attempts before the age of twenty and has spent two decades since building the most ruthlessly administered state west of Aenodira. Norr’s conquest of the Brekelands proceeds warlord by warlord, and it is not pillage — it is absorption: every conquered holding is surveyed into the Reckoning Book, every landholder swears a personal oath to Norr himself, and every obligation is recorded, audited, and enforced to the letter. Where submission is refused — the Harrowing of the Weld, four years ago, ended a district’s rebellion by ending, for a generation, the district. He styles his conquest “the restoration of lawful administration,” which has the special insolence of being partly true.
+Baseborn son of the old Duke of Normere, acknowledged but never legitimized, who survived three assassination attempts before the age of twenty, took Normere in fact some twenty years ago, and has spent the two decades since building the most ruthlessly administered state west of Aenodira. Norr’s conquest of the Brekelands proceeds warlord by warlord, and it is not pillage — it is absorption: every conquered holding is surveyed into the Reckoning Book, every landholder swears a personal oath to Norr himself, and every obligation is recorded, audited, and enforced to the letter. Where submission is refused — the Harrowing of the Weld, four years ago, ended a district’s rebellion by ending, for a generation, the district. He styles his conquest “the restoration of lawful administration,” which has the special insolence of being partly true.
 
 # The Imperial Academy of the Lupine Throne
 
@@ -404,7 +404,8 @@ Most of loyalist territory counts Years of the Reckoning from the Founding. A se
 - **4 years ago:** The Harrowing of the Weld, in the Brekelands.
 - **3 years ago:** Empress Nyreeza disappears without explanation.
 - **~2.5 years ago:** Qilvayas’s coronation; the restoration begins in earnest.
-- **Within the year:** Two anticipated events, watched closely across the fractured empire: the promulgation of the Zhuvedian Laws in Aenodira, and the coronation of King Karvel as Emperor of the True Rite in Orlath.
+- **~1 year ago:** Marshal Dane recovers the Ninth’s standard from the Brekelands — the empire’s Young Wolf, and its first clear good news in a long while.
+- **This Solacre (nine months out):** Two anticipated events, watched closely across the fractured empire: the promulgation of the Zhuvedian Laws in Aenodira, and the coronation of King Karvel as Emperor of the True Rite in Orlath.
 
 ~
 

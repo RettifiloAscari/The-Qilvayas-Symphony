@@ -1,3 +1,12 @@
+# RESOLVED — applied to canon
+
+This audit was applied as a single consolidated pass (see the commit that closes the
+timeline audit). All seventeen findings were actioned per Josh's decision brief; two
+decisions overrode this draft's recommendation — M-2 closed the gap, and O-3 committed
+the shadow connection. Kept for the record; no longer pending.
+
+---
+
 # Design Draft — Timeline Arithmetic Audit
 
 *The Qilvayas Symphony — full-corpus consistency pass, dates and elapsed years*
