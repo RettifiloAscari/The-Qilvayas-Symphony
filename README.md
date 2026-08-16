@@ -71,7 +71,3 @@ rebuild only ever touches the documents whose content actually changed.
 
 See [`PIPELINE_README.md`](PIPELINE_README.md) for the full pipeline reference and
 [`CLAUDE.md`](CLAUDE.md) for the working instructions and canon rules.
-
-## Working notes
-
-- [Timeline arithmetic audit](drafts/timeline-arithmetic-audit.md) — findings by severity, awaiting sign-off.
