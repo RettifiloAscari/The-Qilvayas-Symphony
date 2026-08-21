@@ -192,6 +192,20 @@ Qilvayas’s plan for imperial restoration rests on several pillars:
 
 Archjurist Senna Vhal's Law Commission is compiling the Zhuvedian Laws as seven short Books, promulgated together this coming Solacre on the Long Course — the empire's first comprehensive legal code since the Golden Tablets. What follows is what a subject of the empire would actually know.
 
+The Tablets themselves don't survive complete, but a few lines are old enough and famous enough that every Academy student still knows them by heart:
+
+*“By the will of the Lupine Matron and the true voice of her chosen son, Zhuvedus, is this Empire raised, and these words set down that all who come after may know the order of things.”*
+
+*“No free soul may be bound as chattel, for the wolf does not cage her cubs, and what can vow cannot be owned.”*
+
+*“Let every vow be kept, for a broken word is a wound upon the pack.”*
+
+*“He who spills wolf-blood without cause shall answer to the pack's keeper, and the price shall be paid in full before the moon turns.”*
+
+*“The Throne descends to whom the sitting wolf names before the pack, living or dying, and the pack shall know no other law of blood.”*
+
+*“Set down in the year of the founding, by those who stood witness to the covenant of the Throne, that the memory of that day never fade.”*
+
 **Persons and bound labor:** Zhuvedian law is old and clear on the worst of it: owning a person outright is illegal and doctrinally blasphemous throughout the empire — the same principle that makes a sworn oath binding also makes chattel slavery incoherent, since the law holds that only a will capable of making a vow can be owned by no one but itself. What the law does recognize is more complicated: oath-bound personal service (the foundation of Duke Norr's rule in Normere), ordinary time-limited debt-bondage, and hostage-diplomacy — a full guest's legal standing, not bondage at all, and the basis for the Academy's own admission practices. New under the coming Laws: such an arrangement must be sworn before a recognized witness — a Church witness, a magistrate, or a standing stone in Tarnovar — to be enforceable at all. The empire's real trouble isn't the law; it's that the law hasn't reached every corner of the fractured territories in two hundred years, and the Brekelands are where that gap shows worst.
 
 **Oaths and witnesses:** A sworn word binds because it is witnessed — marriage before a Church witness, Norr's personal oaths sworn before his assembled halls, the standing stones of Tarnovar. Swearing falsely before a recognized witness is perjury, tried wherever the oath itself was sworn, and it follows the liar on their own record rather than being settled with a fine.

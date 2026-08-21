@@ -1,3 +1,11 @@
+# RESOLVED — applied to canon
+
+Approved as drafted, no redlines. Applied to `campaign_v11.js` and `playerguide.js`; the
+optional `refguide.js` cross-reference was left out (not requested). Kept for the record;
+no longer pending.
+
+---
+
 # Design Draft — The Golden Tablets, in Fragment
 
 *The Qilvayas Symphony — small exercise: actual quoted text from the Golden Tablets*

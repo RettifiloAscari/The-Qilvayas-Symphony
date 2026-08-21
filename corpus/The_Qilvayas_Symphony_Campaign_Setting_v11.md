@@ -464,6 +464,24 @@ The working theory (see The Founding Myth: Zhuvedus and the Broken Oath) is that
 
 Archjurist Senna Vhal’s Law Commission is compiling the Zhuvedian Laws as seven Books, promulgated together this coming Solacre on the Long Course — the empire’s first comprehensive legal code since the Golden Tablets, and Qilvayas’s own described ambition: laws “forged by the fires of justice and cast in molds of wisdom.” Each Book governs one domain of imperial life; together they are meant to do for the fractured empire what the historical Corpus Juris Civilis did for Justinian’s.
 
+### The Golden Tablets, in Fragment
+
+The Tablets themselves do not survive complete — no document does, across two thousand years — but six lines are old enough and famous enough that every Seal-house student still has them by heart, carved over more than one provincial courthouse door:
+
+*“By the will of the Lupine Matron and the true voice of her chosen son, Zhuvedus, is this Empire raised, and these words set down that all who come after may know the order of things.”*
+
+*“No free soul may be bound as chattel, for the wolf does not cage her cubs, and what can vow cannot be owned.”*
+
+*“Let every vow be kept, for a broken word is a wound upon the pack.”*
+
+*“He who spills wolf-blood without cause shall answer to the pack’s keeper, and the price shall be paid in full before the moon turns.”*
+
+*“The Throne descends to whom the sitting wolf names before the pack, living or dying, and the pack shall know no other law of blood.”*
+
+*“Set down in the year of the founding, by those who stood witness to the covenant of the Throne, that the memory of that day never fade.”*
+
+DM Only: read against the new Laws, what the fragments never do is the point. The vow-clause never says how anyone would know a vow was made, by whom, or that it was broken — no witness, no record, no venue; Book Two exists to close exactly that silence, and Qilvayas has no idea why closing it matters. The wolf-clause is the “older law only implied” self-defense the Wolf-Price statute already references (see The Wolf-Price, above) — now with actual words, and they still never say “self-defense,” because the Tablets never define what excuses a wolf’s death at all; they only set the price. And the colophon is the quiet one: the Tablets call their own authors “those who stood witness” — true, and the worst possible word for what the Witness Hall’s assembly actually did (see The Turning Away). Any Seal-house character who has known that line their whole life is, without realizing it, quoting the exact self-description of the people who un-witnessed a god’s covenant. Never explain this at the table. Let a player notice it, or don’t — either way it is already true the moment the frieze is found (Session Seven), and it lands harder for having been sitting in a courtroom inscription the whole campaign.
+
 ## Book One — Of Persons
 
 Book One codifies the empire’s existing framework for a person’s claim on another person’s labor (see Law, Oath, and Bound Labor, above), unchanged in substance: chattel slavery remains illegal and blasphemous; oath-bound service, debt-bondage and indenture, and hostage-diplomacy remain the three legal categories beneath it. Book One adds one new requirement: to be enforceable in an imperial court, an oath-bound service agreement or a debt-bondage indenture must be sworn before a witness empowered to record it — a Church witness, a magistrate, or, in Tarnovar, a standing stone. An unwitnessed labor arrangement is not illegal. It is simply not enforceable: a master with no recorded oath has no imperial recourse if the bound party walks away. It is, in a fractured empire whose worst abuses cluster exactly where no one is watching, a narrow but real answer — and it costs the Commission nothing that wasn’t already true of every other oath in Zhuvedian law.
