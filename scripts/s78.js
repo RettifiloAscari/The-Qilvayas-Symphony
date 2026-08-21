@@ -56,7 +56,7 @@ const title = (ch, main, sub) => {
 };
 
 // ==========================================================
-// SESSION 7 — THE TURNING AWAY
+// SESSION 7 \u2014 THE TURNING AWAY
 // ==========================================================
 const c7 = [];
 title(c7, "Session Seven: The Turning Away", "An adventure for 4\u20136 characters of 6th level \u2014 the price of the Seal, the rooms beneath the rooms, and the faces that would not look");
@@ -160,7 +160,7 @@ c7.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 400,
 c7.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "\u201CThey are not fleeing. They are not screaming. They have decided, together and without a word, to see nothing at all.\u201D", italics: true })] }));
 
 // ==========================================================
-// SESSION 8 — THE UNKEPT VIGIL
+// SESSION 8 \u2014 THE UNKEPT VIGIL
 // ==========================================================
 const c8 = [];
 title(c8, "Session Eight: The Unkept Vigil", "An adventure for 4\u20136 characters of 7th level \u2014 the rite floor, the last champion, and the funeral that never happened");

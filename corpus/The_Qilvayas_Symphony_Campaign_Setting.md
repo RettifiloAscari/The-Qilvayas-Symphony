@@ -1,5 +1,5 @@
 <!-- GENERATED FILE - DO NOT EDIT.
-     Source:     scripts/campaign_v11.js
+     Source:     scripts/campaign.js
      Regenerate: tools/build.sh
      Hand edits here are overwritten and never reach the published documents.
 -->
@@ -464,7 +464,7 @@ The working theory (see The Founding Myth: Zhuvedus and the Broken Oath) is that
 
 Archjurist Senna Vhal’s Law Commission is compiling the Zhuvedian Laws as seven Books, promulgated together this coming Solacre on the Long Course — the empire’s first comprehensive legal code since the Golden Tablets, and Qilvayas’s own described ambition: laws “forged by the fires of justice and cast in molds of wisdom.” Each Book governs one domain of imperial life; together they are meant to do for the fractured empire what the historical Corpus Juris Civilis did for Justinian’s.
 
-### The Golden Tablets, in Fragment
+## The Golden Tablets, in Fragment
 
 The Tablets themselves do not survive complete — no document does, across two thousand years — but six lines are old enough and famous enough that every Seal-house student still has them by heart, carved over more than one provincial courthouse door:
 
@@ -1431,15 +1431,16 @@ Custom NPC blocks keyed to class archetypes, validated against the DMG Monster S
 
 # Development Roadmap — Post-Beta Status
 
-As of v10, the D&D-ification pass and the Social Foundations pass are both complete: all names canonical; the Founding Myth, binding site, timeline, both campaign clocks, and the Powers locked; magic and the faith codified (the Weight of the Word, the Sanction, Chartered Thaumaturgy, the night iconography, lycanthropy doctrine, the relic economy); peoples and demographics established (the Founder’s Blood, the Stonesworn, the Marked, and the rest); every region fleshed with terrain, creatures, and settlements; three dragon-powers placed; the Roster assigned; ten Powers fully statted (Appendix II); five homebrew items of record (Appendix III); and commerce and loot grounded in SRD pricing; the Packlaw doctrine of gender and authority; the four-tier framework for oaths, service, and bound labor; marriage-as-oath and the Denmother’s Choice succession custom; and the twelve-month Imperial Calendar. Deliberately open by design (not gaps): Nyreeza’s exact fate; Countess Ory’s blood-rite mechanism; the coronation’s metaphysical consequence; whether the Piso gun over Marshal Dane ever fires; whether any line of Threnvos survives; and warlock patron design (sign-off required when built — at least one patron option may trace to the thing beneath Aenodira).
+The D&D-ification pass and the Social Foundations pass are both complete: all names canonical; the Founding Myth, binding site, timeline, both campaign clocks, and the Powers locked; magic and the faith codified (the Weight of the Word, the Sanction, Chartered Thaumaturgy, the night iconography, lycanthropy doctrine, the relic economy); peoples and demographics established (the Founder’s Blood, the Stonesworn, the Marked, and the rest); every region fleshed with terrain, creatures, and settlements; three dragon-powers placed; the Roster assigned; ten Powers fully statted (Appendix II); five homebrew items of record (Appendix III); and commerce and loot grounded in SRD pricing; the Packlaw doctrine of gender and authority; the four-tier framework for oaths, service, and bound labor; marriage-as-oath and the Denmother’s Choice succession custom; and the twelve-month Imperial Calendar. Closed since: a full timeline-arithmetic audit across every document, reconciling the commencement clock, the dynasty’s short reigns, and the Acceleration’s dating; and the imperial law pass — the Zhuvedian Laws in seven Books, the Sanction and the Charter’s mark-and-register certification, the jurisdiction map from Direct Rule to warlord country, the legions’ rank ladder (and Marshal reframed as an acclamation rather than a rung on it), street-level justice from provincial magistrate to the Church’s parallel Writ, and the Golden Tablets quoted in fragment for the first time. Deliberately open by design (not gaps): Nyreeza’s exact fate; Countess Ory’s blood-rite mechanism; the coronation’s metaphysical consequence; whether the Piso gun over Marshal Dane ever fires; whether any line of Threnvos survives; and warlock patron design (sign-off required when built — at least one patron option may trace to the thing beneath Aenodira).
 
 Next development priorities, in order:
 
 - **1. The Undercourt and the Binding Site:** COMPLETE. Sessions Seven and Eight build the full descent — the price of the Seal, the Vesting Room, the Long Approach, the Witness Hall, and the Rite Floor — through the Vigil and the separation of grief from hunger. The campaign’s next frontier is the second arc: the empire itself.
-- **2. Tarnovar Deep Development:** Advanced by v8 (Kamenhold, Fencegate, Verath, the Stonesworn, the Old Wood) — still needs the Vosthren ballad cycle in full and the Voivode’s court before the envoy thread matures into an arc.
-- **3. The Twin Clocks:** Design the Zhuvedian Laws promulgation and the Grey-Gold Rising (the capital crisis), and the Orlath coronation arc — the mid-campaign’s hinge year.
+- **2. Tarnovar Deep Development:** Well advanced (Kamenhold, Fencegate, Verath, the Stonesworn, the Old Wood) — still needs the Vosthren ballad cycle in full and the Voivode’s court before the envoy thread matures into an arc.
+- **3. The Twin Clocks:** The Laws themselves are now written — what remains is the event. Design the promulgation itself and the Grey-Gold Rising it triggers (the capital crisis), and the Orlath coronation arc — the mid-campaign’s hinge year. The Laws’ own registration provisions are the readiest candidate for the spark that unites the Golds and the Greys.
 - **4. The Greywell Module:** The Girls of Greywell as a self-contained gothic horror arc (seeded via Session Five’s optional Farrowgate client); decide Ory’s mechanism at build time.
-- **5. Sessions Seven and Beyond:** Built against party divergences recorded in the DM Reference Guide’s Branch Ledger.
+- **5. The Remaining Social Gaps:** Medicine and disease (sharpened by Farrowgate’s overcrowding), language and literacy, the coin’s name, and the legal personhood of the Marked — the last of which now has a fixed anchor to build from, Velmareth’s standing exception, and real dependencies on Book One.
+- **6. Sessions Nine and Beyond:** Built against party divergences recorded in the DM Reference Guide’s Branch Ledger.
 
 ~
 

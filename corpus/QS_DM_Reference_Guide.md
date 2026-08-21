@@ -10,7 +10,7 @@
 
 *A quick-reference cheat sheet — Atlas, NPCs, and mythology at a glance*
 
-***Living document — update alongside the sourcebook. Current as of Sourcebook v11 (the Turning Away, the Scouring, the Unkept Vigil). Sessions 0–8; the Undercourt descent is complete.***
+***Living document — update alongside the sourcebook. Current through the imperial law pass (the Zhuvedian Laws, certification, jurisdiction, rank, and street justice). Sessions 0–8; the Undercourt descent is complete.***
 
 # The Atlas — Regions at a Glance
 
@@ -103,7 +103,7 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn'
 | Semya of Halvenne | The road / Farrowgate or Dravenna | Refugee matriarch; delivered the "indrawn breath" omen. Her people's fate tracks the party's choice to help or not. |
 | Odric Hale | The road / Rivergate | Racketeer with a dead Roads Commission seal. Thread points to a Rivergate seal-dealer. |
 
-## The Powers of the Fractured Empire (Sourcebook v6)
+## The Powers of the Fractured Empire
 
 | **Name** | **Realm / Key** | **Notes** |
 | --- | --- | --- |
@@ -225,11 +225,11 @@ DM-only anchor (computational baseline; the in-world Reckoning figure stays soft
 - **The Lector's Seal housing:** Gifted to the party as their mercenary company's official sealing-stamp. (Sessions 3–4)
 - **Forty witnesses (Halvenne):** If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)
 - **Ondrei's complaint vs. the Third Legion colonel:** Currently sitting in Legate Thorne's inbox — background thread, can be developed or left as texture.
-- **The Coronation Clock:** Karvel's crowning in Orlath, same year as the Laws' promulgation. The campaign's second structural clock. (Sourcebook v6)
-- **The Landless King's Fifth Petition:** Aldrec's final overture to the throne — a closing window tied to his failing health. (Sourcebook v6)
-- **The Girls of Greywell:** A Farrowgate family's missing daughter → Castle Greywell. Pure gothic horror, deliberately non-shadow. (Sourcebook v6)
-- **The Grey-Gold Rising:** Proposed capital riot when the Laws' tax provisions post — Qilvayas's Nika moment. Unscheduled. (Sourcebook v6)
-- **The Book and the Fence:** Norr's surveyors approaching Dregan's stakes — the west's coming collision. (Sourcebook v6)
+- **The Coronation Clock:** Karvel's crowning in Orlath, same year as the Laws' promulgation. The campaign's second structural clock.
+- **The Landless King's Fifth Petition:** Aldrec's final overture to the throne — a closing window tied to his failing health.
+- **The Girls of Greywell:** A Farrowgate family's missing daughter → Castle Greywell. Pure gothic horror, deliberately non-shadow.
+- **The Grey-Gold Rising:** Proposed capital riot when the Laws' tax provisions post — Qilvayas's Nika moment. Unscheduled.
+- **The Book and the Fence:** Norr's surveyors approaching Dregan's stakes — the west's coming collision.
 - **The Shen Alliance:** Formed, discounted, or refused in Sessions 5–6 — defines the party's intelligence landscape. Shen holds Nyreeza's final filing; the party holds the rubbing; Vell holds the key.
 - **The Empress's Last Words:** Translated in Session 6: "the wound predates the Wall. The Tablets were written over it. He must not follow me. Tell him the garden, not the grave." The last line keys the sealed dispatch case.
 - **The Writ's Aftermath:** Vaelindra's status post-Session 6 (free/hidden/custody per branch) and every favor owed or spent to get there.

@@ -10,7 +10,7 @@ You don't wait to be asked. When a discussion touches a plot thread, location, f
 
 ## Canon and Sources of Truth
 
-The campaign setting document (currently **v11**) is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
+The campaign setting document is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
 
 **Where the material lives.** The GitHub repository `RettifiloAscari/The-Qilvayas-Symphony`, read through the GitHub connector, is the **single source of truth** — everything is read from it, and nothing is mirrored into project knowledge (that arrangement was retired because the duplicate copies drifted):
 
@@ -160,7 +160,7 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 
 **Living documents, all published in the shared visual template:**
 
-1. **The Qilvayas Symphony Campaign Setting** (currently v11) — the canonical sourcebook. Version-numbered; prior versions retained.
+1. **The Qilvayas Symphony Campaign Setting** — the canonical sourcebook. Not version-numbered: a living document, edited in place and rebuilt, with git history carrying the record of what changed and when.
 2. **Session modules** — Sessions 0 through 8 (Sessions 3–4 combined as The Proving Below).
 3. **QS DM Reference Guide** — quick-lookup cheat sheet in table form: Atlas regions, districts, NPCs by circle, the Powers, magic and faith, peoples, dragons, core mythology, timeline, items and threads, the Branch Ledger, and the deliberately-open list. Canon-derived, never a separate source of truth. **Update it in the same pass as any canon change** — when in doubt, include it. A stale reference guide is worse than none.
 4. **QS Player Guide** — the sanitized, shareable edition.
@@ -174,7 +174,7 @@ Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/suc
 | `PIPELINE_README.md` | Full usage instructions — read this first |
 | `QS_Style_Template_encoded.md` | The visual template (Alegreya SC Medium headings in deep book-red, Alegreya Sans SC and Lato body text, A4, page-number footers), base64-encoded because project storage converts .docx uploads to text. `transplant.py` decodes it automatically. |
 | `transplant.py` | Applies the template; self-bootstrapping |
-| `campaign_v11.js` | Sourcebook generator (current version) |
+| `campaign.js` | Sourcebook generator |
 | `sessions.js` | Sessions 0–2 |
 | `session34.js` | Sessions 3–4 |
 | `s56.js` | Sessions 5–6 |
@@ -222,7 +222,7 @@ The generator scripts write output to `/home/claude/`. Create that directory if 
   The `pdffonts` check is the companion failure mode: when a template font is absent, rendering succeeds but substitutes a fallback, and line breaks, table fits, and total page count all shift. A layout inspected under substituted fonts is not the layout that will publish.
 
 - **Known layout limitation.** Wide tables with prose-bearing columns crowd badly in the two-column body — the commerce and price tables are the worst affected, wrapping to one or two words per line. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak; treat it as a queued fix rather than an ad hoc patch.
-- **Bump the sourcebook version** for significant material (new doctrinal sections, major passes): copy the script to the next version number, update the output filename inside it, then edit. Small corrections patch in place. Keep prior versions.
+- **The sourcebook is not version-numbered.** It is a living document: edit `campaign.js` in place and rebuild, and let git history carry the record of what changed and when. Earlier revisions are recoverable from the log rather than kept as parallel files.
 - **Approved script changes go back to the repository.** A script edited here is only half-applied until the change reaches `scripts/` in the repository and `tools/build.sh` regenerates `corpus/` and `documents/` from it. Hand the edited script back rather than only the resulting PDF — the script is the canon, the document is the output.
 
 ---

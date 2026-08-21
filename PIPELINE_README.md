@@ -10,7 +10,7 @@ These files are the **actual production assets** for The Qilvayas Symphony. The 
 |---|---|
 | `QS_Style_Template_encoded.md` | The /u/YaAlex-derived 5e visual template (Alegreya SC Medium headings in deep book-red, Alegreya Sans SC and Lato body text, A4, page-number footers), base64-encoded. **Project knowledge converts uploaded .docx files to plain text, destroying the binary — so the template ships encoded.** `transplant.py` decodes it automatically. |
 | `transplant.py` | Applies the template to a generated .docx. Self-bootstrapping — extracts the template automatically on first run. |
-| `campaign_v11.js` | Generates the campaign setting sourcebook (current: v11). |
+| `campaign.js` | Generates the campaign setting sourcebook. |
 | `sessions.js` | Generates Sessions 0, 1, and 2 (writes three files). |
 | `session34.js` | Generates Sessions 3–4, *The Proving Below*. |
 | `s56.js` | Generates Sessions 5 and 6 (writes two files). |
@@ -62,7 +62,7 @@ Generate the plain `.docx`, apply the template, render to PDF, then make the PDF
 reproducible:
 
 ```bash
-node campaign_v11.js                                        # writes a plain .docx
+node campaign.js                                            # writes a plain .docx
 python3 transplant.py <in>.docx <styled>.docx               # applies the template
 soffice --headless --convert-to pdf --outdir . <styled>.docx
 gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true \
@@ -107,7 +107,7 @@ Wide tables with prose-bearing columns crowd badly in the two-column body. The c
 
 ## Versioning
 
-Bump the sourcebook version for significant material (new doctrinal sections, major passes) — copy the script to the next version number, update the output filename inside it, then edit. Small corrections patch in place without a bump. Prior versions are kept for history.
+The sourcebook is not version-numbered. It is a living document: edit `campaign.js` in place and rebuild, and let git history carry the record of what changed and when. Earlier revisions are recoverable from the log rather than kept as parallel files.
 
 ## Editing conventions
 

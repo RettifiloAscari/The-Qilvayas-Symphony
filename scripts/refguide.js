@@ -29,7 +29,7 @@ const c = [];
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [new TextRun({ text: "DM Reference Guide", bold: true, size: 40 })] }));
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 100 }, children: [new TextRun({ text: "The Qilvayas Symphony", italics: true, size: 24 })] }));
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 200 }, children: [new TextRun({ text: "A quick-reference cheat sheet \u2014 Atlas, NPCs, and mythology at a glance", italics: true, size: 22, color: "5B1F1F" })] }));
-c.push(PS([{ t: "Living document \u2014 update alongside the sourcebook. Current as of Sourcebook v11 (the Turning Away, the Scouring, the Unkept Vigil). Sessions 0\u20138; the Undercourt descent is complete. ", i: true, b: true }], { alignment: AlignmentType.CENTER, spacing: { after: 300 } }));
+c.push(PS([{ t: "Living document \u2014 update alongside the sourcebook. Current through the imperial law pass (the Zhuvedian Laws, certification, jurisdiction, rank, and street justice). Sessions 0\u20138; the Undercourt descent is complete. ", i: true, b: true }], { alignment: AlignmentType.CENTER, spacing: { after: 300 } }));
 
 // ============ ATLAS ============
 c.push(H1("The Atlas \u2014 Regions at a Glance"));
@@ -144,7 +144,7 @@ c.push(table(
 ));
 
 // ============ MYTHOLOGY ============
-c.push(H2("The Powers of the Fractured Empire (Sourcebook v6)"));
+c.push(H2("The Powers of the Fractured Empire"));
 c.push(table(
   ["Name", "Realm / Key", "Notes"],
   [22, 20, 58],
@@ -268,11 +268,11 @@ c.push(BUL("The Cold Door rubbing:", "Charcoal rubbing of cipher marks at the Un
 c.push(BUL("The Lector's Seal housing:", "Gifted to the party as their mercenary company's official sealing-stamp. (Sessions 3\u20134)"));
 c.push(BUL("Forty witnesses (Halvenne):", "If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)"));
 c.push(BUL("Ondrei's complaint vs. the Third Legion colonel:", "Currently sitting in Legate Thorne's inbox \u2014 background thread, can be developed or left as texture."));
-c.push(BUL("The Coronation Clock:", "Karvel's crowning in Orlath, same year as the Laws' promulgation. The campaign's second structural clock. (Sourcebook v6)"));
-c.push(BUL("The Landless King's Fifth Petition:", "Aldrec's final overture to the throne \u2014 a closing window tied to his failing health. (Sourcebook v6)"));
-c.push(BUL("The Girls of Greywell:", "A Farrowgate family's missing daughter \u2192 Castle Greywell. Pure gothic horror, deliberately non-shadow. (Sourcebook v6)"));
-c.push(BUL("The Grey-Gold Rising:", "Proposed capital riot when the Laws' tax provisions post \u2014 Qilvayas's Nika moment. Unscheduled. (Sourcebook v6)"));
-c.push(BUL("The Book and the Fence:", "Norr's surveyors approaching Dregan's stakes \u2014 the west's coming collision. (Sourcebook v6)"));
+c.push(BUL("The Coronation Clock:", "Karvel's crowning in Orlath, same year as the Laws' promulgation. The campaign's second structural clock."));
+c.push(BUL("The Landless King's Fifth Petition:", "Aldrec's final overture to the throne \u2014 a closing window tied to his failing health."));
+c.push(BUL("The Girls of Greywell:", "A Farrowgate family's missing daughter \u2192 Castle Greywell. Pure gothic horror, deliberately non-shadow."));
+c.push(BUL("The Grey-Gold Rising:", "Proposed capital riot when the Laws' tax provisions post \u2014 Qilvayas's Nika moment. Unscheduled."));
+c.push(BUL("The Book and the Fence:", "Norr's surveyors approaching Dregan's stakes \u2014 the west's coming collision."));
 c.push(BUL("The Shen Alliance:", "Formed, discounted, or refused in Sessions 5\u20136 \u2014 defines the party's intelligence landscape. Shen holds Nyreeza's final filing; the party holds the rubbing; Vell holds the key."));
 c.push(BUL("The Empress's Last Words:", "Translated in Session 6: \"the wound predates the Wall. The Tablets were written over it. He must not follow me. Tell him the garden, not the grave.\" The last line keys the sealed dispatch case."));
 c.push(BUL("The Writ's Aftermath:", "Vaelindra's status post-Session 6 (free/hidden/custody per branch) and every favor owed or spent to get there."));

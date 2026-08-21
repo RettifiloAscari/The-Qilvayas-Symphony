@@ -32,7 +32,7 @@ build, so the Markdown and the published documents cannot drift apart.
 
 ### Sourcebook
 
-- [The Qilvayas Symphony Campaign Setting (v11)](corpus/The_Qilvayas_Symphony_Campaign_Setting_v11.md) — the canonical sourcebook · [PDF](documents/The_Qilvayas_Symphony_Campaign_Setting_v11.pdf)
+- [The Qilvayas Symphony Campaign Setting](corpus/The_Qilvayas_Symphony_Campaign_Setting.md) — the canonical sourcebook · [PDF](documents/The_Qilvayas_Symphony_Campaign_Setting.pdf)
 
 ### Session modules
 
