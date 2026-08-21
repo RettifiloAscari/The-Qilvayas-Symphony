@@ -1,3 +1,13 @@
+# RESOLVED — applied to canon
+
+All nine items (L-1 through L-9) were approved as drafted, with no redlines. Applied as a
+single consolidated pass to `campaign_v11.js`, `refguide.js`, and `playerguide.js`; the
+three opportunity findings (O-1 through O-3) were left as observations for whoever builds
+the Grey-Gold Rising, per their own "no sign-off required" status — nothing further to
+apply. Kept for the record; no longer pending.
+
+---
+
 # Design Draft — Imperial Law and Governance
 
 *The Qilvayas Symphony — the Zhuvedian Laws, certification and the Sanction, the

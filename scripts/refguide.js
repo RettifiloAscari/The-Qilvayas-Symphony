@@ -50,6 +50,25 @@ c.push(table(
   ]
 ));
 
+c.push(H1("Imperial and Border Jurisdiction, at a Glance"));
+c.push(table(
+  ["Region", "Legal Status", "Who Enforces"],
+  [22, 34, 44],
+  [
+    ["The Crownlands", "Direct Rule \u2014 imperial law at full strength", "Palatine Guard; imperial magistrates"],
+    ["The Ostmark", "Loyalist Provincial \u2014 nominal, unevenly enforced", "Thin legion garrisons; Magistrate Ondrei's model"],
+    ["The Suthmark", "Loyalist Provincial \u2014 genuinely loyal, ducal house", "Duchess Vasq's household authority + the Church"],
+    ["Principality of Tarnovar", "Sovereign Treaty-Nation \u2014 imperial law N/A", "Oath-custom; the Voivode; Dregan's Fence (unsanctioned)"],
+    ["Velmareth / Delta Compact", "Sovereign Treaty-Nation \u2014 own mercantile law; Marked hold legal standing here, uniquely", "The Harborlords; the Compact's own courts"],
+    ["The Brekelands", "Contested / Warlord \u2014 statute unenforced", "Individual warlords; no appeal exists"],
+    ["The See of Orlath", "Parallel Legal-Religious Authority", "Olvesa's See; its own rival Sanction"],
+    ["Kingdom of Ardven", "Sovereign Treaty-Nation \u2014 independent crown", "King Karvel's own developing law"],
+    ["The Skellvard", "Non-Territorial Customary Law", "Clan lawspeakers; tally-sticks record debts"],
+    ["Duchy of Normere", "De Facto Replacement \u2014 claimed, superseded", "Norr's personal-oath system + the Reckoning Book"]
+  ]
+));
+c.push(PS([{ t: "Marked (tiefling) personhood generalized beyond Velmareth's exception: still open \u2014 not resolved by this pass.", i: true }]));
+
 c.push(H1("Aenodira \u2014 Districts at a Glance"));
 c.push(table(
   ["District", "Ring", "What's There", "Key Figure"],
@@ -193,6 +212,16 @@ c.push(BUL("The Packlaw:", "Church doctrine \u2014 the Matron leads by wisdom, n
 c.push(BUL("Bound labor (4 tiers):", "(1) Chattel slavery: ILLEGAL + blasphemous empire-wide, tied to oath-magic (can't own what can swear). (2) Oath-bound service: legal (Norr's whole system). (3) Debt-bondage/indenture: legal, time-limited. (4) Hostage-diplomacy (incl. Academy admissions): separate category, NOT bondage, full legal personhood retained. Real crisis = enforcement gap in the Brekelands, not the law itself."));
 c.push(BUL("Marriage & the Denmother's Choice:", "Marriage = real oath (Church witness / Tarnovari standing stones); unrepaired infidelity/abandonment = a small echo of Zhuvedus's crime. Divorce = a formal Release (counter-oath), not just separation. Titled succession is NAMED, not automatic-eldest \u2014 revisable, doesn't require blood. Makes Vasq's Aldous/Tavian succession a genuinely open question. Tarnovar: title follows whoever takes up the stone. Suthmark: inheritance settles at Fallowmonth's turn."));
 c.push(BUL("The Imperial Calendar:", "12 months, year begins Wolfmoon (Matron's month) \u2014 Thawtide, Sowmonth, Greening, Solacre, Haymonth, Harvestide (Vintage Night fell here), Vinmoon, Fallowmonth, Greywane, Longdark (Matron's 2nd month), Threshold (20-day year-end). Loyalists count Years of the Reckoning (YR) from the Founding; Orlath keeps a quiet second dating from the Reconciliation; Tarnovar counts by Voivodes' reigns."));
+
+c.push(H1("The Zhuvedian Laws \u2014 Quick Reference"));
+c.push(PS([{ t: "Archjurist Vhal's Law Commission; promulgated together this coming Solacre on the Long Course. Seven Books:", i: true }]));
+c.push(BUL("Book One \u2014 Of Persons:", "Bound labor unchanged (see above) + NEW: an oath-bound service/indenture must be witnessed and recorded to be enforceable. Unwitnessed = not illegal, just unenforceable. Marked personhood generalized beyond Velmareth: still open."));
+c.push(BUL("Book Two \u2014 Of Oaths and the Witness:", "States outright: an oath binds at law only if sworn before a recognized witness. Perjury = a distinct offense from lying, tried where the oath was sworn, penalized as a mark on the liar's own signet-record (Book Four), not a fine."));
+c.push(BUL("Book Three \u2014 Of the Sanction and the Charter:", "Certification = mark + register, always both. Church (Sanction), Charter (House of the Craft), Crown/guilds (mundane trade) each keep their own register. Unstamped/unlicensed = not itself a crime; shifts the burden to produce the register entry on challenge."));
+c.push(BUL("Book Four \u2014 Of Seals and Record:", "Forgery of an imperial instrument (seal/signet/writ/charter) = restitution + indenture, scaling to exile on repeat. A retired office must surrender its seal to the Archive before its authority lapses \u2014 how Mosse's trade is legitimate."));
+c.push(BUL("Book Five \u2014 Of the Wolf:", "Formalizes the existing Wolf-Price statute (see Magic & Faith, above) as statute. No new content."));
+c.push(BUL("Book Six \u2014 Of the March:", "Rank ladder: Legionary \u2192 Sergeant (~10) \u2192 Centurion (~80\u2013100, NEW) \u2192 Colonel (a garrison/legion) \u2192 Legate (multi-legion / capital force). Censor / Censor-Captain leads Office Examiners. MARSHAL IS NOT A RANK \u2014 it's a Throne acclamation for personal renown, independent of command size (why Dane outranks Thorne in title but not in actual command). Officer misconduct = court-martial at Legate level, appealable once to Aenodira."));
+c.push(BUL("Book Seven \u2014 Of Judgment:", "No separate civilian watch \u2014 garrisons (Palatine Guard in Aenodira) double as the peace. Magistrates (Ondrei's model) are judge + civil administrator, no jury. Appeal to Aenodira exists but is slow. Secular process and the Church's Writ run in parallel and can conflict; a political favor can quash a writ as obstruction, but only as an exception. No magistrate, no appeal in warlord territory \u2014 the warlord's word is final."));
 
 c.push(H1("Core Mythology at a Glance (DM Only)"));
 c.push(BUL("Zhuvedus:", "Empire's founder. Was a paladin, Oath of Devotion (canon). Broke a sworn covenant with his rival Threnvos, killing him under the Matron's own witness, and fell to Oathbreaker in the same act \u2014 the power that let him found the empire alone."));

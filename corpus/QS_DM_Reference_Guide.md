@@ -27,6 +27,23 @@
 | The Skellvard | Sea-King Aldrec the Landless | Hostile — but persuadable | Displaced ship-clans, pushed south by Ardven. Aldrec wants a march and a title; refused four times; dying slowly. |
 | Duchy of Normere | Duke Garvin Norr, the Bastard | Rival power (west) | Conquest + the Reckoning Book + personal oaths. Absorbing the Brekelands. Qilvayas's dark mirror. The Harrowing of the Weld, 4 yrs ago. |
 
+# Imperial and Border Jurisdiction, at a Glance
+
+| **Region** | **Legal Status** | **Who Enforces** |
+| --- | --- | --- |
+| The Crownlands | Direct Rule — imperial law at full strength | Palatine Guard; imperial magistrates |
+| The Ostmark | Loyalist Provincial — nominal, unevenly enforced | Thin legion garrisons; Magistrate Ondrei's model |
+| The Suthmark | Loyalist Provincial — genuinely loyal, ducal house | Duchess Vasq's household authority + the Church |
+| Principality of Tarnovar | Sovereign Treaty-Nation — imperial law N/A | Oath-custom; the Voivode; Dregan's Fence (unsanctioned) |
+| Velmareth / Delta Compact | Sovereign Treaty-Nation — own mercantile law; Marked hold legal standing here, uniquely | The Harborlords; the Compact's own courts |
+| The Brekelands | Contested / Warlord — statute unenforced | Individual warlords; no appeal exists |
+| The See of Orlath | Parallel Legal-Religious Authority | Olvesa's See; its own rival Sanction |
+| Kingdom of Ardven | Sovereign Treaty-Nation — independent crown | King Karvel's own developing law |
+| The Skellvard | Non-Territorial Customary Law | Clan lawspeakers; tally-sticks record debts |
+| Duchy of Normere | De Facto Replacement — claimed, superseded | Norr's personal-oath system + the Reckoning Book |
+
+*Marked (tiefling) personhood generalized beyond Velmareth's exception: still open — not resolved by this pass.*
+
 # Aenodira — Districts at a Glance
 
 | **District** | **Ring** | **What's There** | **Key Figure** |
@@ -152,6 +169,18 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn'
 - **Bound labor (4 tiers):** (1) Chattel slavery: ILLEGAL + blasphemous empire-wide, tied to oath-magic (can't own what can swear). (2) Oath-bound service: legal (Norr's whole system). (3) Debt-bondage/indenture: legal, time-limited. (4) Hostage-diplomacy (incl. Academy admissions): separate category, NOT bondage, full legal personhood retained. Real crisis = enforcement gap in the Brekelands, not the law itself.
 - **Marriage & the Denmother's Choice:** Marriage = real oath (Church witness / Tarnovari standing stones); unrepaired infidelity/abandonment = a small echo of Zhuvedus's crime. Divorce = a formal Release (counter-oath), not just separation. Titled succession is NAMED, not automatic-eldest — revisable, doesn't require blood. Makes Vasq's Aldous/Tavian succession a genuinely open question. Tarnovar: title follows whoever takes up the stone. Suthmark: inheritance settles at Fallowmonth's turn.
 - **The Imperial Calendar:** 12 months, year begins Wolfmoon (Matron's month) — Thawtide, Sowmonth, Greening, Solacre, Haymonth, Harvestide (Vintage Night fell here), Vinmoon, Fallowmonth, Greywane, Longdark (Matron's 2nd month), Threshold (20-day year-end). Loyalists count Years of the Reckoning (YR) from the Founding; Orlath keeps a quiet second dating from the Reconciliation; Tarnovar counts by Voivodes' reigns.
+
+# The Zhuvedian Laws — Quick Reference
+
+*Archjurist Vhal's Law Commission; promulgated together this coming Solacre on the Long Course. Seven Books:*
+
+- **Book One — Of Persons:** Bound labor unchanged (see above) + NEW: an oath-bound service/indenture must be witnessed and recorded to be enforceable. Unwitnessed = not illegal, just unenforceable. Marked personhood generalized beyond Velmareth: still open.
+- **Book Two — Of Oaths and the Witness:** States outright: an oath binds at law only if sworn before a recognized witness. Perjury = a distinct offense from lying, tried where the oath was sworn, penalized as a mark on the liar's own signet-record (Book Four), not a fine.
+- **Book Three — Of the Sanction and the Charter:** Certification = mark + register, always both. Church (Sanction), Charter (House of the Craft), Crown/guilds (mundane trade) each keep their own register. Unstamped/unlicensed = not itself a crime; shifts the burden to produce the register entry on challenge.
+- **Book Four — Of Seals and Record:** Forgery of an imperial instrument (seal/signet/writ/charter) = restitution + indenture, scaling to exile on repeat. A retired office must surrender its seal to the Archive before its authority lapses — how Mosse's trade is legitimate.
+- **Book Five — Of the Wolf:** Formalizes the existing Wolf-Price statute (see Magic & Faith, above) as statute. No new content.
+- **Book Six — Of the March:** Rank ladder: Legionary → Sergeant (~10) → Centurion (~80–100, NEW) → Colonel (a garrison/legion) → Legate (multi-legion / capital force). Censor / Censor-Captain leads Office Examiners. MARSHAL IS NOT A RANK — it's a Throne acclamation for personal renown, independent of command size (why Dane outranks Thorne in title but not in actual command). Officer misconduct = court-martial at Legate level, appealable once to Aenodira.
+- **Book Seven — Of Judgment:** No separate civilian watch — garrisons (Palatine Guard in Aenodira) double as the peace. Magistrates (Ondrei's model) are judge + civil administrator, no jury. Appeal to Aenodira exists but is slow. Secular process and the Church's Writ run in parallel and can conflict; a political favor can quash a writ as obstruction, but only as an exception. No magistrate, no appeal in warlord territory — the warlord's word is final.
 
 # Core Mythology at a Glance (DM Only)
 

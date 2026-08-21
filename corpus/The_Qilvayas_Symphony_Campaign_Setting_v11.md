@@ -78,6 +78,25 @@ DM Only: Tarnovar is what became of Threnvos’s people. “Vosthren” is Thren
 
 **The Duchy of Normere:** The iron surprise of the west coast: a once-minor duchy forged into the most efficient state in the fractured empire by Duke Garvin Norr, the Bastard of Normere (see The Powers of the Fractured Empire). Normere’s instruments are famous and feared in equal measure — the Reckoning Book, a census of every hide of land and head of livestock the Duke rules; the personal oath every landholder swears to Norr himself, bypassing all intermediate lords; and the memory of the Harrowing of the Weld, four years past, when a rebellious district learned what the Duke’s patience costs when it runs out. Norr is not resisting reunification. He is conducting his own.
 
+### Imperial and Border Jurisdiction, at a Glance
+
+Imperial law does not mean the same thing twice past the Crownlands’ border. The table below is a single page for a question the Atlas otherwise answers one region at a time: where the Laws actually run, and who actually enforces whatever does.
+
+| **Region** | **Status** | **Who Actually Enforces** |
+| --- | --- | --- |
+| The Crownlands | Direct Rule — imperial law at full strength | The Palatine Guard; imperial magistrates |
+| The Ostmark | Loyalist Provincial — nominal, unevenly enforced | Thin legion garrisons; Magistrate Ondrei’s model |
+| The Suthmark | Loyalist Provincial — genuinely loyal, governed through the ducal house | Duchess Vasq’s household authority, alongside the Church |
+| Principality of Tarnovar | Sovereign Treaty-Nation — imperial law does not apply | Oath-custom; the Voivode; Ban Dregan’s Fence (unsanctioned even internally) |
+| Velmareth and the Delta Compact | Sovereign Treaty-Nation — own mercantile law; the Marked hold actual legal standing here, uniquely | The Harborlords; the Compact’s own courts |
+| The Brekelands | Contested / Warlord — imperial statute on the books, unenforced | Individual warlords; no appeal exists |
+| The See of Orlath | Parallel Legal-Religious Authority — rejects the Matriarchate and the Office of Omens alike | Olvesa’s See; its own rival Sanction |
+| Kingdom of Ardven | Sovereign Treaty-Nation — an independent, literate, expansionist crown | King Karvel’s own developing law |
+| The Skellvard | Non-Territorial Customary Law — no fixed land, no codified statute | Clan lawspeakers; tally-sticks record debts and broken promises |
+| The Duchy of Normere | De Facto Replacement — imperial law formally claimed, functionally superseded | Duke Norr’s personal-oath system and the Reckoning Book |
+
+One exception is worth flagging rather than generalizing: Velmareth’s grant of legal standing to the Marked has no imperial equivalent, and whether it ever becomes one is a live question the Zhuvedian Laws do not yet answer.
+
 ## The Regions in Depth
 
 Per the approved full-fantasy dial: monsters are common, dragons are active, and the wild is genuinely wild. Creature lists name SRD monsters except where marked † (Monster Manual, non-SRD — validate manually per instructions). Each region: the land, who lives there, what hunts there, and named settlements.
@@ -440,6 +459,63 @@ Qilvayas’s mother, Empress Nyreeza, disappeared under circumstances that remai
 Her fate remains a thread that can be pulled as the campaign develops—potentially revealing allies, enemies, conspiracies, or truths about the empire itself. One known thread already exists: the Seeress Vaelindra of the Still Waters was among the last people to meet with the Empress before her disappearance, and she has never spoken of what passed between them (see Key NPCs and Factions).
 
 The working theory (see The Founding Myth: Zhuvedus and the Broken Oath) is that she was searching for evidence of the empire’s true founding account, and quite possibly found the site where it happened. Whether that discovery left her dead, transformed, or simply trapped somewhere no one has thought to look is still undecided, and can remain a genuine mystery the party uncovers through play.
+
+# The Zhuvedian Laws
+
+Archjurist Senna Vhal’s Law Commission is compiling the Zhuvedian Laws as seven Books, promulgated together this coming Solacre on the Long Course — the empire’s first comprehensive legal code since the Golden Tablets, and Qilvayas’s own described ambition: laws “forged by the fires of justice and cast in molds of wisdom.” Each Book governs one domain of imperial life; together they are meant to do for the fractured empire what the historical Corpus Juris Civilis did for Justinian’s.
+
+## Book One — Of Persons
+
+Book One codifies the empire’s existing framework for a person’s claim on another person’s labor (see Law, Oath, and Bound Labor, above), unchanged in substance: chattel slavery remains illegal and blasphemous; oath-bound service, debt-bondage and indenture, and hostage-diplomacy remain the three legal categories beneath it. Book One adds one new requirement: to be enforceable in an imperial court, an oath-bound service agreement or a debt-bondage indenture must be sworn before a witness empowered to record it — a Church witness, a magistrate, or, in Tarnovar, a standing stone. An unwitnessed labor arrangement is not illegal. It is simply not enforceable: a master with no recorded oath has no imperial recourse if the bound party walks away. It is, in a fractured empire whose worst abuses cluster exactly where no one is watching, a narrow but real answer — and it costs the Commission nothing that wasn’t already true of every other oath in Zhuvedian law.
+
+The legal personhood of the Marked remains, deliberately, Book One’s one unresolved clause. Velmareth already grants tieflings full legal standing that no other jurisdiction extends (see Free City of Velmareth and the Delta Compact) — whether the Commission ever writes that standing into imperial law is a live question the Laws do not yet answer.
+
+## Book Two — Of Oaths and the Witness
+
+Book Two states plainly what the empire’s oldest customs have always assumed: a sworn word binds because it is witnessed. Marriage before a Church witness, Norr’s personal oaths sworn before his assembled halls, the standing stones of Tarnovar — all already comply without a clause needing to change. What Book Two adds is procedural: perjury, a false oath sworn before a recognized witness, is a distinct offense from ordinary lying, tried in whatever venue the oath itself was sworn in. Its penalty is never a fine. It is entered against the liar’s own signet-record (see Book Four) — a mark that follows the person rather than a debt that can be paid off, which is precisely why Zhuvedian doctrine has always called perjury blasphemy’s cousin rather than mere fraud.
+
+## Book Three — Of the Sanction and the Charter
+
+Book Three gives formal shape to certification across all three of the empire’s licensing bodies — the Church’s Sanction over divine goods and practice, the House of the Craft’s Charter over arcane goods and practice, and the Crown and guilds over mundane trade, tolls, and weights and measures. In every domain, certification is two things, never one: a physical mark — a wax stamp, a pewter warrant-medal, a charter seal, a guild-stamp — and a matching written entry in the certifying body’s own register: a parish or almonry ledger, a Chartered Scriptorium’s roll, a guild’s books. The mark alone proves nothing to a suspicious buyer or a sitting magistrate; what actually settles a dispute is whether the register entry exists and matches.
+
+Possessing unstamped goods or practicing without a license is not, by itself, a crime — it shifts the burden. A magistrate, a Church tribunal, or a Charter inspector may demand the seller or practitioner produce their register entry on formal challenge, and it is the failure to produce one, not the missing stamp itself, that opens a case. This is the calculation Rivergate’s gray market already prices into its discounts: the goods are usually genuine, and the risk being sold at a markdown is the registration, not the quality.
+
+## Book Four — Of Seals and Record
+
+Book Four names forging an imperial instrument — a seal, a signet, a writ, a chartered license — as an offense in its own right, distinct from whatever fraud the forgery enables: restitution plus a term of indenture (Book One’s second tier) scaled to the value of what was falsely authorized, escalating to exile from the offending jurisdiction on a second offense. Every chartered license, and every signet issued for identification, is dual-recorded exactly as Book Three requires: the physical mark, and an entry in the issuing body’s own register. Copying wax is easy. Copying a Chartered Scriptorium’s register, an almonry’s ledger, or an academy’s roll is a fundamentally harder crime — which is exactly why Rivergate deals in provenance rather than fabrication.
+
+An office that ceases to exist must surrender its seal formally to the Imperial Archive before its authority lapses; only after surrender may the retired instrument change hands as a curio. It is a small, dry clause, and it is the entire reason a trade like Tirell Mosse’s — dealer in the seals, signets, and letterheads of forty defunct institutions — is a legitimate one and not a smuggling operation.
+
+## Book Five — Of the Wolf
+
+Book Five is the shortest of the seven, because it changes nothing: it simply gives the existing Wolf-Price statute (see The Wolf-Price: Blood Debts and the Provinces, above) formal standing among the Laws rather than leaving it to stand alone. Self-defense remains a full defense against a wolf-killing charge, reported to a magistrate within three days with the body produced or accounted for; the older, non-legal debt to the nearest shrine-keeper remains exactly as it was.
+
+## Book Six — Of the March
+
+Book Six is military law, narrow by design: every subject owes the empire service in some form, deliberately undefined in scope (see The Vision of Restoration, above); border-lord and warlord private forces are tolerated as a fact of the fracture rather than licensed; and an officer who defrauds his own command is triable by court-martial at Legate level, appealable once to Aenodira — the exact mechanism Magistrate Ondrei’s complaint against Colonel Dessen has been waiting on.
+
+The Book also gives the legions’ chain of command formal shape for the first time:
+
+| **Rank** | **Command** | **Body** |
+| --- | --- | --- |
+| Legionary | Self | Imperial Legions |
+| Sergeant | ~10 (a file) | Any regular force |
+| Centurion | ~80–100 (a company) | Imperial Legions |
+| Colonel | A garrison or single legion | Imperial Legions |
+| Legate | Multiple legions, or the capital’s standing force; answers directly to the Throne | Imperial Legions / Palatine Guard |
+| Censor / Censor-Captain | A detachment of Office Examiners | Office of Omens’ military arm |
+
+Marshal is not a rung on this ladder. It is an acclamation the Throne grants a field commander for extraordinary personal renown, entirely apart from the size of the force under him — which is why Gavric Dane, who commands a single march’s garrison, is styled Marshal while Legate Thorne, who commands the Palatine Guard itself, is not. Dane holds a Colonel’s actual authority and a Marshal’s public weight, and the gap between the two is precisely what makes the court’s quiet anxiety about him a structural fact rather than an unexplained rumor.
+
+Provincial and warlord forces carry no standard rank of their own; “Captain” serves empire-wide as a courtesy title for anyone commanding a company-sized irregular force — a border lord’s retinue, a warlord company, a Sarkanni mercenary contract-officer — without implying any place in the legions’ ladder at all.
+
+## Book Seven — Of Judgment
+
+Book Seven answers the question every provincial town already answers in practice without a name for it. There is no separate civilian watch in the Crownlands or the loyalist provinces: order-keeping is a standing duty of whatever legion or garrison detachment is posted locally, and in Aenodira itself, of the Palatine Guard. A magistrate — judge and civil administrator combined in a single office, as Cassivar Ondrei already is in Dravenna — receives complaints, hears testimony (a witnessed oath carries real evidentiary weight under Book Two; a false one is perjury, not merely a bad witness), and rules without a jury. Sentencing runs the Laws’ own ranges: fines, restitution, indenture under Book One, rarely worse.
+
+Appeal to Aenodira exists, and Book Seven does nothing to make it fast — Ondrei’s complaint against Colonel Dessen is itself the proof, still sitting in Legate Thorne’s inbox years on. Secular justice and the Church’s own process (the Office of Omens’ escalating Writ of Examination) run in parallel and can conflict; a sufficient political favor can have a writ quashed as obstruction of an open imperial inquiry, but only as an exceptional intervention from above, never as a routine appeal.
+
+Outside the loyalist provinces, in thin country, there is often no resident magistrate at all, and disputes fall to whoever locally holds informal authority — a village elder, or the same shrine-keeper who already judges the Wolf-Price, called on for grievances that have nothing to do with wolves. In the Brekelands, and anywhere warlord-held, there is no magistrate and no appeal: the warlord or his captains are judge, jury, and enforcement, full stop.
 
 # The Imperial Academy of the Lupine Throne
 

@@ -188,9 +188,21 @@ Qilvayas’s plan for imperial restoration rests on several pillars:
 
 **Military Force When Necessary:** While he prefers peaceful methods, Qilvayas is prepared to use force against those who threaten imperial stability or refuse reasonable terms.
 
-## Law and Bound Labor
+## The Zhuvedian Laws
 
-Zhuvedian law is old and clear on the worst of it: owning a person outright is illegal and doctrinally blasphemous throughout the empire — the same principle that makes a sworn oath binding also makes chattel slavery incoherent, since the law holds that only a will capable of making a vow can be owned by no one but itself. What the law does recognize is more complicated: oath-bound personal service (the foundation of Duke Norr's rule in Normere), ordinary time-limited debt-bondage, and hostage-diplomacy — a full guest's legal standing, not bondage at all, and the basis for the Academy's own admission practices. The empire's real trouble isn't the law; it's that the law hasn't reached every corner of the fractured territories in two hundred years, and the Brekelands are where that gap shows worst.
+Archjurist Senna Vhal's Law Commission is compiling the Zhuvedian Laws as seven short Books, promulgated together this coming Solacre on the Long Course — the empire's first comprehensive legal code since the Golden Tablets. What follows is what a subject of the empire would actually know.
+
+**Persons and bound labor:** Zhuvedian law is old and clear on the worst of it: owning a person outright is illegal and doctrinally blasphemous throughout the empire — the same principle that makes a sworn oath binding also makes chattel slavery incoherent, since the law holds that only a will capable of making a vow can be owned by no one but itself. What the law does recognize is more complicated: oath-bound personal service (the foundation of Duke Norr's rule in Normere), ordinary time-limited debt-bondage, and hostage-diplomacy — a full guest's legal standing, not bondage at all, and the basis for the Academy's own admission practices. New under the coming Laws: such an arrangement must be sworn before a recognized witness — a Church witness, a magistrate, or a standing stone in Tarnovar — to be enforceable at all. The empire's real trouble isn't the law; it's that the law hasn't reached every corner of the fractured territories in two hundred years, and the Brekelands are where that gap shows worst.
+
+**Oaths and witnesses:** A sworn word binds because it is witnessed — marriage before a Church witness, Norr's personal oaths sworn before his assembled halls, the standing stones of Tarnovar. Swearing falsely before a recognized witness is perjury, tried wherever the oath itself was sworn, and it follows the liar on their own record rather than being settled with a fine.
+
+**Certification — the Sanction and the Charter:** Every certified good or license in the empire is two things, never one: a physical mark (a wax stamp, a pewter warrant-medal, a charter seal, a guild-stamp) and a matching entry in the certifying body's register — a parish ledger, a Chartered Scriptorium's roll, a guild's books. Carrying unstamped goods or practicing without a license isn't a crime by itself; it just means a magistrate, Church tribunal, or Charter inspector can demand you produce the register entry, and it's failing to produce one — not the missing stamp — that actually opens a case.
+
+**Seals and forgery:** Forging an imperial instrument — a seal, a signet, a writ, a chartered license — is its own offense: restitution plus a term of indenture, scaling to exile from the jurisdiction on a second offense. A defunct office must formally surrender its seal to the Imperial Archive before its authority lapses; only after that may the instrument change hands as a curio, which is exactly how a trade like Rivergate's dealers in dead offices' seals stays on the right side of the law.
+
+**Rank, in brief:** Sergeant, Colonel, and Legate mark increasing scale of command in the legions. Marshal is not a rank at all — it's an acclamation the Throne grants a field commander for extraordinary personal renown, regardless of the size of the force they actually lead.
+
+**Justice, town to capital:** There's no separate civilian watch in the Crownlands or the loyalist provinces — the local garrison keeps the peace, and in Aenodira, the Palatine Guard does. A magistrate hears complaints and rules without a jury; appeal to Aenodira exists but is notoriously slow. Outside the loyalist provinces, disputes often fall to whoever locally holds informal authority — an elder, a shrine-keeper. In warlord territory, there is no magistrate and no appeal at all.
 
 ## The Mystery of Empress Nyreeza
 
