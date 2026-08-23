@@ -42,7 +42,7 @@
 | The Skellvard | Non-Territorial Customary Law | Clan lawspeakers; tally-sticks record debts |
 | Duchy of Normere | De Facto Replacement — claimed, superseded | Norr's personal-oath system + the Reckoning Book |
 
-*Marked (tiefling) personhood generalized beyond Velmareth's exception: still open — not resolved by this pass.*
+*Marked (tiefling) personhood beyond Velmareth's exception: LIVE thread, not resolved by this pass — see Branch Ledger and Items/Threads. Book One's one clause the Commission hasn't closed; party action before the Solacre promulgation can tip it either way.*
 
 # Aenodira — Districts at a Glance
 
@@ -168,6 +168,7 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn'
 - **The Packlaw:** Church doctrine — the Matron leads by wisdom, not strength; authority runs through mothers as often as sires. Explains why nearly every SETTLED seat of power (Nyreeza, Vasq, Morn, Corvane, Olvesa, Thorne, Shen) is female, while still-climbing/unsettled power (Norr, Karvel, Aldrec, Dane, Dregan) skews male. Bars no man from rule — Qilvayas sits the throne. His own unnamed heir is a quiet loose thread, deliberately unresolved.
 - **Bound labor (4 tiers):** (1) Chattel slavery: ILLEGAL + blasphemous empire-wide, tied to oath-magic (can't own what can swear). (2) Oath-bound service: legal (Norr's whole system). (3) Debt-bondage/indenture: legal, time-limited. (4) Hostage-diplomacy (incl. Academy admissions): separate category, NOT bondage, full legal personhood retained. Real crisis = enforcement gap in the Brekelands, not the law itself.
 - **Marriage & the Denmother's Choice:** Marriage = real oath (Church witness / Tarnovari standing stones); unrepaired infidelity/abandonment = a small echo of Zhuvedus's crime. Divorce = a formal Release (counter-oath), not just separation. Titled succession is NAMED, not automatic-eldest — revisable, doesn't require blood. Makes Vasq's Aldous/Tavian succession a genuinely open question. Tarnovar: title follows whoever takes up the stone. Suthmark: inheritance settles at Fallowmonth's turn.
+- **The Marked's Legal Status:** Feared/filed in Church lands, informally tolerated in Rivergate, full legal standing ONLY in Velmareth. Book One's one unresolved clause — deliberately LIVE, not closed. See Branch Ledger.
 - **Language and Literacy:** Old Imperial (dead as a native tongue, purely administrative/liturgical) vs. Common (universal vernacular). Literacy tracks education/office, not province — the party is a fluent, literate elite moving through a mostly unlettered world. Ardven's subsidized literacy = ideological contrast; Tarnovar inverts the hierarchy (a spoken, witnessed oath outranks writing). Sharpened by the law pass: Books One–Four run on witness/mark/register, so the unlettered are exposed exactly where the Laws should protect them. Marked mapping: deliberately deferred to its own pass.
 - **The Imperial Calendar:** 12 months, year begins Wolfmoon (Matron's month) — Thawtide, Sowmonth, Greening, Solacre, Haymonth, Harvestide (Vintage Night fell here), Vinmoon, Fallowmonth, Greywane, Longdark (Matron's 2nd month), Threshold (20-day year-end). Loyalists count Years of the Reckoning (YR) from the Founding; Orlath keeps a quiet second dating from the Reconciliation; Tarnovar counts by Voivodes' reigns.
 
@@ -234,6 +235,7 @@ DM-only anchor (computational baseline; the in-world Reckoning figure stays soft
 - **The Shen Alliance:** Formed, discounted, or refused in Sessions 5–6 — defines the party's intelligence landscape. Shen holds Nyreeza's final filing; the party holds the rubbing; Vell holds the key.
 - **The Empress's Last Words:** Translated in Session 6: "the wound predates the Wall. The Tablets were written over it. He must not follow me. Tell him the garden, not the grave." The last line keys the sealed dispatch case.
 - **The Writ's Aftermath:** Vaelindra's status post-Session 6 (free/hidden/custody per branch) and every favor owed or spent to get there.
+- **Marked Personhood — the Live Clause:** Vhal's Commission hasn't settled Book One's treatment of the Marked; Velmareth's standing exception is the model on the table. Whatever the party brings to bear before the Solacre promulgation can tip the final language. If they never engage it, the Commission settles it without them.
 - **The Second Seal:** Reached, not opened, end of Session 6. The word FORGIVE. The campaign's fixed landmark going forward.
 
 # The Undercourt Revelations (DM Only — Sessions 7–8)
@@ -281,6 +283,7 @@ Every session module now carries a Diverging Paths section. Track outcomes here 
 | Watch Three — who took the offer | 8 |  |
 | The covenant's second half — the players' words, verbatim | 8 |  |
 | WHO THEY TOLD (largest branch in the campaign) | 8 |  |
+| Marked personhood — Book One's final language | TBD (Twin Clocks) |  |
 
 # Deliberately Open — By Design (Not Gaps)
 
