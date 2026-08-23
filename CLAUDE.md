@@ -307,6 +307,21 @@ and verify before publishing by scanning for DM-only strings and mechanical asid
 - **Verify rendering before publishing.** Rendering bugs are invisible in source. The
   escape check must use a doubled backslash — `grep -c '\\u'`; the single-quoted
   `'\u'` form matches the plain letter *u* and can never return zero on real prose.
+- **DM-only markers are bold book-red, never italic.** Every inline `DM Only:` /
+  `DM note:` marker is rendered with the `DM()` segment helper present in each generator
+  (`const DM = (t) => ({ t, b: true, c: "5B1F1F" })`), inside a `PS([...])` paragraph:
+  `PS([DM("DM Only: "), { t: "the note itself." }])`. Colour is preattentive — a DM spots
+  red without reading — and it leaves the body roman, which matters because these notes
+  run 100–200 words. **Colour the marker, not the prose**; never set a whole DM paragraph
+  in italic. Italic is reserved for read-aloud text, quotations, and epigraphs, and
+  overloading it makes both signals ambiguous. Two rules follow from the Markdown shim,
+  which appends its own trailing space after every bold run: the marker segment carries
+  the trailing space (`DM("DM Only: ")`) and the following segment never begins with one,
+  exactly as `B(lead, rest)` already does; and a bare parenthetical absorbs its brackets
+  into the marker (`DM("(DM only) ")`). Sections already titled `(DM Only)` need no inline
+  marker — the heading renders in book-red and is the most prominent thing on the page.
+  Not yet covered: table cells and stat-block trait text, whose helpers render a single
+  unstyled run.
 - **Known limitation:** wide prose-bearing tables crowd badly in the two-column body
   (the commerce and price tables worst). Letting them span both columns is a structural
   change to the generators — a queued fix, not an ad hoc patch.

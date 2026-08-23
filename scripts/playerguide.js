@@ -2,11 +2,12 @@ const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Level
 const fs = require('fs');
 
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
-const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i })) });
+const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
+const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
 const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun(t)] });
 const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(t)] });
 const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, children: [new TextRun(t)] });
-const BULLET = (segs) => new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 120 }, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i })) });
+const BULLET = (segs) => new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 120 }, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
 const { Table, TableRow, TableCell, WidthType, ShadingType } = require('docx');

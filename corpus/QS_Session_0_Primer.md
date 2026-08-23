@@ -46,7 +46,7 @@ The capital academy admits through a lottery that is less fair than it appears. 
 - **3 — The Hostage:** A son or daughter of a border lord or ambitious noble, kept close to the capital to ensure a parent’s good behavior. In law this is hostage-diplomacy, a formal category and emphatically not bondage: the character retains full legal personhood and is owed treatment as an honored, if constrained, guest (see the sourcebook, Law, Oath, and Bound Labor). Whether their actual experience has matched that standard is the character’s to decide. Thread: the parent’s politics, and what happens back home if relations with the throne sour.
 - **4 — The Protégé:** A regional lord or power spotted talent and sponsored it, expecting a return on the investment. Thread: the patron, and the first favor they will eventually call in.
 - **5 — The True Believer:** Sought admission out of genuine conviction — in the empire, the Lupine Matron, or the Emperor’s restoration. Thread: what happens to faith when the institution disappoints it.
-- **6 — The Quiet Irregularity:** The paperwork says lottery. It wasn’t — a forged record, a bribed clerk, a swapped name. The character may not even know who arranged it, or why. Thread: whoever did it, and what they wanted. (DM note: this one is a gift — it can be wired into any faction later.)
+- **6 — The Quiet Irregularity:** The paperwork says lottery. It wasn’t — a forged record, a bribed clerk, a swapped name. The character may not even know who arranged it, or why. Thread: whoever did it, and what they wanted. (**DM note:** this one is a gift — it can be wired into any faction later.)
 
 # Forging the Party
 
