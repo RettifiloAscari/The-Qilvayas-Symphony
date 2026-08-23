@@ -10,7 +10,7 @@
 
 *A quick-reference cheat sheet — Atlas, NPCs, and mythology at a glance*
 
-***Living document — update alongside the sourcebook. Current through the imperial law pass (the Zhuvedian Laws, certification, jurisdiction, rank, and street justice). Sessions 0–8; the Undercourt descent is complete.***
+***Living document — update alongside the sourcebook. Current through the imperial law pass (the Zhuvedian Laws, certification, jurisdiction, rank, and street justice) and the language and literacy pass. Sessions 0–8; the Undercourt descent is complete.***
 
 # The Atlas — Regions at a Glance
 
@@ -168,6 +168,7 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn'
 - **The Packlaw:** Church doctrine — the Matron leads by wisdom, not strength; authority runs through mothers as often as sires. Explains why nearly every SETTLED seat of power (Nyreeza, Vasq, Morn, Corvane, Olvesa, Thorne, Shen) is female, while still-climbing/unsettled power (Norr, Karvel, Aldrec, Dane, Dregan) skews male. Bars no man from rule — Qilvayas sits the throne. His own unnamed heir is a quiet loose thread, deliberately unresolved.
 - **Bound labor (4 tiers):** (1) Chattel slavery: ILLEGAL + blasphemous empire-wide, tied to oath-magic (can't own what can swear). (2) Oath-bound service: legal (Norr's whole system). (3) Debt-bondage/indenture: legal, time-limited. (4) Hostage-diplomacy (incl. Academy admissions): separate category, NOT bondage, full legal personhood retained. Real crisis = enforcement gap in the Brekelands, not the law itself.
 - **Marriage & the Denmother's Choice:** Marriage = real oath (Church witness / Tarnovari standing stones); unrepaired infidelity/abandonment = a small echo of Zhuvedus's crime. Divorce = a formal Release (counter-oath), not just separation. Titled succession is NAMED, not automatic-eldest — revisable, doesn't require blood. Makes Vasq's Aldous/Tavian succession a genuinely open question. Tarnovar: title follows whoever takes up the stone. Suthmark: inheritance settles at Fallowmonth's turn.
+- **Language and Literacy:** Old Imperial (dead as a native tongue, purely administrative/liturgical) vs. Common (universal vernacular). Literacy tracks education/office, not province — the party is a fluent, literate elite moving through a mostly unlettered world. Ardven's subsidized literacy = ideological contrast; Tarnovar inverts the hierarchy (a spoken, witnessed oath outranks writing). Sharpened by the law pass: Books One–Four run on witness/mark/register, so the unlettered are exposed exactly where the Laws should protect them. Marked mapping: deliberately deferred to its own pass.
 - **The Imperial Calendar:** 12 months, year begins Wolfmoon (Matron's month) — Thawtide, Sowmonth, Greening, Solacre, Haymonth, Harvestide (Vintage Night fell here), Vinmoon, Fallowmonth, Greywane, Longdark (Matron's 2nd month), Threshold (20-day year-end). Loyalists count Years of the Reckoning (YR) from the Founding; Orlath keeps a quiet second dating from the Reconciliation; Tarnovar counts by Voivodes' reigns.
 
 # The Zhuvedian Laws — Quick Reference
