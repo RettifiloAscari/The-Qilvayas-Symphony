@@ -10,7 +10,7 @@
 
 *A quick-reference cheat sheet — Atlas, NPCs, and mythology at a glance*
 
-***Living document — update alongside the sourcebook. Current through the imperial law pass (the Zhuvedian Laws, certification, jurisdiction, rank, and street justice) and the language and literacy pass. Sessions 0–8; the Undercourt descent is complete.***
+***Living document — update alongside the sourcebook. Current through the full Social Foundations program — imperial law, language and literacy, currency, and medicine and disease all closed; Marked personhood the sole live thread. Sessions 0–8; the Undercourt descent is complete.***
 
 # The Atlas — Regions at a Glance
 
@@ -171,6 +171,7 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn'
 - **The Marked's Legal Status:** Feared/filed in Church lands, informally tolerated in Rivergate, full legal standing ONLY in Velmareth. Book One's one unresolved clause — deliberately LIVE, not closed. See Branch Ledger.
 - **Currency — the Zhuven:** Formal name for the standard gold coin (Zhuvedus obverse, She-Wolf reverse); everyone actually says "wolf" in Common. Silver strand, copper mote below it — inconsistent minting. Table pricing stays gp/sp/cp; Zhuven/strand/mote are just what the coins are called and look like in hand. Velmareth weighs rather than reads it; Norr restrikes captured coin with his own seal over the wolf; Tarnovar takes it same as anyone but trusts it less than a sworn word.
 - **Language and Literacy:** Old Imperial (dead as a native tongue, purely administrative/liturgical) vs. Common (universal vernacular). Literacy tracks education/office, not province — the party is a fluent, literate elite moving through a mostly unlettered world. Ardven's subsidized literacy = ideological contrast; Tarnovar inverts the hierarchy (a spoken, witnessed oath outranks writing). Sharpened by the law pass: Books One–Four run on witness/mark/register, so the unlettered are exposed exactly where the Laws should protect them. Marked mapping: deliberately deferred to its own pass.
+- **Medicine and Disease:** Three certified tiers under Book Three (Sanction/divine, Charter/arcane, Crown-guild/mundane physicians) cover almost nobody — most of the empire relies on uncertified folk care (herbwife, bonesetter, midwife), same tolerance-tier as hedge-magic. Farrowgate's overcrowding breeds a chronic lung-ailment, the Damp — mundane, NOT shadow-connected (same ruling as Greywell). Church magic cures an active case instantly; it doesn't fix a drainage ditch. Rivergate sells patent quackery under forged Sanction marks.
 - **The Imperial Calendar:** 12 months, year begins Wolfmoon (Matron's month) — Thawtide, Sowmonth, Greening, Solacre, Haymonth, Harvestide (Vintage Night fell here), Vinmoon, Fallowmonth, Greywane, Longdark (Matron's 2nd month), Threshold (20-day year-end). Loyalists count Years of the Reckoning (YR) from the Founding; Orlath keeps a quiet second dating from the Reconciliation; Tarnovar counts by Voivodes' reigns.
 
 # The Zhuvedian Laws — Quick Reference

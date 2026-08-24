@@ -243,19 +243,16 @@ fixes. **Do not regenerate without sign-off.**
 
 ## Remaining Worldbuilding Gaps
 
-Closed so far: calendar, funerary custom and the Vigil, marriage/inheritance/succession,
-bound labor and legal personhood, gender and authority, the imperial law pass (the
-Zhuvedian Laws in seven Books, certification, jurisdiction, the legions' rank ladder,
-street-level justice, and the Golden Tablets quoted in fragment), language and literacy,
-and the currency (the Zhuven).
+Closed: calendar, funerary custom and the Vigil, marriage/inheritance/succession, bound
+labor and legal personhood, gender and authority, the imperial law pass (the Zhuvedian
+Laws in seven Books, certification, jurisdiction, the legions' rank ladder, street-level
+justice, and the Golden Tablets quoted in fragment), language and literacy, currency (the
+Zhuven), and medicine and disease. **The Remaining Worldbuilding Gaps list is now fully
+closed.**
 
 Live rather than closed — resolution deliberately handed to play, not pre-decided: the
 legal personhood of the Marked (tieflings), tracked as a Branch Ledger thread tied to the
 Twin Clocks' Solacre promulgation.
-
-Still open — offer this when the corpus needs depth rather than plot:
-
-- **Medicine and disease** — mundane versus chartered/blessed healing, and who can afford which (sharpened by Farrowgate's overcrowding)
 
 ---
 

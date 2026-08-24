@@ -114,6 +114,8 @@ Every educated Zhuvedian knows the shape of magic in the empire, even if they ca
 
 **Wildshape:** Willed shape is not cursed shape — the wolf-trial has no claim on a druid’s wolf-form, and doctrine says so plainly. Folk opinion goes further: villages that would never touch a stray wolf will touch a druid who’s just changed back, for luck. The Office of Omens, naturally, still likes to know who can do it.
 
+**Physic and Healing:** Divine healing runs through the Church's licensed Sanction — reliable, genuinely magical, and priced accordingly. Ordinary medicine is a guild trade like any other: Academy-trained physicians and chirurgeons, expensive and mostly urban. Everyone else relies on whatever herbwife, bonesetter, or midwife the village has always relied on — perfectly legal, wildly variable, and the only medicine most of the empire will ever actually see.
+
 **The Wolf-Price:** Self-defense is a real legal defense — report it to a magistrate within three days and the law is satisfied. The law was never the whole of it, though. Older custom says a dead wolf still leaves a debt, paid in coin or labor to whoever keeps the local shrine, guilt or no guilt. Pay it promptly and the story that follows you is a good one.
 
 **The Chosen:** A wolf that stays with you by its own will is read as the Matron’s visible favor — expect blessings, nods, and pointed questions. A ranger whose beast-bond is a wolf lives this daily, and is treated accordingly — touched, in the provinces; noted, in the capital. A wolf caged or collared is profanation; no honest market in the empire sells a wolf-cage. Feed wild ones at the treeline if you must, and never call them in.
@@ -336,7 +338,7 @@ The Long Wall was built expecting a population that never arrived. The result is
 
 **The Archwork:** An old imperial aqueduct crosses the outer city on high stone arches, several sections long since bricked up and converted into housing. Working-class and unglamorous.
 
-**Farrowgate:** The newest and least planned district, populated overwhelmingly by displaced people from the fractured territories. Established Aenodirans use the name without much affection; the people who live there increasingly use it themselves.
+**Farrowgate:** The newest and least planned district, populated overwhelmingly by displaced people from the fractured territories. Established Aenodirans use the name without much affection; the people who live there increasingly use it themselves. The district's overcrowding breeds its own chronic complaint, a lung-sickness residents call the Damp — no mystery to it, just too many people in too little space with worse drainage than the rest of the city.
 
 **Rivergate:** The docks and river trade quarter, where goods — and a fair amount that isn’t quite goods — move in and out of the capital. Less regulated than the Exchange, and considerably more interesting to anyone asking questions the empire’s official record doesn’t want to answer.
 
