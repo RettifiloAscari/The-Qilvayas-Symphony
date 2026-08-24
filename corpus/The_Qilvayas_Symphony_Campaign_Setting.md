@@ -16,7 +16,7 @@
 
 # Campaign Overview
 
-The Qilvayas Symphony is a campaign of imperial ambition, prophetic visions, and moral complexity set against the backdrop of a crumbling empire. Drawing inspiration from Byzantine history—particularly the struggles of emperors like Justinian who sought to restore former Roman glory—this campaign explores themes of legacy, power, the cost of idealism, and the tension between the dream of unity and the reality of a fractured world.
+The Qilvayas Symphony is a campaign of imperial ambition, prophetic visions, and moral complexity set against the backdrop of a crumbling empire. Drawing inspiration from Byzantine history — particularly the struggles of emperors like Justinian who sought to restore former Roman glory — this campaign explores themes of legacy, power, the cost of idealism, and the tension between the dream of unity and the reality of a fractured world.
 
 The player characters are final-year students at the prestigious Imperial Academy of the Lupine Throne, completing their field exercises and planning their futures as independent adventurers. When they receive a shared prophetic vision of the capital city in flames and a monstrous shadow in storm clouds above, they are drawn into events that will test their abilities, challenge their loyalties, and potentially determine the fate of the empire itself.
 
@@ -24,13 +24,13 @@ The player characters are final-year students at the prestigious Imperial Academ
 
 ## The Height of Empire
 
-At its zenith, the Empire of Zhuvedus spanned nearly an entire continent. United under the Lupine Throne and guided by the principles of the Lupine Matron, the empire represented civilization, law, and order. The Golden Tablets—sacred legal codes established by the empire’s forefathers—formed the foundation of Zhuvedian governance and culture. Trade flourished along imperial roads, justice was administered by trained magistrates, and the imperial legions defended the borders against external threats.
+At its zenith, the Empire of Zhuvedus spanned nearly an entire continent. United under the Lupine Throne and guided by the principles of the Lupine Matron, the empire represented civilization, law, and order. The Golden Tablets — sacred legal codes established by the empire’s forefathers — formed the foundation of Zhuvedian governance and culture. Trade flourished along imperial roads, justice was administered by trained magistrates, and the imperial legions defended the borders against external threats.
 
-The imperial capital, seat of the Lupine Throne, was the beating heart of this civilization—a center of learning, culture, and power that drew the ambitious and talented from across the realm.
+The imperial capital, seat of the Lupine Throne, was the beating heart of this civilization — a center of learning, culture, and power that drew the ambitious and talented from across the realm.
 
 ## Two Centuries of Decline
 
-The empire’s decline was not sudden but gradual—a slow erosion over two hundred years. Internal strife between noble houses weakened central authority. Corruption spread through the bureaucracy as distant provinces found ways to avoid imperial taxation and oversight. Military expeditions to reclaim lost territories or suppress rebellions failed, draining the treasury and damaging the legions’ reputation. External powers, sensing weakness, pressed against the borders and even seized imperial territory.
+The empire’s decline was not sudden but gradual — a slow erosion over two hundred years. Internal strife between noble houses weakened central authority. Corruption spread through the bureaucracy as distant provinces found ways to avoid imperial taxation and oversight. Military expeditions to reclaim lost territories or suppress rebellions failed, draining the treasury and damaging the legions’ reputation. External powers, sensing weakness, pressed against the borders and even seized imperial territory.
 
 Most devastatingly, the empire fractured. What had been provinces became semi-independent “nations,” each ruled by ambitious warlords, merchant councils, or noble houses who once swore fealty to the throne but now pursued their own interests. Some maintained the fiction of imperial loyalty while ignoring imperial law. Others openly declared independence. Still others warred among themselves, creating a patchwork of competing powers where once there had been unity.
 
@@ -40,9 +40,9 @@ The imperial capital remained, and the Lupine Throne was still occupied, but the
 
 ## Political Landscape
 
-The empire today is a shadow of its former self, yet it persists. The imperial capital and its surrounding territories remain under direct imperial control, and several regions still recognize the Lupine Throne’s authority—some genuinely, others opportunistically. The fractured “nations” present a complex political landscape:
+The empire today is a shadow of its former self, yet it persists. The imperial capital and its surrounding territories remain under direct imperial control, and several regions still recognize the Lupine Throne’s authority — some genuinely, others opportunistically. The fractured “nations” present a complex political landscape:
 
-**Border Lords and Regional Powers:** Former provincial governors, military commanders, and noble houses now rule territories as de facto independent states. Their relationship with the throne varies—some maintain nominal loyalty while ignoring imperial edicts, others have declared independence outright, and a few actively work against reunification to protect their autonomy.
+**Border Lords and Regional Powers:** Former provincial governors, military commanders, and noble houses now rule territories as de facto independent states. Their relationship with the throne varies — some maintain nominal loyalty while ignoring imperial edicts, others have declared independence outright, and a few actively work against reunification to protect their autonomy.
 
 **Merchant Republics:** Wealthy trading cities that broke away to avoid imperial taxation, now governed by councils of merchants and guild masters. They prefer the current disorder, which allows them to play different powers against each other for commercial advantage.
 
@@ -228,15 +228,15 @@ All mundane prices pulled from the SRD equipment data (exact book values). Magic
 
 # The Lupine Matron and Imperial Faith
 
-The Lupine Matron is the divine patron of the Zhuvedian Empire, represented as a great wolf—wise, protective, and fierce. According to Zhuvedian theology, the Lupine Matron gave the empire’s people their core virtues: loyalty, honor, wisdom, and the strength to endure hardship. The phrase “We are the Kin of Great Timberwolf” references this divine connection and appears in imperial prayers and ceremonies.
+The Lupine Matron is the divine patron of the Zhuvedian Empire, represented as a great wolf — wise, protective, and fierce. According to Zhuvedian theology, the Lupine Matron gave the empire’s people their core virtues: loyalty, honor, wisdom, and the strength to endure hardship. The phrase “We are the Kin of Great Timberwolf” references this divine connection and appears in imperial prayers and ceremonies.
 
-The Matron’s worship long predates the empire that now venerates her. Zhuvedian doctrine holds that she has guided many champions and many peoples across a span of time far longer than any dynasty’s recorded history—Zhuvedus was simply the most successful and most enduring of those she chose to favor. Whether Zhuvedus himself ever attained true divinity, however, is a matter of genuine theological dispute, one that runs directly through the empire’s politics and its faith alike (see The Founding Myth: Zhuvedus and the Broken Oath).
+The Matron’s worship long predates the empire that now venerates her. Zhuvedian doctrine holds that she has guided many champions and many peoples across a span of time far longer than any dynasty’s recorded history — Zhuvedus was simply the most successful and most enduring of those she chose to favor. Whether Zhuvedus himself ever attained true divinity, however, is a matter of genuine theological dispute, one that runs directly through the empire’s politics and its faith alike (see The Founding Myth: Zhuvedus and the Broken Oath).
 
 The faith of the Lupine Matron has historically unified the empire, providing moral and spiritual justification for imperial authority. The Golden Tablets, containing the fundamental laws of the empire, are said to have been inspired by the Lupine Matron’s wisdom and committed to writing by the empire’s forefathers.
 
 However, as the empire fractured politically, regional variations in the faith have emerged. Some breakaway territories emphasize different aspects of the Lupine Matron’s teachings or venerate local saints above imperial doctrine. This theological fragmentation mirrors the political splintering and presents both a challenge and an opportunity for Qilvayas’s restoration efforts.
 
-The Church of the Lupine Matron in the capital remains the institutional heart of the faith—wealthy, hierarchical, and deeply entangled with imperial politics. Its clergy administer doctrine, sanctify imperial authority, and guard their interpretive monopoly over omens, visions, and the divine will. Those who claim direct revelation outside Church sanction occupy dangerous ground: not quite heretical, but never fully tolerated. This tension becomes immediately relevant to the party through the Seeress (see Key NPCs and Factions).
+The Church of the Lupine Matron in the capital remains the institutional heart of the faith — wealthy, hierarchical, and deeply entangled with imperial politics. Its clergy administer doctrine, sanctify imperial authority, and guard their interpretive monopoly over omens, visions, and the divine will. Those who claim direct revelation outside Church sanction occupy dangerous ground: not quite heretical, but never fully tolerated. This tension becomes immediately relevant to the party through the Seeress (see Key NPCs and Factions).
 
 ## The Church in Practice
 
@@ -386,31 +386,31 @@ The empire is human-majority — right for its Byzantine texture — with the ot
 
 No single account of Zhuvedus’s nature is universally accepted. Three distinct traditions coexist, each serving different interests, and each believing itself the truth.
 
-**Church Doctrine (Public):** The Church of the Lupine Matron teaches that Zhuvedus was a mortal hero, chosen and favored by the Matron but never divine himself—virtuous in his triumphs, flawed in his failures, and mortal in his death. To the Church, only the Matron is properly divine; elevating any mortal, however great, to godhood would be heretical. “Sinful children of Zhuvedus” is meant in this light: heirs to a great but flawed man, not to a god.
+**Church Doctrine (Public):** The Church of the Lupine Matron teaches that Zhuvedus was a mortal hero, chosen and favored by the Matron but never divine himself — virtuous in his triumphs, flawed in his failures, and mortal in his death. To the Church, only the Matron is properly divine; elevating any mortal, however great, to godhood would be heretical. “Sinful children of Zhuvedus” is meant in this light: heirs to a great but flawed man, not to a god.
 
-**The Imperial Cult (Public):** A smaller, older priesthood tied to the imperial household teaches otherwise—that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne’s claim to hereditary legitimacy: only Zhuvedus’s line, in this telling, has the right to rule. The Church tolerates this cult’s existence because confronting it directly would mean confronting the throne itself.
+**The Imperial Cult (Public):** A smaller, older priesthood tied to the imperial household teaches otherwise — that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne’s claim to hereditary legitimacy: only Zhuvedus’s line, in this telling, has the right to rule. The Church tolerates this cult’s existence because confronting it directly would mean confronting the throne itself.
 
-**The Buried Truth (Hidden):** A far older, deliberately suppressed tradition holds a darker and more specific account—that Zhuvedus was not the Matron’s only champion in his own era, that his rise involved the destruction of a rival she had also favored, and that his triumph came at the cost of a sacred oath broken in her own witness. This is the account developed below. It survives only in fragments: old ballads the Church has worked for generations to lose, half-remembered oral traditions in the further provinces, and the private knowledge of a very few people still living—among them, Vaelindra.
+**The Buried Truth (Hidden):** A far older, deliberately suppressed tradition holds a darker and more specific account — that Zhuvedus was not the Matron’s only champion in his own era, that his rise involved the destruction of a rival she had also favored, and that his triumph came at the cost of a sacred oath broken in her own witness. This is the account developed below. It survives only in fragments: old ballads the Church has worked for generations to lose, half-remembered oral traditions in the further provinces, and the private knowledge of a very few people still living — among them, Vaelindra.
 
 ## Threnvos and the Sworn Covenant
 
-Long before the empire existed in anything like its current form, the Matron favored more than one champion in a single generation. Alongside Zhuvedus stood Threnvos, leader of a different people with an equal claim to her blessing. Rather than see one destroy the other, she is said to have bound them under a sworn covenant—witnessed and sanctified by her own power—some form of joint rule, mutual restraint, or shared founding. The exact terms are lost. What survives is only that it was sacred, that both men swore it freely, and that it was meant to hold.
+Long before the empire existed in anything like its current form, the Matron favored more than one champion in a single generation. Alongside Zhuvedus stood Threnvos, leader of a different people with an equal claim to her blessing. Rather than see one destroy the other, she is said to have bound them under a sworn covenant — witnessed and sanctified by her own power — some form of joint rule, mutual restraint, or shared founding. The exact terms are lost. What survives is only that it was sacred, that both men swore it freely, and that it was meant to hold.
 
 Zhuvedus broke it. He destroyed Threnvos and claimed sole right to found what became the empire, and he did it under the eyes of the god who had sanctified the promise between them.
 
 ## The Oathbreaker’s Crown
 
-Zhuvedus was, by the account preserved in the buried tradition, a paladin—sworn to the Oath of Devotion, a champion whose given word was meant to be inviolable. Breaking a sacred oath sworn before a god does not simply end quietly; it corrupts. In shattering his covenant with Threnvos, Zhuvedus fell from his oath and rose again as something else—an Oathbreaker, drawing on darker power in the same moment he used it to destroy his rival and seize the founding of the empire alone.
+Zhuvedus was, by the account preserved in the buried tradition, a paladin — sworn to the Oath of Devotion, a champion whose given word was meant to be inviolable. Breaking a sacred oath sworn before a god does not simply end quietly; it corrupts. In shattering his covenant with Threnvos, Zhuvedus fell from his oath and rose again as something else — an Oathbreaker, drawing on darker power in the same moment he used it to destroy his rival and seize the founding of the empire alone.
 
-This is, perhaps, the empire’s deepest and most carefully guarded irony: the throne whose current occupant is rewriting the Golden Tablets in pursuit of lawful restoration was founded by a broken oath, and the man who broke it drew the very power of his triumph from that betrayal. Neither the Church nor the imperial cult preserves this detail—both have every reason not to. A paladin or cleric with sufficient insight standing in the right place, however, might still recognize the particular wrongness of Oathbreaker corruption for what it is.
+This is, perhaps, the empire’s deepest and most carefully guarded irony: the throne whose current occupant is rewriting the Golden Tablets in pursuit of lawful restoration was founded by a broken oath, and the man who broke it drew the very power of his triumph from that betrayal. Neither the Church nor the imperial cult preserves this detail — both have every reason not to. A paladin or cleric with sufficient insight standing in the right place, however, might still recognize the particular wrongness of Oathbreaker corruption for what it is.
 
 ## The Shadow’s Origin (DM Only)
 
-Threnvos did not simply die. Whatever he felt in that final moment—betrayal, rage, the specific grief of being killed by a man he’d trusted enough to swear brotherhood with—did not dissipate with him. It became the seed around which the wound left by the broken oath took shape. What waits in the vision’s storm clouds is not a two-thousand-year-old grudge, and it is not a mindless force of pure entropy—it is both, fused together at the moment of its birth. The personal grievance gave the impersonal hunger a shape and a direction; the impersonal hunger has kept the personal grievance fed and growing long after any ordinary vengeful spirit would have faded.
+Threnvos did not simply die. Whatever he felt in that final moment — betrayal, rage, the specific grief of being killed by a man he’d trusted enough to swear brotherhood with — did not dissipate with him. It became the seed around which the wound left by the broken oath took shape. What waits in the vision’s storm clouds is not a two-thousand-year-old grudge, and it is not a mindless force of pure entropy — it is both, fused together at the moment of its birth. The personal grievance gave the impersonal hunger a shape and a direction; the impersonal hunger has kept the personal grievance fed and growing long after any ordinary vengeful spirit would have faded.
 
-That fusion is what makes the entity dangerous in the present tense. Every oath broken since—every noble house that abandoned fealty, every treaty a warlord tore up, every governor who quietly stopped honoring the crown—has fed something that already had a will and a memory attached to it. It has been growing more itself, not just larger, for two centuries of imperial fracture. This gives player and NPC choices around loyalty, betrayal, and broken promises a direct, if invisible, bearing on the threat shown in the opening vision—a mechanism the DM can use quietly throughout the campaign without ever stating it outright to the players.
+That fusion is what makes the entity dangerous in the present tense. Every oath broken since — every noble house that abandoned fealty, every treaty a warlord tore up, every governor who quietly stopped honoring the crown — has fed something that already had a will and a memory attached to it. It has been growing more itself, not just larger, for two centuries of imperial fracture. This gives player and NPC choices around loyalty, betrayal, and broken promises a direct, if invisible, bearing on the threat shown in the opening vision — a mechanism the DM can use quietly throughout the campaign without ever stating it outright to the players.
 
-The binding site—where the oath was broken and Threnvos died—lies beneath the imperial capital itself, beneath the Old Forum (confirmed; see Geography and Locations), which explains why the vision shows that specific city burning rather than some other place of significance. This ties the site’s development directly to the capital’s geography (see Geography and Locations) and gives Empress Nyreeza’s disappearance a concrete shape: she was very likely searching for evidence of this true founding account, and quite possibly found the site itself.
+The binding site — where the oath was broken and Threnvos died — lies beneath the imperial capital itself, beneath the Old Forum (confirmed; see Geography and Locations), which explains why the vision shows that specific city burning rather than some other place of significance. This ties the site’s development directly to the capital’s geography (see Geography and Locations) and gives Empress Nyreeza’s disappearance a concrete shape: she was very likely searching for evidence of this true founding account, and quite possibly found the site itself.
 
 ## The Turning Away (DM Only)
 
@@ -438,9 +438,9 @@ This is the campaign’s pivot from a dungeon problem to a civilization problem.
 
 ## The Young Emperor
 
-Qilvayas is a 110-year-old Drow—young by the standards of his long-lived race, but old enough to rule without a regent. He ascended to the Lupine Throne following the mysterious disappearance of his mother, Empress Nyreeza. Raised within the imperial palace, he received the finest education available in history, law, military strategy, theology, and statecraft. More importantly, he studied the empire’s decline intimately, tracing its causes and contemplating solutions.
+Qilvayas is a 110-year-old Drow — young by the standards of his long-lived race, but old enough to rule without a regent. He ascended to the Lupine Throne following the mysterious disappearance of his mother, Empress Nyreeza. Raised within the imperial palace, he received the finest education available in history, law, military strategy, theology, and statecraft. More importantly, he studied the empire’s decline intimately, tracing its causes and contemplating solutions.
 
-His youth gives him energy and idealism, but also makes him somewhat untested. He has never commanded armies in the field, never navigated the brutal realities of imperial politics at the highest level, and never faced the compromises that restoring an empire might demand. His vision is clear, his ambition genuine, and his belief in the righteousness of his cause unshakeable—but the question remains whether he can adapt that vision to reality without losing himself in the process.
+His youth gives him energy and idealism, but also makes him somewhat untested. He has never commanded armies in the field, never navigated the brutal realities of imperial politics at the highest level, and never faced the compromises that restoring an empire might demand. His vision is clear, his ambition genuine, and his belief in the righteousness of his cause unshakeable — but the question remains whether he can adapt that vision to reality without losing himself in the process.
 
 ## The Man Behind the Crown
 
@@ -464,7 +464,7 @@ His grief for his mother is real, unresolved, and armored over with work. Known 
 
 Qilvayas’s plan for imperial restoration rests on several pillars:
 
-**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code—the “Zhuvedian Laws”—that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. In his own words, these laws will be “forged by the fires of justice and cast in molds of wisdom.” This echoes the historical Corpus Juris Civilis of Emperor Justinian—the belief that law itself can be a civilizing and unifying force.
+**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code — the “Zhuvedian Laws” — that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. In his own words, these laws will be “forged by the fires of justice and cast in molds of wisdom.” This echoes the historical Corpus Juris Civilis of Emperor Justinian — the belief that law itself can be a civilizing and unifying force.
 
 **Administrative Revival:** He is rebuilding imperial institutions that have atrophied or disappeared. The Imperial Academy is a key part of this effort, training a new generation of loyal, competent administrators who understand his vision.
 
@@ -472,9 +472,9 @@ Qilvayas’s plan for imperial restoration rests on several pillars:
 
 **Military Force When Necessary:** While he prefers peaceful methods, Qilvayas is prepared to use force against those who threaten imperial stability or refuse reasonable terms. He understands that some warlords and breakaway states will never willingly submit.
 
-The question the campaign will explore is whether these idealistic goals can survive contact with reality—and what Qilvayas might become in the pursuit of restoration.
+The question the campaign will explore is whether these idealistic goals can survive contact with reality — and what Qilvayas might become in the pursuit of restoration.
 
-That question has a mythic precedent he likely doesn’t know he’s repeating. The empire’s own founder broke a sacred oath in pursuit of a goal he believed justified it, and became something else in the process (see The Founding Myth: Zhuvedus and the Broken Oath). Every pragmatic compromise Qilvayas makes in the name of restoration—every ally set aside, every promise expedient to break—walks the same road his ancestor walked to its end. Whether he ever recognizes the echo is one of the campaign’s central open questions.
+That question has a mythic precedent he likely doesn’t know he’s repeating. The empire’s own founder broke a sacred oath in pursuit of a goal he believed justified it, and became something else in the process (see The Founding Myth: Zhuvedus and the Broken Oath). Every pragmatic compromise Qilvayas makes in the name of restoration — every ally set aside, every promise expedient to break — walks the same road his ancestor walked to its end. Whether he ever recognizes the echo is one of the campaign’s central open questions.
 
 ## Law, Oath, and Bound Labor
 
@@ -488,7 +488,7 @@ The empire’s actual crisis is not its law but its reach. Imperial statute forb
 
 Qilvayas’s mother, Empress Nyreeza, disappeared under circumstances that remain unclear. She was the one who began revitalizing the Imperial Academy and took the first steps toward institutional reform. Her sudden absence created a power vacuum that Qilvayas filled, but it also left questions: Was her disappearance natural, political, or something more sinister? Did she flee, was she taken, or is she dead? Does Qilvayas know more than he admits?
 
-Her fate remains a thread that can be pulled as the campaign develops—potentially revealing allies, enemies, conspiracies, or truths about the empire itself. One known thread already exists: the Seeress Vaelindra of the Still Waters was among the last people to meet with the Empress before her disappearance, and she has never spoken of what passed between them (see Key NPCs and Factions).
+Her fate remains a thread that can be pulled as the campaign develops — potentially revealing allies, enemies, conspiracies, or truths about the empire itself. One known thread already exists: the Seeress Vaelindra of the Still Waters was among the last people to meet with the Empress before her disappearance, and she has never spoken of what passed between them (see Key NPCs and Factions).
 
 The working theory (see The Founding Myth: Zhuvedus and the Broken Oath) is that she was searching for evidence of the empire’s true founding account, and quite possibly found the site where it happened. Whether that discovery left her dead, transformed, or simply trapped somewhere no one has thought to look is still undecided, and can remain a genuine mystery the party uncovers through play.
 
@@ -577,7 +577,7 @@ Outside the loyalist provinces, in thin country, there is often no resident magi
 
 ## Purpose and History
 
-The Imperial Academy was originally founded during the empire’s golden age to train the administrators, officers, and specialists needed to govern and defend such a vast realm. Like much else, it fell into decline as the empire fractured—many regional academies closed, curricula degraded, and standards slipped.
+The Imperial Academy was originally founded during the empire’s golden age to train the administrators, officers, and specialists needed to govern and defend such a vast realm. Like much else, it fell into decline as the empire fractured — many regional academies closed, curricula degraded, and standards slipped.
 
 Empress Nyreeza began the academy’s revival in the years before her disappearance, recognizing that rebuilding imperial institutions required trained personnel. Emperor Qilvayas has continued and expanded this effort, seeing the academy as essential to his restoration plans. He needs loyal, competent people who understand his vision and can implement his reforms across the empire.
 
@@ -585,11 +585,11 @@ Today, multiple Imperial Academies exist across territories that still recognize
 
 ## Admission and Student Body
 
-The empire maintains a policy of universal education—in theory, any subject can seek admission to an Imperial Academy. In practice, admission to the capital academy operates through a lottery system that is less fair than it appears:
+The empire maintains a policy of universal education — in theory, any subject can seek admission to an Imperial Academy. In practice, admission to the capital academy operates through a lottery system that is less fair than it appears:
 
 **The Official Process:** Applicants from across the empire enter their names into an annual lottery for admission. The system is designed to give opportunity to talented individuals regardless of birth or wealth.
 
-**The Reality:** Wealthy families make generous “donations” to the academy, and their children mysteriously get selected. Local lords ensure their favored protégés gain admission. Some slots are reserved for hostage-diplomacy situations—sons and daughters of border lords and ambitious nobles kept close to ensure good behavior. But enough legitimate lottery winners make it through that the system maintains its legitimacy and the student body remains genuinely diverse.
+**The Reality:** Wealthy families make generous “donations” to the academy, and their children mysteriously get selected. Local lords ensure their favored protégés gain admission. Some slots are reserved for hostage-diplomacy situations — sons and daughters of border lords and ambitious nobles kept close to ensure good behavior. But enough legitimate lottery winners make it through that the system maintains its legitimacy and the student body remains genuinely diverse.
 
 This creates a fascinating mix: children of privilege alongside scholarship students who earned their place, hostages resentful of being pawns alongside true believers in the empire, ambitious commoners seeking advancement alongside nobility maintaining family traditions. The academy deliberately fosters this diversity, believing that future imperial servants need to understand and work with people from all backgrounds.
 
@@ -609,7 +609,7 @@ The House of the Sword trains officers, strategists, and those who will serve in
 
 ### House of the Seal
 
-The House of the Seal focuses on administration, law, theology, and governance—the civilian machinery that keeps an empire functioning. These students will become the magistrates, tax collectors, diplomats, and priests who actually run imperial territories day-to-day.
+The House of the Seal focuses on administration, law, theology, and governance — the civilian machinery that keeps an empire functioning. These students will become the magistrates, tax collectors, diplomats, and priests who actually run imperial territories day-to-day.
 
 **Core Studies:** Imperial law and the Zhuvedian legal codes, theology and doctrine of the Lupine Matron, rhetoric and persuasion, diplomacy and negotiation, taxation and fiscal policy, record-keeping and bureaucratic procedure, history and philosophy of governance.
 
@@ -619,7 +619,7 @@ The House of the Seal focuses on administration, law, theology, and governance�
 
 ### House of the Craft
 
-The House of the Craft is the most diverse and internally varied, encompassing anyone whose skills serve the empire but don’t fit neatly into military command or civil administration. The unifying principle is practical application—these are people who make things, solve problems, and get specialized work done.
+The House of the Craft is the most diverse and internally varied, encompassing anyone whose skills serve the empire but don’t fit neatly into military command or civil administration. The unifying principle is practical application — these are people who make things, solve problems, and get specialized work done.
 
 **Core Studies (varies by specialization):** Engineering and architecture, medicine and surgery, alchemy and herbalism, cartography and surveying, languages and linguistics, codes and ciphers, arcane theory and spellcraft, artifice and magical item creation, trade and economics, arts and propaganda.
 
@@ -635,11 +635,11 @@ For character creation purposes, the thirteen base classes align with the houses
 
 **House of the Sword:** Barbarian, Fighter, Monk. Paladins may choose Sword as primary if their concept is a warrior shaped by faith rather than a religious figure trained for war.
 
-**House of the Seal:** Paladins who see themselves foremost as religious champions—think warrior-clergy in the Byzantine mold—may take Seal as primary with heavy Sword cross-training. Clerics with a doctrinal or pastoral focus may also justify Seal primary.
+**House of the Seal:** Paladins who see themselves foremost as religious champions — think warrior-clergy in the Byzantine mold — may take Seal as primary with heavy Sword cross-training. Clerics with a doctrinal or pastoral focus may also justify Seal primary.
 
 **House of the Craft:** Artificer, Bard (arts and propaganda), Cleric (divine magic, with substantial Seal cross-training in theology), Druid (natural philosophy), Ranger (wilderness operations), Rogue (espionage, codes, intelligence), Sorcerer, Warlock, Wizard.
 
-The imbalance toward Craft is intentional—it is explicitly the catch-all house for specialists, and magic is institutionally treated as a specialized skill rather than a separate estate. Players should choose primary house based on character concept, with the paladin placement left deliberately flexible.
+The imbalance toward Craft is intentional — it is explicitly the catch-all house for specialists, and magic is institutionally treated as a specialized skill rather than a separate estate. Players should choose primary house based on character concept, with the paladin placement left deliberately flexible.
 
 ## Cross-Training and Curriculum Structure
 
@@ -651,7 +651,7 @@ The academy’s philosophy emphasizes cooperation between houses. The empire nee
 - An intelligence officer might be Craft primary (espionage, languages, codes) with courses in both Seal (diplomacy, law) and Sword (military intelligence).
 - A military chaplain studies Seal (theology, law) with Sword coursework (military hierarchy, morale, battlefield ministry).
 
-This flexibility allows the academy to train highly specialized professionals while ensuring they can work effectively across disciplines—crucial for serving a complex empire.
+This flexibility allows the academy to train highly specialized professionals while ensuring they can work effectively across disciplines — crucial for serving a complex empire.
 
 ## Dormitories and Social Structure
 
@@ -671,7 +671,7 @@ The standard academy program lasts four years. Students typically enter around a
 
 **Third Year:** Advanced specialized study, deeper cross-training, more complex projects and simulations, beginning of practical application.
 
-**Fourth Year (Final Year):** Students complete supervised field exercises—real-world assignments that prove they can apply their training outside the safety of the academy. These might include serving with imperial legions on patrol, assisting magistrates in provincial courts, conducting surveys or diplomatic missions, solving problems for local authorities, or taking on adventuring contracts that serve imperial interests.
+**Fourth Year (Final Year):** Students complete supervised field exercises — real-world assignments that prove they can apply their training outside the safety of the academy. These might include serving with imperial legions on patrol, assisting magistrates in provincial courts, conducting surveys or diplomatic missions, solving problems for local authorities, or taking on adventuring contracts that serve imperial interests.
 
 Field exercises serve multiple purposes: they test competence under real conditions, build confidence and practical skills, create opportunities for students to distinguish themselves, and provide the empire with useful work from advanced students at minimal cost. Students often work in small mixed-house teams during these exercises, mirroring how they might operate in actual imperial service.
 
@@ -699,39 +699,39 @@ The capital academy maintains one tradition no student is ever told about: the P
 
 ## Who They Are
 
-The player characters are final-year students at the Imperial Academy of the Lupine Throne, currently completing their field exercises. They come from diverse backgrounds—some from loyal imperial territories, others from breakaway regions or neutral ground. Some earned their admission through the lottery, others through family influence or political arrangement. They may have different primary houses and specializations, but their time together at the academy—sharing dormitories, working on cross-training projects, competing in house competitions—has forged them into a cohesive unit.
+The player characters are final-year students at the Imperial Academy of the Lupine Throne, currently completing their field exercises. They come from diverse backgrounds — some from loyal imperial territories, others from breakaway regions or neutral ground. Some earned their admission through the lottery, others through family influence or political arrangement. They may have different primary houses and specializations, but their time together at the academy — sharing dormitories, working on cross-training projects, competing in house competitions — has forged them into a cohesive unit.
 
-They are competent but not yet famous—skilled enough to handle dangerous situations but still learning, still making mistakes, still figuring out who they are and what they believe. They represent the future Emperor Qilvayas is trying to build: capable, educated individuals who understand both the ideals of the empire and the messy reality of the fractured world.
+They are competent but not yet famous — skilled enough to handle dangerous situations but still learning, still making mistakes, still figuring out who they are and what they believe. They represent the future Emperor Qilvayas is trying to build: capable, educated individuals who understand both the ideals of the empire and the messy reality of the fractured world.
 
 ## Their Plans
 
-The party has decided that after graduation, they will form their own adventuring company—a mercenary band operating under the principle that “a job is a job and coin is coin.” This represents a choice to be masters of their own fate rather than following predetermined paths into imperial bureaucracy, military service, or guild positions.
+The party has decided that after graduation, they will form their own adventuring company — a mercenary band operating under the principle that “a job is a job and coin is coin.” This represents a choice to be masters of their own fate rather than following predetermined paths into imperial bureaucracy, military service, or guild positions.
 
-Their academy training makes them uniquely qualified for this work. They can handle diverse challenges—combat, negotiation, investigation, problem-solving—and their cross-training means they work together seamlessly despite different specializations. In the chaos of the fractured empire, there’s always work for capable people willing to take on dangerous jobs that “decent folk may not wish to risk themselves to do.”
+Their academy training makes them uniquely qualified for this work. They can handle diverse challenges — combat, negotiation, investigation, problem-solving — and their cross-training means they work together seamlessly despite different specializations. In the chaos of the fractured empire, there’s always work for capable people willing to take on dangerous jobs that “decent folk may not wish to risk themselves to do.”
 
 They might rationalize this as serving imperial interests (protecting imperial citizens, maintaining order, gathering intelligence) or simply be honest that they prefer freedom and profit over institutional service. Either way, they’re planning to strike out independently once they complete their final exercises and officially graduate.
 
-But fate—or the gods, or something else—has other plans for them.
+But fate — or the gods, or something else — has other plans for them.
 
 # The Inciting Incident: The Shared Vision
 
 ## The Vision Itself
 
-After completing their latest field exercise and celebrating with the profits from their client, the party retires to their inn for the night. During sleep, each character receives the same vision—or perhaps nightmare:
+After completing their latest field exercise and celebrating with the profits from their client, the party retires to their inn for the night. During sleep, each character receives the same vision — or perhaps nightmare:
 
-Dark storm clouds gather over the imperial capital. The city below burns with infernal flames—not natural fire, but something wrong, something that shouldn’t exist in the mortal world. The characters are present in the vision but powerless, unable to move or speak, only able to witness in horror.
+Dark storm clouds gather over the imperial capital. The city below burns with infernal flames — not natural fire, but something wrong, something that shouldn’t exist in the mortal world. The characters are present in the vision but powerless, unable to move or speak, only able to witness in horror.
 
-Their gaze is drawn upward to the storm clouds. Behind the roiling darkness lurks an immense shadow—not just large, but vast, world-shaking, wrong. It emanates a roar that resonates in their bones, that speaks of ancient power and terrible purpose. The characters cannot scream, cannot flee, cannot do anything but watch until the vision fades to blackness and they awaken drenched in sweat.
+Their gaze is drawn upward to the storm clouds. Behind the roiling darkness lurks an immense shadow — not just large, but vast, world-shaking, wrong. It emanates a roar that resonates in their bones, that speaks of ancient power and terrible purpose. The characters cannot scream, cannot flee, cannot do anything but watch until the vision fades to blackness and they awaken drenched in sweat.
 
 When they compare notes, they realize with growing unease that they all experienced exactly the same vision, down to the smallest details. This is no ordinary dream.
 
 ## The Response
 
-Despite their academy training, the party has no frame of reference for this. Shared prophetic visions aren’t part of the curriculum. But they know someone who might have answers: quiet word among academy scholars and capital contacts speaks of a Seeress in the city—a woman named Vaelindra, once of the Church, now independent—who is consulted discreetly by people of consequence when omens defy explanation. She is not advertised; she is referred. Finding her is the party’s first step.
+Despite their academy training, the party has no frame of reference for this. Shared prophetic visions aren’t part of the curriculum. But they know someone who might have answers: quiet word among academy scholars and capital contacts speaks of a Seeress in the city — a woman named Vaelindra, once of the Church, now independent — who is consulted discreetly by people of consequence when omens defy explanation. She is not advertised; she is referred. Finding her is the party’s first step.
 
 The vision has marked them. Whether they want it or not, they are now connected to something larger than their plans for an independent mercenary company. The capital calls, and with it, their destiny.
 
-They must travel to the capital—back to the heart of the empire they thought they’d left behind—and seek answers from the Seeress. What they learn there will determine not just their own futures, but perhaps the fate of the Empire of Zhuvedus itself.
+They must travel to the capital — back to the heart of the empire they thought they’d left behind — and seek answers from the Seeress. What they learn there will determine not just their own futures, but perhaps the fate of the Empire of Zhuvedus itself.
 
 # Campaign Themes and Potential Directions
 
@@ -753,17 +753,17 @@ The Qilvayas Symphony explores several interconnected themes:
 
 The shadow creature in the vision can be developed in several directions, depending on the tone and focus of the campaign:
 
-**The Empire’s Dark Reflection:** The shadow represents what the empire becomes if Qilvayas’s methods grow too brutal. The infernal flames are purges and forced compliance. The vision is a warning about the cost of restoration—showing the party what they might need to prevent or oppose.
+**The Empire’s Dark Reflection:** The shadow represents what the empire becomes if Qilvayas’s methods grow too brutal. The infernal flames are purges and forced compliance. The vision is a warning about the cost of restoration — showing the party what they might need to prevent or oppose.
 
 **Ancient Power Unleashed:** The Lupine Throne or some imperial regalia contains a bound entity or dark pact from the empire’s founding. Qilvayas, desperate to save the empire, might reach for this power without understanding the consequences. The vision shows the result of that choice.
 
-**External Existential Threat:** The shadow is real, literal, and coming—an ancient enemy, a planar incursion, or something awakening. Only a unified empire has any chance of surviving, justifying Qilvayas’s urgency but also forcing terrible choices about how quickly reunification must happen.
+**External Existential Threat:** The shadow is real, literal, and coming — an ancient enemy, a planar incursion, or something awakening. Only a unified empire has any chance of surviving, justifying Qilvayas’s urgency but also forcing terrible choices about how quickly reunification must happen.
 
-**Theological Crisis:** The shadow represents corruption spreading through the faith of the Lupine Matron—heresy, false prophets, or something masquerading as divine will. The vision warns of spiritual catastrophe that could destroy the empire from within.
+**Theological Crisis:** The shadow represents corruption spreading through the faith of the Lupine Matron — heresy, false prophets, or something masquerading as divine will. The vision warns of spiritual catastrophe that could destroy the empire from within.
 
 **Combination or Misdirection:** The truth might combine elements from multiple interpretations, or the vision itself might be incomplete or intentionally misleading, sent by forces with their own agendas.
 
-Working answer for DM reference: the shadow is a fusion of the personal and the impersonal—Threnvos’s dying essence bound to the force unleashed by Zhuvedus’s broken oath, fed since by every betrayal the fractured empire has produced. See The Founding Myth: Zhuvedus and the Broken Oath for the full account. This should not be revealed to players outright; let them arrive at pieces of it through Vaelindra, Nyreeza’s trail, and whatever they eventually find beneath the capital.
+Working answer for DM reference: the shadow is a fusion of the personal and the impersonal — Threnvos’s dying essence bound to the force unleashed by Zhuvedus’s broken oath, fed since by every betrayal the fractured empire has produced. See The Founding Myth: Zhuvedus and the Broken Oath for the full account. This should not be revealed to players outright; let them arrive at pieces of it through Vaelindra, Nyreeza’s trail, and whatever they eventually find beneath the capital.
 
 ## Potential Campaign Arcs
 
@@ -777,7 +777,7 @@ The campaign can develop in various directions based on player choices and inter
 
 **Preventing Catastrophe:** If the shadow represents an actual external or supernatural threat, the party might focus on investigating and preventing the catastrophe shown in their vision, regardless of political implications.
 
-The campaign’s tone allows for moral complexity—there may be no clear “right” answer to whether the empire should be restored, what methods are justified, or even whether the vision’s warning can or should be heeded. The party will need to make difficult choices with imperfect information, and their decisions will have real consequences for the empire and its people.
+The campaign’s tone allows for moral complexity — there may be no clear “right” answer to whether the empire should be restored, what methods are justified, or even whether the vision’s warning can or should be heeded. The party will need to make difficult choices with imperfect information, and their decisions will have real consequences for the empire and its people.
 
 # Key NPCs and Factions
 
@@ -787,27 +787,27 @@ The campaign’s tone allows for moral complexity—there may be no clear “rig
 
 ### Who She Is
 
-Vaelindra is an elderly human woman—late seventies, perhaps older, difficult to tell—who has lived in the capital long enough to have watched three rulers come and go, including Empress Nyreeza. She was not always the Seeress. She arrived in the capital decades ago as a minor functionary in the Church of the Lupine Matron, bright and ambitious, until her first genuine vision destroyed her career. What she saw conflicted with Church interests; the hierarchy quietly sidelined her, and she has operated independently ever since—not quite official, not quite heretical, merely tolerated. Powerful people consult her quietly and would never admit it publicly.
+Vaelindra is an elderly human woman — late seventies, perhaps older, difficult to tell — who has lived in the capital long enough to have watched three rulers come and go, including Empress Nyreeza. She was not always the Seeress. She arrived in the capital decades ago as a minor functionary in the Church of the Lupine Matron, bright and ambitious, until her first genuine vision destroyed her career. What she saw conflicted with Church interests; the hierarchy quietly sidelined her, and she has operated independently ever since — not quite official, not quite heretical, merely tolerated. Powerful people consult her quietly and would never admit it publicly.
 
 ### Presentation and Manner
 
-She is deliberately unmystical. No dramatic robes, no incense-filled chamber of mystery. She lives in a comfortable but modest apartment in a middle district of the capital, keeps meticulous written records of every vision she has ever interpreted, and receives visitors like a retired scholar receiving students. She is sharp, a little sardonic, and asks more questions than she answers. She has seen enough prophecy go wrong—interpreted incorrectly, weaponized politically, fulfilled in ways nobody anticipated—that she is deeply cautious about telling people what their visions “mean.”
+She is deliberately unmystical. No dramatic robes, no incense-filled chamber of mystery. She lives in a comfortable but modest apartment in a middle district of the capital, keeps meticulous written records of every vision she has ever interpreted, and receives visitors like a retired scholar receiving students. She is sharp, a little sardonic, and asks more questions than she answers. She has seen enough prophecy go wrong — interpreted incorrectly, weaponized politically, fulfilled in ways nobody anticipated — that she is deeply cautious about telling people what their visions “mean.”
 
 ### Her Gift
 
-Her gift is genuine. She receives true visions from time to time, and she has an uncanny ability to recognize patterns across different people’s prophetic experiences. When the party describes their shared vision, she will recognize elements she has encountered before—not the same vision, but related imagery, similar symbolic language. This unsettles her deeply, because it suggests something much larger than a personal omen: something already in motion.
+Her gift is genuine. She receives true visions from time to time, and she has an uncanny ability to recognize patterns across different people’s prophetic experiences. When the party describes their shared vision, she will recognize elements she has encountered before — not the same vision, but related imagery, similar symbolic language. This unsettles her deeply, because it suggests something much larger than a personal omen: something already in motion.
 
 ### What She Tells the Party
 
-She does not interpret the vision so much as confirm its legitimacy and share what she knows of its imagery. The shadow, the infernal fire, the burning capital—she has seen fragments of this before. She can tell the party the vision is real and connected to events already unfolding. But she pushes back firmly on the assumption that it is a prophecy of inevitable doom. In her experience, shared visions do not show what will happen—they show what could happen if nothing changes. This distinction preserves the party’s agency: they are not spectators to a predetermined script but actors who may yet change the outcome.
+She does not interpret the vision so much as confirm its legitimacy and share what she knows of its imagery. The shadow, the infernal fire, the burning capital — she has seen fragments of this before. She can tell the party the vision is real and connected to events already unfolding. But she pushes back firmly on the assumption that it is a prophecy of inevitable doom. In her experience, shared visions do not show what will happen — they show what could happen if nothing changes. This distinction preserves the party’s agency: they are not spectators to a predetermined script but actors who may yet change the outcome.
 
 ### Relationship with the Throne
 
-Her most complicated entanglement is with the imperial family. Empress Nyreeza consulted her regularly, and Vaelindra was one of the last people to see the Empress before her disappearance. She has never spoken of that final meeting to anyone. Emperor Qilvayas knows she exists and knows his mother trusted her, but he has never sought her out—possibly because he fears what she might tell him.
+Her most complicated entanglement is with the imperial family. Empress Nyreeza consulted her regularly, and Vaelindra was one of the last people to see the Empress before her disappearance. She has never spoken of that final meeting to anyone. Emperor Qilvayas knows she exists and knows his mother trusted her, but he has never sought her out — possibly because he fears what she might tell him.
 
 ### Her Secret (DM Only)
 
-Vaelindra’s career-ending vision, decades ago, showed her fragments of the empire’s true founding account—Zhuvedus, the broken oath, and the rival he destroyed to seize it (see The Founding Myth: Zhuvedus and the Broken Oath). That is precisely what the Church could not tolerate, and precisely why she was sidelined rather than elevated. She and Empress Nyreeza discussed this in their final meeting, and Vaelindra believes Nyreeza went looking for confirmation, or for the site itself, shortly before she vanished. Vaelindra also believes that Qilvayas’s restoration project, however genuinely motivated, risks repeating his ancestor’s exact error—that in his urgency to reunify the empire through law and order, he may yet break faith the way Zhuvedus once did, and accelerate the very conditions that lead to the burning capital of the vision. She has not decided what to do with this knowledge, or whether the party can be trusted with it. This revelation should be deployed at a dramatically appropriate moment mid-campaign, once the party has earned her trust—or forced her hand.
+Vaelindra’s career-ending vision, decades ago, showed her fragments of the empire’s true founding account — Zhuvedus, the broken oath, and the rival he destroyed to seize it (see The Founding Myth: Zhuvedus and the Broken Oath). That is precisely what the Church could not tolerate, and precisely why she was sidelined rather than elevated. She and Empress Nyreeza discussed this in their final meeting, and Vaelindra believes Nyreeza went looking for confirmation, or for the site itself, shortly before she vanished. Vaelindra also believes that Qilvayas’s restoration project, however genuinely motivated, risks repeating his ancestor’s exact error — that in his urgency to reunify the empire through law and order, he may yet break faith the way Zhuvedus once did, and accelerate the very conditions that lead to the burning capital of the vision. She has not decided what to do with this knowledge, or whether the party can be trusted with it. This revelation should be deployed at a dramatically appropriate moment mid-campaign, once the party has earned her trust — or forced her hand.
 
 ### Resolved Design Notes
 
@@ -949,9 +949,9 @@ This is not where Semya’s people from Halvenne ended up, if the party helped r
 
 The docks and river trade quarter, where goods — and a fair amount that isn’t quite goods — move in and out of the capital. Less prestigious than the Exchange, less regulated, and considerably more interesting to anyone investigating something the empire’s official record doesn’t want to explain, including, plausibly, wherever Odric Hale bought his dead Roads Commission seal.
 
-None of this is exhaustive, and it isn’t meant to be — Aenodira should grow the way real capitals do, one specific street or shopfront named the moment a scene actually needs it, built outward from this framework rather than pre-mapped down to the alley. What’s fixed for now: the three rings and their walls, the two hills of Highcourt and the Sanctum, Coppergate’s location relative to the Academy, and the Old Forum as the confirmed location above the binding site **(DM only)** .
+None of this is exhaustive, and it isn’t meant to be — Aenodira should grow the way real capitals do, one specific street or shopfront named the moment a scene actually needs it, built outward from this framework rather than pre-mapped down to the alley. What’s fixed for now: the three rings and their walls, the two hills of Highcourt and the Sanctum, Coppergate’s location relative to the Academy, and the Old Forum as the confirmed location above the binding site **(DM only).**
 
-Whatever lies beneath the capital—the likely site of the broken oath and Threnvos’s death (see The Founding Myth: Zhuvedus and the Broken Oath)—should be developed alongside the capital itself, since the two are now the same design problem.
+Whatever lies beneath the capital — the likely site of the broken oath and Threnvos’s death (see The Founding Myth: Zhuvedus and the Broken Oath) — should be developed alongside the capital itself, since the two are now the same design problem.
 
 # Plot Hooks and Adventure Seeds
 

@@ -19,9 +19,9 @@ The party begins as final-year students at the Imperial Academy of the Lupine Th
 # Character Creation Rules
 
 - **Level:** 3rd. This puts subclasses online for every class and lets the party absorb the Session One climax without a tuned kid-gloves encounter.
-- **Ability Scores:** 27-point buy or standard array (15, 14, 13, 12, 10, 8), DM's preference. Avoid rolled stats for this campaign — the political and social pillars punish a party with a dump-stat face.
+- **Ability Scores:** 27-point buy or standard array (15, 14, 13, 12, 10, 8), DM’s preference. Avoid rolled stats for this campaign — the political and social pillars punish a party with a dump-stat face.
 - **Hit Points:** Maximum at 1st level, average (rounded up) at 2nd and 3rd.
-- **Races and Sources:** DM's discretion. Note that Drow carry imperial resonance in this setting — the Emperor himself is Drow — so a Drow PC is a statement, not just a stat line. Worth a conversation if anyone picks one.
+- **Races and Sources:** DM’s discretion. Note that Drow carry imperial resonance in this setting — the Emperor himself is Drow — so a Drow PC is a statement, not just a stat line. Worth a conversation if anyone picks one.
 - **Equipment:** Standard class and background starting equipment, plus the Academy Field Kit: an academy uniform and house insignia, a student signet (functions as identification in imperial-loyal territory), a writing kit, and a 25 gp field stipend remaining from the exercise advance.
 - **Advancement:** Milestone leveling recommended. Suggested pace: 4th level after the meeting with the Seeress concludes (early Session Three); 5th at the close of the Proving (end of Session Four); 6th at the Second Seal (end of Session Six). XP totals are listed in the session documents for tables that prefer XP.
 

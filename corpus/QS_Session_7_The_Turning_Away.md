@@ -147,7 +147,7 @@ Record outcomes in the Branch Ledger.
 
 ***Only When Unobserved.*** The Turned can move and attack only while no creature is looking directly at it. A creature that spends its action watching one Turned (declared openly) freezes that Turned entirely for the duration. This is the encounter’s core tension: attention costs actions, and there are more of them than there are of you.
 
-***Witnessed.*** If a creature holds its attention on a single Turned for one full round AND describes aloud what it sees — naming the Turned as a person who stood here and did nothing — the Turned turns to face the speaker, is laid to rest, and vanishes. No check. No damage. This is the intended solution and the module's whole thesis.
+***Witnessed.*** If a creature holds its attention on a single Turned for one full round AND describes aloud what it sees — naming the Turned as a person who stood here and did nothing — the Turned turns to face the speaker, is laid to rest, and vanishes. No check. No damage. This is the intended solution and the module’s whole thesis.
 
 ***The Colder Room.*** Each Turned destroyed by damage rather than witnessed lowers the temperature of the Hall by a degree the party can feel, and the DM should say so, every time, without explanation.
 

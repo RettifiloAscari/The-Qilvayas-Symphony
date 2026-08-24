@@ -138,9 +138,9 @@ cA.push(P("The party begins as final-year students at the Imperial Academy of th
 
 cA.push(H1("Character Creation Rules"));
 cA.push(BUL("Level:", "3rd. This puts subclasses online for every class and lets the party absorb the Session One climax without a tuned kid-gloves encounter."));
-cA.push(BUL("Ability Scores:", "27-point buy or standard array (15, 14, 13, 12, 10, 8), DM's preference. Avoid rolled stats for this campaign \u2014 the political and social pillars punish a party with a dump-stat face."));
+cA.push(BUL("Ability Scores:", "27-point buy or standard array (15, 14, 13, 12, 10, 8), DM\u2019s preference. Avoid rolled stats for this campaign \u2014 the political and social pillars punish a party with a dump-stat face."));
 cA.push(BUL("Hit Points:", "Maximum at 1st level, average (rounded up) at 2nd and 3rd."));
-cA.push(BUL("Races and Sources:", "DM's discretion. Note that Drow carry imperial resonance in this setting \u2014 the Emperor himself is Drow \u2014 so a Drow PC is a statement, not just a stat line. Worth a conversation if anyone picks one."));
+cA.push(BUL("Races and Sources:", "DM\u2019s discretion. Note that Drow carry imperial resonance in this setting \u2014 the Emperor himself is Drow \u2014 so a Drow PC is a statement, not just a stat line. Worth a conversation if anyone picks one."));
 cA.push(BUL("Equipment:", "Standard class and background starting equipment, plus the Academy Field Kit: an academy uniform and house insignia, a student signet (functions as identification in imperial-loyal territory), a writing kit, and a 25 gp field stipend remaining from the exercise advance."));
 cA.push(BUL("Advancement:", "Milestone leveling recommended. Suggested pace: 4th level after the meeting with the Seeress concludes (early Session Three); 5th at the close of the Proving (end of Session Four); 6th at the Second Seal (end of Session Six). XP totals are listed in the session documents for tables that prefer XP."));
 

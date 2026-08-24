@@ -6,7 +6,7 @@
 
 **The Qilvayas Symphony**
 
-*A Player's Guide to the Empire*
+*A Player’s Guide to the Empire*
 
 ~
 
@@ -20,7 +20,7 @@ This is a companion for players, not the DM’s working sourcebook. It collects 
 
 # Campaign Overview
 
-The Qilvayas Symphony is a story of imperial ambition, prophetic omens, and moral complexity, set against the backdrop of a crumbling empire. Drawing on the tensions of real history—particularly emperors who sought to restore a fading glory—this is a world exploring legacy, power, the cost of idealism, and the gap between the dream of unity and the reality of a fractured world.
+The Qilvayas Symphony is a story of imperial ambition, prophetic omens, and moral complexity, set against the backdrop of a crumbling empire. Drawing on the tensions of real history — particularly emperors who sought to restore a fading glory — this is a world exploring legacy, power, the cost of idealism, and the gap between the dream of unity and the reality of a fractured world.
 
 Player characters are final-year students at the prestigious Imperial Academy of the Lupine Throne, completing their field exercises and planning their futures as independent adventurers. What happens next is for the table to discover.
 
@@ -28,13 +28,13 @@ Player characters are final-year students at the prestigious Imperial Academy of
 
 ## The Height of Empire
 
-At its zenith, the Empire of Zhuvedus spanned nearly an entire continent. United under the Lupine Throne and guided by the principles of the Lupine Matron, the empire represented civilization, law, and order. The Golden Tablets—sacred legal codes established by the empire’s forefathers—formed the foundation of Zhuvedian governance and culture. Trade flourished along imperial roads, justice was administered by trained magistrates, and the imperial legions defended the borders against external threats.
+At its zenith, the Empire of Zhuvedus spanned nearly an entire continent. United under the Lupine Throne and guided by the principles of the Lupine Matron, the empire represented civilization, law, and order. The Golden Tablets — sacred legal codes established by the empire’s forefathers — formed the foundation of Zhuvedian governance and culture. Trade flourished along imperial roads, justice was administered by trained magistrates, and the imperial legions defended the borders against external threats.
 
-The imperial capital, Aenodira, seat of the Lupine Throne, was the beating heart of this civilization—a center of learning, culture, and power that drew the ambitious and talented from across the realm.
+The imperial capital, Aenodira, seat of the Lupine Throne, was the beating heart of this civilization — a center of learning, culture, and power that drew the ambitious and talented from across the realm.
 
 ## Two Centuries of Decline
 
-The empire’s decline was not sudden but gradual—a slow erosion over two hundred years. Internal strife between noble houses weakened central authority. Corruption spread through the bureaucracy as distant provinces found ways to avoid imperial taxation and oversight. Military expeditions to reclaim lost territories or suppress rebellions failed, draining the treasury and damaging the legions’ reputation. External powers, sensing weakness, pressed against the borders and even seized imperial territory.
+The empire’s decline was not sudden but gradual — a slow erosion over two hundred years. Internal strife between noble houses weakened central authority. Corruption spread through the bureaucracy as distant provinces found ways to avoid imperial taxation and oversight. Military expeditions to reclaim lost territories or suppress rebellions failed, draining the treasury and damaging the legions’ reputation. External powers, sensing weakness, pressed against the borders and even seized imperial territory.
 
 Most devastatingly, the empire fractured. What had been provinces became semi-independent “nations,” each ruled by ambitious warlords, merchant councils, or noble houses who once swore fealty to the throne but now pursue their own interests. Some maintain the fiction of imperial loyalty while ignoring imperial law. Others have openly declared independence. Still others war among themselves.
 
@@ -42,9 +42,9 @@ The imperial capital remains, and the Lupine Throne is still occupied, but the r
 
 # The Empire Today
 
-The empire today is a shadow of its former self, yet it persists. Aenodira and its surrounding territories remain under direct imperial control, and several regions still recognize the Lupine Throne’s authority—some genuinely, others opportunistically.
+The empire today is a shadow of its former self, yet it persists. Aenodira and its surrounding territories remain under direct imperial control, and several regions still recognize the Lupine Throne’s authority — some genuinely, others opportunistically.
 
-**Border Lords and Regional Powers:** Former provincial governors, military commanders, and noble houses now rule territories as de facto independent states. Their relationship with the throne varies—some maintain nominal loyalty while ignoring imperial edicts, others have declared independence outright, and a few actively work against reunification.
+**Border Lords and Regional Powers:** Former provincial governors, military commanders, and noble houses now rule territories as de facto independent states. Their relationship with the throne varies — some maintain nominal loyalty while ignoring imperial edicts, others have declared independence outright, and a few actively work against reunification.
 
 **Merchant Republics:** Wealthy trading cities that broke away to avoid imperial taxation, now governed by councils of merchants and guild masters. They prefer the current disorder, which lets them play different powers against each other for commercial advantage.
 
@@ -78,13 +78,13 @@ The borders are fluid and contested. Alliances shift, minor wars flare and sputt
 
 # The Lupine Matron and the Imperial Faith
 
-The Lupine Matron is the divine patron of the Zhuvedian Empire, represented as a great wolf—wise, protective, and fierce. According to Zhuvedian theology, the Lupine Matron gave the empire’s people their core virtues: loyalty, honor, wisdom, and the strength to endure hardship. The phrase “We are the Kin of Great Timberwolf” references this divine connection and appears throughout imperial prayer and ceremony.
+The Lupine Matron is the divine patron of the Zhuvedian Empire, represented as a great wolf — wise, protective, and fierce. According to Zhuvedian theology, the Lupine Matron gave the empire’s people their core virtues: loyalty, honor, wisdom, and the strength to endure hardship. The phrase “We are the Kin of Great Timberwolf” references this divine connection and appears throughout imperial prayer and ceremony.
 
 The Matron’s worship long predates the empire that now venerates her. Zhuvedian doctrine holds that she has guided many champions and many peoples across a span of time far longer than any dynasty’s recorded history. Whether Zhuvedus, the empire’s founder, ever attained true divinity himself is a matter of genuine and ongoing theological dispute:
 
-**Church Doctrine:** The Church of the Lupine Matron teaches that Zhuvedus was a mortal hero, chosen and favored by the Matron but never divine himself—virtuous in his triumphs, flawed in his failures, and mortal in his death. To the Church, only the Matron is properly divine.
+**Church Doctrine:** The Church of the Lupine Matron teaches that Zhuvedus was a mortal hero, chosen and favored by the Matron but never divine himself — virtuous in his triumphs, flawed in his failures, and mortal in his death. To the Church, only the Matron is properly divine.
 
-**The Imperial Cult:** A smaller, older priesthood tied to the imperial household teaches otherwise—that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne’s claim to hereditary legitimacy.
+**The Imperial Cult:** A smaller, older priesthood tied to the imperial household teaches otherwise — that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne’s claim to hereditary legitimacy.
 
 The capital Church is governed by the Matriarchate — Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira — advised by the Synod of the Grey, a council of senior clergy. Beneath them: the seminaries of the Sanctum, the parish structure reaching into every loyalist district, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole legal authority to receive, examine, and rule on visions, portents, and claims of divine contact. Independent interpreters are known to exist, operating quietly outside the Office’s sanction — tolerated uneasily, never fully accepted, found (if at all) through networks rather than any public sign.
 
@@ -106,15 +106,15 @@ Every educated Zhuvedian knows the shape of magic in the empire, even if they ca
 
 **The Wolf-Shape:** Church doctrine holds lycanthropy to be profanation — the Matron’s image stolen by a curse — and wolf-trials are a recognized (and recognizably abused) proceeding. Older folk belief holds that sometimes the shape is her mark, and that the difference shows in what the changed one does under the moon. Do not repeat this near clergy.
 
-**The Packlaw:** Church teaching holds that the Matron leads her pack by wisdom and endurance, not raw strength — and that a pack's survival runs through its mothers as often as its sires. It's why nobody in the empire remarks on a woman holding a duchy, a temple, or an army: settled authority answers to this doctrine as a matter of course. Authority still being fought for tends to skew male instead — a pack doesn't easily hand its trust to what hasn't yet proven it belongs.
+**The Packlaw:** Church teaching holds that the Matron leads her pack by wisdom and endurance, not raw strength — and that a pack’s survival runs through its mothers as often as its sires. It’s why nobody in the empire remarks on a woman holding a duchy, a temple, or an army: settled authority answers to this doctrine as a matter of course. Authority still being fought for tends to skew male instead — a pack doesn’t easily hand its trust to what hasn’t yet proven it belongs.
 
-**Marriage and the Denmother's Choice:** A wedding vow is a real, binding oath, sworn before a Church witness or, in Tarnovar, at the standing stones — which means an unrepaired betrayal of it is taken very seriously indeed. Divorce exists, but it's a formal Release, not just a parting of ways. Titles and thrones don't simply pass to the eldest child: a ruling parent names their heir openly, and can change that naming during their own lifetime. It makes succession a live question in more than one court right now.
+**Marriage and the Denmother’s Choice:** A wedding vow is a real, binding oath, sworn before a Church witness or, in Tarnovar, at the standing stones — which means an unrepaired betrayal of it is taken very seriously indeed. Divorce exists, but it’s a formal Release, not just a parting of ways. Titles and thrones don’t simply pass to the eldest child: a ruling parent names their heir openly, and can change that naming during their own lifetime. It makes succession a live question in more than one court right now.
 
-**Common and Old Imperial:** Nobody is born speaking Old Imperial anymore — it survives only as the empire's administrative and liturgical language, the tongue of the Golden Tablets, the Church's rites, and Academy instruction, learned rather than inherited. Everyone, everywhere, speaks Common as their native tongue; what separates a magistrate's clerk from a farmhand is schooling, not birthplace. Ardven's cheap, subsidized literacy is a point of national pride there for exactly this reason — it's rarer, and more valuable, in the empire than most Academy students stop to notice.
+**Common and Old Imperial:** Nobody is born speaking Old Imperial anymore — it survives only as the empire’s administrative and liturgical language, the tongue of the Golden Tablets, the Church’s rites, and Academy instruction, learned rather than inherited. Everyone, everywhere, speaks Common as their native tongue; what separates a magistrate’s clerk from a farmhand is schooling, not birthplace. Ardven’s cheap, subsidized literacy is a point of national pride there for exactly this reason — it’s rarer, and more valuable, in the empire than most Academy students stop to notice.
 
 **Wildshape:** Willed shape is not cursed shape — the wolf-trial has no claim on a druid’s wolf-form, and doctrine says so plainly. Folk opinion goes further: villages that would never touch a stray wolf will touch a druid who’s just changed back, for luck. The Office of Omens, naturally, still likes to know who can do it.
 
-**Physic and Healing:** Divine healing runs through the Church's licensed Sanction — reliable, genuinely magical, and priced accordingly. Ordinary medicine is a guild trade like any other: Academy-trained physicians and chirurgeons, expensive and mostly urban. Everyone else relies on whatever herbwife, bonesetter, or midwife the village has always relied on — perfectly legal, wildly variable, and the only medicine most of the empire will ever actually see.
+**Physic and Healing:** Divine healing runs through the Church’s licensed Sanction — reliable, genuinely magical, and priced accordingly. Ordinary medicine is a guild trade like any other: Academy-trained physicians and chirurgeons, expensive and mostly urban. Everyone else relies on whatever herbwife, bonesetter, or midwife the village has always relied on — perfectly legal, wildly variable, and the only medicine most of the empire will ever actually see.
 
 **The Wolf-Price:** Self-defense is a real legal defense — report it to a magistrate within three days and the law is satisfied. The law was never the whole of it, though. Older custom says a dead wolf still leaves a debt, paid in coin or labor to whoever keeps the local shrine, guilt or no guilt. Pay it promptly and the story that follows you is a good one.
 
@@ -172,19 +172,19 @@ Every educated Zhuvedian knows the shape of magic in the empire, even if they ca
 
 ## The Young Emperor
 
-Qilvayas is a 110-year-old Drow—young by the standards of his long-lived race, but old enough to rule without a regent. He ascended to the Lupine Throne following the mysterious disappearance of his mother, Empress Nyreeza. Raised within the imperial palace, he received the finest education available in history, law, military strategy, theology, and statecraft, and studied the empire’s decline intimately.
+Qilvayas is a 110-year-old Drow — young by the standards of his long-lived race, but old enough to rule without a regent. He ascended to the Lupine Throne following the mysterious disappearance of his mother, Empress Nyreeza. Raised within the imperial palace, he received the finest education available in history, law, military strategy, theology, and statecraft, and studied the empire’s decline intimately.
 
 His youth gives him energy and idealism, but also makes him somewhat untested. He has never commanded armies in the field, never navigated the brutal realities of imperial politics at the highest level, and never faced the compromises that restoring an empire might demand. His vision is clear, his ambition genuine, and his belief in the righteousness of his cause unshakeable.
 
 ## The Man Behind the Crown
 
-In person, Qilvayas is precise, courteous, and quietly relentless. He speaks softly and in the cadences of law—clauses, provisos, careful definitions—and he never raises his voice. He works brutal hours and sleeps little even by Drow standards. His court has learned to read three habits: he walks the Long Course alone at dawn twice a week; he answers one petition from a commoner personally each day, chosen at random from the pile (the Daily Draw); and he has never, in three years, entered his mother’s study. It is cleaned weekly, by his order. Nothing in it may be moved.
+In person, Qilvayas is precise, courteous, and quietly relentless. He speaks softly and in the cadences of law — clauses, provisos, careful definitions — and he never raises his voice. He works brutal hours and sleeps little even by Drow standards. His court has learned to read three habits: he walks the Long Course alone at dawn twice a week; he answers one petition from a commoner personally each day, chosen at random from the pile (the Daily Draw); and he has never, in three years, entered his mother’s study. It is cleaned weekly, by his order. Nothing in it may be moved.
 
 ## The Vision of Restoration
 
 Qilvayas’s plan for imperial restoration rests on several pillars:
 
-**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code—the “Zhuvedian Laws”—that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. Their promulgation is anticipated this coming Solacre, some nine months out.
+**Legal Reform:** He seeks to rewrite the Golden Tablets, creating a new comprehensive legal code — the “Zhuvedian Laws” — that will modernize governance, eliminate corruption, and provide a unifying framework for all imperial territories. Their promulgation is anticipated this coming Solacre, some nine months out.
 
 **Administrative Revival:** He is rebuilding imperial institutions that have atrophied or disappeared. The Imperial Academy is central to this effort.
 
@@ -194,9 +194,9 @@ Qilvayas’s plan for imperial restoration rests on several pillars:
 
 ## The Zhuvedian Laws
 
-Archjurist Senna Vhal's Law Commission is compiling the Zhuvedian Laws as seven short Books, promulgated together this coming Solacre on the Long Course — the empire's first comprehensive legal code since the Golden Tablets. What follows is what a subject of the empire would actually know.
+Archjurist Senna Vhal’s Law Commission is compiling the Zhuvedian Laws as seven short Books, promulgated together this coming Solacre on the Long Course — the empire’s first comprehensive legal code since the Golden Tablets. What follows is what a subject of the empire would actually know.
 
-The Tablets themselves don't survive complete, but a few lines are old enough and famous enough that every Academy student still knows them by heart:
+The Tablets themselves don’t survive complete, but a few lines are old enough and famous enough that every Academy student still knows them by heart:
 
 *“By the will of the Lupine Matron and the true voice of her chosen son, Zhuvedus, is this Empire raised, and these words set down that all who come after may know the order of things.”*
 
@@ -204,25 +204,25 @@ The Tablets themselves don't survive complete, but a few lines are old enough an
 
 *“Let every vow be kept, for a broken word is a wound upon the pack.”*
 
-*“He who spills wolf-blood without cause shall answer to the pack's keeper, and the price shall be paid in full before the moon turns.”*
+*“He who spills wolf-blood without cause shall answer to the pack’s keeper, and the price shall be paid in full before the moon turns.”*
 
 *“The Throne descends to whom the sitting wolf names before the pack, living or dying, and the pack shall know no other law of blood.”*
 
 *“Set down in the year of the founding, by those who stood witness to the covenant of the Throne, that the memory of that day never fade.”*
 
-**Persons and bound labor:** Zhuvedian law is old and clear on the worst of it: owning a person outright is illegal and doctrinally blasphemous throughout the empire — the same principle that makes a sworn oath binding also makes chattel slavery incoherent, since the law holds that only a will capable of making a vow can be owned by no one but itself. What the law does recognize is more complicated: oath-bound personal service (the foundation of Duke Norr's rule in Normere), ordinary time-limited debt-bondage, and hostage-diplomacy — a full guest's legal standing, not bondage at all, and the basis for the Academy's own admission practices. New under the coming Laws: such an arrangement must be sworn before a recognized witness — a Church witness, a magistrate, or a standing stone in Tarnovar — to be enforceable at all. The empire's real trouble isn't the law; it's that the law hasn't reached every corner of the fractured territories in two hundred years, and the Brekelands are where that gap shows worst.
+**Persons and bound labor:** Zhuvedian law is old and clear on the worst of it: owning a person outright is illegal and doctrinally blasphemous throughout the empire — the same principle that makes a sworn oath binding also makes chattel slavery incoherent, since the law holds that only a will capable of making a vow can be owned by no one but itself. What the law does recognize is more complicated: oath-bound personal service (the foundation of Duke Norr’s rule in Normere), ordinary time-limited debt-bondage, and hostage-diplomacy — a full guest’s legal standing, not bondage at all, and the basis for the Academy’s own admission practices. New under the coming Laws: such an arrangement must be sworn before a recognized witness — a Church witness, a magistrate, or a standing stone in Tarnovar — to be enforceable at all. The empire’s real trouble isn’t the law; it’s that the law hasn’t reached every corner of the fractured territories in two hundred years, and the Brekelands are where that gap shows worst.
 
-**The Marked, and an open question:** Whether the Zhuvedian Laws will extend Velmareth's model of full legal standing to tieflings everywhere is the one clause Archjurist Vhal's Commission hasn't settled — sincerely argued on both sides, and still unresolved as Solacre approaches. It's a live question, not a closed one; what happens next may depend on who makes the case, and to whom, before the Laws are read aloud on the Long Course.
+**The Marked, and an open question:** Whether the Zhuvedian Laws will extend Velmareth’s model of full legal standing to tieflings everywhere is the one clause Archjurist Vhal’s Commission hasn’t settled — sincerely argued on both sides, and still unresolved as Solacre approaches. It’s a live question, not a closed one; what happens next may depend on who makes the case, and to whom, before the Laws are read aloud on the Long Course.
 
-**Oaths and witnesses:** A sworn word binds because it is witnessed — marriage before a Church witness, Norr's personal oaths sworn before his assembled halls, the standing stones of Tarnovar. Swearing falsely before a recognized witness is perjury, tried wherever the oath itself was sworn, and it follows the liar on their own record rather than being settled with a fine.
+**Oaths and witnesses:** A sworn word binds because it is witnessed — marriage before a Church witness, Norr’s personal oaths sworn before his assembled halls, the standing stones of Tarnovar. Swearing falsely before a recognized witness is perjury, tried wherever the oath itself was sworn, and it follows the liar on their own record rather than being settled with a fine.
 
-**Certification — the Sanction and the Charter:** Every certified good or license in the empire is two things, never one: a physical mark (a wax stamp, a pewter warrant-medal, a charter seal, a guild-stamp) and a matching entry in the certifying body's register — a parish ledger, a Chartered Scriptorium's roll, a guild's books. Carrying unstamped goods or practicing without a license isn't a crime by itself; it just means a magistrate, Church tribunal, or Charter inspector can demand you produce the register entry, and it's failing to produce one — not the missing stamp — that actually opens a case.
+**Certification — the Sanction and the Charter:** Every certified good or license in the empire is two things, never one: a physical mark (a wax stamp, a pewter warrant-medal, a charter seal, a guild-stamp) and a matching entry in the certifying body’s register — a parish ledger, a Chartered Scriptorium’s roll, a guild’s books. Carrying unstamped goods or practicing without a license isn’t a crime by itself; it just means a magistrate, Church tribunal, or Charter inspector can demand you produce the register entry, and it’s failing to produce one — not the missing stamp — that actually opens a case.
 
-**Seals and forgery:** Forging an imperial instrument — a seal, a signet, a writ, a chartered license — is its own offense: restitution plus a term of indenture, scaling to exile from the jurisdiction on a second offense. A defunct office must formally surrender its seal to the Imperial Archive before its authority lapses; only after that may the instrument change hands as a curio, which is exactly how a trade like Rivergate's dealers in dead offices' seals stays on the right side of the law.
+**Seals and forgery:** Forging an imperial instrument — a seal, a signet, a writ, a chartered license — is its own offense: restitution plus a term of indenture, scaling to exile from the jurisdiction on a second offense. A defunct office must formally surrender its seal to the Imperial Archive before its authority lapses; only after that may the instrument change hands as a curio, which is exactly how a trade like Rivergate’s dealers in dead offices’ seals stays on the right side of the law.
 
-**Rank, in brief:** Sergeant, Colonel, and Legate mark increasing scale of command in the legions. Marshal is not a rank at all — it's an acclamation the Throne grants a field commander for extraordinary personal renown, regardless of the size of the force they actually lead.
+**Rank, in brief:** Sergeant, Colonel, and Legate mark increasing scale of command in the legions. Marshal is not a rank at all — it’s an acclamation the Throne grants a field commander for extraordinary personal renown, regardless of the size of the force they actually lead.
 
-**Justice, town to capital:** There's no separate civilian watch in the Crownlands or the loyalist provinces — the local garrison keeps the peace, and in Aenodira, the Palatine Guard does. A magistrate hears complaints and rules without a jury; appeal to Aenodira exists but is notoriously slow. Outside the loyalist provinces, disputes often fall to whoever locally holds informal authority — an elder, a shrine-keeper. In warlord territory, there is no magistrate and no appeal at all.
+**Justice, town to capital:** There’s no separate civilian watch in the Crownlands or the loyalist provinces — the local garrison keeps the peace, and in Aenodira, the Palatine Guard does. A magistrate hears complaints and rules without a jury; appeal to Aenodira exists but is notoriously slow. Outside the loyalist provinces, disputes often fall to whoever locally holds informal authority — an elder, a shrine-keeper. In warlord territory, there is no magistrate and no appeal at all.
 
 ## The Mystery of Empress Nyreeza
 
@@ -282,7 +282,7 @@ Today, multiple Imperial Academies exist across loyalist territories, but the ca
 
 ## Admission and Student Body
 
-The empire maintains a policy of universal education—in theory, any subject can seek admission. In practice, admission operates through a lottery that is less fair than it appears: wealthy families make generous “donations,” local lords ensure favored protégés are selected, and some slots are reserved for hostage-diplomacy arrangements. But enough legitimate lottery winners make it through that the system maintains its legitimacy, and the student body remains genuinely diverse — privilege beside scholarship, hostages beside true believers, ambitious commoners beside nobility.
+The empire maintains a policy of universal education — in theory, any subject can seek admission. In practice, admission operates through a lottery that is less fair than it appears: wealthy families make generous “donations,” local lords ensure favored protégés are selected, and some slots are reserved for hostage-diplomacy arrangements. But enough legitimate lottery winners make it through that the system maintains its legitimacy, and the student body remains genuinely diverse — privilege beside scholarship, hostages beside true believers, ambitious commoners beside nobility.
 
 ## The Three Houses
 
@@ -338,7 +338,7 @@ The Long Wall was built expecting a population that never arrived. The result is
 
 **The Archwork:** An old imperial aqueduct crosses the outer city on high stone arches, several sections long since bricked up and converted into housing. Working-class and unglamorous.
 
-**Farrowgate:** The newest and least planned district, populated overwhelmingly by displaced people from the fractured territories. Established Aenodirans use the name without much affection; the people who live there increasingly use it themselves. The district's overcrowding breeds its own chronic complaint, a lung-sickness residents call the Damp — no mystery to it, just too many people in too little space with worse drainage than the rest of the city.
+**Farrowgate:** The newest and least planned district, populated overwhelmingly by displaced people from the fractured territories. Established Aenodirans use the name without much affection; the people who live there increasingly use it themselves. The district’s overcrowding breeds its own chronic complaint, a lung-sickness residents call the Damp — no mystery to it, just too many people in too little space with worse drainage than the rest of the city.
 
 **Rivergate:** The docks and river trade quarter, where goods — and a fair amount that isn’t quite goods — move in and out of the capital. Less regulated than the Exchange, and considerably more interesting to anyone asking questions the empire’s official record doesn’t want to answer.
 
@@ -346,7 +346,7 @@ The Long Wall was built expecting a population that never arrived. The result is
 
 All mundane prices pulled from the SRD equipment data (exact book values). Magic availability per the approved economy: Church almonries sell sanctioned mercy openly; arcane material is chartered, scarce, and papered; Rivergate discounts everything including the truth.
 
-Prices below are given in the familiar gp/sp/cp shorthand for ease of reference. In hand, the coin changing at every counter is the Zhuven — Zhuvedus's profile struck on one face, the She-Wolf on the other — though almost nobody calls it that. In Common, it's simply a wolf: "three wolves for the room," "a wolf a day, all found." Smaller coin is a silver strand or a copper mote, restruck by whatever mint last had dies on hand.
+Prices below are given in the familiar gp/sp/cp shorthand for ease of reference. In hand, the coin changing at every counter is the Zhuven — Zhuvedus’s profile struck on one face, the She-Wolf on the other — though almost nobody calls it that. In Common, it’s simply a wolf: “three wolves for the room,” “a wolf a day, all found.” Smaller coin is a silver strand or a copper mote, restruck by whatever mint last had dies on hand.
 
 ### The Exchange, Aenodira — General Outfitting (book prices)
 
@@ -406,22 +406,22 @@ Prices below are given in the familiar gp/sp/cp shorthand for ease of reference.
 
 # The Imperial Calendar
 
-Twelve months, beginning at Wolfmoon in deep winter — the Matron's own month — and running the ordinary agricultural year most people actually live by.
+Twelve months, beginning at Wolfmoon in deep winter — the Matron’s own month — and running the ordinary agricultural year most people actually live by.
 
 | **Month** | **Season** | **Known For** |
 | --- | --- | --- |
-| Wolfmoon | Deep winter (year begins) | The Matron's high month; the year turns in her keeping. |
+| Wolfmoon | Deep winter (year begins) | The Matron’s high month; the year turns in her keeping. |
 | Thawtide | Late winter | Roads reopen for the year. |
 | Sowmonth | Early spring | Planting begins in the Suthmark. |
 | Greening | Mid-spring | Long Course racing season opens. |
-| Solacre | Early summer | The court's busiest season. |
+| Solacre | Early summer | The court’s busiest season. |
 | Haymonth | Midsummer | Academy field exercises traditionally run through here. |
-| Harvestide | Early autumn | The Suthmark's great harvest festival. |
+| Harvestide | Early autumn | The Suthmark’s great harvest festival. |
 | Vinmoon | Mid-autumn | Grape harvest; Suthmark wines are dated by Vinmoon year. |
 | Fallowmonth | Late autumn | Fields rest; many estates settle inheritance here. |
 | Greywane | Early winter | Racing season closes; days shorten. |
-| Longdark | Deep winter | The Matron's second high month. |
-| Threshold | Year's end | A short 20-day month — old debts settled before the year turns. |
+| Longdark | Deep winter | The Matron’s second high month. |
+| Threshold | Year’s end | A short 20-day month — old debts settled before the year turns. |
 
 Most of loyalist territory counts Years of the Reckoning from the Founding. A seven-day week — a market day, a rest day, five working days — rounds out the everyday structure.
 
