@@ -204,6 +204,7 @@ children.push(B("Rivergate:", "The docks and river trade quarter, where goods \u
 // ==================== PART VII: COMMERCE ====================
 children.push(H1("Commerce: Where to Spend Your Stipend"));
 children.push(P("All mundane prices pulled from the SRD equipment data (exact book values). Magic availability per the approved economy: Church almonries sell sanctioned mercy openly; arcane material is chartered, scarce, and papered; Rivergate discounts everything including the truth."));
+children.push(P("Prices below are given in the familiar gp/sp/cp shorthand for ease of reference. In hand, the coin changing at every counter is the Zhuven \u2014 Zhuvedus's profile struck on one face, the She-Wolf on the other \u2014 though almost nobody calls it that. In Common, it's simply a wolf: \"three wolves for the room,\" \"a wolf a day, all found.\" Smaller coin is a silver strand or a copper mote, restruck by whatever mint last had dies on hand."));
 children.push(H3("The Exchange, Aenodira \u2014 General Outfitting (book prices)"));
 children.push(table(["Item","Price","Item","Price"],[30,20,30,20],[
   ["Backpack","2 gp","Rope, hempen (50 ft.)","1 gp"],

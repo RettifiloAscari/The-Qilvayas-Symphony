@@ -344,6 +344,8 @@ The Long Wall was built expecting a population that never arrived. The result is
 
 All mundane prices pulled from the SRD equipment data (exact book values). Magic availability per the approved economy: Church almonries sell sanctioned mercy openly; arcane material is chartered, scarce, and papered; Rivergate discounts everything including the truth.
 
+Prices below are given in the familiar gp/sp/cp shorthand for ease of reference. In hand, the coin changing at every counter is the Zhuven — Zhuvedus's profile struck on one face, the She-Wolf on the other — though almost nobody calls it that. In Common, it's simply a wolf: "three wolves for the room," "a wolf a day, all found." Smaller coin is a silver strand or a copper mote, restruck by whatever mint last had dies on hand.
+
 ### The Exchange, Aenodira — General Outfitting (book prices)
 
 | **Item** | **Price** | **Item** | **Price** |
