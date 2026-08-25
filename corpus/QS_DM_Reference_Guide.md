@@ -10,7 +10,7 @@
 
 *A quick-reference cheat sheet — Atlas, NPCs, and mythology at a glance*
 
-***Living document — update alongside the sourcebook. Current through the full Social Foundations program — imperial law, language and literacy, currency, and medicine and disease all closed; Marked personhood the sole live thread. Sessions 0–8; the Undercourt descent is complete.***
+***Living document — update alongside the sourcebook. Current through the full Social Foundations program — imperial law, language and literacy, currency, and medicine and disease all closed; Marked personhood and the Grey-Gold Rising the two live threads, both resolving at Solacre Day. Sessions 0–8; the Undercourt descent is complete.***
 
 # The Atlas — Regions at a Glance
 
@@ -229,10 +229,11 @@ DM-only anchor (computational baseline; the in-world Reckoning figure stays soft
 - **The Lector’s Seal housing:** Gifted to the party as their mercenary company’s official sealing-stamp. (Sessions 3–4)
 - **Forty witnesses (Halvenne):** If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)
 - **Ondrei’s complaint vs. the Third Legion colonel:** Currently sitting in Legate Thorne’s inbox — background thread, can be developed or left as texture.
-- **The Coronation Clock:** Karvel’s crowning in Orlath, same year as the Laws’ promulgation. The campaign’s second structural clock.
+- **Solacre Day:** The promulgation, the Marked ruling, the Grey-Gold Rising, and word of Karvel’s coronation all converge on one day, not just one season. See The Coronation Clock and The Grey-Gold Rising, below.
+- **The Coronation Clock:** Karvel’s crowning in Orlath, landing the same day as the Laws’ promulgation — not merely the same year. The campaign’s second structural clock.
 - **The Landless King’s Fifth Petition:** Aldrec’s final overture to the throne — a closing window tied to his failing health.
 - **The Girls of Greywell:** A Farrowgate family’s missing daughter → Castle Greywell. Pure gothic horror, deliberately non-shadow.
-- **The Grey-Gold Rising:** Proposed capital riot when the Laws’ tax provisions post — Qilvayas’s Nika moment. Unscheduled.
+- **The Grey-Gold Rising:** Trigger reconciled: Book Three’s registration requirement, extended over Long Course commerce — not a new tax. Golds (inner-wall patron money) and Greys (outer-wall trade) unite against enforcement that lands hardest on the Greys. Qilvayas’s Nika moment. Mercy-or-massacre outcome LIVE, tracked on the Branch Ledger like Marked personhood — see Branch Ledger.
 - **The Book and the Fence:** Norr’s surveyors approaching Dregan’s stakes — the west’s coming collision.
 - **The Shen Alliance:** Formed, discounted, or refused in Sessions 5–6 — defines the party’s intelligence landscape. Shen holds Nyreeza’s final filing; the party holds the rubbing; Vell holds the key.
 - **The Empress’s Last Words:** Translated in Session 6: “the wound predates the Wall. The Tablets were written over it. He must not follow me. Tell him the garden, not the grave.” The last line keys the sealed dispatch case.
@@ -286,6 +287,7 @@ Every session module now carries a Diverging Paths section. Track outcomes here 
 | The covenant’s second half — the players’ words, verbatim | 8 |  |
 | WHO THEY TOLD (largest branch in the campaign) | 8 |  |
 | Marked personhood — Book One’s final language | TBD (Twin Clocks) |  |
+| The Grey-Gold Rising — mercy or massacre | TBD (Twin Clocks) |  |
 
 # Deliberately Open — By Design (Not Gaps)
 

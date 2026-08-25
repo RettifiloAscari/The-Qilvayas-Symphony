@@ -30,7 +30,7 @@ const c = [];
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 120 }, children: [new TextRun({ text: "DM Reference Guide", bold: true, size: 40 })] }));
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 100 }, children: [new TextRun({ text: "The Qilvayas Symphony", italics: true, size: 24 })] }));
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 200 }, children: [new TextRun({ text: "A quick-reference cheat sheet \u2014 Atlas, NPCs, and mythology at a glance", italics: true, size: 22, color: "5B1F1F" })] }));
-c.push(PS([{ t: "Living document \u2014 update alongside the sourcebook. Current through the full Social Foundations program \u2014 imperial law, language and literacy, currency, and medicine and disease all closed; Marked personhood the sole live thread. Sessions 0\u20138; the Undercourt descent is complete.", i: true, b: true }], { alignment: AlignmentType.CENTER, spacing: { after: 300 } }));
+c.push(PS([{ t: "Living document \u2014 update alongside the sourcebook. Current through the full Social Foundations program \u2014 imperial law, language and literacy, currency, and medicine and disease all closed; Marked personhood and the Grey-Gold Rising the two live threads, both resolving at Solacre Day. Sessions 0\u20138; the Undercourt descent is complete.", i: true, b: true }], { alignment: AlignmentType.CENTER, spacing: { after: 300 } }));
 
 // ============ ATLAS ============
 c.push(H1("The Atlas \u2014 Regions at a Glance"));
@@ -273,10 +273,11 @@ c.push(BUL("The Cold Door rubbing:", "Charcoal rubbing of cipher marks at the Un
 c.push(BUL("The Lector\u2019s Seal housing:", "Gifted to the party as their mercenary company\u2019s official sealing-stamp. (Sessions 3\u20134)"));
 c.push(BUL("Forty witnesses (Halvenne):", "If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)"));
 c.push(BUL("Ondrei\u2019s complaint vs. the Third Legion colonel:", "Currently sitting in Legate Thorne\u2019s inbox \u2014 background thread, can be developed or left as texture."));
-c.push(BUL("The Coronation Clock:", "Karvel\u2019s crowning in Orlath, same year as the Laws\u2019 promulgation. The campaign\u2019s second structural clock."));
+c.push(BUL("Solacre Day:", "The promulgation, the Marked ruling, the Grey-Gold Rising, and word of Karvel\u2019s coronation all converge on one day, not just one season. See The Coronation Clock and The Grey-Gold Rising, below."));
+c.push(BUL("The Coronation Clock:", "Karvel\u2019s crowning in Orlath, landing the same day as the Laws\u2019 promulgation \u2014 not merely the same year. The campaign\u2019s second structural clock."));
 c.push(BUL("The Landless King\u2019s Fifth Petition:", "Aldrec\u2019s final overture to the throne \u2014 a closing window tied to his failing health."));
 c.push(BUL("The Girls of Greywell:", "A Farrowgate family\u2019s missing daughter \u2192 Castle Greywell. Pure gothic horror, deliberately non-shadow."));
-c.push(BUL("The Grey-Gold Rising:", "Proposed capital riot when the Laws\u2019 tax provisions post \u2014 Qilvayas\u2019s Nika moment. Unscheduled."));
+c.push(BUL("The Grey-Gold Rising:", "Trigger reconciled: Book Three\u2019s registration requirement, extended over Long Course commerce \u2014 not a new tax. Golds (inner-wall patron money) and Greys (outer-wall trade) unite against enforcement that lands hardest on the Greys. Qilvayas\u2019s Nika moment. Mercy-or-massacre outcome LIVE, tracked on the Branch Ledger like Marked personhood \u2014 see Branch Ledger."));
 c.push(BUL("The Book and the Fence:", "Norr\u2019s surveyors approaching Dregan\u2019s stakes \u2014 the west\u2019s coming collision."));
 c.push(BUL("The Shen Alliance:", "Formed, discounted, or refused in Sessions 5\u20136 \u2014 defines the party\u2019s intelligence landscape. Shen holds Nyreeza\u2019s final filing; the party holds the rubbing; Vell holds the key."));
 c.push(BUL("The Empress\u2019s Last Words:", "Translated in Session 6: \u201Cthe wound predates the Wall. The Tablets were written over it. He must not follow me. Tell him the garden, not the grave.\u201D The last line keys the sealed dispatch case."));
@@ -328,7 +329,8 @@ c.push(table(
     ["Watch Three \u2014 who took the offer", "8", ""],
     ["The covenant\u2019s second half \u2014 the players\u2019 words, verbatim", "8", ""],
     ["WHO THEY TOLD (largest branch in the campaign)", "8", ""],
-    ["Marked personhood \u2014 Book One\u2019s final language", "TBD (Twin Clocks)", ""]
+    ["Marked personhood \u2014 Book One\u2019s final language", "TBD (Twin Clocks)", ""],
+    ["The Grey-Gold Rising \u2014 mercy or massacre", "TBD (Twin Clocks)", ""]
   ]
 ));
 
