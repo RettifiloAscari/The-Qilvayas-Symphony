@@ -157,6 +157,15 @@ Record outcomes in the Branch Ledger.
 
 Turned Elder (six-character parties): as the Turned, but 68 hit points, and its Unobserved Strike deals an extra 4 (1d8) necrotic damage. It is the one at the front.
 
+# NPC Notes — What Is Down There
+
+There are no living NPCs on the ceremonial floor, which is why this module has carried no profiles. But the Turned are addressable, players will try to address them, and a DM should not be improvising the answer.
+
+- **The Turned, addressed.** They were people, and specifically they were the crowd — the witnesses who stood in this hall while the founding oath was broken, and turned their faces from it. They have no speech pattern because they have no mouths turned toward anyone; they answer in posture, and only to being seen. The Witnessed trait carries the mechanics. What it does not carry is the pacing: when the first Turned is genuinely witnessed and turns its head, that is the first time it has done so in two thousand years. Describe it slowly, once, and never again for the others — the second one should land as recognition, not as a repeated cutscene.
+- **Turn Undead, and why it is worse than useless.** They are typed undead and Turn Undead works on them exactly as written — they flee, for the minute it lasts, and it accomplishes nothing whatsoever. They return unturned and unwitnessed, and the party has spent a slot and a minute teaching the room that the Church’s instrument for the restless dead does not reach these ones. Let a devout character feel that land: these dead are not restless. They are waiting. What is owed them is the Vigil, and doctrine has never made the Vigil conditional on the dead having been good. A party that works this out here has already solved Session Eight.
+
+**DM Only:** do not let a player talk a Turned into anything. They cannot be persuaded, bargained with, or absolved — there is nobody home to accept absolution. They can only be witnessed. The distinction is the whole architecture of the campaign in one encounter: the empire’s problem was never that it did wrong, it was that it looked away, and looking is the only thing that undoes it.
+
 # Loot and Found Rewards — Session Seven
 
 | **Find** | **Value / Effect** |

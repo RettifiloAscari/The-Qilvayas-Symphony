@@ -18,7 +18,7 @@
 | --- | --- | --- | --- |
 | The Crownlands | Direct imperial rule | Loyal (core) | Aenodira and its river valley; imperial law at full strength here only. INLAND — river trade via Rivergate, no ocean harbor (nearest salt water: Velmareth, 10 days downriver). Race-day factions: the Golds and the Greys. |
 | The Ostmark | Legion garrisons; Magistrate Cassivar Ondrei (Dravenna); Marshal Gavric Dane | Loyal (towns) / inertial (country) | Colonel Aurel Dessen’s grain scandal ongoing. Dane recovered the Ninth’s lost standard — the legions’ darling, the court’s worry. |
-| The Suthmark | Duchess Emerenn Vasq (née Meldane) | Loyal, devout, scarred | Feeds the capital. Carries the Vintage Night (6 yrs ago) and the Greywell disappearances. |
+| The Suthmark | Duke Aldous Vasq in law; the Dowager Duchess Emerenn (née Meldane) in fact | Loyal, devout, scarred | Feeds the capital. Carries the Vintage Night (6 yrs ago) and the Greywell disappearances. |
 | Principality of Tarnovar | Voivode Ysavet Morn; Ban Dregan Morn (Eastmarch) | Independent (100 yrs) | DM ONLY: descended from Threnvos’s people. Oath-culture; “Vosthren” ballads. Dregan’s Fence holds the Brekeland border. Do not spend early. |
 | Velmareth / Delta Compact | The Harborlords (incl. House Meldane) | Neutral / disorder-preferring | Merchant republic; Exchange delegations answer here. Meldane money reaches into the Suthmark. |
 | The Brekelands | Warlords Bettra Skarn & Ilmarch Voss (shrinking) | Fractured / being absorbed | Granary War produced the Halvenne refugees. Squeezed between Norr’s Reckoning Book (west) and Dregan’s Fence (east). |
@@ -33,7 +33,7 @@
 | --- | --- | --- |
 | The Crownlands | Direct Rule — imperial law at full strength | Palatine Guard; imperial magistrates |
 | The Ostmark | Loyalist Provincial — nominal, unevenly enforced | Thin legion garrisons; Magistrate Ondrei’s model |
-| The Suthmark | Loyalist Provincial — genuinely loyal, ducal house | Duchess Vasq’s household authority + the Church |
+| The Suthmark | Loyalist Provincial — genuinely loyal, ducal house | Duke Aldous in law; the Dowager’s household authority in fact + the Church |
 | Principality of Tarnovar | Sovereign Treaty-Nation — imperial law N/A | Oath-custom; the Voivode; Dregan’s Fence (unsanctioned) |
 | Velmareth / Delta Compact | Sovereign Treaty-Nation — own mercantile law; Marked hold legal standing here, uniquely | The Harborlords; the Compact’s own courts |
 | The Brekelands | Contested / Warlord — statute unenforced | Individual warlords; no appeal exists |
@@ -111,6 +111,7 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn�
 | Marshal Gavric Dane | Ostmark — Germanicus | “The Young Wolf.” Recovered the Ninth’s standard. Beloved, ambitionless, watched by everyone. DM: the Piso gun — if he dies suddenly, the empire tears itself apart. Never broken an oath. |
 | Ban Dregan Morn | Tarnovar Eastmarch — Vlad III | Ex-academy hostage. The Fence: impaled oath-breakers; safest roads in the west. DM: closest of anyone to guessing the shadow’s nature from first principles. |
 | Duchess Emerenn Vasq | Suthmark — Catherine de’ Medici | Velmareth Meldane by birth. Rules through sons + the Garland (informant web). Vintage Night truth (canon): a limited arrest that cascaded; she chose to own it. Waiting for the Ory accusation to become profitable. |
+| Duke Aldous Vasq / Tavian Vasq | Suthmark — the ducal house | Aldous: 26, chronically ill, rules by signature and misses nothing. Tavian: 4 yrs younger, healthy, waiting. DM: the Denmother’s Choice is revisable — that is the fault line. |
 | Countess Velsanna Ory | Greywell, Suthmark — E. Báthory | GENUINELY MONSTROUS (canon ruling): blood-rite youth, 40+ girls over two decades. NOT shadow-connected — pure gothic horror. The crown owes her money; power will move for the debt, not the dead. |
 | Saint-Regent Olvesa the Reconciled | See of Orlath — Olga of Kiev | Four vengeances, then sainthood. Founder of the See. DM: her visions are TRUE and darkened 3 yrs ago — that’s why the coronation is now. Karvel’s grandmother. |
 | King Karvel | Ardven — Charlemagne | Unified twelve northern crowns; monastery schools; a restoration that works. Coronation as Emperor of the True Rite pending within the year — privately ambivalent about it. |
@@ -237,7 +238,7 @@ DM-only anchor (computational baseline; the in-world Reckoning figure stays soft
 | ~3 yrs ago (DM) | Vessarkath lets one wolf-standard leave her hoard — she felt the stir under the capital; the Ninth’s eagle starts its slow way home via the Brekelands. |
 | ~2.5 yrs ago | Qilvayas’s coronation; restoration begins in earnest. |
 | ~1 yr ago | Marshal Dane recovers the Ninth’s standard, nearly 60 yrs after Silvasse. The Ostmark’s wound starts to close; the empire gets its Young Wolf. |
-| This Solacre (~9 mo) | TWO CLOCKS, ONE SEASON: Zhuvedian Laws promulgation (Aenodira) + Karvel’s coronation as Emperor of the True Rite (Orlath). |
+| This Solacre (~9 mo) | TWO CLOCKS, ONE DAY: Laws promulgation + Book One’s Marked ruling + Book Three landing on Long Course commerce (Aenodira) + word of Karvel’s coronation as Emperor of the True Rite (Orlath). One bell — see Solacre Day. |
 | Present day | Party’s field exercise → vision → return to Aenodira → the Proving. |
 
 # Items and Threads Currently in Play

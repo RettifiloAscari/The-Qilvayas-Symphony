@@ -152,6 +152,15 @@ Record outcomes in the Branch Ledger.
 
 Threnvos has no stat block, by design. He cannot be fought, damaged, banished, turned, or compelled. If a DM ever needs a number for him, the number is the Vigil.
 
+# NPC Notes — What Is Down There
+
+As in Session Seven: nothing living, and one thing worth knowing how to play.
+
+- **The Unwitnessed, addressed.** Not the Turned, and the difference matters at the table. The Turned had witnesses and refused to be them; the Unwitnessed never had any at all — they are the residue of things that happened in this place and were seen by nobody. There is no memory in them to name and no gaze to hold, so the Session Seven solution does not work, and a player who tries it should fail visibly and safely. What reaches them is the Vigil itself: being kept, watched, and lit by someone who chose to stay. They are not trying to win the fight. They are trying to end the watch.
+- **Playing the difference.** A scholar character notices it immediately (no check — they have just spent a session on the Turned). Let that character be the one who says it out loud, and let the table feel the correction: this is not a puzzle they have already solved. The counter is not cleverness. It is somebody standing still in the dark with a light, doing the oldest thing their people do.
+
+**DM Only:** the Unwitnessed are the campaign’s cleanest statement of its own thesis, and they should never be explained on the page to players. A thing that happened and was not seen does not stop existing; it becomes shapeless, hungry, and permanent. Every unkept oath in the fiction above them is making more of these. If the party asks what happens to the Unwitnessed after the Vigil is kept, the honest answer is that nobody knows, because until tonight nobody had kept one.
+
 # Loot and Found Rewards — Session Eight
 
 | **Find** | **Value / Effect** |

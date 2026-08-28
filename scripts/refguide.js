@@ -40,7 +40,7 @@ c.push(table(
   [
     ["The Crownlands", "Direct imperial rule", "Loyal (core)", "Aenodira and its river valley; imperial law at full strength here only. INLAND \u2014 river trade via Rivergate, no ocean harbor (nearest salt water: Velmareth, 10 days downriver). Race-day factions: the Golds and the Greys."],
     ["The Ostmark", "Legion garrisons; Magistrate Cassivar Ondrei (Dravenna); Marshal Gavric Dane", "Loyal (towns) / inertial (country)", "Colonel Aurel Dessen\u2019s grain scandal ongoing. Dane recovered the Ninth\u2019s lost standard \u2014 the legions\u2019 darling, the court\u2019s worry."],
-    ["The Suthmark", "Duchess Emerenn Vasq (n\u00e9e Meldane)", "Loyal, devout, scarred", "Feeds the capital. Carries the Vintage Night (6 yrs ago) and the Greywell disappearances."],
+    ["The Suthmark", "Duke Aldous Vasq in law; the Dowager Duchess Emerenn (n\u00e9e Meldane) in fact", "Loyal, devout, scarred", "Feeds the capital. Carries the Vintage Night (6 yrs ago) and the Greywell disappearances."],
     ["Principality of Tarnovar", "Voivode Ysavet Morn; Ban Dregan Morn (Eastmarch)", "Independent (100 yrs)", "DM ONLY: descended from Threnvos\u2019s people. Oath-culture; \u201CVosthren\u201D ballads. Dregan\u2019s Fence holds the Brekeland border. Do not spend early."],
     ["Velmareth / Delta Compact", "The Harborlords (incl. House Meldane)", "Neutral / disorder-preferring", "Merchant republic; Exchange delegations answer here. Meldane money reaches into the Suthmark."],
     ["The Brekelands", "Warlords Bettra Skarn & Ilmarch Voss (shrinking)", "Fractured / being absorbed", "Granary War produced the Halvenne refugees. Squeezed between Norr\u2019s Reckoning Book (west) and Dregan\u2019s Fence (east)."],
@@ -58,7 +58,7 @@ c.push(table(
   [
     ["The Crownlands", "Direct Rule \u2014 imperial law at full strength", "Palatine Guard; imperial magistrates"],
     ["The Ostmark", "Loyalist Provincial \u2014 nominal, unevenly enforced", "Thin legion garrisons; Magistrate Ondrei\u2019s model"],
-    ["The Suthmark", "Loyalist Provincial \u2014 genuinely loyal, ducal house", "Duchess Vasq\u2019s household authority + the Church"],
+    ["The Suthmark", "Loyalist Provincial \u2014 genuinely loyal, ducal house", "Duke Aldous in law; the Dowager\u2019s household authority in fact + the Church"],
     ["Principality of Tarnovar", "Sovereign Treaty-Nation \u2014 imperial law N/A", "Oath-custom; the Voivode; Dregan\u2019s Fence (unsanctioned)"],
     ["Velmareth / Delta Compact", "Sovereign Treaty-Nation \u2014 own mercantile law; Marked hold legal standing here, uniquely", "The Harborlords; the Compact\u2019s own courts"],
     ["The Brekelands", "Contested / Warlord \u2014 statute unenforced", "Individual warlords; no appeal exists"],
@@ -154,6 +154,7 @@ c.push(table(
     ["Marshal Gavric Dane", "Ostmark \u2014 Germanicus", "\u201CThe Young Wolf.\u201D Recovered the Ninth\u2019s standard. Beloved, ambitionless, watched by everyone. DM: the Piso gun \u2014 if he dies suddenly, the empire tears itself apart. Never broken an oath."],
     ["Ban Dregan Morn", "Tarnovar Eastmarch \u2014 Vlad III", "Ex-academy hostage. The Fence: impaled oath-breakers; safest roads in the west. DM: closest of anyone to guessing the shadow\u2019s nature from first principles."],
     ["Duchess Emerenn Vasq", "Suthmark \u2014 Catherine de\u2019 Medici", "Velmareth Meldane by birth. Rules through sons + the Garland (informant web). Vintage Night truth (canon): a limited arrest that cascaded; she chose to own it. Waiting for the Ory accusation to become profitable."],
+    ["Duke Aldous Vasq / Tavian Vasq", "Suthmark \u2014 the ducal house", "Aldous: 26, chronically ill, rules by signature and misses nothing. Tavian: 4 yrs younger, healthy, waiting. DM: the Denmother\u2019s Choice is revisable \u2014 that is the fault line."],
     ["Countess Velsanna Ory", "Greywell, Suthmark \u2014 E. B\u00e1thory", "GENUINELY MONSTROUS (canon ruling): blood-rite youth, 40+ girls over two decades. NOT shadow-connected \u2014 pure gothic horror. The crown owes her money; power will move for the debt, not the dead."],
     ["Saint-Regent Olvesa the Reconciled", "See of Orlath \u2014 Olga of Kiev", "Four vengeances, then sainthood. Founder of the See. DM: her visions are TRUE and darkened 3 yrs ago \u2014 that\u2019s why the coronation is now. Karvel\u2019s grandmother."],
     ["King Karvel", "Ardven \u2014 Charlemagne", "Unified twelve northern crowns; monastery schools; a restoration that works. Coronation as Emperor of the True Rite pending within the year \u2014 privately ambivalent about it."],
@@ -275,7 +276,7 @@ c.push(table(
     ["~3 yrs ago (DM)", "Vessarkath lets one wolf-standard leave her hoard \u2014 she felt the stir under the capital; the Ninth\u2019s eagle starts its slow way home via the Brekelands."],
     ["~2.5 yrs ago", "Qilvayas\u2019s coronation; restoration begins in earnest."],
     ["~1 yr ago", "Marshal Dane recovers the Ninth\u2019s standard, nearly 60 yrs after Silvasse. The Ostmark\u2019s wound starts to close; the empire gets its Young Wolf."],
-    ["This Solacre (~9 mo)", "TWO CLOCKS, ONE SEASON: Zhuvedian Laws promulgation (Aenodira) + Karvel\u2019s coronation as Emperor of the True Rite (Orlath)."],
+    ["This Solacre (~9 mo)", "TWO CLOCKS, ONE DAY: Laws promulgation + Book One\u2019s Marked ruling + Book Three landing on Long Course commerce (Aenodira) + word of Karvel\u2019s coronation as Emperor of the True Rite (Orlath). One bell \u2014 see Solacre Day."],
     ["Present day", "Party\u2019s field exercise \u2192 vision \u2192 return to Aenodira \u2192 the Proving."]
   ]
 ));

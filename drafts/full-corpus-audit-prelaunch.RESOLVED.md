@@ -1,3 +1,47 @@
+# RESOLVED — applied to canon
+
+Signed off item by item and applied as a single consolidated pass (see the commit that
+closes the pre-launch audit). **Fourteen items decided; twelve applied, two deliberately
+not.**
+
+| Item | Decision |
+| --- | --- |
+| **H-1** Solacre Day | Applied — both timeline rows now read TWO CLOCKS, ONE DAY and carry the full convergence |
+| **H-2** Vasq | Applied — law-vs-fact propagated to the Atlas and jurisdiction tables in all three documents; SB profile repaired (duplicate "sickly" cut, the Player Guide's connective carried across) |
+| **M-1** Vessarkath | Applied — "sixty years past" |
+| **M-2** Aldous / Tavian | Applied — new subsection *The Suthmark's Sons*, two Roster rows, one ref guide row. Absorbs **L-2** |
+| **M-3** Currency | Applied — Odric takes the toll in Zhuven; a carter supplies "a wolf, he means a wolf" |
+| **M-4 / O-3** Charter | Applied — Concord register entry in Session 3–4 (Optional Content), register receipt on the wall in Session 5 |
+| **M-5** Scaling | Applied — per-encounter lines for the Odric bridge and the Halloc dock |
+| **L-1** Olvesa's sixty years | **No change** — deliberate rounding, per decision |
+| **L-3** Double space | Applied |
+| **O-1** Farrowgate's Damp | Applied — S5 client coughs; S6 callback notes it came back |
+| **O-2** Odric's writ | Applied — Book Three register challenge added to the anachronism check |
+| **O-4** Semya's witnesses | Applied — Book Two framing in the Diverging Paths entry |
+| **Part IV** Mechanical validation | **Run.** 32 blocks, zero genuine errors. No script changes arose |
+| **S7 / S8 NPC profiles** | Applied — *NPC Notes — What Is Down There* added to both |
+
+## One error found and fixed during the build
+
+The first draft of the Session Seven note claimed a cleric "finds nothing there to turn."
+**That was wrong.** The Turned are typed undead, and while they are immune to the
+*frightened* condition, Turn Undead does not inflict frightened — RAW it works on them
+normally. Caught by visual inspection of the rendered page, before commit. The published
+text now says Turn Undead functions exactly as written and accomplishes nothing, which is
+both mechanically correct and better fiction: the Church's instrument for the restless dead
+does not reach these ones, because they are not restless. They are waiting.
+
+## Still open after this pass
+
+- **No maps or player handouts** exist anywhere in the corpus. Out of scope for these
+  generators; a DM running Session One draws Redwatch themselves.
+- **The campaign ends at Session Eight** (~40 hours). The Twin Clocks arc is designed and
+  now internally consistent, but not built.
+- **The sourcebook's own "Closed since" changelog** and the ref guide's header line do not
+  yet mention this audit. One line each, unapproved and therefore not written.
+
+---
+
 # Design Draft — Full Pre-Launch Consistency Audit
 
 *The Qilvayas Symphony — every document, cross-referenced, before the campaign runs*
@@ -474,33 +518,111 @@ more valuable, and nothing says so.
 
 # PART IV — MECHANICAL VALIDATION
 
-**Not run.** Per the brief, this Part is optional and confirmation is needed before
-starting. Recorded here so the scope is agreed before the work rather than after.
+**Run.** Approved and executed against the 5e-bits SRD database (`5e-bits/5e-database`,
+commit `ce47a18`), checking all **32 homebrew stat blocks** — 22 module blocks plus the ten
+Powers of Appendix II — against the DMG's Monster Statistics by Challenge Rating table
+*and* against SRD monsters at the same and neighboring CR, plus every spell reference and
+every SRD-derived price in the commerce tables.
 
-On approval it would pull `codeload.github.com/5e-bits/5e-database/tar.gz/refs/heads/main`
-and check, reporting each as *well-calibrated* / *intentional design pattern* / *genuine
-error*:
+## Headline: no genuine errors, in any of the 32 blocks.
 
-- **The ten Powers' stat blocks** (Appendix II, CR 5–10) against the DMG's Monster
-  Statistics by Challenge Rating table and against SRD monsters at neighboring CR — the
-  brief's own priority, since these are the boss-tier blocks players will implicitly compare.
-- **Every module stat block** — the Oathless Deserters and Dren (S1), Malich / Odric / his
-  enforcers (S2), the Proving's constructs and hounds (S3–4), Halloc and the Inkhands (S5),
-  Ferrin Odo (S6), the Turned (S7), the Unwitnessed (S8).
-- **The one flag already standing.** S1:325 records, from the earlier mechanical audit, that
-  "the Oathless Deserters deal 10–12 damage per round — CR 1-grade output at a CR 1/2 label."
-  That is in the corpus as an acknowledged, deliberate deviation, not an open defect; a new
-  pass should confirm it still reads that way rather than re-flagging it.
-- **Spell mechanics** wherever an NPC, item, or effect names a spell.
-- **Equipment stats and prices** in the commerce tables against SRD pricing.
-- **The five homebrew items of record** (Appendix III).
+That result needs one methodological caveat stated up front, because it reverses a first
+impression. Measured against the **DMG table alone**, every humanoid block in the corpus
+looks badly under-tuned — the Powers sit 50–90 hit points and 15–60 damage below their
+CR band. Measured against **actual SRD monsters**, they are correct, because official
+SRD humanoids sit just as far below that table. A CR 3 Veteran has 58 HP where the DMG
+table says 101–115. The table describes monsters; these are people.
 
-Deliberate deviations — Dregan's Sanction of the Broken Word, support-role NPCs, pack
-creatures, custody-focused Church examiners — would be identified as intentional design and
-not "corrected," per the protocol.
+A second caveat on method: automated damage extraction **undercounted four of the ten
+Powers by 50–100%**, because their output lives in riders rather than the base attack line.
+Every classification below uses the hand-checked figure.
 
-> **SIGN-OFF FLAG IV** — awaiting Josh's go/no-go. Read-only; no script changes implied by
-> running it, only findings.
+| Power | Parsed DPR | Actual DPR | Why |
+| --- | --- | --- | --- |
+| Ban Dregan Morn | 27 | **54** | Sanction of the Broken Word adds 2d8 radiant per hit — and the block itself notes that against "bandits, deserters, and most of the fractured world's soldiery, everyone qualifies" |
+| Emperor Qilvayas | 16 | **34** | Vigil's 2d8 radiant rider, plus a 45 hp healing pool |
+| Mistress Averil Shen | 14 | **31** | Sneak Attack 5d6 (+17), once per turn |
+| Saint-Regent Olvesa | 3 | **~40+** | The walking stick is not the weapon; *spirit guardians* and *flame strike* are |
+
+## Findings by classification
+
+**Well-calibrated (24 blocks).** Several are near-exact ports of their SRD analog, which is
+the strongest possible evidence of careful grounding:
+
+| Homebrew block | SRD analog | Match |
+| --- | --- | --- |
+| Provincial Soldier (CR 1/8) | Guard | AC 16 / HP 11 / +3 — identical |
+| Umbral Remnant (CR 1/2) | Shadow | AC 12 / HP 16 / +4 / 9 dmg — identical |
+| Bartleby, Elder Mimic (CR 2) | Mimic | AC 12 / HP 58 / +5 — identical |
+| Sergeant Varkos Dren (CR 3) | Veteran | HP 58 / +5; AC 15 vs. 17 — softer, correct for a deserter in worn kit |
+| Vault Warden (CR 5) | Bulette | AC 17/94/+7/30 vs. AC 17/90/+8/30 — within a point |
+| Marshal Dane, Sea-King Aldrec (CR 7) | Oni | AC 16/HP 110/+7/DPR 30 — both land on it |
+| Ban Dregan Morn (CR 9) | Fire Giant | DPR 54 vs. 58 with the Sanction counted |
+| Saint-Regent Olvesa (CR 10) | Archmage (CR 12) | 117 HP and DC 17 vs. 99 HP and DC 17 — if anything **under**-labeled |
+
+**Intentional design pattern (8 blocks)** — deviations that are the design working, not
+failing. Per the protocol these are identified, not corrected:
+
+- **Prelate Sarvin Odell (CR 5)** — 3 damage per round against a CR 5 band of 33–38. The
+  protocol names custody-focused Church examiners as a deliberate pattern, and this is that
+  block. His threat is a DC 17 save and a jurisdiction, not a mace.
+- **Duke Garvin Norr (CR 8)** — 27 DPR against a band of 51–56. The block is a
+  mastermind-general; the sourcebook says outright that his power is armies.
+- **Emperor Qilvayas (CR 9)** — 34 DPR and a healing pool he spends "on others. Always on
+  others." At most one CR high, and defensive by design.
+- **Olvesa's *The Reconciled*** — *sanctuary* made permanent and self-only, which RAW
+  cannot be, and which does not break when she acts. Deliberate: she has been struck four
+  times in sixty years.
+- **Qilvayas's *divination*** — not on the paladin list (it is cleric/druid 4th). Framed as
+  a Crown Oath gift rather than a spell slot, and the block says the Matron answers. Correct
+  as flavor; noted so it isn't mistaken for a slip.
+- **Yield and Warrant Protocols** (Vault Warden), **Hold Fast** (Halloc), **Professional
+  Standards** (Inkhand Enforcer), **Paid, Not Owned** (Bridge Enforcer) — explicit morale
+  and stand-down clauses, exactly per the design spec's requirement that combats carry
+  credible nonviolent resolutions.
+
+**The one standing flag, re-examined.** S1:325 records that "the Oathless Deserters deal
+10–12 damage per round — CR 1-grade output at a CR 1/2 label." Against the DMG table that
+is true (CR 1/2 = 6–8). Against the SRD it is **normal**: a Lizardfolk is CR 1/2 with two
+attacks for 10, and an Orc is CR 1/2 hitting for 9 at +5. The flag is accurate about the
+table and over-cautious about play, and its own conclusion — "Neither needs changing — the
+yield thresholds and parley paths are the pressure valves" — is right.
+
+> **Recommendation: leave S1:325 as written.** It is honest, it is marked "for awareness
+> rather than revision," and a DM is better served by a warning that proved conservative
+> than by no warning.
+
+**Spells (12 checked).** *sanctuary, spirit guardians, flame strike, heal, greater
+restoration, divination, command, zone of truth, dispel magic, bless, hold person, sending*
+— all exist in the SRD at the levels and with the effects the corpus describes. Olvesa's
+13th-level cleric access correctly reaches *heal* (6th). Dregan's *zone of truth* at DC 15
+is arithmetically correct for his Charisma and proficiency.
+
+**Equipment and prices.** Every SRD-derived price in the commerce tables matches the SRD
+**exactly** — backpack 2 gp, bedroll 1 gp, hooded lantern 5 gp, torch 1 cp, chain 5 gp,
+healer's kit 5 gp, shortsword 10 gp, longsword 15 gp, shield 10 gp, chain shirt 50 gp,
+breastplate 400 gp, holy water 25 gp, spellbook 50 gp, component pouch 25 gp, ink 10 gp,
+paper 2 sp, rations 5 sp, waterskin 2 sp, tinderbox 5 sp, oil 1 sp, and the rest. Twenty-six
+checked, twenty-six correct.
+
+Deliberate premiums are marked as such in the tables themselves and are not errors: Potion
+of Greater Healing at 200 gp "requires standing with a parish, or a pilgrim's writ," and the
+spell scrolls carry Chartered Scriptorium registration. In-world pricing, correctly flagged.
+
+## Verified Clean — Part IV
+
+| Check | Result |
+| --- | --- |
+| All 32 homebrew stat blocks vs. DMG CR table **and** SRD analogs | **No genuine errors.** |
+| The ten Powers (CR 5–10) — the brief's stated priority | **Well-calibrated or intentional.** Olvesa is arguably under-labeled; Qilvayas at most one CR high. |
+| Attack bonuses vs. CR baseline | **In band throughout.** The single outlier is the Vault Warden's +8 against a CR 5 baseline of +6 — one point above Bulette's +7, on a construct with two explicit stand-down clauses. |
+| Save DCs vs. CR baseline | **Consistent.** DC 12–15 at low CR, 15–17 at CR 5–10. |
+| Spell references | **12 of 12 correct** in level, list, and effect. |
+| SRD equipment prices | **26 of 26 exact.** |
+| Morale / nonviolent resolution per the design spec | **Present in every combat block that needed one.** |
+
+> **No script changes arise from Part IV.** The production pass proceeds with the fourteen
+> consistency items only.
 
 ---
 
