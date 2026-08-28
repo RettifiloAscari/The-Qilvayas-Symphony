@@ -1,3 +1,26 @@
+# RESOLVED — applied to canon
+
+Approved with one redline: sign-off 2 taken as option (b) — the Academy rank renamed
+**Magister → Professor** (and *Magister Emeritus* → *Professor Emeritus*). *Preceptor* was
+considered and rejected: it collides with **Prelate** worse than Magister collided with
+Magistrate.
+
+Two items changed on contact with the scripts, both noted in the delivery:
+
+- **Sign-off 3 was a false positive.** Every Ferrin Odo reference in `scripts/` is already
+  `Censor-Captain`; the bare "Captain Ferrin Odo" in the audit was the tail of the
+  compound matching my own regex. No change was needed or made.
+- **The player guide withholding on item 7** was applied as approved, but the stated
+  rationale does not hold: the player guide already dates Karvel's coronation to this
+  Solacre, so "the regency ends at the coronation" is a public inference, not a
+  telegraph. Left withheld per sign-off; raised for a future call.
+
+Applied to `campaign.js`, `refguide.js`, `playerguide.js`, `sessions.js`, `session34.js`,
+`s56.js`, `CLAUDE.md`, and `reference/project-instructions.md`. Kept for the record; no
+longer pending.
+
+---
+
 # Design Draft — Titles, Ranks, and Precedence
 
 *The Qilvayas Symphony — a common vocabulary for who outranks whom*

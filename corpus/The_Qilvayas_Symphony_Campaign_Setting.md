@@ -70,7 +70,7 @@ The territories below are the ones most likely to matter in the campaign’s fir
 
 **The Brekelands:** The broken middle-west: a patchwork of warlord holdings where imperial administration simply stopped. The local trouble is the Granary War — warlords Bettra Skarn and Ilmarch Voss burning each other’s villages over a dispute neither remembers clearly — which produced the Halvenne refugees and three other burned villages this season. But the Granary War is a squabble between men who cannot see the weather coming: from the west, Duke Garvin Norr absorbs one warlord holding after another into Normere’s Reckoning Book, and along the eastern hills runs Ban Dregan’s Fence, which no Brekeland company raids past twice.
 
-**The See of Orlath:** A breakaway patriarchate in the north claiming the purer doctrine of the Matron — founded nearly sixty years ago by Saint-Regent Olvesa the Reconciled (see The Powers of the Fractured Empire), a woman whose road to sanctity ran through one of the most terrible vengeances in northern memory. Orlath recognizes neither the Matriarchate’s authority nor the Office of Omens’ monopoly on the divine will, and refugees of conscience — clergy who fell out with the Sanctum — drift there still. What the capital has not yet understood: Orlath is no longer merely a schism. It is preparing a coronation.
+**The See of Orlath:** A breakaway patriarchate in the north claiming the purer doctrine of the Matron — founded nearly sixty years ago by Saint-Regent Olvesa the Reconciled (see The Powers of the Fractured Empire), a woman whose road to sanctity ran through one of the most terrible vengeances in northern memory. Orlath recognizes neither the Matriarchate’s authority nor the Office of Omens’ monopoly on the divine will, and refugees of conscience — clergy who fell out with the Sanctum — drift there still. What the capital has not yet understood: Orlath is no longer merely a schism. It is preparing a coronation — and when the crown is set, Olvesa’s sixty-year regency ends, its whole purpose discharged.
 
 **Kingdom of Ardven:** The young power of the far north, beyond Orlath: a dozen quarrelsome kingdoms and clan-lands hammered into one crown over fifteen years by King Karvel (see The Powers of the Fractured Empire). Ardven is expansionist, literate, and increasingly confident — Karvel plants monastery schools the way other kings plant fortresses, and his court hosts scholars the empire’s academies lost to poverty or politics. His consolidation of the northern coasts has had one consequence the empire feels directly: the ship-clans of the Skellvard, driven from fjords they held for generations, now raid southward with nowhere to return to.
 
@@ -240,7 +240,7 @@ The Church of the Lupine Matron in the capital remains the institutional heart o
 
 ## The Church in Practice
 
-The capital Church is governed by the Matriarchate — Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira — advised (and constrained) by the Synod of the Grey, a council of senior clergy whose sessions are closed and whose politics are not. Beneath them: the seminaries of the Sanctum, the parish structure that reaches into every district and most loyalist provinces, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole authority to receive, examine, and rule on visions, portents, and claims of divine contact. The Office’s method is bureaucratic rather than cruel — polite reception, separate questioning, a written determination — and its determinations have a way of ending in files rather than answers. It resents Vaelindra’s existence the way a licensing board resents an unlicensed master: not because she is fraudulent, but because she is not theirs. And under Odell, resentment has recently become policy: as unsanctioned claims multiply across the fracturing empire, the Office has moved from keeping files to serving writs — its posture toward Vaelindra, and toward anyone publicly associated with her, is now active interference rather than watchful patience (engaged in Sessions Five and Six).
+The capital Church is governed by the Matriarchate — Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira — advised (and constrained) by the Synod of the Grey, a council of senior clergy whose sessions are closed and whose politics are not. There is no supreme authority above them, and this is a decision rather than a vacancy: the Matriarchate is collegial by design, so that no one throat holds the whole of the faith. A Prelate accordingly holds his jurisdiction from the Synod rather than from the Matriarch personally — her colleague with his own writ, not her subordinate, which is why the Office of Omens can pursue a posture she has not endorsed and cannot simply countermand. Beneath them: the seminaries of the Sanctum, the parish structure that reaches into every district and most loyalist provinces, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole authority to receive, examine, and rule on visions, portents, and claims of divine contact. The Office’s method is bureaucratic rather than cruel — polite reception, separate questioning, a written determination — and its determinations have a way of ending in files rather than answers. It resents Vaelindra’s existence the way a licensing board resents an unlicensed master: not because she is fraudulent, but because she is not theirs. And under Odell, resentment has recently become policy: as unsanctioned claims multiply across the fracturing empire, the Office has moved from keeping files to serving writs — its posture toward Vaelindra, and toward anyone publicly associated with her, is now active interference rather than watchful patience (engaged in Sessions Five and Six).
 
 ## The Keepers of the Ascent (Imperial Cult)
 
@@ -456,7 +456,7 @@ His grief for his mother is real, unresolved, and armored over with work. Known 
 
 **Legate Bruvasca Thorne:** Commander of the Palatine Guard (see Geography and Locations, the Garrison) — and, by any honest reckoning, the finest field commander the throne possesses. Her name was made at the Ashline, where she broke a Skellvard raid with eight hundred men against five times that number; the soldiers’ songs about it are the closest thing the modern legions have to a victory anyone remembers. That is precisely her problem. The court needs her, the legions love her, and the throne can never quite decide whether her loyalty is a fact or a fortune it has not yet had to spend. She has been given every duty except the one she was made for: an army large enough to actually reconquer something. Her husband Bram, a retired quartermaster who manages her correspondence and is widely underestimated, keeps a private ledger of every promise the court has made her and quietly amends it after every audience. See The Powers of the Fractured Empire for her expanded profile and threads.
 
-**Mistress Averil Shen:** Keeper of what is formally the Bureau of Correspondence and functionally the throne’s intelligence service — small, underfunded, and run on Shen’s personal network of clerks, couriers, and debts. She was Nyreeza’s creature before she was Qilvayas’s, and she is the only member of the court who conducted her own private inquiry into the Empress’s disappearance. What she found, or failed to find, is hers to reveal.
+**Mistress Averil Shen:** Keeper of what is formally the Bureau of Correspondence and functionally the throne’s intelligence service — and Mistress by the precise style of a commoner who holds an imperial bureau in her own right, not by courtesy — small, underfunded, and run on Shen’s personal network of clerks, couriers, and debts. She was Nyreeza’s creature before she was Qilvayas’s, and she is the only member of the court who conducted her own private inquiry into the Empress’s disappearance. What she found, or failed to find, is hers to reveal.
 
 **Hierophant Malzeth Corr:** Head of the imperial cult (see The Keepers of the Ascent). Present at court for every rite and most councils; influential in exact proportion to how much the throne needs its divinity that season.
 
@@ -572,6 +572,89 @@ Book Seven answers the question every provincial town already answers in practic
 Appeal to Aenodira exists, and Book Seven does nothing to make it fast — Ondrei’s complaint against Colonel Dessen is itself the proof, still sitting in Legate Thorne’s inbox years on. Secular justice and the Church’s own process (the Office of Omens’ escalating Writ of Examination) run in parallel and can conflict; a sufficient political favor can have a writ quashed as obstruction of an open imperial inquiry, but only as an exceptional intervention from above, never as a routine appeal.
 
 Outside the loyalist provinces, in thin country, there is often no resident magistrate at all, and disputes fall to whoever locally holds informal authority — a village elder, or the same shrine-keeper who already judges the Wolf-Price, called on for grievances that have nothing to do with wolves. In the Brekelands, and anywhere warlord-held, there is no magistrate and no appeal: the warlord or his captains are judge, jury, and enforcement, full stop.
+
+# Titles, Ranks, and Precedence
+
+The empire has never kept a single order of precedence, and the omission is not an oversight. Two centuries of fracture left the Lupine Throne granting titles it can no longer enforce and recognizing titles it never granted, so that a Voivode and a Duke are not two rungs of one ladder but the heads of two different kinds of thing. What follows is five ladders, each running to its own summit, and one honest rule for what happens where they cross.
+
+## The Throne and the Court
+
+Precedence at court is by access. This is the first thing a provincial learns in Aenodira and the last thing he believes: rank on paper decides where a man stands at a rite, but who reaches the Emperor decides everything else — and the man who decides who reaches the Emperor commands no soldiers, holds no land, and is one of the most powerful people in the empire.
+
+| **Style** | **Office** | **Held by** |
+| --- | --- | --- |
+| Emperor / Empress | The Lupine Throne | Qilvayas; Nyreeza, missing three years |
+| Lord Chamberlain | Keeper of access to the Emperor’s person | Vareth Kessin |
+| Archjurist | Head of the Law Commission drafting the Zhuvedian Laws | Senna Vhal |
+| Mistress / Master | The style of a commoner who heads an imperial bureau | Averil Shen, Keeper of the Bureau of Correspondence |
+| Magistrate | Judge and civil administrator in one office (Book Seven) | Cassivar Ondrei of Dravenna |
+
+Master and Mistress are not courtesies but a precise legal style: they mark a commoner holding an imperial bureau in her own right, as against the noble officers of the household. Averil Shen is Mistress Shen because she is not a lady and has never once pretended to be. The Bureau is hers by appointment and competence, and the style says so.
+
+## The Legions
+
+The one ladder the empire has already written down is the legions’, set out in Book Six — Of the March, above: Legionary, Sergeant, Centurion, Colonel, Legate. Marshal stands outside that ladder as an acclamation of the Throne, and Captain serves empire-wide as a courtesy for anyone commanding an irregular company. Book Six is the authority; nothing here amends it.
+
+## The Church of the Lupine Matron
+
+| **Style** | **Authority** |
+| --- | --- |
+| Matriarch | Voice of the Matron in Aenodira; the Church’s most senior public figure |
+| Synod of the Grey | Council of senior clergy; advises the Matriarch, and constrains her |
+| Prelate | Head of a Church office of jurisdiction — Sarvin Odell, the Office of Omens |
+| Hierophant | Head of the Keepers of the Ascent — the imperial cult, a parallel body and not Church clergy |
+
+The Church has no single supreme authority, and this is a decision rather than a vacancy. The Matriarchate is collegial: the Matron’s Voice speaks for the faith in the capital and is checked at every turn by the Synod of the Grey, which exists precisely so that no one throat holds the whole of it. A Prelate therefore holds his jurisdiction from the Synod and not from the Matriarch personally — her colleague with his own writ, not her subordinate. This is why the Office of Omens can pursue a policy the Matriarch has not endorsed and cannot simply countermand, and why anyone hoping to appeal over Prelate Odell’s head will spend a long and instructive season discovering there is no head to appeal over.
+
+## The Imperial Academy
+
+| **Style** | **Role** |
+| --- | --- |
+| Chancellor | Head of the Academy — Emeth Sorral |
+| Professor | Senior faculty, often holding a named charge — Corvin Dail, Master of Trials |
+| Professor Emeritus | Retired faculty; the style is kept for life, whatever the circumstances of departure |
+| Instructor | Junior faculty — Liria Fenn, House of the Craft |
+| Archivist | Keeper of the restricted stacks — Dathenor Vell |
+
+## Sovereign and Border Styles
+
+These do not rank against one another, and none of them ranks beneath the Throne except where the Throne can make it so. Each style records what kind of power it is.
+
+| **Style** | **What it means** | **Held by** |
+| --- | --- | --- |
+| King | A crown claiming full sovereignty | Karvel of Ardven |
+| Sea-King | King of a people rather than a territory: no land, no seat, no grave | Aldrec the Landless |
+| Voivode | Tarnovar’s war-leader raised to sovereign; absolute within her word | Ysavet Morn |
+| Ban | A march-warden holding a frontier for a Voivode, with wide latitude and little supervision | Dregan Morn, the Eastmarch |
+| Duke / Duchess | An imperial ducal house — a title the Throne granted, whether or not it is still obeyed | Garvin Norr of Normere; the Suthmark house |
+| Count / Countess | A landed noble seated beneath a ducal house | Velsanna Ory of Greywell |
+| Lord | Any landholder with retainers and no better title | Ostrev, on the eastern road |
+| Saint-Regent | Unique to Olvesa: the See’s regency of the True Rite | Olvesa the Reconciled |
+| Harborlord | One of Velmareth’s ruling merchant-bankers | the Meldane house among them |
+| Guildmaster | Head of a chartered trade body | Ptolan Vess, Capital Merchants’ Concord |
+
+The distinction that matters most is the one nobody says aloud. Duke Norr and Voivode Morn are not peers of unequal rank; they hold different kinds of title entirely. Norr’s is imperial — granted by the Lupine Throne, which makes him on paper the Emperor’s own subject, conducting a rival restoration inside the empire’s own law. Morn’s is foreign, and owes Aenodira nothing whatsoever. That asymmetry is the reason Normere is the more dangerous of the two: a Voivode who defies the Throne is a neighbor, while a Duke who does it is a precedent.
+
+## When the Ladders Meet
+
+A Prelate, a Legate, and a Duchess share no scale at all, and they meet constantly. The empire’s practical answer is unwritten and none the weaker for it: precedence at court is by access, precedence in the provinces is by force, and precedence in a shrine is by rite. What happens when those three disagree has never been set down. The Zhuvedian Laws, which have an opinion about grain weights and the wolf-price alike, are conspicuously silent here — and the silence is not something Archjurist Vhal has overlooked. It is the one question she has been told not to answer, because answering it would oblige the Throne to say out loud whose empire this is.
+
+## Forms of Address
+
+| **Speaking to** | **Say** |
+| --- | --- |
+| The Emperor | Your Radiance, in form; Majesty, in the shorthand of a court that uses it daily |
+| A King, Voivode, or Sea-King | Your Grace |
+| A Duke, Duchess, or Ban | Your Grace |
+| A Count, Countess, or Lord | My lord; my lady |
+| The Matriarch | Your Voice |
+| A Prelate or Hierophant | Your Reverence |
+| Saint-Regent Olvesa | Mother — the See uses nothing grander, at her insistence |
+| A Legate or Marshal | Legate; Marshal. The legions do not embroider |
+| A Magistrate | Your Honor |
+| Academy faculty | Professor; Instructor |
+
+Getting one of these wrong is not a crime and rarely even an insult. Getting one deliberately wrong — calling Olvesa Your Holiness, or naming Dregan Ban of the Fence to his face — is a sentence with a knife in it, and every soul in the room will hear it land.
 
 # The Imperial Academy of the Lupine Throne
 
@@ -841,7 +924,7 @@ Threads: Dregan is the campaign’s question about order made flesh — Qilvayas
 
 ### Duchess Emerenn Vasq, née Meldane — the Dowager of the Suthmark
 
-*Historical key: Catherine de’ Medici.* Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line to seal a grain-and-credit compact, widowed at forty some fifteen years ago, and ruler in all but name ever since through her sons — the sickly young Duke Aldous and his ambitious younger brother, Tavian. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, governesses, wine-factors, and priests’ housekeepers, which knows what the Suthmark is thinking before the Suthmark does. Her defining wound is the Vintage Night, six years past: Orlathine congregations massacred in three towns during the harvest festival. She gave an order that night — what she meant by it and what it became are not the same thing — and rather than be seen to have lost control, she let the realm believe she meant all of it. The Suthmark fears her now. She has decided fear will serve. Speech pattern: exquisitely courteous; deploys her dead husband’s opinions as cover for her own; switches to Velmarene idiom when she wants you to know the courtesy has ended.
+*Historical key: Catherine de’ Medici.* Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line to seal a grain-and-credit compact, widowed at forty some fifteen years ago, and Dowager Duchess ever since — a style that carries no authority whatever. The Suthmark’s duke is her sickly elder son; every instrument of rule is his. She governs through her sons — the sickly young Duke Aldous and his ambitious younger brother, Tavian. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, governesses, wine-factors, and priests’ housekeepers, which knows what the Suthmark is thinking before the Suthmark does. Her defining wound is the Vintage Night, six years past: Orlathine congregations massacred in three towns during the harvest festival. She gave an order that night — what she meant by it and what it became are not the same thing — and rather than be seen to have lost control, she let the realm believe she meant all of it. The Suthmark fears her now. She has decided fear will serve. Speech pattern: exquisitely courteous; deploys her dead husband’s opinions as cover for her own; switches to Velmarene idiom when she wants you to know the courtesy has ended.
 
 Threads: Vasq holds the capital’s food supply, which makes her patience the empire’s most strategic resource. She bridges three regions — Meldane money in Velmareth, Suthmark grain, and the Orlath schism bleeding into her provinces — and she has quietly opened her own channels to Orlath, not from sympathy but because she hedges everything. **DM Only:** the truth of the Vintage Night order — now canon: a limited arrest that cascaded into massacre, which she chose to own rather than be seen to have lost control — is her breakable point — proof of what she actually said exists in a Garland lady’s cipher-diary, and its surfacing would either humanize or destroy her. She knows about Countess Ory’s hill country and its vanishing girls; she has done nothing, because the Ory estates hold Vasq debts, and she is waiting for the accusation to become profitable. The gothic horror in her south is, to her, an account not yet due.
 
@@ -853,9 +936,9 @@ Threads: Greywell is the campaign’s pure gothic horror — deliberately unconn
 
 ### Saint-Regent Olvesa the Reconciled — Founder of the See of Orlath
 
-*Historical key: Olga of Kiev.* Sixty years ago she was the young widow-regent of a northern principality whose lord had been murdered under guest-right by the Drevic clan-lords — and what she did about it is still told in the north in four movements, each worse than the last: the envoys buried alive with their gifts; the lodge burned with the second delegation feasting inside it; the funeral-feast on her husband’s barrow where three hundred Drevic notables drank themselves helpless among her soldiers; and the birds — the tribute of sparrows and doves from every Drevic roof, released home at dusk with fire tied to their feet. Then, with her vengeance complete and her name a horror, she walked into a mountain shrine of the Matron and did not come out for a year. What came out was the woman the north now calls the Reconciled — and the See of Orlath founded itself around her rather than by her, penitents and clergy-refugees gathering to the shrine faster than she could send them home. She is its founder the way bedrock founds a house: she never set out to build a church, and the church was simply what would not leave. She set down her sword and her armor in the same season she gave up the Drevic tongue, and has taken up none of the three since — architect of the See’s plain and rigorous rite almost against her will, and the nearest thing the fractured world has to a living saint, a title she accepts with visible distaste because she alone keeps the full ledger of what it cost. She rejects the capital Church not from doctrine first but from knowledge: she has seen, from the inside, exactly what absolution in the service of power looks like. Speech pattern: plain, spare, scripture-cadenced; never euphemizes her own past — refers to the four vengeances as “my instruction,” meaning what taught her.
+*Historical key: Olga of Kiev.* Sixty years ago she was the young widow-regent of a northern principality whose lord had been murdered under guest-right by the Drevic clan-lords — and what she did about it is still told in the north in four movements, each worse than the last: the envoys buried alive with their gifts; the lodge burned with the second delegation feasting inside it; the funeral-feast on her husband’s barrow where three hundred Drevic notables drank themselves helpless among her soldiers; and the birds — the tribute of sparrows and doves from every Drevic roof, released home at dusk with fire tied to their feet. Then, with her vengeance complete and her name a horror, she walked into a mountain shrine of the Matron and did not come out for a year. What came out was the woman the north now calls the Reconciled — and the See of Orlath founded itself around her rather than by her, penitents and clergy-refugees gathering to the shrine faster than she could send them home. She is its founder the way bedrock founds a house: she never set out to build a church, and the church was simply what would not leave. She set down her sword and her armor in the same season she gave up the Drevic tongue, and has taken up none of the three since — architect of the See’s plain and rigorous rite almost against her will, and the nearest thing the fractured world has to a living saint, a title she accepts with visible distaste because she alone keeps the full ledger of what it cost. Her other title is stranger and more precise. The See holds the Lupine Throne vacant and its emperor illegitimate, and has done since its founding — which leaves a seat that must be kept by someone until it can be lawfully filled. Olvesa is Saint-Regent because she keeps it: regent of the True Rite, placeholder for an emperor not yet crowned, for sixty years.  She rejects the capital Church not from doctrine first but from knowledge: she has seen, from the inside, exactly what absolution in the service of power looks like. Speech pattern: plain, spare, scripture-cadenced; never euphemizes her own past — refers to the four vengeances as “my instruction,” meaning what taught her.
 
-Threads: Olvesa is the campaign’s test of whether redemption is real — a genuinely holy woman with a river of blood behind her, leading a genuinely purer church toward a genuinely catastrophic act. **DM Only:** her visions are true. Fragments of the storm and the wrong fire have reached her for decades, and three years ago — the season Nyreeza vanished — they darkened sharply. She reads them as the Matron’s verdict on the corrupt capital and its oath-broken throne, and it is this conviction, not ambition, that has moved the coronation of her grandson from someday to now. She is, in perfect sincerity, about to crown a rival emperor because the shadow’s stirring told her to. If anyone could ever show her what the visions actually are, the entire northern crisis would turn on that conversation.
+Threads: Olvesa is the campaign’s test of whether redemption is real — a genuinely holy woman with a river of blood behind her, leading a genuinely purer church toward a genuinely catastrophic act. **DM Only:** her visions are true. Fragments of the storm and the wrong fire have reached her for decades, and three years ago — the season Nyreeza vanished — they darkened sharply. She reads them as the Matron’s verdict on the corrupt capital and its oath-broken throne, and it is this conviction, not ambition, that has moved the coronation of her grandson from someday to now. She is, in perfect sincerity, about to crown a rival emperor because the shadow’s stirring told her to. If anyone could ever show her what the visions actually are, the entire northern crisis would turn on that conversation. Note also what the coronation costs her personally: the moment Karvel is crowned, the regency she has held for sixty years dissolves, its purpose discharged. She has been keeping a chair warm for the grandson she is about to seat in it, and she knows it. Play her as a woman completing her life’s work, not as one grasping at a new one.
 
 ### King Karvel of Ardven — the Uncrowned Emperor of the North
 
@@ -1045,7 +1128,7 @@ Class entries are archetype keys for flavor and improvisation — NPC stat block
 | Hierophant Malzeth Corr | Human | Cleric (imperial cult) | CR 3-equiv | No |
 | Matriarch Ilsevet Corvane | Human | Cleric (institutional) | CR 7-equiv | No |
 | Archivist Dathenor Vell | Hill dwarf | Sage (archivist) | Noncombatant | No |
-| Magister Corvin Dail | Human | Fighter (drillmaster) | CR 5-equiv | No |
+| Professor Corvin Dail | Human | Fighter (drillmaster) | CR 5-equiv | No |
 | Chancellor Emeth Sorral | Half-elf (canon) | Noble (mage-lite) | Social | No |
 | Instructor Liria Fenn | Human | Bard (College of Lore) | CR 4-equiv | No |
 | Magistrate Cassivar Ondrei | Human | Noble/Expert (magistrate) | Social | No |

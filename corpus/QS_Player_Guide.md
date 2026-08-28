@@ -86,7 +86,7 @@ The Matron’s worship long predates the empire that now venerates her. Zhuvedia
 
 **The Imperial Cult:** A smaller, older priesthood tied to the imperial household teaches otherwise — that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne’s claim to hereditary legitimacy.
 
-The capital Church is governed by the Matriarchate — Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira — advised by the Synod of the Grey, a council of senior clergy. Beneath them: the seminaries of the Sanctum, the parish structure reaching into every loyalist district, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole legal authority to receive, examine, and rule on visions, portents, and claims of divine contact. Independent interpreters are known to exist, operating quietly outside the Office’s sanction — tolerated uneasily, never fully accepted, found (if at all) through networks rather than any public sign.
+The Church has no single supreme authority, and never has: the Matriarchate is collegial by design, so that no one voice holds the whole of the faith. The capital Church is governed by the Matriarchate — Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira — advised by the Synod of the Grey, a council of senior clergy. Beneath them: the seminaries of the Sanctum, the parish structure reaching into every loyalist district, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole legal authority to receive, examine, and rule on visions, portents, and claims of divine contact. Independent interpreters are known to exist, operating quietly outside the Office’s sanction — tolerated uneasily, never fully accepted, found (if at all) through networks rather than any public sign.
 
 The imperial cult’s formal body, the Keepers of the Ascent, is small — perhaps forty priests, led by Hierophant Malzeth Corr, maintaining the dynastic shrine within Highcourt. The Church tolerates their existence, and both institutions understand exactly why.
 
@@ -258,11 +258,11 @@ Kinsman to Voivode Ysavet Morn, sent to the capital academy as a hostage-student
 
 ### Duchess Emerenn Vasq, née Meldane — the Dowager of the Suthmark
 
-Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line, widowed at forty some fifteen years ago, and ruler in all but name ever since through her sons. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, priests’ housekeepers, and wine-factors, which knows what the Suthmark is thinking before the Suthmark does. Six years ago, Orlathine congregations were massacred in three Suthmark towns during the harvest festival — the Vintage Night. What she ordered, and what it became, are not agreed upon even now; she has never corrected the record, and the south fears her for it.
+Born to Velmareth’s great Meldane banking house, married young into the Suthmark’s ducal line, widowed at forty some fifteen years ago, and Dowager Duchess ever since — a style carrying no authority at all. The Suthmark’s duke is her elder son; every instrument of rule is his, and she has governed through her sons regardless. The devout south never fully accepted the merchant’s daughter, and she never asked it to; she governs through the Garland, her web of ladies-in-waiting, priests’ housekeepers, and wine-factors, which knows what the Suthmark is thinking before the Suthmark does. Six years ago, Orlathine congregations were massacred in three Suthmark towns during the harvest festival — the Vintage Night. What she ordered, and what it became, are not agreed upon even now; she has never corrected the record, and the south fears her for it.
 
 ### Saint-Regent Olvesa the Reconciled — Founder of the See of Orlath
 
-Sixty years ago she was the young widow-regent of a northern principality whose lord had been murdered under guest-right — and what she did about it is still told in the north in four terrible movements. Then, vengeance complete, she walked into a mountain shrine of the Matron and did not come out for a year. What came out was the woman the north now calls the Reconciled: founder of the See of Orlath and the nearest thing the fractured world has to a living saint — a title she accepts with visible distaste.
+Sixty years ago she was the young widow-regent of a northern principality whose lord had been murdered under guest-right — and what she did about it is still told in the north in four terrible movements. Then, vengeance complete, she walked into a mountain shrine of the Matron and did not come out for a year. What came out was the woman the north now calls the Reconciled. Her title is more precise than it sounds: the See holds the Lupine Throne vacant and its emperor illegitimate, which leaves a seat someone must keep until it can be lawfully filled — Olvesa is Saint-Regent because she keeps it, regent of the True Rite for an emperor not yet crowned. Founder of the See of Orlath and the nearest thing the fractured world has to a living saint — a title she accepts with visible distaste.
 
 ### King Karvel of Ardven
 
@@ -271,6 +271,35 @@ Grandson of Saint-Regent Olvesa, king of a realm he assembled himself: fifteen y
 ### Duke Garvin Norr — the Bastard of Normere
 
 Baseborn son of the old Duke of Normere, acknowledged but never legitimized, who survived three assassination attempts before the age of twenty, took Normere in fact some twenty years ago, and has spent the two decades since building the most ruthlessly administered state west of Aenodira. Norr’s conquest of the Brekelands proceeds warlord by warlord, and it is not pillage — it is absorption: every conquered holding is surveyed into the Reckoning Book, every landholder swears a personal oath to Norr himself, and every obligation is recorded, audited, and enforced to the letter. Where submission is refused — the Harrowing of the Weld, four years ago, ended a district’s rebellion by ending, for a generation, the district. He styles his conquest “the restoration of lawful administration,” which has the special insolence of being partly true.
+
+# Titles and Forms of Address
+
+The empire keeps no single order of precedence, and that is not an oversight. Two centuries of fracture left the Throne granting titles it can no longer enforce and recognizing titles it never granted — so a Voivode and a Duke are not two rungs of one ladder but the heads of two different kinds of thing. Five ladders run in parallel, each to its own summit.
+
+- **The Throne and the Court:** Emperor; Lord Chamberlain (who keeps access to the Emperor’s person); Archjurist (who holds the pen on the new Laws); Mistress or Master, the style of a commoner heading an imperial bureau; Magistrate, judge and civil administrator in one office. Precedence here is by access rather than rank — which is why the Lord Chamberlain, who commands no soldiers and holds no land, is one of the most powerful people in Aenodira.
+- **The Legions:** Legionary, Sergeant, Centurion, Colonel, Legate. Marshal is not a rung on that ladder but an acclamation of the Throne for extraordinary renown, which is why a Marshal may command far less than a Legate and weigh far more in the public mind. Captain is a courtesy title for anyone leading an irregular company.
+- **The Church:** Matriarch, the Voice of the Matron in the capital, advised and constrained by the Synod of the Grey; Prelate, who heads an office of jurisdiction such as the Office of Omens; Hierophant, who heads the Keepers of the Ascent — the imperial cult, a parallel body and not Church clergy at all. A Prelate holds his writ from the Synod rather than from the Matriarch, so there is rarely a head to appeal over.
+- **The Academy:** Chancellor at the head; Professors, senior faculty who may hold a named charge such as Master of Trials; Instructors, junior faculty; and the Archivist, who keeps the restricted stacks. Professor Emeritus is retained for life, whatever the circumstances of the departure.
+- **Sovereign and border styles:** King; Sea-King, king of a people rather than a territory; Voivode, Tarnovar’s war-leader raised to sovereign; Ban, a march-warden holding a frontier for a Voivode; Duke and Duchess, the imperial ducal houses; Count and Countess beneath them; Lord for any landholder with retainers and no better title; Harborlord for Velmareth’s ruling merchant-bankers; Guildmaster for the head of a chartered trade body; and Saint-Regent, unique to Olvesa.
+
+One distinction is worth carrying to any negotiation. Duke Norr and Voivode Morn are not peers of unequal rank — their titles are different in kind. Norr’s is imperial, granted by the Lupine Throne, which makes him on paper the Emperor’s own subject. Morn’s is foreign and owes Aenodira nothing whatever. A Voivode who defies the Throne is a neighbor; a Duke who does it is a precedent.
+
+Where the ladders cross — and a Prelate, a Legate, and a Duchess share no scale at all — the empire runs on an unwritten rule: precedence at court is by access, in the provinces by force, and in a shrine by rite. What happens when those three disagree has never been set down.
+
+| **Speaking to** | **Say** |
+| --- | --- |
+| The Emperor | Your Radiance, in form; Majesty, in the shorthand of a court that uses it daily |
+| A King, Voivode, or Sea-King | Your Grace |
+| A Duke, Duchess, or Ban | Your Grace |
+| A Count, Countess, or Lord | My lord; my lady |
+| The Matriarch | Your Voice |
+| A Prelate or Hierophant | Your Reverence |
+| Saint-Regent Olvesa | Mother — the See uses nothing grander, at her insistence |
+| A Legate or Marshal | Legate; Marshal. The legions do not embroider |
+| A Magistrate | Your Honor |
+| Academy faculty | Professor; Instructor |
+
+Getting one of these wrong is not a crime and rarely even an insult — the empire is large and its usages vary. Getting one deliberately wrong is a sentence with a knife in it, and every soul in the room will hear it land.
 
 # The Imperial Academy of the Lupine Throne
 

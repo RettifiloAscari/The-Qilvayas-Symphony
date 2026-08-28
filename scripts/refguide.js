@@ -121,7 +121,7 @@ c.push(table(
   [22, 22, 56],
   [
     ["Archivist Dathenor Vell", "Keeper of restricted stacks", "Ancient, dry, volunteers nothing. Refers party to Vaelindra (Session 2). Knows why her Church career ended."],
-    ["Magister Corvin Dail", "Master of Trials", "Designed the party\u2019s Proving. Praises by noting absence of error. Sat his own Proving 40 years ago."],
+    ["Professor Corvin Dail", "Master of Trials", "Designed the party\u2019s Proving. Praises by noting absence of error. Sat his own Proving 40 years ago."],
     ["Chancellor Emeth Sorral", "Head of the Academy", "Commencement-polish drops when surprised \u2014 the Cold Door does it. Knows the wards fail in the eastern stacks."],
     ["Instructor Liria Fenn", "House of the Craft (stagecraft)", "Plays \u201CMerla\u201D in the Proving. Warm and wicked once unmasked."]
   ]
@@ -172,9 +172,23 @@ c.push(table(
     ["The Widow Brakka", "Coppergate \u2014 company landlady", "Feeds everyone, fears nothing, beat a mimic in negotiation. Load-bearing texture; protect at all costs."],
     ["Censor-Captain Ferrin Odo", "The Sanctum \u2014 Office of Omens", "Church soldier executing the Writ; nonlethal always; winnable by lawful conduct."],
     ["Ilinca Verath", "Tarnovari envoy singer (optional)", "Performs the Vosthren lament without knowing its truth. Friendly face of the future Tarnovar arc."],
-    ["Magister Emeritus Pontellus Vorn", "Roads / capital (optional, comic)", "Expelled from three academies \u201Cfor excessive rigor.\u201D Wrong about everything except one thing per appearance."]
+    ["Professor Emeritus Pontellus Vorn", "Roads / capital (optional, comic)", "Expelled from three academies \u201Cfor excessive rigor.\u201D Wrong about everything except one thing per appearance."]
   ]
 ));
+
+c.push(H1("Titles and Precedence at a Glance"));
+c.push(P("Five ladders, not one. The empire keeps no single order of precedence \u2014 a Voivode and a Duke head different kinds of thing, not two rungs of one scale."));
+c.push(table(["Ladder", "Top to bottom", "Note"], [18, 46, 36], [
+  ["Throne & Court", "Emperor \u2192 Lord Chamberlain \u2192 Archjurist \u2192 Mistress/Master of a bureau \u2192 Magistrate", "Precedence here is by ACCESS, not rank. Kessin commands nothing and outweighs almost everyone."],
+  ["Legions", "Legate \u2192 Colonel \u2192 Centurion \u2192 Sergeant \u2192 Legionary", "Book Six. Marshal is an acclamation outside the ladder; Captain is a courtesy for irregulars."],
+  ["Church", "Matriarch + Synod of the Grey (collegial) | Prelate | Hierophant", "NO supreme authority, by design. A Prelate holds his writ from the Synod \u2014 Odell is Corvane\u2019s colleague, not her subordinate. There is no head to appeal over."],
+  ["Academy", "Chancellor \u2192 Professor \u2192 Instructor; Archivist alongside", "Professor Emeritus is kept for life regardless of how the post ended (see Vorn)."],
+  ["Sovereign / Border", "King, Sea-King, Voivode, Ban, Duke/Duchess, Count/Countess, Lord, Harborlord, Guildmaster, Saint-Regent", "These do not rank against each other at all. See below."]
+]));
+c.push(BUL("The distinction that matters:", "Norr\u2019s ducal title is IMPERIAL \u2014 granted by the Throne, making him on paper the Emperor\u2019s own subject running a rival restoration inside imperial law. Morn\u2019s Voivodate is FOREIGN and owes Aenodira nothing. A Voivode who defies the Throne is a neighbor; a Duke who does it is a precedent."));
+c.push(BUL("When ladders collide:", "Court = by access. Provinces = by force. Shrine = by rite. What happens when those disagree is deliberately unwritten \u2014 rule situationally and stay consistent."));
+c.push(BUL("Address:", "Emperor = Your Radiance / Majesty. King, Voivode, Sea-King, Duke, Duchess, Ban = Your Grace. Count, Countess, Lord = my lord / my lady. Matriarch = Your Voice. Prelate, Hierophant = Your Reverence. Olvesa = Mother (nothing grander, at her insistence). Legate, Marshal = the rank, plainly. Magistrate = Your Honor. Faculty = Professor / Instructor."));
+c.push(PS([DM("DM Only: "), { t: "Saint-Regent is the one title with teeth in it. The See holds the Lupine Throne vacant, which leaves a seat someone must keep \u2014 Olvesa has kept it sixty years. Karvel\u2019s coronation therefore ENDS her regency, purpose discharged. Play her as completing her life\u2019s work, not grasping at a new one." }]));
 
 
 c.push(H1("Magic & Faith at a Glance"));

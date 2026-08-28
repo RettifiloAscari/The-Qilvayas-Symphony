@@ -43,7 +43,7 @@ What she withholds: everything touching the founding, Threnvos, and the content 
 
 ## Scene 2: The Summons
 
-The summons finds them before noon — an academy runner, slightly out of breath, with the seal of the Chancellery: report to Magister Corvin Dail, Master of Trials, immediately. In Dail’s spare office (racked practice weapons, one chair, no comforts), the briefing is crisp:
+The summons finds them before noon — an academy runner, slightly out of breath, with the seal of the Chancellery: report to Professor Corvin Dail, Master of Trials, immediately. In Dail’s spare office (racked practice weapons, one chair, no comforts), the briefing is crisp:
 
 - Five days ago, a three-person academy survey team descended into the Undervault — the sealed pre-imperial vault complex beneath the academy’s oldest wing — to catalogue Vault Nine for the Law Commission’s records inventory. They have not reported since. The Undervault’s old wards defeat scrying.
 - The party’s commission: descend, locate the team, render aid, and recover the Lector’s Seal — the archival master-key the team carried, without which half the academy’s deep records are inaccessible. Bring everyone home.
@@ -106,7 +106,7 @@ Baseline (4 characters): the Vault Warden alone. Five characters: two Drill Auto
 
 ## Scene 7: The Reveal
 
-> *The Seal is barely in your hands when the sound begins — stone grinding on stone, but vast, orchestral, everywhere at once. The rotunda’s far wall splits along seams you would have sworn were solid, and folds outward, and beyond it: light. Tiered galleries. Chairs. People. The entire senior faculty of the Imperial Academy of the Lupine Throne, rising to their feet — and applauding. Magister Dail stands at the rail with his arms crossed, wearing the first unguarded expression you have ever seen on him. Beside him, the “missing” survey team, in perfect health, clapping hardest of all. And stepping down toward you, arms spread, commencement-voice already unfurling: the Chancellor of the academy. “Congratulations, graduates. Be at ease — and be proud. You are the twelfth cohort in my tenure to undergo the Proving, and the first to — ” and here the polish cracks, just slightly, into something real — “ — well. We will discuss what you found. Sit. All of you. You have earned every chair in this room.”*
+> *The Seal is barely in your hands when the sound begins — stone grinding on stone, but vast, orchestral, everywhere at once. The rotunda’s far wall splits along seams you would have sworn were solid, and folds outward, and beyond it: light. Tiered galleries. Chairs. People. The entire senior faculty of the Imperial Academy of the Lupine Throne, rising to their feet — and applauding. Professor Dail stands at the rail with his arms crossed, wearing the first unguarded expression you have ever seen on him. Beside him, the “missing” survey team, in perfect health, clapping hardest of all. And stepping down toward you, arms spread, commencement-voice already unfurling: the Chancellor of the academy. “Congratulations, graduates. Be at ease — and be proud. You are the twelfth cohort in my tenure to undergo the Proving, and the first to — ” and here the polish cracks, just slightly, into something real — “ — well. We will discuss what you found. Sit. All of you. You have earned every chair in this room.”*
 
 Run the Reveal in three movements, and give it the full forty-five minutes:
 
@@ -325,7 +325,7 @@ Outcomes here echo forward. Record them in the Branch Ledger.
 
 # NPC Profiles
 
-### Magister Corvin Dail, Master of Trials
+### Professor Corvin Dail, Master of Trials
 
 Human, 60s, ex-legion drillmaster turned educator, House of the Sword to the bone. Speech pattern: parade-ground cadence, economy of words, praises by noting the absence of error (“Nobody died. Nobody split the group past recovery. Acceptable.”). He designed the party’s Proving personally and considers it his finest; his critique at the Reveal is the closest thing to a love letter he is capable of writing. Thread: Dail sat the Proving himself, forty years ago — and has never told anyone what his cohort found, or did not find, in the eastern stacks. If the party ever asks him about the door outside academy walls, over a drink, he goes quiet in a way that is not dismissal.
 

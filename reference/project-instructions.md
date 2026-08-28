@@ -35,6 +35,7 @@ Established canon includes, non-exhaustively:
 - **The Powers of the Fractured Empire** — nine major figures keyed to historical models, with ten full stat blocks
 - **Magic and the Word** — the Weight of the Word, the Sanction, Chartered Thaumaturgy, the Old Observance, scarred/thin-written ground, the night iconography, lycanthropy doctrine, the relic economy
 - **Peoples of the Empire** — the Founder's Blood (Drow), and the placement of every other ancestry
+- **Titles, ranks, and precedence** — five parallel ladders rather than one order of precedence; the collegial Matriarchate; Saint-Regent as the See's regency of the True Rite; Academy faculty are Professors (never Magisters, which collided with the civil Magistrate)
 - **Wolf customs** — the Willing Shape (wildshape), the Wolf-Price, the Chosen Beast
 - **Social foundations** — the Packlaw, the four-tier bound labor framework, marriage-as-oath and the Denmother's Choice, and the twelve-month Imperial Calendar
 - **The three dragons** — Vessarkath, the Saltmaw, the Fjell Whites
@@ -92,7 +93,7 @@ Josh reviews, approves, redlines, or vetoes. **Only then** does material fold in
 - **Always include scaling notes** for 4, 5, and 6 characters.
 - Keep encounter math honest against level-appropriate thresholds. Climaxes may run hot only when the fiction provides pressure valves — negotiation, waves, morale breaks, yield protocols, escape routes.
 - Every combat should have a credible nonviolent or partial resolution path where the fiction supports one, plus explicit NPC morale (when they flee, fold, or surrender).
-- **Levity is deliberate.** The campaign is serious; it needs relief valves. Academy scenes, taverns, bureaucratic absurdity, and recurring comic NPCs (Bartleby, Magister Vorn, the Widow Brakka) keep the weight landing.
+- **Levity is deliberate.** The campaign is serious; it needs relief valves. Academy scenes, taverns, bureaucratic absurdity, and recurring comic NPCs (Bartleby, Professor Vorn, the Widow Brakka) keep the weight landing.
 - Quietly seed the central mechanism — broken oaths and betrayal feed the shadow — without stating it to players. Mark all such material DM-only.
 
 **Session module format:** overview with pacing budget; "What Is Actually Happening (DM Only)"; numbered scenes with boxed read-aloud text; tiered skill DCs; full stat blocks; NPC profiles with speech patterns and threads; **Optional Content**; **Diverging Paths (DM Only)**; loot/rewards; closing epigraph.

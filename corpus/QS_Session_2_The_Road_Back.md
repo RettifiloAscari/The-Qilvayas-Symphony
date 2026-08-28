@@ -222,7 +222,7 @@ End the session there. Do not play the walk home. Session Three opens at the ten
 
 # Optional Content (Beyond the Five-Hour Core)
 
-**The Wandering Lecturer (~40 minutes):** At a waypoint inn, one Magister Emeritus Pontellus Vorn — expelled from three provincial academies, by his own proud account “for excessive rigor” — delivers an unsolicited evening lecture on the capital’s three walls, wrong in nearly every particular and magnificent in all of them. Let an academy-trained party squirm, correct him, or bait him. Comic texture with one buried gift: among his nonsense, one claim is true — “the Long Wall was built for a city that never came” — and a party that fact-checks him later discovers the strange experience of the fool being right once. Vorn is a renewable comic NPC; he will resurface in Aenodira, lecturing pigeons if no one else will listen.
+**The Wandering Lecturer (~40 minutes):** At a waypoint inn, one Professor Emeritus Pontellus Vorn — expelled from three provincial academies, by his own proud account “for excessive rigor” — delivers an unsolicited evening lecture on the capital’s three walls, wrong in nearly every particular and magnificent in all of them. Let an academy-trained party squirm, correct him, or bait him. Comic texture with one buried gift: among his nonsense, one claim is true — “the Long Wall was built for a city that never came” — and a party that fact-checks him later discovers the strange experience of the fool being right once. Vorn is a renewable comic NPC; he will resurface in Aenodira, lecturing pigeons if no one else will listen.
 
 # Diverging Paths (DM Only)
 

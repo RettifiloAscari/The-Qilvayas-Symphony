@@ -84,7 +84,7 @@
 | **Name** | **Role** | **Notes** |
 | --- | --- | --- |
 | Archivist Dathenor Vell | Keeper of restricted stacks | Ancient, dry, volunteers nothing. Refers party to Vaelindra (Session 2). Knows why her Church career ended. |
-| Magister Corvin Dail | Master of Trials | Designed the party’s Proving. Praises by noting absence of error. Sat his own Proving 40 years ago. |
+| Professor Corvin Dail | Master of Trials | Designed the party’s Proving. Praises by noting absence of error. Sat his own Proving 40 years ago. |
 | Chancellor Emeth Sorral | Head of the Academy | Commencement-polish drops when surprised — the Cold Door does it. Knows the wards fail in the eastern stacks. |
 | Instructor Liria Fenn | House of the Craft (stagecraft) | Plays “Merla” in the Proving. Warm and wicked once unmasked. |
 
@@ -126,7 +126,25 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn�
 | The Widow Brakka | Coppergate — company landlady | Feeds everyone, fears nothing, beat a mimic in negotiation. Load-bearing texture; protect at all costs. |
 | Censor-Captain Ferrin Odo | The Sanctum — Office of Omens | Church soldier executing the Writ; nonlethal always; winnable by lawful conduct. |
 | Ilinca Verath | Tarnovari envoy singer (optional) | Performs the Vosthren lament without knowing its truth. Friendly face of the future Tarnovar arc. |
-| Magister Emeritus Pontellus Vorn | Roads / capital (optional, comic) | Expelled from three academies “for excessive rigor.” Wrong about everything except one thing per appearance. |
+| Professor Emeritus Pontellus Vorn | Roads / capital (optional, comic) | Expelled from three academies “for excessive rigor.” Wrong about everything except one thing per appearance. |
+
+# Titles and Precedence at a Glance
+
+Five ladders, not one. The empire keeps no single order of precedence — a Voivode and a Duke head different kinds of thing, not two rungs of one scale.
+
+| **Ladder** | **Top to bottom** | **Note** |
+| --- | --- | --- |
+| Throne & Court | Emperor → Lord Chamberlain → Archjurist → Mistress/Master of a bureau → Magistrate | Precedence here is by ACCESS, not rank. Kessin commands nothing and outweighs almost everyone. |
+| Legions | Legate → Colonel → Centurion → Sergeant → Legionary | Book Six. Marshal is an acclamation outside the ladder; Captain is a courtesy for irregulars. |
+| Church | Matriarch + Synod of the Grey (collegial) \| Prelate \| Hierophant | NO supreme authority, by design. A Prelate holds his writ from the Synod — Odell is Corvane’s colleague, not her subordinate. There is no head to appeal over. |
+| Academy | Chancellor → Professor → Instructor; Archivist alongside | Professor Emeritus is kept for life regardless of how the post ended (see Vorn). |
+| Sovereign / Border | King, Sea-King, Voivode, Ban, Duke/Duchess, Count/Countess, Lord, Harborlord, Guildmaster, Saint-Regent | These do not rank against each other at all. See below. |
+
+- **The distinction that matters:** Norr’s ducal title is IMPERIAL — granted by the Throne, making him on paper the Emperor’s own subject running a rival restoration inside imperial law. Morn’s Voivodate is FOREIGN and owes Aenodira nothing. A Voivode who defies the Throne is a neighbor; a Duke who does it is a precedent.
+- **When ladders collide:** Court = by access. Provinces = by force. Shrine = by rite. What happens when those disagree is deliberately unwritten — rule situationally and stay consistent.
+- **Address:** Emperor = Your Radiance / Majesty. King, Voivode, Sea-King, Duke, Duchess, Ban = Your Grace. Count, Countess, Lord = my lord / my lady. Matriarch = Your Voice. Prelate, Hierophant = Your Reverence. Olvesa = Mother (nothing grander, at her insistence). Legate, Marshal = the rank, plainly. Magistrate = Your Honor. Faculty = Professor / Instructor.
+
+**DM Only:** Saint-Regent is the one title with teeth in it. The See holds the Lupine Throne vacant, which leaves a seat someone must keep — Olvesa has kept it sixty years. Karvel’s coronation therefore ENDS her regency, purpose discharged. Play her as completing her life’s work, not grasping at a new one.
 
 # Magic & Faith at a Glance
 
