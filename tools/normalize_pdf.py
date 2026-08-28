@@ -22,10 +22,34 @@ def normalize(path):
     d = re.sub(rb'(/(?:Creation|Mod)Date\(D:)(\d+)',
                lambda m: m.group(1) + b'0' * len(m.group(2)), d)
 
-    # trailer /ID array: zero both hex strings (same length each)
-    d = re.sub(rb'(/ID\s*\[\s*<)([0-9A-Fa-f]+)(>\s*<)([0-9A-Fa-f]+)(>)',
-               lambda m: m.group(1) + b'0' * len(m.group(2)) + m.group(3)
-                         + b'0' * len(m.group(4)) + m.group(5), d)
+    # trailer /ID array: zero both strings. Ghostscript writes /ID either as hex
+    # (<abc123>) or, when the random bytes are not hex-safe, as literal strings
+    # with escapes. Matching only the hex form let the literal form through on
+    # some runs, which silently broke reproducibility -- and because the two
+    # forms differ in length, two builds of identical content could still differ
+    # in size. So: canonicalize the trailer's /ID to one fixed 32-hex-digit pair
+    # regardless of the form gs chose. That is length-changing, which is safe
+    # *only* in a classic trailer, since startxref points back at the xref table
+    # ahead of it; so it is applied only to an /ID followed by startxref. Any
+    # other /ID (e.g. inside a cross-reference stream) is zeroed in place at its
+    # original byte length, where changing the length would corrupt offsets.
+    _STR = rb'(?:<[0-9A-Fa-f]*>|\((?:\\.|[^\\)])*\))'
+    _ID = rb'/ID\s*\[\s*' + _STR + rb'\s*' + _STR + rb'\s*\]'
+    _ZERO32 = b'0' * 32
+
+    # 1. the trailer's /ID -> fixed canonical form
+    d = re.sub(_ID + rb'(?=\s*>>\s*startxref)',
+               b'/ID [<' + _ZERO32 + b'><' + _ZERO32 + b'>]', d, flags=re.S)
+
+    # 2. any remaining /ID -> zeroed, same byte length
+    def _zero_in_place(m):
+        budget = len(m.group(0)) - len(b'/ID [<><>]')
+        if budget < 2:
+            return m.group(0)
+        a, b = budget // 2, budget - budget // 2
+        return b'/ID [<' + b'0' * a + b'><' + b'0' * b + b'>]'
+
+    d = re.sub(_ID, _zero_in_place, d, flags=re.S)
 
     # trailer /DocChecksum hex hash (LibreOffice; harmless if absent)
     d = re.sub(rb'(/DocChecksum\s*/)([0-9A-Fa-f]+)',

@@ -102,7 +102,7 @@ Beyond the doors: Vault Nine, a domed rotunda, empty shelving radiating from a c
 
 ### Scaling the Warden
 
-Baseline (4 characters): the Vault Warden alone. Five characters: two Drill Automatons enter from alcoves on round 2. Six characters: two automatons from round 1, and the Warden’s Bulwark trait is active until both automatons fall. The encounter is deliberately hot for the tier — that is what the yield protocol, the warrant, the phrase, and (unknown to the players) the mercy wards are for. Let it feel dangerous. It is allowed to be, because it cannot actually be.
+Baseline (4 characters): the Vault Warden alone. Five characters: one Drill Automaton enters from an alcove on round 2. Six characters: two automatons from round 1, and the Warden’s Bulwark trait is active until both automatons fall. Add exactly that many and no more — a second automaton at five characters crosses the encounter-multiplier boundary and nearly doubles the adjusted difficulty rather than nudging it, which is how a Proving that cannot kill anyone starts feeling like one that wants to. The encounter is deliberately hot for the tier — that is what the yield protocol, the warrant, the phrase, and (unknown to the players) the mercy wards are for. Let it feel dangerous. It is allowed to be, because it cannot actually be.
 
 ## Scene 7: The Reveal
 
