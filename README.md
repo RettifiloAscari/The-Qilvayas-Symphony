@@ -1,6 +1,10 @@
-# The Qilvayas Symphony
+<p align="center">
+  <img src="images/98fb0bb2-7593-43cf-a843-8b4229139334.jpg"
+       alt="The Qilvayas Symphony — a Dungeons &amp; Dragons 5th Edition campaign setting. Emperor Qilvayas, crowned and holding a wolf-headed staff, stands in a Byzantine mosaic hall; the Lupine Matron's she-wolf is worked into the wall behind him."
+       width="1024">
+</p>
 
-A Dungeons & Dragons 5th Edition campaign setting.
+# The Qilvayas Symphony
 
 An imperial fantasy campaign set in the declining Empire of Zhuvedus, where a young
 drow emperor attempts to restore former glory through legal reform, institutional
