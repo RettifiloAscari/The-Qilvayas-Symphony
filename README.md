@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/98fb0bb2-7593-43cf-a843-8b4229139334.jpg"
+  <img src="images/title-banner.jpg"
        alt="The Qilvayas Symphony — a Dungeons &amp; Dragons 5th Edition campaign setting. Emperor Qilvayas, crowned and holding a wolf-headed staff, stands in a Byzantine mosaic hall; the Lupine Matron's she-wolf is worked into the wall behind him."
        width="1024">
 </p>
@@ -17,8 +17,9 @@ This repository is the source of truth for the campaign.
 ## How this repository works
 
 The **generator scripts are the canon.** Everything else is input to them or output
-from them. To change the campaign, edit a script in `scripts/` and run `tools/build.sh`;
-never edit the generated files directly, because the next build discards those edits.
+from them — with one exception, `images/`, noted below. To change the campaign, edit a
+script in `scripts/` and run `tools/build.sh`; never edit the generated files directly,
+because the next build discards those edits.
 
 | Directory | What it is |
 |---|---|
@@ -28,9 +29,17 @@ never edit the generated files directly, because the next build discards those e
 | `tools/` | `build.sh` regenerates and verifies everything; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible. |
 | `reference/` | The mirrored instructions for the Claude Chat project. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
+| `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |
 
 `corpus/` and `documents/` are produced from the same untouched scripts in the same
 build, so the Markdown and the published documents cannot drift apart.
+
+`images/` is the one directory the build does not touch. The generators emit `.docx`
+through docx-js and the Markdown shim has no image path, so getting artwork into the
+published documents means extending both sides of the pipeline rather than dropping a
+file in a folder — a deliberate later pass, deferred until there is enough art to
+justify it. For now these files serve the repository itself, starting with the banner
+at the top of this page.
 
 ## The documents
 

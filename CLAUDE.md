@@ -13,7 +13,7 @@ the same pass.
 ## Repository Layout
 
 The generator scripts are the source of truth. Everything else in this repository is
-either input to them or output from them.
+either input to them or output from them, with the single exception of `images/`.
 
 - `scripts/` — **the canon.** The docx-js generators, `transplant.py`, and the
   base64-encoded visual template. Editing canon means editing a script here.
@@ -27,6 +27,10 @@ either input to them or output from them.
   `normalize_pdf.py` (makes the rendered PDF byte-reproducible).
 - `reference/project-instructions.md` — the mirrored instructions for the Chat project.
 - `drafts/` — design drafts awaiting sign-off. Not canon; never read as canon.
+- `images/` — artwork, named for what it depicts. **The one directory the build does not
+  touch.** It serves the repository today (the README banner); folding art into the
+  published documents needs an image path added to both docx-js generation and the
+  Markdown shim, and is a deliberate later pass, not a drop-in.
 - `README.md` — repository index with links to every document.
 
 `corpus/` and `documents/` come from the same untouched scripts in the same build, so

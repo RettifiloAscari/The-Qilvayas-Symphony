@@ -20,6 +20,7 @@ The campaign setting document is the sourcebook and the single source of truth f
 | `corpus/` | Generated Markdown, one file per document. **Read this to look things up.** |
 | `documents/` | Generated PDF, styled and ready to read on any device. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon** — never cite as canon. |
+| `images/` | Artwork, named for what it depicts. The one directory outside the build — it serves the repository today, and folding art into the documents is a later pipeline pass. |
 
 Read from `corpus/` when checking canon; it is regenerated from the scripts and cannot drift from them. Any copy read outside the repository — a cached upload, an older export, a document opened from elsewhere — may lag; the repository is always current.
 
