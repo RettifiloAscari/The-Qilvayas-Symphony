@@ -8,6 +8,19 @@ You don't wait to be asked. When a discussion touches a plot thread, location, f
 
 ---
 
+## The Ruleset — 2014, Not 2024
+
+**Everything in this campaign is built on the 2014 D&D 5th Edition ruleset.** This is a standing constraint, not a default to drift from. "D&D 5e" is ambiguous now that the 2024 revision exists, so state it plainly: when the two disagree, **2014 wins.**
+
+- **Terminology is 2014.** *Race*, not *species*. *Challenge Rating*, not any revised framing. Backgrounds, feats, and ability score improvements follow the 2014 structure.
+- **No 2024-only mechanics.** Weapon masteries (Vex, Topple, Graze, Nick, and the rest), Bastions, Epic Boons, Heroic Inspiration, the revised exhaustion ladder, the reworked grapple and unarmed strike rules, and the 2024 spell list revisions are all **out of scope.** Do not introduce them, and do not "correct" existing material toward them.
+- **SRD validation reads the 2014 data deliberately.** The `src/2014/en/5e-SRD-*.json` paths and the API's `/api/2014/...` endpoints are the correct source, chosen on purpose — not an incidental artifact of the repository layout.
+- **Monster math follows the 2014 DMG** — the Monster Statistics by Challenge Rating table and the 2014 encounter-building multipliers.
+
+If a genuinely useful 2024 idea comes up, **flag it as a proposal** rather than folding it in. Moving the campaign to 2024 would be a deliberate, signed-off migration affecting every stat block and every player-facing document, not a quiet modernization.
+
+---
+
 ## Canon and Sources of Truth
 
 The campaign setting document is the sourcebook and the single source of truth for lore. Session documents are adventures built on it. The beta phase is closed: **all names are canonical**, and bracketed working-name placeholders no longer appear in the corpus.
@@ -111,7 +124,7 @@ The **Branch Ledger** lives in the DM Reference Guide: a table of every tracked 
 
 ## Mechanical Validation
 
-Homebrew stat blocks, spells, magic items, and equipment are built by feel first, then sanity-checked against official 5e SRD data rather than trusting instinct alone.
+Homebrew stat blocks, spells, magic items, and equipment are built by feel first, then sanity-checked against official 5e SRD data rather than trusting instinct alone. **All of it against the 2014 SRD** — see The Ruleset, above. The `2014` in the paths below is the whole point of them.
 
 **Preferred: direct database access.** Pull the source repo behind the API — `codeload.github.com/5e-bits/5e-database/tar.gz/refs/heads/main` (`raw.githubusercontent.com`, `github.com`, and `codeload.github.com` are all reachable from the sandbox). This avoids the live API's URL-guessing restriction, has no rate limit, and makes bulk comparison far faster than one-by-one lookups. Monster data: `src/2014/en/5e-SRD-Monsters.json`; other types follow `src/2014/en/5e-SRD-<Type>.json`.
 

@@ -220,6 +220,10 @@ document. It is not. Use explicit line numbers when inspecting a specific sectio
 
 ## 6. Mechanical validation — how to do it so the answer is real
 
+**Use the ruleset the campaign actually runs on.** Everything below assumes the 2014
+SRD and the 2014 DMG, which is what `src/2014/en/...` gives you. If §7 chose 2024, the
+paths, the monster table, and half the vocabulary change — settle that first.
+
 **Do not judge stat blocks against the DMG's Monster Statistics by CR table alone.**
 Measured that way, every humanoid NPC in the Qilvayas corpus looked badly under-tuned —
 50 to 90 hit points and 15 to 60 damage below its CR band. That verdict was wrong. Official
@@ -260,21 +264,30 @@ for large tables even as you add bodies.
 Ask these as short multiple-choice where they fork. Do not assume answers from the first
 campaign.
 
-1. **The repository.** Name, and whether it starts empty or as a fork of the Qilvayas
+1. **The ruleset — confirm 2014, or decide otherwise deliberately.** The Qilvayas
+   Symphony is built entirely on the **2014** D&D 5th Edition rules, and this pipeline's
+   SRD validation reads `src/2014/en/...` on purpose. "D&D 5e" is ambiguous now that the
+   2024 revision exists, so pin it before writing a stat block. If this campaign stays on
+   2014, say so in `CLAUDE.md` as a standing constraint: *race* not *species*, no weapon
+   masteries or Bastions or Epic Boons, no revised exhaustion or grapple rules, monster
+   math from the 2014 DMG. If it moves to 2024, that is a different SRD path, a different
+   monster table, and a different vocabulary — decide once, up front, because retrofitting
+   is a migration across every stat block and every player-facing document.
+2. **The repository.** Name, and whether it starts empty or as a fork of the Qilvayas
    structure.
-2. **The core theme, and its historical spine if it has one.** Qilvayas ran on Byzantine
+3. **The core theme, and its historical spine if it has one.** Qilvayas ran on Byzantine
    imperial decline with major NPCs keyed to historical models (Justinian, Olga of Kiev,
    Charlemagne, Vlad III, Catherine de' Medici). That framing did enormous work — it made
    NPCs coherent, gave their politics internal logic, and made research productive. A
    different campaign may want a different spine or none, but decide deliberately.
-3. **The document set.** Qilvayas runs: a sourcebook, session modules, a DM Reference
+4. **The document set.** Qilvayas runs: a sourcebook, session modules, a DM Reference
    Guide (single-column, wide tables), and a sanitized Player Guide. The Player Guide is
    authored as its own document, never produced by deleting paragraphs from the sourcebook
    — spoiler-safety lives in how sections are *written*. That split is worth keeping.
-4. **Party size, starting level, session length, advancement.** Qilvayas: 4–6 players,
+5. **Party size, starting level, session length, advancement.** Qilvayas: 4–6 players,
    3rd level, five-hour sessions, milestone advancement.
-5. **Visual template** — reuse, restyle, or replace. See §1.
-6. **Tone.** Write it down explicitly in `CLAUDE.md`. Qilvayas: "grandeur next to strain,
+6. **Visual template** — reuse, restyle, or replace. See §1.
+7. **Tone.** Write it down explicitly in `CLAUDE.md`. Qilvayas: "grandeur next to strain,
    institutions outliving their purpose, moral complexity with no clean answers." That one
    sentence steered hundreds of decisions.
 
