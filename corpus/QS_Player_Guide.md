@@ -18,6 +18,8 @@
 
 This is a companion for players, not the DM’s working sourcebook. It collects what an educated person in the Empire of Zhuvedus — particularly a final-year student of the Imperial Academy — would generally know: the shape of the world, its history, its politics, its faith, and the figures who hold power in it. It leaves things out on purpose. Some mysteries in this world are mysteries to the characters who live in it, and this guide is written to respect that — you won’t find spoilers here, and you shouldn’t expect to. Treat it the way your character would treat a good education: a solid foundation, not the whole story.
 
+**A note on the rules:** this campaign runs on the 2014 edition of the fifth-edition rules: the Player’s Handbook, Monster Manual, and Dungeon Master’s Guide as they stood before the 2024 revision. If you learned the game from the newer books, most of what you know still applies, but a few things do not — there are no weapon masteries here, backgrounds and ancestries work the older way, and exhaustion, grappling, and a handful of spells follow the earlier text. Bring whichever books you own; the table will sort out the differences, and none of them change the story.
+
 # Campaign Overview
 
 The Qilvayas Symphony is a story of imperial ambition, prophetic omens, and moral complexity, set against the backdrop of a crumbling empire. Drawing on the tensions of real history — particularly emperors who sought to restore a fading glory — this is a world exploring legacy, power, the cost of idealism, and the gap between the dream of unity and the reality of a fractured world.
