@@ -154,7 +154,7 @@ children.push(B("The Crossing Under Weight.", "A ford or a rope bridge that will
 
 children.push(H1("Encounters on the Road"));
 children.push(P("Each region below carries a d12 table. Roll once per travel day on a good road, twice on a bad one, and once more for any night spent outside a settlement. Roughly half of every table is not a fight, on purpose: an encounter table whose every entry is initiative teaches players that the world is a corridor with monsters in it."));
-children.push(P("Entries marked with a dagger reference Monster Manual creatures outside the SRD; substitute freely. Everything else is SRD."));
+children.push(P("A name followed by a bracketed dagger \u2014 (\u2020) \u2014 is a Monster Manual creature outside the SRD: look its stat block up rather than pulling it from the open data, or substitute freely. Everything else is SRD. The key is repeated under every table that uses it."));
 
 // ---------- settlement entry helper ----------
 // Six lines, same order every time, so the eye learns where to land.
@@ -180,7 +180,7 @@ const ENC = (region, rows) => {
   // pages away by the time a DM has flipped to the Normere table, and a bare symbol with
   // no key on the page reads as a corruption rather than a note.
   if (rows.some((r) => r.some((cellText) => cellText.indexOf("\u2020") >= 0))) {
-    out.push(PS([{ t: "\u2020 Monster Manual, outside the SRD \u2014 look the stat block up rather than pulling it from the open data, or substitute freely.", i: true }], { spacing: { after: 200 } }));
+    out.push(PS([{ t: "(\u2020) Monster Manual, outside the SRD \u2014 look the stat block up rather than pulling it from the open data, or substitute freely.", i: true }], { spacing: { after: 200 } }));
   }
   return out;
 };
@@ -292,7 +292,7 @@ children.push(...ENC("the Ostmark", [
   ["7", "Ogres (1d2) in the hill country, working a stretch of road as a toll they have invented and are very pleased with."],
   ["8", "A griffon on the crags, hunting. It will not engage a group. A party that watches it is watching something the empire used to ride."],
   ["9", "A hedge-priest walking a circuit of four villages, glad of company, and carrying news from all four."],
-  ["10", "Wights\u2020 in a failed watch-fort \u2014 a dead garrison that never stood down. They will not leave the fort. Something has made them restless this season."],
+  ["10", "Wights (\u2020) in a failed watch-fort \u2014 a dead garrison that never stood down. They will not leave the fort. Something has made them restless this season."],
   ["11", "A funeral party on the road with a body and no lamp, having run out of oil. They will pay anything. It is nearly dark."],
   ["12", "Two men fighting on the road over a boundary, with a third holding the horses and no intention of stopping it."]
 ]));
@@ -561,7 +561,7 @@ children.push(...ENC("the See of Orlath", [
   ["6", "A troll in a ravine, which the See\u2019s rangers manage rather than kill, on a schedule, with fire."],
   ["7", "Saber-toothed tigers (1d2) on the high fells, hunting the same pilgrims the wolves are protecting."],
   ["8", "A relic procession coming down the road, and the question of whether to kneel."],
-  ["9", "A banshee\u2020 on the Drevic moors, mourning, not hunting, and the difference is entirely in how the party opens."],
+  ["9", "A banshee (\u2020) on the Drevic moors, mourning, not hunting, and the difference is entirely in how the party opens."],
   ["10", "Polar bear on a fell shoulder, unbothered, immense, and directly on the only path."],
   ["11", "Two Ardvenner scribes traveling to Orlath on Karvel\u2019s business, cheerful, indiscreet, and carrying a sealed case."],
   ["12", "The Reconciliation Shrine at dusk, empty, and the extraordinary quality of the silence in it."]
@@ -693,7 +693,7 @@ children.push(...LOC({
   buy: "Nothing.",
   talk: "Nobody living.",
   comp: "Norr\u2019s surveyors map the pre-ducal barrows elsewhere and build around them, to the letter of an old accommodation nobody writes down. In the Weld they do not survey at all.",
-  dm: "The Harrowing left revenants\u2020 \u2014 vengeance-oath dead \u2014 walking the burned district. Norr knows. The Weld is the one entry in the Reckoning Book with no numbers in it, and the one place his personal oath-web has a hole in it. The shadow has noticed the hole. This is Marked-to-Scarred thin-written ground and it is the western mirror of Halvenne: a party who has seen both has seen the mechanism twice and can name it."
+  dm: "The Harrowing left revenants (\u2020) \u2014 vengeance-oath dead \u2014 walking the burned district. Norr knows. The Weld is the one entry in the Reckoning Book with no numbers in it, and the one place his personal oath-web has a hole in it. The shadow has noticed the hole. This is Marked-to-Scarred thin-written ground and it is the western mirror of Halvenne: a party who has seen both has seen the mechanism twice and can name it."
 }));
 
 children.push(...ENC("Normere", [
@@ -708,7 +708,7 @@ children.push(...ENC("Normere", [
   ["9", "A road crew resurfacing a road that is already perfect, on schedule, because it is on the schedule."],
   ["10", "A Brekeland refugee family who have crossed into Normere and are being processed, kindly, thoroughly, and permanently."],
   ["11", "The Weld\u2019s boundary at dusk: fenced fields, maintained road, and no lamp anywhere in twelve miles."],
-  ["12", "Revenants\u2020 at the Weld\u2019s edge, walking the old district line, who will not pursue past it and who are looking for somebody specific."]
+  ["12", "Revenants (\u2020) at the Weld\u2019s edge, walking the old district line, who will not pursue past it and who are looking for somebody specific."]
 ]));
 
 // ============ BESTIARY ============

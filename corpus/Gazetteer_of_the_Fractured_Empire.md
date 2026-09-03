@@ -110,7 +110,7 @@ The imperial calendar is a working document for travel. Roads reopen in Thawtide
 
 Each region below carries a d12 table. Roll once per travel day on a good road, twice on a bad one, and once more for any night spent outside a settlement. Roughly half of every table is not a fight, on purpose: an encounter table whose every entry is initiative teaches players that the world is a corridor with monsters in it.
 
-Entries marked with a dagger reference Monster Manual creatures outside the SRD; substitute freely. Everything else is SRD.
+A name followed by a bracketed dagger — (†) — is a Monster Manual creature outside the SRD: look its stat block up rather than pulling it from the open data, or substitute freely. Everything else is SRD. The key is repeated under every table that uses it.
 
 # The Crownlands
 
@@ -256,11 +256,11 @@ Big-sky plains breaking into wooded hills eastward, watch-forts on the heights s
 | 7 | Ogres (1d2) in the hill country, working a stretch of road as a toll they have invented and are very pleased with. |
 | 8 | A griffon on the crags, hunting. It will not engage a group. A party that watches it is watching something the empire used to ride. |
 | 9 | A hedge-priest walking a circuit of four villages, glad of company, and carrying news from all four. |
-| 10 | Wights† in a failed watch-fort — a dead garrison that never stood down. They will not leave the fort. Something has made them restless this season. |
+| 10 | Wights (†) in a failed watch-fort — a dead garrison that never stood down. They will not leave the fort. Something has made them restless this season. |
 | 11 | A funeral party on the road with a body and no lamp, having run out of oil. They will pay anything. It is nearly dark. |
 | 12 | Two men fighting on the road over a boundary, with a third holding the horses and no intention of stopping it. |
 
-*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
+*(†) Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
 
 # The Suthmark
 
@@ -616,12 +616,12 @@ What the capital has not understood is that Orlath is no longer a schism. It is 
 | 6 | A troll in a ravine, which the See’s rangers manage rather than kill, on a schedule, with fire. |
 | 7 | Saber-toothed tigers (1d2) on the high fells, hunting the same pilgrims the wolves are protecting. |
 | 8 | A relic procession coming down the road, and the question of whether to kneel. |
-| 9 | A banshee† on the Drevic moors, mourning, not hunting, and the difference is entirely in how the party opens. |
+| 9 | A banshee (†) on the Drevic moors, mourning, not hunting, and the difference is entirely in how the party opens. |
 | 10 | Polar bear on a fell shoulder, unbothered, immense, and directly on the only path. |
 | 11 | Two Ardvenner scribes traveling to Orlath on Karvel’s business, cheerful, indiscreet, and carrying a sealed case. |
 | 12 | The Reconciliation Shrine at dusk, empty, and the extraordinary quality of the silence in it. |
 
-*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
+*(†) Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
 
 # Kingdom of Ardven
 
@@ -793,7 +793,7 @@ Rain-lashed headlands, drained polder-fields behind the Duke’s dikes, slate to
 
 **The complication.** Norr’s surveyors map the pre-ducal barrows elsewhere and build around them, to the letter of an old accommodation nobody writes down. In the Weld they do not survey at all.
 
-**DM Only:** The Harrowing left revenants† — vengeance-oath dead — walking the burned district. Norr knows. The Weld is the one entry in the Reckoning Book with no numbers in it, and the one place his personal oath-web has a hole in it. The shadow has noticed the hole. This is Marked-to-Scarred thin-written ground and it is the western mirror of Halvenne: a party who has seen both has seen the mechanism twice and can name it.
+**DM Only:** The Harrowing left revenants (†) — vengeance-oath dead — walking the burned district. Norr knows. The Weld is the one entry in the Reckoning Book with no numbers in it, and the one place his personal oath-web has a hole in it. The shadow has noticed the hole. This is Marked-to-Scarred thin-written ground and it is the western mirror of Halvenne: a party who has seen both has seen the mechanism twice and can name it.
 
 **Encounters — Normere (d12)**
 
@@ -810,9 +810,9 @@ Rain-lashed headlands, drained polder-fields behind the Duke’s dikes, slate to
 | 9 | A road crew resurfacing a road that is already perfect, on schedule, because it is on the schedule. |
 | 10 | A Brekeland refugee family who have crossed into Normere and are being processed, kindly, thoroughly, and permanently. |
 | 11 | The Weld’s boundary at dusk: fenced fields, maintained road, and no lamp anywhere in twelve miles. |
-| 12 | Revenants† at the Weld’s edge, walking the old district line, who will not pursue past it and who are looking for somebody specific. |
+| 12 | Revenants (†) at the Weld’s edge, walking the old district line, who will not pursue past it and who are looking for somebody specific. |
 
-*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
+*(†) Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
 
 # A Bestiary of the Fractured Empire
 
