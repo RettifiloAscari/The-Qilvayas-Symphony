@@ -77,7 +77,8 @@ measurement spread and usually fine. Fix in this order:
 Table cells are left-aligned with the inherited first-line indent cleared; the
 template otherwise centres and indents them. Dice columns want 11%, not 7.
 
-`refguide.js` is the one single-column document and is exempt from all of this.
+Single-column documents are exempt and are named in `tools/pipeline.conf`; here that is
+`refguide.js`, whose value is wide scannable tables with the whole page to use.
 
 ### DM markers are bold book-red, never italic
 
@@ -151,6 +152,11 @@ The generators write to a hardcoded `/home/claude`. `build.sh` accommodates that
 rather than patching it out of nine scripts — a historical quirk, not worth disturbing.
 
 ## Reference
+
+Everything repository-specific lives in `tools/pipeline.conf` — the single-column
+generator, the column measure, and which documents are player-facing. The five tools below
+are byte-identical to their copies in The King's Crusade, so a fix to one is a copy rather
+than a re-derivation.
 
 - `tools/anchor.py` — assert-then-edit
 - `tools/normalize_escapes.py` — real characters in, `\uXXXX` out; `--check` to report

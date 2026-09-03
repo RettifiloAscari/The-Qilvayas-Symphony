@@ -27,15 +27,31 @@ Three fixes, in order of preference:
      not. Merge columns, or convert the table to full-width B() entries -- which is
      what the Factions list and the Canon of Saints became.
 
-refguide.js is exempt: it is the one single-column document.
+Single-column documents are exempt and are named in tools/pipeline.conf; their
+tables get the full page width.
 """
 import glob
+import os
 import re
 import sys
 
-# Two-column body on A4 with the template's margins: (11906 - 864 - 1008 - 360) / 2
-# twips per column, less the cell margins, is about 3.30in of usable text width.
-COL_IN = 3.30
+
+def conf(key, default):
+    """Read one value from tools/pipeline.conf, so this file stays identical
+    across repositories and only the config differs."""
+    path = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'pipeline.conf')
+    try:
+        for line in open(path, encoding='utf-8'):
+            line = line.strip()
+            if line.startswith(key + '='):
+                return line.split('=', 1)[1].strip().strip('"').strip("'")
+    except OSError:
+        pass
+    return default
+
+
+# Usable text width of one column of the two-column body, in inches.
+COL_IN = float(conf('COLUMN_WIDTH_IN', '3.30'))
 PAD_IN = 0.06
 
 # Measured from real glyph extents (pdftotext -bbox) on the published sourcebook:
@@ -46,7 +62,7 @@ CHAR_IN = 0.059
 CERTAIN = 1.25    # need/avail above this will break, every time
 LIKELY = 1.05     # above this, probably breaks -- render the page and look
 
-SINGLE_COLUMN = {'refguide.js'}
+SINGLE_COLUMN = set(conf('SINGLE_COLUMN_GENERATORS', '').split())
 
 # A line may break after any of these, so they end an unbreakable run.
 BREAKABLE = re.compile(r'[\s\-\u2010-\u2015/]+')

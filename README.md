@@ -28,6 +28,11 @@ because the next build discards those edits.
 | `documents/` | **Generated PDF** — styled, embeds its fonts, reads on any device. |
 | `tools/` | `build.sh` regenerates and verifies everything; `verify.sh` runs every pre-commit check in one call; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py`, `anchor.py`, `check_columns.py`, and `find_page.py` are the authoring tools. |
 | `.claude/skills/` | `qs-build` — the production mechanics, loaded on demand rather than in every session. |
+
+The five authoring tools and `verify.sh` are byte-identical to their copies in
+[The King's Crusade](https://github.com/RettifiloAscari/the-kings-crusade); everything
+repository-specific lives in `tools/pipeline.conf`, so a fix to one is a copy across
+rather than a re-derivation.
 | `reference/` | The mirrored instructions for the Claude Chat project. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
 | `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |

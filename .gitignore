@@ -23,3 +23,7 @@ scripts/_template_decoded.docx
 # .docx is a build intermediate only — never committed. The deliverable is the
 # PDF in documents/, which embeds its fonts and reads identically on any device.
 *.docx
+
+# Python bytecode from the tools/
+__pycache__/
+*.pyc
