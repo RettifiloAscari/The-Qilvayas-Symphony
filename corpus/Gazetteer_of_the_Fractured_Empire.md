@@ -45,7 +45,7 @@ From Aenodira, at normal pace, on the best surviving surface. Add a third to eve
 | **To** | **Days** | **Route and Condition** |
 | --- | --- | --- |
 | Varn’s Crossing | 1 | The eastern trunk road. Excellent surface, tolled at the bridge, patrolled twice daily. |
-| Lupenna | 2 (on foot) | The Matron’s Road. Excellent, crowded, and the only imperial road with a formal begging ordinance. |
+| Lupenna | 2 | The Matron’s Road, walked not ridden. Excellent, crowded, and the only imperial road with a formal begging ordinance. |
 | Whitequay | 2 | River road north. Good surface; barge traffic makes it faster to go by water in either direction. |
 | Dravenna | 4 | The eastern trunk road past Varn’s Crossing. Good to the Ostmark border, adequate after. |
 | Kolvess | 6 | As Dravenna, then two days north on a legion spur. Maintained by the Third, which is to say patchily. |

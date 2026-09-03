@@ -93,6 +93,27 @@ measurement spread and usually fine. Fix in this order:
    not. Merge columns, or convert to full-width `B()` entries — which is what the
    Factions list and the Canon of Saints became.
 
+**Widening a column can silently delete rows.** Widths are a zero-sum hundred, so widening
+one column narrows another, the narrowed column wraps to more lines, and the table gets
+taller. A table that then meets a column or page break does not always continue on the
+other side: LibreOffice can simply **drop the rows that no longer fit**, with no error and
+no page-count change. The Gazetteer's Distances by Imperial Road table sits on that edge
+today — its `Days` column is one twip-fraction too narrow for its own `Days` header, which
+breaks as `Day`/`s`, and every attempt to widen it (from the prose column *or* from the
+`To` column, at 11%, 12% and 13%) truncated the table after its first row, losing eleven
+of twelve destinations and 232 words. The 10% is load-bearing; leave it alone.
+
+Nothing in the pipeline catches this. `build.sh` reports thirteen documents "ok", the page
+census is unchanged, and `check_columns.py` rates the surviving break *marginal*. **Compare
+word counts before and after any width change**, against the previous PDF and against the
+corpus, which is generated from the same run and never truncates:
+
+```bash
+pdftotext documents/<doc>.pdf - | wc -w      # vs the same for the pre-change PDF
+```
+
+A drop of more than a word or two is rows going missing, not reflow.
+
 Table cells are left-aligned with the inherited first-line indent cleared; the
 template otherwise centres and indents them. Dice columns want 11%, not 7.
 

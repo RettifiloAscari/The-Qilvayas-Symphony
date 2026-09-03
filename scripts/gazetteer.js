@@ -98,7 +98,7 @@ children.push(table(
   [26, 10, 64],
   [
     ["Varn\u2019s Crossing", "1", "The eastern trunk road. Excellent surface, tolled at the bridge, patrolled twice daily."],
-    ["Lupenna", "2 (on foot)", "The Matron\u2019s Road. Excellent, crowded, and the only imperial road with a formal begging ordinance."],
+    ["Lupenna", "2", "The Matron\u2019s Road, walked not ridden. Excellent, crowded, and the only imperial road with a formal begging ordinance."],
     ["Whitequay", "2", "River road north. Good surface; barge traffic makes it faster to go by water in either direction."],
     ["Dravenna", "4", "The eastern trunk road past Varn\u2019s Crossing. Good to the Ostmark border, adequate after."],
     ["Kolvess", "6", "As Dravenna, then two days north on a legion spur. Maintained by the Third, which is to say patchily."],
