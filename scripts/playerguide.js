@@ -4,9 +4,9 @@ const fs = require('fs');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
-const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun(t)] });
-const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(t)] });
-const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, children: [new TextRun(t)] });
+const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, keepNext: true, children: [new TextRun(t)] });
+const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, keepNext: true, children: [new TextRun(t)] });
+const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, keepNext: true, children: [new TextRun(t)] });
 const BULLET = (segs) => new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 120 }, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
@@ -19,8 +19,10 @@ const { Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = 
 const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
 
 const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const row = (cells) => new TableRow({ children: cells });
-const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
+const row = (cells) => new TableRow({ children: cells, cantSplit: true });
+// The header row repeats when a long table spans a column or page break.
+const headerRow = (cells) => new TableRow({ children: cells, cantSplit: true, tableHeader: true });
+const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ headerRow(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
 
 
 const children = [];

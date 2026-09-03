@@ -12,9 +12,9 @@ const PS = (segs, opts = {}) => new Paragraph({
   children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c }))
 });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
-const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun(t)] });
-const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(t)] });
-const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, children: [new TextRun(t)] });
+const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, keepNext: true, children: [new TextRun(t)] });
+const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, keepNext: true, children: [new TextRun(t)] });
+const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, keepNext: true, children: [new TextRun(t)] });
 const BULLET = (segs) => new Paragraph({
   numbering: { reference: "bullets", level: 0 }, spacing: { after: 120 },
   children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c }))
@@ -30,7 +30,7 @@ const { Table: LTable, TableRow: LRow, TableCell: LCell, WidthType: LW, ShadingT
 const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
 
 const lcell = (text, opts = {}) => new LCell({ width: { size: opts.w || 20, type: LW.PERCENTAGE }, shading: opts.head ? { type: LS.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 90, right: 90 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, columnWidths: CW(widths), layout: LL.FIXED, rows: [ new LRow({ children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
+const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, columnWidths: CW(widths), layout: LL.FIXED, rows: [ new LRow({ cantSplit: true, tableHeader: true, children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ cantSplit: true, children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
 
 
 // Boxed read-aloud text
@@ -47,7 +47,7 @@ const abCell = (text, bold) => new TableCell({
   width: { size: 16.6, type: WidthType.PERCENTAGE },
   shading: bold ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined,
   children: [new Paragraph({
-    alignment: AlignmentType.CENTER, spacing: { after: 40, before: 40 },
+    keepNext: !!bold, alignment: AlignmentType.CENTER, spacing: { after: 40, before: 40 },
     children: [new TextRun({ text, bold: !!bold, size: 20 })]
   })]
 });
@@ -66,8 +66,8 @@ const SB = (d) => {
     columnWidths: CW([1, 1, 1, 1, 1, 1]),
     layout: TableLayoutType.FIXED,
     rows: [
-      new TableRow({ children: ["STR", "DEX", "CON", "INT", "WIS", "CHA"].map(h => abCell(h, true)) }),
-      new TableRow({ children: [d.str, d.dex, d.con, d.int, d.wis, d.cha].map(v => abCell(v + " (" + mod(v) + ")")) })
+      new TableRow({ cantSplit: true, children: ["STR", "DEX", "CON", "INT", "WIS", "CHA"].map(h => abCell(h, true)) }),
+      new TableRow({ cantSplit: true, children: [d.str, d.dex, d.con, d.int, d.wis, d.cha].map(v => abCell(v + " (" + mod(v) + ")")) })
     ]
   }));
   out.push(P("", { spacing: { after: 60 } }));

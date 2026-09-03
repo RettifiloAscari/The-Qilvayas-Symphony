@@ -60,6 +60,11 @@ note "build"
 if tools/build.sh >/tmp/qs_build.log 2>&1; then ok "$(grep -c 'pages  ok' /tmp/qs_build.log) documents built and verified clean"
 else bad "build failed - see /tmp/qs_build.log"; fi
 
+note "stat blocks are not torn across a column or page break"
+out="$(python3 tools/check_tearing.py 2>&1)"; rc=$?
+if [[ $rc -eq 0 ]]; then ok "every ability row sits under its own header"
+else printf '%s\n' "$out" | sed 's/^/   /'; bad "torn stat block(s) above"; fi
+
 note "corpus and documents match scripts"
 md=$(git status --porcelain corpus | wc -l)
 pdf=$(git status --porcelain documents | wc -l)
@@ -71,9 +76,12 @@ elif [[ "$md" -eq 0 && "$pdf" -gt 0 ]]; then
   # that last committed them. Do NOT commit that churn -- it is a large meaningless
   # diff that the next machine reverses. Discard with: git checkout -- documents/
   printf '   note  %d PDF(s) differ but every corpus file is identical.\n' "$pdf"
-  printf '         That is cross-container render churn, not drift. Verify with\n'
-  printf '         pdftotext before and after; if the text matches, run\n'
-  printf '         git checkout -- documents/ rather than committing it.\n'
+  printf '         Two things look like this. A LAYOUT change (widths, keepNext,\n'
+  printf '         cantSplit) is real and should be committed -- page counts move.\n'
+  printf '         Cross-container RENDER CHURN is not, and should be discarded:\n'
+  printf '         same page counts, same pdftotext output, different bytes.\n'
+  printf '         Check pdfinfo page counts first, then pdftotext. If nothing\n'
+  printf '         moved, git checkout -- documents/ rather than committing it.\n'
 else
   printf '   note  %d corpus and %d document file(s) changed - commit them with the script change\n' "$md" "$pdf"
 fi

@@ -27,6 +27,20 @@ reproducibility). The `.docx` is an intermediate and is gitignored. Nothing in
 5. Render the pages you changed and **look at them**.
 6. Commit `scripts/`, `corpus/`, and `documents/` **together**.
 
+## Prerequisites
+
+All checked by the build, and each has bitten one of the two campaigns. `PIPELINE_README.md`
+carries the long form.
+
+| Requirement | Install | Why |
+|---|---|---|
+| Node + `docx` | `npm install docx` | The generators |
+| Python 3 | stdlib only | `transplant.py`, `normalize_pdf.py` |
+| LibreOffice **Writer** | `apt-get install libreoffice-writer` | `libreoffice-core` alone loads *nothing* and every document fails with "source file could not be loaded" — a content-shaped error with an environment cause. Containers ship with core only. |
+| Ghostscript | `apt-get install ghostscript` | Reproducible PDF |
+| poppler-utils | `apt-get install poppler-utils` | `pdftotext`, `pdffonts`, `pdftoppm` |
+| Alegreya SC, Alegreya Sans SC, Lato | TTFs into `~/.local/share/fonts`, then `fc-cache -f` | Missing fonts **substitute silently and change pagination**, so layout verified without them is meaningless. `fonts.google.com/download` is blocked here — pull the static TTFs from `raw.githubusercontent.com/google/fonts/main/ofl/{alegreyasc,alegreyasanssc,lato}/`. |
+
 ## Conventions that fail silently
 
 ### Compose in real characters, then normalize
@@ -76,6 +90,16 @@ measurement spread and usually fine. Fix in this order:
 
 Table cells are left-aligned with the inherited first-line indent cleared; the
 template otherwise centres and indents them. Dice columns want 11%, not 7.
+
+**Tables must not tear.** `row()` sets `cantSplit` so a row's cells cannot be torn across
+a column or page break; the header row is built by `headerRow()`, which adds `tableHeader`
+so it repeats when a long table does span a break; and `abCell` sets `keepNext: !!bold`,
+true only for the header row, which binds STR/DEX/CON forward to the values beneath it.
+Without that binding a stat block can put its six labels at the foot of one column and its
+six numbers in the next — which three blocks in this corpus were doing until it was ported
+from the sister repository. `tools/check_tearing.py` reads glyph boxes and fails the build
+if it happens again; reading order cannot detect it, because on a two-column page a torn
+block looks contiguous and an intact one can look broken.
 
 Single-column documents are exempt and are named in `tools/pipeline.conf`; here that is
 `refguide.js`, whose value is wide scannable tables with the whole page to use.
@@ -132,6 +156,10 @@ For a precise answer on whether something broke, read the glyph extents rather t
 squinting: `pdftotext -bbox -f N -l N doc.pdf -` lists every word with its box, so a
 word absent from that list is a word that got split.
 
+For the source scan use `grep -Pl` (list offending files) rather than `-Pc`: with nine
+generators, `-Pc` prints a `file:count` line per script and there is no single number to
+read.
+
 The escape check must use a **doubled backslash** — `grep -c '\\u'`. The
 single-quoted `'\u'` form matches the plain letter *u* and can never return zero on
 real prose.
@@ -162,6 +190,7 @@ than a re-derivation.
 - `tools/normalize_escapes.py` — real characters in, `\uXXXX` out; `--check` to report
 - `tools/check_columns.py` — starved table columns, banded by confidence
 - `tools/find_page.py` — which PDF page a string is on
+- `tools/check_tearing.py` — stat-block ability rows torn from their header
 - `tools/verify.sh` — everything above in one call; `--full` adds reproducibility
 - `tools/build.sh` — the build itself; `--no-verify` only when the render toolchain
   is genuinely unavailable

@@ -12,8 +12,8 @@ const fs = require('fs');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 160 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 160 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
-const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, children: [new TextRun(t)] });
-const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, children: [new TextRun(t)] });
+const H1 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_1, keepNext: true, children: [new TextRun(t)] });
+const H2 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_2, keepNext: true, children: [new TextRun(t)] });
 const BULLET = (segs) => new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 100 }, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
 
@@ -24,13 +24,15 @@ const cell = (text, opts = {}) => new TableCell({
   margins: { top: 60, bottom: 60, left: 100, right: 100 },
   children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, italics: !!opts.i, size: 19 })] })]
 });
-const row = (cells) => new TableRow({ children: cells });
+const row = (cells) => new TableRow({ children: cells, cantSplit: true });
+// The header row repeats when a long table spans a column or page break.
+const headerRow = (cells) => new TableRow({ children: cells, cantSplit: true, tableHeader: true });
 const table = (headers, widths, rows) => new Table({
   width: { size: 100, type: WidthType.PERCENTAGE },
   columnWidths: CW(widths),
   layout: TableLayoutType.FIXED,
   rows: [
-    row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))),
+    headerRow(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))),
     ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] }))))
   ]
 });
