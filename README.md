@@ -14,40 +14,16 @@ futures by a shared prophetic vision of the capital burning.
 
 This repository is the source of truth for the campaign.
 
-## How this repository works
+## Contents
 
-The **generator scripts are the canon.** Everything else is input to them or output
-from them — with one exception, `images/`, noted below. To change the campaign, edit a
-script in `scripts/` and run `tools/build.sh`; never edit the generated files directly,
-because the next build discards those edits.
-
-| Directory | What it is |
-|---|---|
-| `scripts/` | **The canon.** docx-js generators, `transplant.py`, and the encoded visual template. |
-| `corpus/` | **Generated Markdown** — readable and greppable on any device. Start here. |
-| `documents/` | **Generated PDF** — styled, embeds its fonts, reads on any device. |
-| `tools/` | `build.sh` regenerates and verifies everything; `verify.sh` runs every pre-commit check in one call; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py`, `anchor.py`, `check_columns.py`, and `find_page.py` are the authoring tools. |
-| `.claude/skills/` | `qs-build` — the production mechanics, loaded on demand rather than in every session. |
-
-The five authoring tools and `verify.sh` are byte-identical to their copies in
-[The King's Crusade](https://github.com/RettifiloAscari/the-kings-crusade); everything
-repository-specific lives in `tools/pipeline.conf`, so a fix to one is a copy across
-rather than a re-derivation.
-| `reference/` | The mirrored instructions for the Claude Chat project. |
-| `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
-| `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |
-
-`corpus/` and `documents/` are produced from the same untouched scripts in the same
-build, so the Markdown and the published documents cannot drift apart.
-
-`images/` is the one directory the build does not touch. The generators emit `.docx`
-through docx-js and the Markdown shim has no image path, so getting artwork into the
-published documents means extending both sides of the pipeline rather than dropping a
-file in a folder — a deliberate later pass, deferred until there is enough art to
-justify it. For now these files serve the repository itself, starting with the banner
-at the top of this page.
+- [The documents](#the-documents) — [Core volumes](#core-volumes) · [Session modules](#session-modules) · [Guides](#guides)
+- [How this repository works](#how-this-repository-works)
+- [Rebuilding](#rebuilding)
 
 ## The documents
+
+Thirteen documents, all generated. Read the Markdown on any device; the PDF is the
+styled, font-embedded edition meant for the table.
 
 ### Core volumes
 
@@ -74,6 +50,39 @@ at the top of this page.
 - [Player Guide](corpus/QS_Player_Guide.md) — the sanitized, shareable edition · [PDF](documents/QS_Player_Guide.pdf)
 
 The two documents to hand a player are the **Player Guide** and the **Player's Companion**. Both are authored player-facing from the first word rather than cut down from a DM document, and both are scanned for DM-only material before every publish.
+
+## How this repository works
+
+The **generator scripts are the canon.** Everything else is input to them or output
+from them — with one exception, `images/`, noted below. To change the campaign, edit a
+script in `scripts/` and run `tools/build.sh`; never edit the generated files directly,
+because the next build discards those edits.
+
+| Directory | What it is |
+|---|---|
+| `scripts/` | **The canon.** docx-js generators, `transplant.py`, and the encoded visual template. |
+| `corpus/` | **Generated Markdown** — readable and greppable on any device. Start here. |
+| `documents/` | **Generated PDF** — styled, embeds its fonts, reads on any device. |
+| `tools/` | `build.sh` regenerates and verifies everything; `verify.sh` runs every pre-commit check in one call; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py`, `anchor.py`, `check_columns.py`, and `find_page.py` are the authoring tools. |
+| `.claude/skills/` | `qs-build` — the production mechanics, loaded on demand rather than in every session. |
+| `reference/` | The mirrored instructions for the Claude Chat project. |
+| `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
+| `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |
+
+The five authoring tools and `verify.sh` are byte-identical to their copies in
+[The King's Crusade](https://github.com/RettifiloAscari/the-kings-crusade); everything
+repository-specific lives in `tools/pipeline.conf`, so a fix to one is a copy across
+rather than a re-derivation.
+
+`corpus/` and `documents/` are produced from the same untouched scripts in the same
+build, so the Markdown and the published documents cannot drift apart.
+
+`images/` is the one directory the build does not touch. The generators emit `.docx`
+through docx-js and the Markdown shim has no image path, so getting artwork into the
+published documents means extending both sides of the pipeline rather than dropping a
+file in a folder — a deliberate later pass, deferred until there is enough art to
+justify it. For now these files serve the repository itself, starting with the banner
+at the top of this page.
 
 ## Rebuilding
 
