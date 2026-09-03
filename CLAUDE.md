@@ -32,6 +32,8 @@ either input to them or output from them, with the single exception of `images/`
   published documents needs an image path added to both docx-js generation and the
   Markdown shim, and is a deliberate later pass, not a drop-in.
 - `README.md` — repository index with links to every document.
+- `.claude/skills/qs-build/` — the production mechanics, as a skill loaded on demand.
+  It is the single copy of those rules; do not restate them in this file.
 
 Nine generators produce thirteen documents. The Gazetteer and the Player's Companion are
 new volumes rather than extensions of the sourcebook, and the split is deliberate: the
@@ -338,78 +340,23 @@ by design** anything whose presence contradicts its own fiction (Vaelindra has n
 she is findable only by referral); keep unresolved dread, since a hook is not a spoiler;
 and verify before publishing by scanning for DM-only strings and mechanical asides.
 
-**Production practice.** `PIPELINE_README.md` is the full reference; this is the summary.
+**Production practice.** The mechanics live in the **`qs-build` skill** — invoke it
+before touching anything in `scripts/`, running a build, adding a document, or
+debugging a rendering problem. It carries the escape convention, the table and
+`columnWidths` rules, the DM-marker convention, the anchored-edit discipline, and the
+verification loop, and it is loaded on demand so this file does not pay for it in
+every lore conversation. `PIPELINE_README.md` remains the full reference.
 
-- **Generation scripts are the source of truth.** Documents are generated programmatically
-  (docx-js) so the corpus regenerates consistently and content splices between documents
-  without transcription drift. Never hand-edit a published document — edit the script.
-- **One command rebuilds everything:** `tools/build.sh`. It regenerates `corpus/` and
-  `documents/`, applies the template, renders each document to PDF, and fails the build on
-  escape leaks or font substitution. Use `--no-verify` only when the render toolchain is
-  genuinely unavailable.
-- **The deliverable is PDF; the .docx is a build intermediate.** The pipeline runs
-  docx-js → `transplant.py` (template) → LibreOffice (PDF) → Ghostscript → `normalize_pdf.py`.
-  The final two passes strip per-run randomness (timestamps, IDs, font-subset tags) so an
-  unchanged document produces a byte-identical file and the git history stays clean.
-- **All documents pass through the template pipeline** — the /u/YaAlex-derived 5e style
-  template (Alegreya SC Medium headings in deep book-red, **Alegreya Sans SC and Lato**
-  body text, A4, page-number footers), applied via `transplant.py`. Full-width masthead,
-  continuous two-column body for the sourcebook and modules; **single-column for the DM
-  Reference Guide**, whose value is wide scannable tables.
-- **Fonts must be installed or verification is meaningless.** The template requests
-  Alegreya SC, Alegreya Sans SC, and Lato. Missing fonts do not error — they substitute,
-  and substitution changes line breaks, table fits, and page count. `build.sh` refuses to
-  run if any of the three is absent.
-- **`node --check` is not sufficient — run every generator.** It validates syntax, not
-  identifiers: a call to a helper the file does not define, or a push onto the wrong
-  document's array, passes `--check` and throws at build time. Helper sets genuinely
-  differ between generators (`refguide.js` has no `B()` or `H3()`; the session generators
-  use `ltable`/`lcell` rather than `table`/`cell`), and the multi-document generators hold
-  several arrays at once, so a `c6.push` inside the Session Five block is a real and easy
-  mistake. Run each script, then build.
-- **Verify rendering before publishing.** Rendering bugs are invisible in source. The
-  escape check must use a doubled backslash — `grep -c '\\u'`; the single-quoted
-  `'\u'` form matches the plain letter *u* and can never return zero on real prose.
-- **DM-only markers are bold book-red, never italic.** Every inline `DM Only:` /
-  `DM note:` marker is rendered with the `DM()` segment helper present in each generator
-  (`const DM = (t) => ({ t, b: true, c: "5B1F1F" })`), inside a `PS([...])` paragraph:
-  `PS([DM("DM Only: "), { t: "the note itself." }])`. Colour is preattentive — a DM spots
-  red without reading — and it leaves the body roman, which matters because these notes
-  run 100–200 words. **Colour the marker, not the prose**; never set a whole DM paragraph
-  in italic. Italic is reserved for read-aloud text, quotations, and epigraphs, and
-  overloading it makes both signals ambiguous. Two rules follow from the Markdown shim,
-  which appends its own trailing space after every bold run: the marker segment carries
-  the trailing space (`DM("DM Only: ")`) and the following segment never begins with one,
-  exactly as `B(lead, rest)` already does; and a bare parenthetical absorbs its brackets
-  into the marker (`DM("(DM only) ")`). Sections already titled `(DM Only)` need no inline
-  marker — the heading renders in book-red and is the most prominent thing on the page.
-  Not yet covered: table cells and stat-block trait text, whose helpers render a single
-  unstyled run.
-- **Tables must pass `columnWidths`.** `docx-js` emits a dummy equal-width `<w:tblGrid>`
-  when a `Table` is built without it, and LibreOffice honours that grid over the per-cell
-  percentages — so every table renders with evenly split columns and the `widths` array is
-  silently discarded. The `table()` and `ltable()` helpers now pass
-  `columnWidths: CW(widths)` and `layout: TableLayoutType.FIXED`; `CW` scales the widths
-  array to twips, and proportions are what matter because `tblW=100%` governs the total.
-  The stat-block ability tables pass a literal `CW([1,1,1,1,1,1])`, since they have no
-  `widths` in scope. `TableLayoutType` must also exist in `tools/docx-md-shim/index.js`
-  or the Markdown half of the build throws. This was the real cause of the crowding
-  previously recorded here as a two-column-body limitation.
-- **Table cells are left-aligned with the inherited first-line indent cleared.** The
-  template's cell paragraphs otherwise centre and indent, which reads badly once narrow
-  columns are actually narrow. Dice columns want 11%, not 7 — at two-column width, 7%
-  breaks `d12` across two lines.
-- **Compose prose with real characters, then run `tools/normalize_escapes.py`.**
-  Hand-escaping while writing is slow and is exactly where the doubled-backslash bug comes
-  from: a run written as `\\u2019` compiles clean, passes the non-ASCII scanner, and leaks
-  a literal `’` into the PDF. The tool collapses a doubled escape, converts non-ASCII
-  to `\uXXXX`, and curls a straight apostrophe **only between two word characters** —
-  `(\w)'(\w)`, narrow on purpose, because any wider rule matches `require('docx')` and
-  corrupts the generator on its first line. It is idempotent; `--check` reports without
-  writing.
-- **Edit generators with an anchor and an assertion.** Read, assert the anchor occurs
-  exactly the expected number of times, replace, write. A silent zero-match quietly does
-  nothing and the build still passes.
+Three things belong here because they are canon rules rather than mechanics:
+
+- **Generation scripts are the source of truth.** Never hand-edit a published
+  document; edit the script. `corpus/` and `documents/` are output.
+- **Regenerate in the same commit as the script change.** Run `tools/build.sh` and
+  commit `scripts/`, `corpus/`, and `documents/` together. A corpus that disagrees
+  with its generator is worse than no corpus.
+- **The deliverable is PDF; the `.docx` is a build intermediate** and is never
+  committed. One command rebuilds everything: `tools/build.sh`. Verify with
+  `tools/verify.sh --full` before committing.
 
 ---
 

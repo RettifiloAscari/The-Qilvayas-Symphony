@@ -967,7 +967,7 @@ children.push(H1("Appendix I \u2014 The Roster: Races and Classes"));
 children.push(P("Class entries are archetype keys for flavor and improvisation \u2014 NPC stat blocks remain custom-built per DMG practice, not class-leveled builds. \u2018Statted\u2019 marks the ten who receive full blocks in Part IV."));
 children.push(table(
   ["Name", "Race", "Class / Archetype", "Standing"],
-  [28, 15, 33, 24],
+  [28, 19, 29, 24],
   [
     ["Emperor Qilvayas", "Drow", "Paladin (Crown-sworn)", "CR 9 (statted)"],
     ["Legate Bruvasca Thorne", "Human", "Fighter (Battle Master)", "CR 10 (statted)"],

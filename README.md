@@ -26,7 +26,8 @@ because the next build discards those edits.
 | `scripts/` | **The canon.** docx-js generators, `transplant.py`, and the encoded visual template. |
 | `corpus/` | **Generated Markdown** — readable and greppable on any device. Start here. |
 | `documents/` | **Generated PDF** — styled, embeds its fonts, reads on any device. |
-| `tools/` | `build.sh` regenerates and verifies everything; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py` converts typographic characters in the generators to `\uXXXX`. |
+| `tools/` | `build.sh` regenerates and verifies everything; `verify.sh` runs every pre-commit check in one call; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py`, `anchor.py`, `check_columns.py`, and `find_page.py` are the authoring tools. |
+| `.claude/skills/` | `qs-build` — the production mechanics, loaded on demand rather than in every session. |
 | `reference/` | The mirrored instructions for the Claude Chat project. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
 | `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |
