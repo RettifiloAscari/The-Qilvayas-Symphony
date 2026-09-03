@@ -109,6 +109,19 @@ block looks contiguous and an intact one can look broken.
 Single-column documents are exempt and are named in `tools/pipeline.conf`; here that is
 `refguide.js`, whose value is wide scannable tables with the whole page to use.
 
+**Prose after a table gets its gap from `transplant.py`, not the generator.** A table
+carries no space-after in OOXML and body paragraphs are authored with `spacing.after` only,
+so prose immediately following a table sits flush against its bottom border. Headings always
+looked right because their style supplies `spacing.before`, which is why the defect only ever
+appeared on table-then-prose. `gap_after_tables()` gives the first paragraph after each table
+a 180-twip before-gap and skips three cases: headings, any paragraph whose author set a
+`before` deliberately, and blank spacer paragraphs — an empty paragraph is already the gap,
+and the stat-block helper pushes one after its ability table. That last test must be on the
+text content, not on the presence of a `<w:t>` tag: docx-js emits an empty run as
+`<w:t></w:t>` rather than omitting it. Fixing this in `transplant.py` rather than in
+`table()` is deliberate — the helper returns a single Table, so a per-call fix would mean
+touching every call site in every generator and remembering it forever after.
+
 ### DM markers are bold book-red, never italic
 
 `const DM = (t) => ({ t, b: true, c: "5B1F1F" })`, used inside `PS([...])`:

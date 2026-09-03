@@ -78,6 +78,52 @@ def sect_xml(cols, with_footer):
     c = f'<w:cols w:num="{cols}" w:space="360"/>' if cols > 1 else '<w:cols w:num="1"/>'
     return foot + PGSZ + PGMAR + c
 
+# --- breathing room under a table ---
+# A table carries no "space after" in OOXML, and the body paragraphs are authored with
+# spacing.after only, so prose immediately following a table butts against its bottom
+# border with no gap at all. Headings already look right, because their style supplies
+# spacing.before -- which is why the defect only ever showed up on table-then-prose and
+# never on table-then-heading.
+#
+# Fixing it here rather than in the generators is deliberate: table() returns a single
+# Table object, so a per-call fix would mean changing every call site in every generator
+# (forty-four in one repository, seventy-one in the other) and remembering it forever
+# after. One pass over the assembled XML covers every table, including any added later.
+TABLE_GAP = 180   # twips; a shade under the 200 that separates two body paragraphs
+
+_PARA_AFTER_TBL = re.compile(r'(</w:tbl>\s*)(<w:p\b(?:(?!</w:p>).)*?</w:p>)', re.S)
+_IS_HEADING = re.compile(r'w:pStyle w:val="(Heading\d|Title|Subtitle)"')
+_SPACING = re.compile(r'<w:spacing\b([^/>]*)/>')
+_TEXT = re.compile(r'<w:t[^>]*>([^<]*)</w:t>')
+
+def gap_after_tables(doc):
+    """Give the first paragraph after each table a space-before."""
+    def fix(m):
+        head, para = m.group(1), m.group(2)
+        if _IS_HEADING.search(para):
+            return m.group(0)          # its style already supplies the gap
+        if 'w:before=' in para:
+            return m.group(0)          # author asked for something specific; respect it
+        if not ''.join(_TEXT.findall(para)).strip():
+            # A blank paragraph IS already the gap. The stat-block helper pushes one after
+            # its ability table, and it emits <w:t></w:t> rather than no run at all, so the
+            # test has to be on the text content and not on the tag.
+            return m.group(0)
+        s = _SPACING.search(para)
+        if s:
+            # add the attribute to the spacing element that is already there
+            para = para[:s.start()] + '<w:spacing w:before="%d"%s/>' % (TABLE_GAP, s.group(1)) + para[s.end():]
+        else:
+            open_tag = re.match(r'<w:p\b[^>]*>', para)
+            if '<w:pPr>' in para:
+                para = para.replace('<w:pPr>', '<w:pPr><w:spacing w:before="%d"/>' % TABLE_GAP, 1)
+            else:
+                para = (para[:open_tag.end()]
+                        + '<w:pPr><w:spacing w:before="%d"/></w:pPr>' % TABLE_GAP
+                        + para[open_tag.end():])
+        return head + para
+    return _PARA_AFTER_TBL.sub(fix, doc)
+
 def convert(src, dst, two_col=True):
     work = os.path.join(_HERE, "work_tpl")
     shutil.rmtree(work, ignore_errors=True)
@@ -115,6 +161,8 @@ def convert(src, dst, two_col=True):
         p0, p1 = paras[0].group(0), paras[1].group(0)
         doc = doc.replace(p0, restyle(p0, "Title"), 1)
         doc = doc.replace(p1, restyle(p1, "Subtitle"), 1)
+
+    doc = gap_after_tables(doc)
 
     # ability-table cells: sz 20 -> 17 so headers fit two-column width
     doc = doc.replace('<w:sz w:val="20"/>', '<w:sz w:val="17"/>')
