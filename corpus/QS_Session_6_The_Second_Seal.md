@@ -14,7 +14,9 @@
 
 Everything converges. The Empress’s two ciphered documents — the party’s rubbing and Shen’s final filing — go under Archivist Vell’s eye and give up a translation that changes the shape of the campaign. The Office of Omens, its patience spent, executes its Writ of Examination against Vaelindra at the blue-shuttered house, and the party’s choices decide her fate and their standing with the Church for years of play. Her hand forced, Vaelindra finally gives the party the middle tier of the truth she has carried for fifty years. And then, following a dead woman’s bearings, the party opens a mason’s door in the base of Zhuvedus’s own monument and descends beneath the Old Forum — through the catacombs, past the First Seal, through the unquiet dead — to end the session standing before the Second Seal, in cold that has waited two thousand years to be felt again, listening to a sound they know from a dream.
 
-Designed for a five-hour core. Pacing budget: reading the dead letters (60 minutes); Shen, and what the translation is worth (30 minutes); the Writ at Ninth Lane (75 minutes); Vaelindra’s hand, forced (45 minutes); the descent (75 minutes); the Second Seal (15 minutes, unhurried — it is the cliffhanger and the arc’s final image). Optional content adds up to two further hours. The party reaches 6th level when the session ends at the Seal.
+Designed for a five-hour core. Pacing budget: reading the dead letters, and the hole in the Fourth Book (55 minutes); Shen, and what the translation is worth (25 minutes); the Writ at Ninth Lane, run in its four phases (75 minutes); Vaelindra’s hand, forced (40 minutes); the descent through the seven keyed areas (70 minutes); the Second Seal (15 minutes, unhurried — it is the cliffhanger and the arc’s final image). Optional content adds up to two further hours. The party reaches 6th level when the session ends at the Seal.
+
+**On the descent.** Seventy minutes for seven areas is five minutes less than the previous budget allowed for the same journey, and it buys a great deal more, because the areas give the DM somewhere to put the time rather than a single long corridor to narrate. D2 and D4 are the two that must not be hurried; D1, D6, and D7 are each a single image. If the table is behind, D2’s four hundred years of the capital’s dead can be one paragraph instead of five minutes, and nothing structural is lost.
 
 ## What Is Actually Happening (DM Only)
 
@@ -72,6 +74,87 @@ Baseline (4 characters, 5th level): 4 Hollow Dead + the Sepulcher Chill in a two
 > *The gallery ends, and the architecture changes — not built, but hewn: a single vault of the black mortarless stone, older than every bone behind you, and at its far side, the door. You know it before the light reaches it, because your body knows it: the Cold Door beneath the academy was a postern — this is the gate. Twenty feet of black stone furred white with frost in air that has never known winter, worked across its whole face with carvings your academy educations have no alphabet for — and, small and human at its foot, the last of Nyreeza’s marks: her cipher, and beside it, scratched deeper and less steadily, in plain Imperial anyone can read — the word she wrote when the cipher stopped being enough: FORGIVE. The medallion is a coal of cold against its carrier’s chest. And through twenty feet of stone that has held for two thousand years, faint and vast and patient, comes a sound. You know it. You have known it since a night at the Gilded Ford. On the far side of the Second Seal, something that has always been here is breathing in its sleep — and as you stand there, in the deepest cold of the oldest dark, it turns over.*
 
 End the session there — on the sound, the word, and the cold. Do not open the Seal; do not let anything come through; do not resolve. If a player attempts to force or magic the door, let every attempt fail with total, geological indifference and one consequence: the sound pauses. Listening. Then resumes. That is enough. Milestone: the party reaches 6th level on the walk back up into the lamplight of a city that has no idea what it is standing on. The next arc — what the Seal requires, what Vaelindra’s names cost, and what happened to the woman who wrote FORGIVE — begins with Session Seven.
+
+# The Descent, Keyed
+
+Scene 5 takes the party under the Old Forum for the first time, and the route matters, because they will use it again in Sessions Seven and Eight and because a route the players have mapped is a route they own. Seven areas from the Forum floor to the Second Seal.
+
+**The shape of it.** Down, and then east. The public stair on the Forum’s east side serves the upper Bone Galleries and stops at a consolidation hoarding that has been there since before living memory. Behind the hoarding the galleries continue down four more levels, and at the bottom of the fourth the masonry changes and the Undercourt begins. The funerary traffic never comes below the second level, which is why this route is available and why nobody has walked it in a century.
+
+**D1. The East Stair.** Public, lit, swept, and entirely ordinary. Vigil-keepers pass here at all hours and will nod. This is the last well-lit place for two sessions.
+
+**D2. The Upper Galleries.** Two levels of interments, oldest at the bottom, arranged in wall-niches by century. Dry, cold, and profoundly peaceful. Nothing here is hostile. A party that hurries through misses the point: this is where every Zhuvedian in the capital ends up, and the party is about to walk past four hundred years of them.
+
+**D3. The Consolidation Hoarding.** Timber, painted, official, and eighty years old. A notice board beside it carries a work order that was never completed. The hoarding is not locked. It is simply a hoarding, and going past it is a decision rather than a break-in — which is exactly the kind of threshold this campaign likes.
+
+**D4. The Closed Galleries.** Two more levels, unswept, undisturbed, and — the first genuinely wrong thing — noticeably colder than the levels above, in a place where depth should mean warmth. A DC 13 Wisdom (Survival) or any character who has held Dren’s medallion knows that is backwards.
+
+**D5. The Change of Stone.** Imperial brick gives way to black stone fitted without mortar, the same as the Cold Door and the same as the Founder’s Wall a mile above. There is no doorway; the two masonries simply meet, and one of them was there first.
+
+**D6. The Approach.** A corridor that is not a corridor: too wide, too tall, and proportioned for a procession. The Undercourt proper. Sound behaves oddly here and the party will notice before the DM says anything.
+
+**D7. The Second Seal.** Where the session ends. See the scene text; nothing in this keying replaces it.
+
+# The Writ at Ninth Lane (Set Piece, in Phases)
+
+Scene 3 is the session’s set piece and it is a siege of paperwork, not of walls. Run it in four phases with a decision at each transition. The Office of Omens does not break down doors; it arrives with a document, and the horror of the scene is that everything Censor-Captain Odo does is lawful.
+
+**Phase One — The Knock (10 minutes).** Odo arrives with four and knocks. He presents a Writ of Examination naming Vaelindra, and he waits to be admitted. The decision: does the party open the door? He will wait a long time. He has waited before. Refusing is legal, costs nothing immediately, and changes the whole scene into a siege — which is what he would prefer, because a siege is a fact he can write down.
+
+**Phase Two — The Reading (15 minutes).** Admitted or not, the Writ is read aloud in full, at the door or through it. It is long, it is precise, and it is correct. The decision: does anyone challenge it on its own terms? A DC 15 Intelligence (History) or any character with a legal background finds the defect — the Writ names Vaelindra and does not name her premises, which under Book Four means it authorizes examination of a person and not a search of a house. Odo will concede the point instantly and courteously, because he is not a liar, and will then simply ask her to come with him, which is what the Writ actually permits.
+
+**Phase Three — The Choice (20 minutes).** Vaelindra’s hand is forced. The decision belongs to her and the party can influence it, and the module must let them fail: she can go, which ends the immediate danger and begins a much worse one; or she can refuse, which makes her a fugitive within the hour. What the party says here matters more than any check. Ask for a stated argument, not a roll.
+
+**Phase Four — The Departure (20 minutes).** Whatever was chosen, Odo leaves, and how he leaves is the phase. If violence has occurred, he is a wounded officer with witnesses and the party are now a filed matter. If it has not, he leaves a copy of the Writ, thanks them, and — this is the line to deliver carefully — asks each of them their name, and writes them down, and does not react to any of them.
+
+**DM Only:** Odo believes he is protecting the empire from a hundred unlicensed prophets and he is, in the main, correct. Play him warm. He should be the most reasonable person in the room and the party should not be able to hate him cleanly, because the campaign’s whole argument is that institutions do terrible things through people who are behaving well. If the table wants a villain here, refuse to supply one.
+
+# The Fourth Book Concordance (Puzzle)
+
+Scene 1 is the party reading what they recovered, and as written it is a translation. Make it a reconstruction: the letters give a set of register citations, and the citations point at a hole. The puzzle is noticing the shape of an absence.
+
+> *Six citations, all to the Fourth Book, of Seals and Record. Five of them resolve: ordinary deposit entries, dry as chalk, dated across one season twelve years ago. The sixth resolves to an entry that says a document was DEPOSITED and does not say by whom, in a register whose whole purpose is to say by whom. And when you check the five that worked, all five have the same Hand, and it is not the Hand of the clerk who was working that season.*
+
+**What it means.** Somebody deposited six items under a borrowed clerk’s hand and left one of them unattributed. That is not a forgery; it is worse and quieter. It is somebody with legitimate access using it in a way the register cannot describe.
+
+**Solution one — the concordance.** With Mosse’s secondhand concordance, DC 13 Intelligence (Investigation) resolves all six citations in an hour. The sixth is the finding and it announces itself.
+
+**Solution two — Vell.** Take it to the Archivist. He will resolve it in four minutes, go very quiet, and then be extremely careful about what he says next — because the Hand in question is one he knows, and it has no business being on those entries, and he has spent twelve years not asking himself why.
+
+**Solution three — the register itself.** Go to the Archive and pull Book Four for that season. Slow, public, and it works, and it also means the party’s names are now on a request slip in the archive’s own record, which is a real cost and should be stated after they do it, not before.
+
+**Solution four — the negative.** A party who never resolves the citations at all can still get there by asking who was clerking that season and finding that the answer is one person who was demonstrably somewhere else. This is the hardest route and the most satisfying, and a DM should be ready for it because clever tables find it.
+
+# Traps and Hazards on the Descent
+
+**The Hoarding (D3).** No mechanics. Stated here because a DM will want to put a lock on it and should not. The whole point is that nothing prevents them. Going past a notice that says do not is the session’s real threshold and it should cost nothing but nerve.
+
+**The Cold (D4 onward).** Environmental. Marked thin-written ground, worsening with depth. Long rests taken below D4 restore half the usual Hit Dice. Ritual casting takes twice as long and may simply fail. Divination returns grief rather than answers — and a DM should have one specific, personal, useless piece of grief ready for each player character, because that is far more frightening than a failed spell.
+
+**The Niche Fall (D2 and D4).** Mechanical hazard. Eight hundred years of interments in wall-niches, and the mortar in the closed galleries has gone. A creature that climbs, braces against, or fights beside a niche wall: DC 12 Dexterity save or a section gives — 2d6 bludgeoning, and the party is now standing in somebody. There is no monster in this. The horror is entirely in the apology.
+
+# Encounters in the Galleries
+
+Roll a d8 on the descent, once per level below the hoarding. Most of these are not fights, and that is the level’s whole atmosphere.
+
+| **d8** | **What Happens** |
+| --- | --- |
+| 1 | A vigil-keeper on the upper galleries, working late, who will talk about the consolidation hoarding and what she has heard behind it. |
+| 2 | A niche with a lamp burning in it. Fresh oil. Four levels below where anyone goes. |
+| 3 | Rats, and then the absence of rats, which is worse and which happens one level lower. |
+| 4 | A Thin-Written Echo (see the Gazetteer’s bestiary) repeating one gesture from a funeral eight hundred years ago. |
+| 5 | A collapsed section of gallery revealing a level below that is on no plan the Church holds. |
+| 6 | Cold that arrives as a front, moving, and passes over the party in about four seconds, and does not come back. |
+| 7 | A Vigil-Wight (see the Gazetteer’s bestiary) in the closed galleries, unwatched for a century. It can be laid to rest by keeping its Vigil, and the party has somewhere else to be, and that is the encounter. |
+| 8 | Their own light, reflected off something a long way ahead that should not be reflective. |
+
+# Handout — Session Six
+
+## The Writ of Examination
+
+> *BY THE OFFICE OF OMENS, under the Third Book, of the Sanction and the Charter, and by the writ of the Synod of the Grey: TO VAELINDRA, called of the Still Waters, of the parish of the Ninth Lane, greeting. You are required to present yourself for examination touching claims of divine contact received and interpreted without Sanction. This writ is served upon your person. You may bring one companion. You are not accused. — F. ODO, Censor-Captain, for the Prelate of the Office.*
+
+Note for the DM: read You are not accused in exactly the tone of a man who means it, because he does. And note what the writ does not say: it names her person and not her house, which is the defect in Phase Two, and it is right there on the paper for any player who reads the handout carefully instead of listening to it.
 
 # Optional Content (Beyond the Five-Hour Core)
 

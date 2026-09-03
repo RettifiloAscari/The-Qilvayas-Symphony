@@ -92,6 +92,47 @@ The Church has no single supreme authority, and never has: the Matriarchate is c
 
 The imperial cult’s formal body, the Keepers of the Ascent, is small — perhaps forty priests, led by Hierophant Malzeth Corr, maintaining the dynastic shrine within Highcourt. The Church tolerates their existence, and both institutions understand exactly why.
 
+## The Aspects
+
+The Matron is one, and she has offices. The Aspects are the different things she does, and the distinction is not decorative: saying the Matron in her Hunt is correct, and saying the Matron of the Hunt, as though there were another Matron somewhere doing something else, is a heresy with a name. The name is Division. A village priest will correct you gently. A Sanctum examiner will write it down.
+
+A cleric’s calling takes the shape of one of them. Sanction is issued against an Aspect, and the pewter warrant-medal is stamped on the reverse with its mark.
+
+| **Aspect** | **Domain** | **Who Serves It** |
+| --- | --- | --- |
+| The Watch at the Threshold | Life | Vigil-keepers, hospitallers, almoners, midwives. The commonest calling in the empire by a wide margin. |
+| The Long Hunt | War | Legion chaplains and the Church militant. Endurance rather than fury: the Matron does not sprint, she arrives. |
+| The Long Memory | Knowledge | Archivists, jurists, scriptoria. She remembers every promise made in her hearing. |
+| The Lamp Left Burning | Light | Vigil lamps, lighthouses, the night offices. Light kept through the night rather than sunrise — dawn is her gift, not her element. |
+| The Elder Range | Nature | The Old Observance: field-shrines, first-fruits, the wolf-watch on winter roads. Older than the Church and never quite reconciled to it. |
+| The Winter Voice | Tempest | The northern liturgies. The Sanctum finds it provincial and the north finds the Sanctum soft. |
+| The Limping Bitch | Trickery | The she-wolf who feigns a broken leg to lead the hunter from the den. Never formally recognized, never once suppressed, and painted on half the barn doors in the Suthmark. |
+
+**Paladins swear, and it shows.** Devotion is the Crown-sworn and the Church’s own Oathwards; the Emperor is Crown-sworn. The Ancients is the Green Watch, the Old Observance’s paladins, sworn at field-shrines and holding warrants nobody issued. Vengeance is the Wolf-Price made a vocation — respectable in the provinces, where blood debt is a working legal category, and awkward at court.
+
+## The Saints
+
+Fourteen names carry the empire’s devotion. Canonization takes a documented life, a testified act, and the passage of a full generation, so that nobody is made a saint by the people who liked them. Feast days are working holidays in the parishes that keep them.
+
+| **Feast** | **Saint** | **Patron Of** |
+| --- | --- | --- |
+| Wolfmoon 1 | Lupenna of the First Shrine | Hospitality, guest-right, roadside shrines. Her feast opens the year. |
+| Wolfmoon 4 | Ivessa of the Ford | Rearguards, ferrymen, and anyone who says go on without me. |
+| Thawtide 11 | Coren the Unhurried | Vigil-keepers, night-workers, and the patient. |
+| Sowmonth 8 | Yenna Corvane | Advocates and the badly represented. |
+| Sowmonth 27 | Perisse the Milkless | Foundlings, nurses, and the bound-freed. |
+| Haymonth 9 | Vosk the Field-Cutter | Surgeons, medics, and their consciences. |
+| Harvestide 2 | Bellara of Ambervale | Harvests, almoners, and honest thieves. |
+| Vinmoon 3 | Ilvane the Sea-Kept | Pilots, harbor-hands, and merchants who honor a bad contract. |
+| Fallowmonth 21 | Halvard of the Quiet Rite | Stonewrights, record-keepers, unglamorous fidelity. |
+| Greywane 14 | Tobrin Ashfall | The falsely accused. |
+| Greywane 30 | Elleth of the Grey Gate | Gatekeepers, quarantine wardens, the unforgivable choice. |
+| Longdark 19 | Odarr of the Nine Winters | Winter travelers, the maimed, the stubborn. |
+| Threshold 6 | Marek the Witness | Witnesses, oath-keepers, inconvenient truth. |
+| — (suppressed) | Ovric, Struck from the Canon | Nothing, officially. Removed by decree of the Synod ninety years ago, for reasons the decree does not state. The Ostmark parishes never stopped. |
+
+Four pilgrim roads carry real traffic: the Matron’s Road from Aenodira to Lupenna, two days on foot and lined the whole way with candle-stalls; the Penitent’s Stair, the switchback ascent above Orlath, where crutches are left at the top and the town at the bottom sells them; the Nine Winters Way through Odarr’s northern passes, walked in winter on purpose; and the Three Fords, because three towns claim Ivessa’s crossing and the Church has never adjudicated, so serious pilgrims walk all three and let the Matron sort it out.
+
 # Magic, As Lived
 
 Every educated Zhuvedian knows the shape of magic in the empire, even if they cannot cast a cantrip. Folk belief — old, universal, and taken seriously even by people who claim not to — holds that sworn words have weight: an oath is a real thing once spoken, stone holds what air forgets, and there are places where too many broken promises have soured the ground itself. The Church neither confirms nor mocks this. The Church, notably, treats vows as sacraments.

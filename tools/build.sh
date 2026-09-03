@@ -33,7 +33,7 @@ VERIFY=1
 STAGE=/home/claude
 mkdir -p "$STAGE" "$DOCS" "$CORPUS"
 
-GENERATORS=(campaign sessions session34 s56 s78 refguide playerguide)
+GENERATORS=(campaign gazetteer companion sessions session34 s56 s78 refguide playerguide)
 # Only the DM Reference Guide stays single-column; its value is wide tables.
 SINGLE_COL_MATCH="QS_DM_Reference_Guide"
 

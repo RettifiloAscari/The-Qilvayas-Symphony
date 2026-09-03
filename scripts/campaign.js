@@ -28,13 +28,20 @@ const BULLET = (segs) => new Paragraph({
 
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
-const { Table, TableRow, TableCell, WidthType, ShadingType } = require('docx');
-const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
+const { Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = require('docx');
+// Column widths in twips. docx-js emits a dummy equal-width <w:tblGrid> when
+// columnWidths is absent, and LibreOffice honours that grid over the per-cell
+// percentages -- every table renders with evenly split columns. Passing the
+// grid explicitly, with a fixed layout, is what makes the widths array mean
+// anything. Proportions are what matter; tblW=100% governs the total.
+const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
+
+const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
 const row = (cells) => new TableRow({ children: cells });
-const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows: [ row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
+const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
 const mod = (v) => { const m = Math.floor((v - 10) / 2); return (m >= 0 ? "+" : "\u2212") + Math.abs(m); };
 const abCell = (text, bold) => new TableCell({ width: { size: 16.6, type: WidthType.PERCENTAGE }, shading: bold ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, children: [new Paragraph({ alignment: AlignmentType.CENTER, spacing: { after: 40, before: 40 }, children: [new TextRun({ text, bold: !!bold, size: 20 })] })] });
-const SB = (d) => { const out = []; out.push(new Paragraph({ spacing: { before: 240, after: 40 }, children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })] })); out.push(PS([{ t: d.meta, i: true }], { spacing: { after: 120 } })); out.push(B("Armor Class:", d.ac)); out.push(B("Hit Points:", d.hp)); out.push(B("Speed:", d.speed)); out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows: [ new TableRow({ children: ["STR","DEX","CON","INT","WIS","CHA"].map(h => abCell(h, true)) }), new TableRow({ children: [d.str,d.dex,d.con,d.int,d.wis,d.cha].map(v => abCell(v + " (" + mod(v) + ")")) }) ] })); out.push(P("", { spacing: { after: 60 } })); if (d.saves) out.push(B("Saving Throws:", d.saves)); if (d.skills) out.push(B("Skills:", d.skills)); if (d.resist) out.push(B("Damage Resistances:", d.resist)); if (d.immune) out.push(B("Damage Immunities:", d.immune)); if (d.condimmune) out.push(B("Condition Immunities:", d.condimmune)); if (d.senses) out.push(B("Senses:", d.senses)); if (d.langs) out.push(B("Languages:", d.langs)); out.push(B("Challenge:", d.cr)); (d.traits||[]).forEach(t => out.push(PS([{ t: t.n + ". ", b: true, i: true }, { t: t.t }]))); if (d.actions && d.actions.length) { out.push(PS([{ t: "ACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } if (d.reactions && d.reactions.length) { out.push(PS([{ t: "REACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } return out; };
+const SB = (d) => { const out = []; out.push(new Paragraph({ spacing: { before: 240, after: 40 }, children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })] })); out.push(PS([{ t: d.meta, i: true }], { spacing: { after: 120 } })); out.push(B("Armor Class:", d.ac)); out.push(B("Hit Points:", d.hp)); out.push(B("Speed:", d.speed)); out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW([1, 1, 1, 1, 1, 1]), layout: TableLayoutType.FIXED, rows: [ new TableRow({ children: ["STR","DEX","CON","INT","WIS","CHA"].map(h => abCell(h, true)) }), new TableRow({ children: [d.str,d.dex,d.con,d.int,d.wis,d.cha].map(v => abCell(v + " (" + mod(v) + ")")) }) ] })); out.push(P("", { spacing: { after: 60 } })); if (d.saves) out.push(B("Saving Throws:", d.saves)); if (d.skills) out.push(B("Skills:", d.skills)); if (d.resist) out.push(B("Damage Resistances:", d.resist)); if (d.immune) out.push(B("Damage Immunities:", d.immune)); if (d.condimmune) out.push(B("Condition Immunities:", d.condimmune)); if (d.senses) out.push(B("Senses:", d.senses)); if (d.langs) out.push(B("Languages:", d.langs)); out.push(B("Challenge:", d.cr)); (d.traits||[]).forEach(t => out.push(PS([{ t: t.n + ". ", b: true, i: true }, { t: t.t }]))); if (d.actions && d.actions.length) { out.push(PS([{ t: "ACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } if (d.reactions && d.reactions.length) { out.push(PS([{ t: "REACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } return out; };
 
 
 // ---------- content ----------
@@ -102,7 +109,7 @@ children.push(B("The Duchy of Normere:", "The iron surprise of the west coast: a
 
 children.push(H3("Imperial and Border Jurisdiction, at a Glance"));
 children.push(P("Imperial law does not mean the same thing twice past the Crownlands\u2019 border. The table below is a single page for a question the Atlas otherwise answers one region at a time: where the Laws actually run, and who actually enforces whatever does."));
-children.push(table(["Region","Status","Who Actually Enforces"],[22,32,46],[
+children.push(table(["Region","Status","Who Actually Enforces"],[23, 32, 45],[
   ["The Crownlands","Direct Rule \u2014 imperial law at full strength","The Palatine Guard; imperial magistrates"],
   ["The Ostmark","Loyalist Provincial \u2014 nominal, unevenly enforced","Thin legion garrisons; Magistrate Ondrei\u2019s model"],
   ["The Suthmark","Loyalist Provincial \u2014 genuinely loyal, governed through the ducal house","Duke Aldous in law; the Dowager Duchess\u2019s household authority in fact, alongside the Church"],
@@ -204,7 +211,7 @@ children.push(table(["Item","Price","Notes"],[34,16,50],[
   ["Blessed taper (homebrew, common)","5 gp","Burns 1 hour; its light counts as the light of a shrine for purposes of the Old Observance \u2014 mostly bought for funerals and promises"]
 ]));
 children.push(H3("Rivergate Gray Market \u2014 \u2018Everything Certified\u2019"));
-children.push(table(["Item","Price","Notes"],[34,16,50],[
+children.push(table(["Item","Price","Notes"],[34, 19, 47],[
   ["Any Exchange-list item","\u221220%","Provenance flexible; quality genuine (the Inkhands guarantee it \u2014 their ledgers are their honor)"],
   ["Unstamped healing potion","35 gp","Works fine. The discount is the legal risk, priced honestly"],
   ["Unlicensed scrollwork, 1st","60\u201380 gp","1-in-6 chance of a flawed casting (DM discretion); the good scribes cost Exchange prices anyway"],
@@ -241,6 +248,157 @@ children.push(P("What happens after the Vigil is where the empire stops agreeing
 children.push(P("For an ordinary market town with no catacombs and no delta to send anyone into, the physical answer is the Vigil Hall \u2014 a modest, unglamorous building near the local shrine or almonry, kept by lay vigil-keepers (traditionally widowed or elderly, traditionally paid almost nothing, traditionally among the best-informed people in town about who just died owing what to whom). Every major town has one. It is exactly the kind of small, load-bearing institution that can hold a scene, a rumor, or a body the party very badly needs to examine, without a word of this needing to touch the Undercourt, the binding site, or anything else still sealed for later."));
 
 // ==================== PART I: MAGIC & THE FAITH ====================
+// ============ THE ASPECTS AND THE SAINTS ============
+children.push(H1("The Aspects and the Canon of Saints"));
+children.push(P("The Matron is one. This is the first thing a Zhuvedian child learns and the last thing a Zhuvedian heretic denies, and the empire has argued about almost everything else instead. What the faith does have \u2014 what any faith serving a whole civilization eventually acquires \u2014 is a vocabulary for the different things one goddess does, and a long roll of people she is held to have done them through."));
+
+children.push(H2("The Doctrine of Aspects"));
+children.push(P("An Aspect is an office the Matron holds, not a part she is divided into. The distinction sounds like hairsplitting and is in fact the sharpest doctrinal line in the empire, because two centuries of schism have taught the Church exactly how a metaphor becomes a second god. Orthodoxy is carried by a preposition: one says the Matron in her Hunt, never the Matron of the Hunt as though there were another Matron elsewhere doing something else. The heresy of Division \u2014 teaching the Aspects as distinct powers \u2014 was condemned four hundred years ago and is still the charge the Sanctum reaches for first, which tells you how often somebody drifts into it by accident on a cold night in a country parish."));
+children.push(P("For a cleric, the Aspect is the shape of the calling rather than its source. The power is the Matron\u2019s; the Aspect is which of her offices the caller was answered from, and it determines the colour of the vestment, the wording of the daily office, and which shrine will feed you when you arrive wet and unannounced. Sanction is issued against an Aspect: a warrant-medal is stamped on its reverse with the Aspect\u2019s mark, and a Watch cleric ministering as a Hunt cleric is committing a paperwork offence, not a sin."));
+
+children.push(H2("The Seven Recognized Aspects"));
+children.push(P("Seven Aspects hold formal recognition from the Matriarchate. The correspondence to a cleric\u2019s domain is exact and unremarkable to anyone in the world; the table below is for the table, not for the fiction."));
+children.push(table(
+  ["Aspect", "Domain", "Who Serves It, and How She Is Shown"],
+  [28, 20, 52],
+  [
+    ["The Watch at the Threshold", "Life", "Vigil-keepers, hospitallers, almonry clergy, midwives \u2014 the commonest calling in the empire by a wide margin. Shown as a wolf lying across a doorway, a lamp behind it."],
+    ["The Long Hunt", "War", "Legion chaplains, the Church militant, Censor-Captains, anyone whose duty is endurance rather than fury. Shown as a wolf at a steady trot, never at a sprint."],
+    ["The Long Memory", "Knowledge", "Archivists, jurists, the Chartered Scriptorium, and \u2014 to the irritation of everyone else \u2014 the Office of Omens. Shown as a wolf with its head turned back over its shoulder."],
+    ["The Lamp Left Burning", "Light", "Vigil-hall lamplighters, lighthouse and channel-light keepers, the night offices. Shown as a lit lamp, and an eye reflecting it."],
+    ["The Elder Range", "Nature", "The Old Observance, field-shrine keepers, druids and rangers who never asked anyone\u2019s permission. Shown with no icon at all: a bare stone, a marked tree."],
+    ["The Winter Voice", "Tempest", "The northern liturgies, storm-country parishes, Orlath, and the Ardven monastery-burghs. Shown as an open throat, the howl drawn as visible breath."],
+    ["The Limping Bitch", "Trickery", "Nobody, officially. Everybody, in the provinces. Shown as a she-wolf dragging a hind leg."]
+  ]
+));
+children.push(B("The Limping Bitch.", "The seventh is the one worth a paragraph. She is the she-wolf who feigns a broken leg to draw the hunter away from the den \u2014 deception spent entirely in defence of what is behind her. She has never been formally recognized and has never once been suppressed. She is not painted in a single cathedral in the Crownlands and she is painted on roughly half the barn doors in the Suthmark. Ask a Prelate about her and you will get a careful sentence about folk piety; ask a village woman and she will tell you which of her neighbours the Matron limped for. A Trickery cleric in this empire is entirely real, entirely unlicensed, and entirely unsurprising to anyone outside the Sanctum."));
+children.push(PS([DM("DM Only: "), { t: "the Limping Bitch is the closest the orthodox faith comes to admitting that a lie told to protect the den is not the same crime as an oath broken for advantage. That distinction is the campaign\u2019s whole moral engine, sitting in plain sight on a barn door, and no theologian in the empire has connected it to the Founding. If a player character ever draws the line out loud in front of clergy, the room should go very quiet." }]));
+
+children.push(H2("The Aspects the Canon Does Not Have"));
+children.push(P("Tables that use domains beyond the 2014 Player\u2019s Handbook will find the empire has opinions, and the gaps are as informative as the entries."));
+children.push(table(
+  ["Domain", "Standing in the Empire"],
+  [20, 80],
+  [
+    ["Grave", "The Watch in its darker register \u2014 the Threshold-Wardens, who deal with what the Vigil exists to prevent when the Vigil has already failed. Recognized, small, and nobody\u2019s first choice of dinner guest."],
+    ["Forge", "The Teeth of the Mountain: the Stonesworn\u2019s Aspect, recognized fully in Tarnovar and not at all in the Crownlands, since recognizing it would concede that Tarnovar\u2019s clergy are clergy."],
+    ["Order", "The Packlaw itself, venerated as an office rather than a doctrine. Favored by magistrates, and by exactly the sort of person who becomes one."],
+    ["Nature", "See The Elder Range \u2014 the Old Observance\u2019s Aspect. The Church\u2019s position remains studied non-comment, for reasons the DM understands better than the Synod does."],
+    ["Death", "There is no Aspect, and the absence is deliberate doctrine rather than an oversight. Divine power answering to death in this empire is not answering from the Matron, and the Office of Omens keeps a file classification open against the day someone proves it."],
+    ["Arcana", "No Aspect, and a jurisdictional war waiting to happen. Thaumaturgy is chartered, not blessed; a cleric of Arcana would set the Charter and the Sanction arguing for a decade over which of them had been insulted."]
+  ]
+));
+children.push(PS([DM("DM Only: "), { t: "a player who brings a Death cleric to this table is not doing something the setting forbids. They are doing something the setting has been waiting for. The honest answer to who answers that call is open, and the thing beneath the Old Forum is at least as plausible a candidate as anything the Sanctum has filed. Do not decide it early, and do not tell them there is a question." }]));
+
+children.push(H2("Oaths and the Paladin"));
+children.push(P("In a world where a sworn word has literal weight, a paladin is not a knight with spells. A paladin is a person carrying a binding heavy enough to be felt, and the empire treats them accordingly: with respect, with wariness, and with paperwork."));
+children.push(BUL("Devotion:", "the Crown-sworn and the Church\u2019s own Oathwards. The most institutionally comfortable of the oaths and the most closely watched, because a Devotion paladin who concludes his institution is the thing in breach becomes the empire\u2019s least manageable problem. Emperor Qilvayas is Crown-sworn."));
+children.push(BUL("The Ancients:", "the Green Watch \u2014 the Old Observance\u2019s paladins, sworn at field-shrines and standing stones rather than altars, holding warrants nobody issued. Tolerated warmly in the provinces, received in the Sanctum the way a magistrate receives a folk remedy."));
+children.push(BUL("Vengeance:", "the Wolf-Price made a vocation. Recognized in the provinces, where blood debt is a functioning legal category, and quietly deplored at court, where it is an embarrassment with a sword. Ban Dregan Morn is what this oath looks like when nobody supervises it for thirty years."));
+children.push(PS([DM("DM Only \u2014 the Oathbreaker: "), { t: "the DMG\u2019s Oathbreaker is not a subclass in this setting so much as a diagnosis. A paladin who breaks his oath and keeps the power is walking, step for step, the road the Founder walked, and this world\u2019s metaphysics say that road leads somewhere specific and occupied. If a player goes there, the shadow beneath Aenodira notices immediately, and what it offers will be generous. This is a campaign-altering event and should be played as one, not as a mechanical swap." }]));
+
+children.push(H2("The Canon of Saints"));
+children.push(P("Canonization in the Zhuvedian Church requires three things: a documented life, a testified act, and the passage of a full generation, so that nobody is made a saint by the people who liked them. The Synod of the Grey rules; the Matriarch confirms; the parishes, in practice, decide first and let the paperwork catch up. Fourteen names carry the whole empire\u2019s devotion, and the roll below is what a literate Zhuvedian would be able to recite badly and a village priest perfectly."));
+children.push(table(
+  ["Feast", "Saint, and What They Are For"],
+  [26, 74],
+  [
+    ["Wolfmoon 1", "Lupenna of the First Shrine \u2014 hospitality, guest-right, roadside shrines"],
+    ["Wolfmoon 4", "Ivessa of the Ford \u2014 rearguards, ferrymen, and anyone who says go on without me"],
+    ["Thawtide 11", "Coren the Unhurried \u2014 vigil-keepers, night-workers, and the patient"],
+    ["Sowmonth 8", "Yenna Corvane \u2014 advocates and the badly represented"],
+    ["Sowmonth 27", "Perisse the Milkless \u2014 foundlings, nurses, and the bound-freed"],
+    ["Haymonth 9", "Vosk the Field-Cutter \u2014 surgeons, medics, and their consciences"],
+    ["Harvestide 2", "Bellara of Ambervale \u2014 harvests, almoners, and honest thieves"],
+    ["Vinmoon 3", "Ilvane the Sea-Kept \u2014 pilots, harbor-hands, and merchants who honor a bad contract"],
+    ["Fallowmonth 21", "Halvard of the Quiet Rite \u2014 stonewrights, record-keepers, unglamorous fidelity"],
+    ["Greywane 14", "Tobrin Ashfall \u2014 the falsely accused"],
+    ["Greywane 30", "Elleth of the Grey Gate \u2014 gatekeepers, quarantine wardens, the unforgivable choice"],
+    ["Longdark 19", "Odarr of the Nine Winters \u2014 winter travelers, the maimed, the stubborn"],
+    ["Threshold 6", "Marek the Witness \u2014 witnesses, oath-keepers, inconvenient truth"],
+    ["struck", "Ovric, Struck from the Canon \u2014 nothing, officially"]
+  ]
+));
+children.push(H3("The Lives"));
+children.push(B("Lupenna of the First Shrine.", "The woman at whose roadside fire the Matron was first fed by a Zhuvedian hand. Her feast opens the year. Shown as a bowl set outside a door."));
+children.push(B("Ivessa of the Ford.", "Held a river crossing through one night so a village could get behind her. Found at dawn still upright, dead, spear planted in the gravel. Three separate towns claim the ford, and the Church has never adjudicated, because settling it would require ruling on which river she died in."));
+children.push(B("Coren the Unhurried.", "Kept four thousand nights\u2019 Vigil and refused ordination six times. Shown as a short wick over a very large reservoir of oil. Canonized over the objection of the Sanctum, which found his refusals insubordinate; the parishes did it anyway and the Matriarchate ratified a fait accompli."));
+children.push(B("Yenna Corvane.", "A jurist who argued four hundred wolf-price cases for the poor and lost most of them deliberately, on the record, to build the precedent that would win the four hundred and first. Archjurist Vhal keeps a copy of her losses; it is the most annotated book in the Law Commission."));
+children.push(B("Perisse the Milkless.", "Kept nine orphans alive through a siege, three of them not her people. Shown as nine cups, one of them cracked. Her cult is strongest among the fourth-tier bound, which is why the Church\u2019s enthusiasm for it is carefully measured."));
+children.push(B("Vosk the Field-Cutter.", "A legion surgeon who refused to sort the wounded by rank and was broken for it twice. Shown as a bone-saw and a coin, the coin being refused. The tiered-care system Book Three establishes is precisely what he refused to do, and the legions\u2019 surgeons keep his icon anyway, which is either irony or protest."));
+children.push(B("Bellara of Ambervale.", "Fed a famine district by miracle, or by emptying a duke\u2019s granary; the accounts differ and the Suthmark does not care which. Shown as an overturned grain measure."));
+children.push(B("Ilvane the Sea-Kept.", "Drowned getting a rival\u2019s crew off a wreck she had every commercial reason to leave. Shown as a rope in an open hand, untied. The Compact keeps her feast as a trading holiday and almost nobody goes to the shrine."));
+children.push(B("Halvard of the Quiet Rite.", "A Stonesworn dwarf who recut an entire oath-stone field alone over eleven years after a landslide, so that no family\u2019s oath would go unmarked. Shown as a chisel worn to a stub. Tarnovar keeps him; the Crownlands has never canonized him, because canonizing a Tarnovari saint would concede something."));
+children.push(B("Tobrin Ashfall.", "A hedge-priest who talked a town out of burning a girl for lycanthropy, then spent forty years proving he had been right. Shown as an unlit pyre, and still the least-preached saint in the Crownlands."));
+children.push(B("Elleth of the Grey Gate.", "Kept Aenodira\u2019s plague gate and decided who came in. Shown as a gate half shut. What she is actually venerated for is the ones she turned away."));
+children.push(B("Odarr of the Nine Winters.", "Kept the northern passes open for pilgrims through nine hard winters, lost both feet to the sixth, and did the last three on a sledge. Shown as a sledge and two empty boots. Orlath claims him hardest."));
+children.push(B("Marek the Witness.", "Saw a lord break a parley-oath, was invited to say he had seen nothing, and said what he saw. Executed for it. Shown as an open eye above a closed mouth."));
+children.push(B("Ovric, Struck from the Canon.", "Venerated for two centuries; removed by decree of the Synod ninety years ago, for reasons the decree does not state. The Ostmark parishes never stopped. Shown as the blank where an icon was."));
+
+children.push(H3("Three Saints Worth More Than a Row"));
+children.push(B("Marek the Witness", "is the saint of this campaign\u2019s central mechanism, and nobody in the empire has noticed. His feast falls in Threshold, the liminal month when old oaths are renewed and old debts settled, which is either an accident of the calendar or the only piece of liturgical honesty the Church has ever committed by mistake. His icon shows the mouth closed because he said the thing once and never repeated it. Parties who ask a priest why a witness-saint is depicted silent will get the standard answer \u2014 that testimony given once truly needs no second telling \u2014 and it is the wrong answer, and the right one is not written down anywhere."));
+children.push(B("Lupenna", "is the saint of hospitality, and the empire\u2019s two worst crimes in living memory are both violations of guest-right: the Vintage Night, where congregations were killed under a festival\u2019s welcome, and the murder that made Olvesa a Saint-Regent, where a lord was killed under his host\u2019s roof. The Church has never preached the connection. The See of Orlath preaches almost nothing else."));
+children.push(PS([DM("DM Only \u2014 Ovric: "), { t: "he was struck because a Sanctum archivist working the deep stacks found what Ovric had actually witnessed and written down, and the Synod of the day chose the smaller scandal. The suppression decree is a masterpiece of saying nothing at four hundred words. The original file exists; it is in the Imperial Archive\u2019s closed levels, and it is the sort of thing a company holding the Lector\u2019s Seal could conceivably reach. What he witnessed touches the Founding. Do not spend this early, and do not make it the only route to the truth \u2014 it is a corroborating door, not the first one." }]));
+
+children.push(H3("Relics, Feasts, and the Pilgrim Roads"));
+children.push(P("Every saint on the roll has relics, and the relic economy already described in this book runs on them: certified fragments with provenance documents, uncertified fragments with better stories, and the Second Treasury at Orlath holding a rival set the Sanctum considers fraudulent and cannot inspect. A saint\u2019s feast is a working holiday in the parishes that keep it \u2014 markets, processions, a suspension of certain kinds of legal proceeding \u2014 and a scheduling problem for everyone else. Four pilgrim roads carry real traffic:"));
+children.push(BUL("The Matron\u2019s Road:", "Aenodira to Lupenna, two days on foot, walked by tens of thousands a year and lined the whole way with candle-stalls, relic-hawkers, and the most competitive begging in the empire."));
+children.push(BUL("The Penitent\u2019s Stair:", "the switchback ascent to the Reconciliation Shrine above Orlath. Crutches are left at the top; the town at the bottom sells them."));
+children.push(BUL("The Nine Winters Way:", "Odarr\u2019s passes, walked in winter on purpose. The Ardven monastery-burghs maintain the stations, which is diplomacy dressed as piety and works as both."));
+children.push(BUL("The Three Fords:", "three towns claim Ivessa\u2019s crossing and the Church has never adjudicated, because settling it would require ruling on which river she died in. Serious pilgrims walk all three and let the Matron sort it out."));
+
+// ============ STANDING ============
+children.push(H1("Standing: What the Empire Remembers"));
+children.push(P("An institution is a memory with a building around it. In a world where sworn words carry literal weight, a party\u2019s relationship with a faction is not a reputation score in any abstract sense \u2014 it is the accumulated residue of small promises made and kept in that institution\u2019s sight. The Church calls it good odor. The legions call it a name. The Concord calls it a line of credit and means all three of the others."));
+children.push(P("Standing is deliberately the lightest possible system: one number per faction, from zero to five, moved by the DM at the end of a session. There are no new rules to learn and nothing to look up mid-scene."));
+children.push(table(
+  ["Tier", "Name", "What It Means at the Table"],
+  [11, 22, 67],
+  [
+    ["0", "Unknown", "You are a face. Doors open at the ordinary price and no faster."],
+    ["1", "Noted", "Someone in the building knows your name. Minor favors are possible; you will be asked for one back."],
+    ["2", "Trusted", "Advantage on Charisma checks made against members of this faction who know of you. Small requests are granted without a decision being taken upstairs."],
+    ["3", "Relied Upon", "The faction brings you work rather than waiting to be asked. You gain access to one thing the faction controls and outsiders do not \u2014 a room, a record, a person, a route."],
+    ["4", "Of the Body", "You are treated as internal. Its enemies are now yours whether you chose them or not, and its rivals adjust their opinion of you downward by one tier without meeting you."],
+    ["5", "Named", "The faction will spend something real on you \u2014 money, people, or its own standing \u2014 once, and will expect the same. This is a promise, and in this world a promise is a weight."]
+  ]
+));
+
+children.push(H2("The Factions"));
+children.push(P("Twelve bodies are worth tracking in the campaign\u2019s first arc. Each moves on its own logic, and the last column is the thing a DM most needs at hand: what this faction will actually do for a party at Relied Upon."));
+children.push(P("Each entry names what raises the number, what lowers it, and \u2014 the thing a DM most needs at hand \u2014 what the faction will actually do for a party at Relied Upon."));
+children.push(B("The Lupine Throne and the Court.", "Rises when you make the restoration look competent, and you do it where the court can see. Falls when you embarrass it, or when you succeed so loudly that you become a faction of your own. At tier 3: an audience without the Lord Chamberlain arranging it first, which is a thing perhaps forty people in the empire have."));
+children.push(B("The Church of the Lupine Matron.", "Rises when you honor the Vigil, protect clergy, or resolve a matter without the Church having to be seen to act. Falls when you minister unsanctioned, shelter a claimed visionary, or win an argument with a Prelate in public. At tier 3: parish hospitality anywhere in loyalist territory, and a sealed letter that ends most provincial difficulties."));
+children.push(B("The Office of Omens.", "Rises when you bring them a claim, answer their questions, and are useful. Falls when you are useful to Vaelindra instead. At tier 3: nothing good \u2014 see below. This faction is the exception."));
+children.push(B("The Imperial Academy.", "Rises when you bring back knowledge, students, or credit; publication counts. Falls when you bring back a scandal, or make the faculty look like the people who examined you. At tier 3: the deep stacks, a laboratory, and a professor\u2019s signature on a requisition nobody will question."));
+children.push(B("The Law Commission.", "Rises when you produce evidence that survives contact with a hearing. Falls when you resolve things in ways that would not. At tier 3: Archjurist Vhal\u2019s ear, and a Writ she will sign on a day\u2019s notice."));
+children.push(B("The Imperial Legions.", "Rises when you stand where you said you would stand. Falls when you leave; once is enough. At tier 3: a century\u2019s worth of soldiers who will listen, and a quartermaster who will lose the paperwork on what you take."));
+children.push(B("The Capital Merchants\u2019 Concord.", "Rises when you make a route safer or a contract enforceable. Falls when you cost anyone money, including honestly. At tier 3: credit, a factor in every major town, and the second-best intelligence network in the empire."));
+children.push(B("The Inkhands of Rivergate.", "Rises when you pay, shut up, and do not bring the Watch back with you. Falls on any of those three, reversed. At tier 3: unlicensed work at trade prices, and a door out of the district at any hour."));
+children.push(B("Vaelindra\u2019s referral circle.", "Rises when you keep her confidence and keep your word. Falls when you spend her name for advantage. At tier 3: introduction to the others she has referred over fifty years, which is a stranger and more useful list than it sounds."));
+children.push(B("The See of Orlath.", "Rises when you treat the schism as a disagreement between the faithful. Falls when you treat it as the Sanctum does. At tier 3: safe passage in the north, and the Second Treasury\u2019s doors."));
+children.push(B("The Tarnovar envoy\u2019s circle.", "Rises when you keep an oath at cost, where a Tarnovari can see it. Falls when you break a small one, at no cost, where a Tarnovari can see it. At tier 3: a hearing at Kamenhold, which nobody from the empire has had in a century."));
+children.push(B("The Golds and the Greys.", "Rises when you are seen at the Long Course, on a side, in the wrong weather. Falls when you are seen on the other side. At tier 3: three thousand people in a stand who will chant your name, which is a weapon and should be handled as one."));
+
+children.push(H3("The Office of Omens Is Not Like the Others"));
+children.push(P("Standing with the Office is the one score a party should be trying to keep low, and the table should never be told so directly. Every tier of it is real, functioning access \u2014 the Office is polite, efficient, and genuinely helpful to those it has a file on. What rises with the tier is not favor but attention, and attention from a body whose determinations end in files rather than answers is the campaign\u2019s quietest trap. At tier 3 the Office assigns a Censor to the party\u2019s affairs as a courtesy. At tier 5 it knows where they sleep, who referred them, and what they are afraid of, and it has written all three down."));
+children.push(PS([DM("DM Only: "), { t: "run Office standing openly and let the players see the number go up. Let it feel like progress. Prelate Odell will be warm, useful, and completely sincere, because he is: he believes the Office is the only thing standing between the empire and a hundred unlicensed prophets. The horror arrives the first time the party needs the Office not to know something and discovers how much it already does." }]));
+
+children.push(H3("Standing Pulls Against Standing"));
+children.push(P("The empire is not one body and cannot be pleased at once. When a party gains a tier with any of these, the DM should ask whether the opposed body noticed."));
+children.push(table(
+  ["Gaining Here", "Costs You With", "Because"],
+  [25, 24, 51],
+  [
+    ["The See of Orlath", "The Church of the Lupine Matron", "There is exactly one licensing authority for the divine, and both of them are certain which."],
+    ["Vaelindra\u2019s circle", "The Office of Omens", "The Office\u2019s objection to her is professional, not theological, which makes it worse."],
+    ["The Inkhands", "The Law Commission", "Vhal\u2019s whole project is that the law should reach Rivergate. The Inkhands are the argument that it does not."],
+    ["The Tarnovar envoy\u2019s circle", "The Lupine Throne and the Court", "Never again the wolf\u2019s word is a proverb about the people currently paying you."],
+    ["The Golds", "The Greys", "And the reverse, and there is no third option, and the stands are how the capital says things it cannot say in the Forum."],
+    ["The Concord", "The Legions", "Book Six\u2019s requisition powers are, from a merchant\u2019s chair, legalized theft with a drum behind it."]
+  ]
+));
+children.push(P("Two pairings are deliberately not opposed, and the reason is worth a DM\u2019s attention. The Academy sits comfortably beside almost everything, which is what makes it the best cover in the empire and the reason a graduating cohort can move through every one of these rooms. And the Church and the Throne do not appear opposite each other anywhere on this table \u2014 not because they agree, but because neither can afford to make a party choose. The day one of them does is a campaign event."));
 children.push(H1("Magic and the Word"));
 children.push(H2("The Weight of the Word"));
 children.push(P("The setting\u2019s metaphysical signature, formalized: in the world of the Lupine Matron, sworn words have literal weight. An oath spoken with intent creates a real, thin binding \u2014 imperceptible to almost everyone, cumulative across a civilization, and the reason this world\u2019s history keeps rhyming. It is why the Tarnovari swear on stone (stone holds what air forgets), why Ban Dregan\u2019s Fence works on the level of dread as well as deterrence, why Duke Norr\u2019s tens of thousands of personal oaths constitute a strategic reality, why the Church treats vows as sacraments and the law treats perjury as blasphemy\u2019s cousin \u2014 and why the breaking of the first great covenant could birth a god-sized wound. Mechanically this changes nothing: no new rules, no new subsystems. It is the flavor layer that makes every class, spell, and social contract in 5e feel native to this world rather than imported into it."));
@@ -414,7 +572,7 @@ children.push(P("Book Five is the shortest of the seven, because it changes noth
 children.push(H2("Book Six \u2014 Of the March"));
 children.push(P("Book Six is military law, narrow by design: every subject owes the empire service in some form, deliberately undefined in scope (see The Vision of Restoration, above); border-lord and warlord private forces are tolerated as a fact of the fracture rather than licensed; and an officer who defrauds his own command is triable by court-martial at Legate level, appealable once to Aenodira \u2014 the exact mechanism Magistrate Ondrei\u2019s complaint against Colonel Dessen has been waiting on."));
 children.push(P("The Book also gives the legions\u2019 chain of command formal shape for the first time:"));
-children.push(table(["Rank","Command","Body"],[20,42,38],[
+children.push(table(["Rank","Command","Body"],[26, 36, 38],[
   ["Legionary","Self","Imperial Legions"],
   ["Sergeant","~10 (a file)","Any regular force"],
   ["Centurion","~80\u2013100 (a company)","Imperial Legions"],
@@ -468,7 +626,7 @@ children.push(table(["Style", "Role"], [26, 74], [
 
 children.push(H2("Sovereign and Border Styles"));
 children.push(P("These do not rank against one another, and none of them ranks beneath the Throne except where the Throne can make it so. Each style records what kind of power it is."));
-children.push(table(["Style", "What it means", "Held by"], [20, 50, 30], [
+children.push(table(["Style", "What it means", "Held by"], [23, 47, 30], [
   ["King", "A crown claiming full sovereignty", "Karvel of Ardven"],
   ["Sea-King", "King of a people rather than a territory: no land, no seat, no grave", "Aldrec the Landless"],
   ["Voivode", "Tarnovar\u2019s war-leader raised to sovereign; absolute within her word", "Ysavet Morn"],
@@ -762,7 +920,7 @@ children.push(H1("The Imperial Calendar"));
 children.push(P("Twelve months, opening at the year\u2019s turn in deep winter with the Matron\u2019s own liturgical season, running the plain agricultural cycle everyone actually lives by, and closing with her second high month before the year turns again."));
 children.push(table(
   ["Month", "Season", "Character"],
-  [18, 22, 60],
+  [21, 22, 57],
   [
     ["Wolfmoon", "Deep winter (year begins)", "The Matron\u2019s high liturgical month; the year turns in her keeping, not the sun\u2019s."],
     ["Thawtide", "Late winter", "Roads reopen; the Ostmark\u2019s watch-forts change garrison."],
@@ -808,46 +966,46 @@ children.push(P("Pacing guidance: the Zhuvedian Laws promulgation is the campaig
 children.push(H1("Appendix I \u2014 The Roster: Races and Classes"));
 children.push(P("Class entries are archetype keys for flavor and improvisation \u2014 NPC stat blocks remain custom-built per DMG practice, not class-leveled builds. \u2018Statted\u2019 marks the ten who receive full blocks in Part IV."));
 children.push(table(
-  ["Name", "Race", "Class / Archetype", "Power Tier", "Statted"],
-  [24, 13, 30, 21, 12],
+  ["Name", "Race", "Class / Archetype", "Standing"],
+  [28, 15, 33, 24],
   [
-    ["Emperor Qilvayas", "Drow", "Paladin (Crown-sworn)", "CR 9", "Yes"],
-    ["Legate Bruvasca Thorne", "Human", "Fighter (Battle Master)", "CR 10", "Yes"],
-    ["Marshal Gavric Dane", "Human", "Fighter (Champion, leader)", "CR 7", "Yes"],
-    ["Ban Dregan Morn", "Human", "Paladin (Oath of Vengeance)", "CR 9", "Yes"],
-    ["Sea-King Aldrec", "Human", "Fighter (raider-king)", "CR 7", "Yes"],
-    ["Duke Garvin Norr", "Human", "Fighter (mastermind-general)", "CR 8", "Yes"],
-    ["King Karvel", "Human", "Fighter (Champion, crowned)", "CR 8", "Yes"],
-    ["Saint-Regent Olvesa", "Human", "Cleric (Life, true visions)", "CR 10", "Yes"],
-    ["Mistress Averil Shen", "Human", "Rogue (Mastermind)", "CR 6", "Yes"],
-    ["Prelate Sarvin Odell", "Human", "Cleric (Knowledge)", "CR 5", "Yes"],
-    ["Empress Nyreeza (absent)", "Drow", "Wizard (scholar-sovereign)", "\u2014 (fate open)", "No \u2014 by design"],
-    ["Vaelindra of the Still Waters", "Human", "Seer (no class; true visions)", "Noncombatant", "No \u2014 by design"],
-    ["Duchess Emerenn Vasq", "Human", "Noble (Mastermind; the Garland)", "Social CR 4", "Social block later"],
-    ["Countess Velsanna Ory", "Human", "Blood-rite sorceress", "Deferred", "Greywell module"],
-    ["Voivode Ysavet Morn", "Human", "Noble (elder stateswoman)", "Social", "No"],
-    ["Lord Chamberlain Kessin", "Human", "Noble (gatekeeper)", "Social", "No"],
-    ["Archjurist Senna Vhal", "Half-elf", "Expert (jurist)", "Social", "No"],
-    ["Hierophant Malzeth Corr", "Human", "Cleric (imperial cult)", "CR 3-equiv", "No"],
-    ["Matriarch Ilsevet Corvane", "Human", "Cleric (institutional)", "CR 7-equiv", "No"],
-    ["Archivist Dathenor Vell", "Hill dwarf", "Sage (archivist)", "Noncombatant", "No"],
-    ["Professor Corvin Dail", "Human", "Fighter (drillmaster)", "CR 5-equiv", "No"],
-    ["Chancellor Emeth Sorral", "Half-elf (canon)", "Noble (mage-lite)", "Social", "No"],
-    ["Instructor Liria Fenn", "Human", "Bard (College of Lore)", "CR 4-equiv", "No"],
-    ["Magistrate Cassivar Ondrei", "Human", "Noble/Expert (magistrate)", "Social", "No"],
-    ["Sgt. Petra Malich", "Human", "Fighter (soldier)", "CR 1 (statted, S2)", "Existing"],
-    ["Odric Hale", "Human", "Rogue (charlatan)", "CR 1/2 (statted, S2)", "Existing"],
-    ["Clerk Ossian Pell", "Human", "Commoner (clerk)", "\u2014", "No"],
-    ["Tirell Mosse", "Rock gnome", "Expert (dealer)", "\u2014", "No"],
-    ["Brune Halloc", "Half-orc", "Fighter (dock boss)", "CR 2 (statted, S5)", "Existing"],
-    ["The Widow Brakka", "Hill dwarf", "Commoner (landlady, undefeated)", "Beyond CR", "No"],
-    ["Censor-Captain Ferrin Odo", "Human", "Fighter (church soldier)", "CR 3 (statted, S6)", "Existing"],
-    ["Ilinca Verath", "Human (Tarnovari)", "Bard (ballad-keeper)", "\u2014", "No"],
-    ["Warlords Skarn & Voss", "Human", "Fighters (veterans)", "CR 3\u20134-equiv", "No"],
-    ["Colonel Aurel Dessen", "Human", "Fighter (corrupt officer)", "CR 3-equiv", "No"],
-    ["Duke Aldous Vasq", "Human", "Noble (invalid administrator)", "Noncombatant", "No"],
-    ["Tavian Vasq", "Human", "Noble (heir in waiting)", "Social", "No"],
-    ["Marshal Dane\u2019s analog gap \u2014 Yanna, Semya, Vorn, Tobble, Bram", "Human", "Commoners / Nobles", "\u2014", "No"]
+    ["Emperor Qilvayas", "Drow", "Paladin (Crown-sworn)", "CR 9 (statted)"],
+    ["Legate Bruvasca Thorne", "Human", "Fighter (Battle Master)", "CR 10 (statted)"],
+    ["Marshal Gavric Dane", "Human", "Fighter (Champion, leader)", "CR 7 (statted)"],
+    ["Ban Dregan Morn", "Human", "Paladin (Oath of Vengeance)", "CR 9 (statted)"],
+    ["Sea-King Aldrec", "Human", "Fighter (raider-king)", "CR 7 (statted)"],
+    ["Duke Garvin Norr", "Human", "Fighter (mastermind)", "CR 8 (statted)"],
+    ["King Karvel", "Human", "Fighter (Champion, crowned)", "CR 8 (statted)"],
+    ["Saint-Regent Olvesa", "Human", "Cleric (Life, true visions)", "CR 10 (statted)"],
+    ["Mistress Averil Shen", "Human", "Rogue (Mastermind)", "CR 6 (statted)"],
+    ["Prelate Sarvin Odell", "Human", "Cleric (Knowledge)", "CR 5 (statted)"],
+    ["Empress Nyreeza (absent)", "Drow", "Wizard (scholar-sovereign)", "Fate open, by design"],
+    ["Vaelindra of the Still Waters", "Human", "Seer (no class; true visions)", "No stats, by design"],
+    ["Duchess Emerenn Vasq", "Human", "Noble (Mastermind; the Garland)", "Social CR 4 \u2014 Social block later"],
+    ["Countess Velsanna Ory", "Human", "Blood-rite sorceress", "Deferred \u2014 Greywell module"],
+    ["Voivode Ysavet Morn", "Human", "Noble (elder stateswoman)", "Social"],
+    ["Lord Chamberlain Kessin", "Human", "Noble (gatekeeper)", "Social"],
+    ["Archjurist Senna Vhal", "Half-elf", "Expert (jurist)", "Social"],
+    ["Hierophant Malzeth Corr", "Human", "Cleric (imperial cult)", "CR 3-equiv"],
+    ["Matriarch Ilsevet Corvane", "Human", "Cleric (institutional)", "CR 7-equiv"],
+    ["Archivist Dathenor Vell", "Hill dwarf", "Sage (archivist)", "No stats"],
+    ["Professor Corvin Dail", "Human", "Fighter (drillmaster)", "CR 5-equiv"],
+    ["Chancellor Emeth Sorral", "Half-elf (canon)", "Noble (mage-lite)", "Social"],
+    ["Instructor Liria Fenn", "Human", "Bard (College of Lore)", "CR 4-equiv"],
+    ["Magistrate Cassivar Ondrei", "Human", "Noble/Expert (magistrate)", "Social"],
+    ["Sgt. Petra Malich", "Human", "Fighter (soldier)", "CR 1 (statted, S2) \u2014 Existing"],
+    ["Odric Hale", "Human", "Rogue (charlatan)", "CR 1/2 (statted, S2) \u2014 Existing"],
+    ["Clerk Ossian Pell", "Human", "Commoner (clerk)", "No"],
+    ["Tirell Mosse", "Rock gnome", "Expert (dealer)", "No"],
+    ["Brune Halloc", "Half-orc", "Fighter (dock boss)", "CR 2 (statted, S5) \u2014 Existing"],
+    ["The Widow Brakka", "Hill dwarf", "Commoner (landlady, undefeated)", "Beyond CR"],
+    ["Censor-Captain Ferrin Odo", "Human", "Fighter (church soldier)", "CR 3 (statted, S6) \u2014 Existing"],
+    ["Ilinca Verath", "Tarnovari human", "Bard (ballad-keeper)", "No"],
+    ["Warlords Skarn & Voss", "Human", "Fighters (veterans)", "CR 3\u20134-equiv"],
+    ["Colonel Aurel Dessen", "Human", "Fighter (corrupt officer)", "CR 3-equiv"],
+    ["Duke Aldous Vasq", "Human", "Noble (invalid administrator)", "No stats"],
+    ["Tavian Vasq", "Human", "Noble (heir in waiting)", "Social"],
+    ["Marshal Dane\u2019s analog gap \u2014 Yanna, Semya, Vorn, Tobble, Bram", "Human", "Commoners / Nobles", "No"]
   ]
 ));
 
@@ -1040,13 +1198,15 @@ children.push(B("The Lector\u2019s Seal (wondrous, rare, unique \u2014 the compa
 
 // Development Roadmap
 children.push(H1("Development Roadmap \u2014 Post-Beta Status"));
-children.push(P("The D&D-ification pass and the Social Foundations pass are both complete: all names canonical; the Founding Myth, binding site, timeline, both campaign clocks, and the Powers locked; magic and the faith codified (the Weight of the Word, the Sanction, Chartered Thaumaturgy, the night iconography, lycanthropy doctrine, the relic economy); peoples and demographics established (the Founder\u2019s Blood, the Stonesworn, the Marked, and the rest); every region fleshed with terrain, creatures, and settlements; three dragon-powers placed; the Roster assigned; ten Powers fully statted (Appendix II); five homebrew items of record (Appendix III); and commerce and loot grounded in SRD pricing; the Packlaw doctrine of gender and authority; the four-tier framework for oaths, service, and bound labor; marriage-as-oath and the Denmother\u2019s Choice succession custom; and the twelve-month Imperial Calendar. Closed since: a full timeline-arithmetic audit across every document, reconciling the commencement clock, the dynasty\u2019s short reigns, and the Acceleration\u2019s dating; and the imperial law pass \u2014 the Zhuvedian Laws in seven Books, the Sanction and the Charter\u2019s mark-and-register certification, the jurisdiction map from Direct Rule to warlord country, the legions\u2019 rank ladder (and Marshal reframed as an acclamation rather than a rung on it), street-level justice from provincial magistrate to the Church\u2019s parallel Writ, and the Golden Tablets quoted in fragment for the first time; and the language and literacy pass \u2014 Old Imperial fully dead as a native tongue, literacy tracking education and office rather than region, and the exposure the unlettered face under the new Laws\u2019 witness-and-register requirements; and the currency, named at last \u2014 the Zhuven, which almost nobody calls a Zhuven; and medicine and disease \u2014 the tiered-care system Book Three already implied, the uncertified folk layer beneath it, and Farrowgate\u2019s Damp as the sharpened, deliberately mundane case. This closes every item on the social-gaps list. Newly framed, and deliberately live rather than closed: the Marked\u2019s legal personhood \u2014 Book One\u2019s one unresolved clause, now built out with its full theological and practical texture, resolution handed to the Branch Ledger and tied to the Twin Clocks\u2019 Solacre promulgation. Newly designed alongside it: the Twin Clocks arc itself \u2014 Solacre Day\u2019s convergence of the Marked ruling, the Grey-Gold Rising, and word of Karvel\u2019s coronation into a single set piece; the Rising\u2019s trigger identified as Book Three\u2019s registration requirement extended over Long Course commerce rather than a new tax; and its mercy-or-massacre outcome live and tied to the Branch Ledger, the same mechanism as Marked personhood. Also closed since: the titles pass \u2014 five parallel ladders rather than one order of precedence, the Matriarchate established as collegial with a Prelate holding his writ from the Synod rather than from the Matron\u2019s Voice, Saint-Regent given its referent at last as the See\u2019s regency of the True Rite for a throne it holds vacant, and Academy faculty restyled Professor so the title stops colliding with the civil Magistrate; and a full pre-launch consistency audit across all eleven documents \u2014 Solacre Day reconciled to one convergent day in every timeline that states it, the Suthmark\u2019s governance separated into law and fact with the Dowager\u2019s sons entered as canon, the Zhuven put into the mouths of the people who actually spend it, and Book Three\u2019s register requirement carried into the party\u2019s own charter. That audit included the corpus\u2019s first mechanical validation against the SRD \u2014 thirty-two homebrew stat blocks, the ten Powers among them, every spell reference and every price \u2014 which found no genuine errors, and one scaling curve since corrected. Deliberately open by design (not gaps): Nyreeza\u2019s exact fate; Countess Ory\u2019s blood-rite mechanism; the coronation\u2019s metaphysical consequence; whether the Piso gun over Marshal Dane ever fires; whether any line of Threnvos survives; and warlock patron design (sign-off required when built \u2014 at least one patron option may trace to the thing beneath Aenodira)."));
+children.push(P("The D&D-ification pass and the Social Foundations pass are both complete: all names canonical; the Founding Myth, binding site, timeline, both campaign clocks, and the Powers locked; magic and the faith codified (the Weight of the Word, the Sanction, Chartered Thaumaturgy, the night iconography, lycanthropy doctrine, the relic economy); peoples and demographics established (the Founder\u2019s Blood, the Stonesworn, the Marked, and the rest); every region fleshed with terrain, creatures, and settlements; three dragon-powers placed; the Roster assigned; ten Powers fully statted (Appendix II); five homebrew items of record (Appendix III); and commerce and loot grounded in SRD pricing; the Packlaw doctrine of gender and authority; the four-tier framework for oaths, service, and bound labor; marriage-as-oath and the Denmother\u2019s Choice succession custom; and the twelve-month Imperial Calendar. Closed since: a full timeline-arithmetic audit across every document, reconciling the commencement clock, the dynasty\u2019s short reigns, and the Acceleration\u2019s dating; and the imperial law pass \u2014 the Zhuvedian Laws in seven Books, the Sanction and the Charter\u2019s mark-and-register certification, the jurisdiction map from Direct Rule to warlord country, the legions\u2019 rank ladder (and Marshal reframed as an acclamation rather than a rung on it), street-level justice from provincial magistrate to the Church\u2019s parallel Writ, and the Golden Tablets quoted in fragment for the first time; and the language and literacy pass \u2014 Old Imperial fully dead as a native tongue, literacy tracking education and office rather than region, and the exposure the unlettered face under the new Laws\u2019 witness-and-register requirements; and the currency, named at last \u2014 the Zhuven, which almost nobody calls a Zhuven; and medicine and disease \u2014 the tiered-care system Book Three already implied, the uncertified folk layer beneath it, and Farrowgate\u2019s Damp as the sharpened, deliberately mundane case. This closes every item on the social-gaps list. Newly framed, and deliberately live rather than closed: the Marked\u2019s legal personhood \u2014 Book One\u2019s one unresolved clause, now built out with its full theological and practical texture, resolution handed to the Branch Ledger and tied to the Twin Clocks\u2019 Solacre promulgation. Newly designed alongside it: the Twin Clocks arc itself \u2014 Solacre Day\u2019s convergence of the Marked ruling, the Grey-Gold Rising, and word of Karvel\u2019s coronation into a single set piece; the Rising\u2019s trigger identified as Book Three\u2019s registration requirement extended over Long Course commerce rather than a new tax; and its mercy-or-massacre outcome live and tied to the Branch Ledger, the same mechanism as Marked personhood. Also closed since: the titles pass \u2014 five parallel ladders rather than one order of precedence, the Matriarchate established as collegial with a Prelate holding his writ from the Synod rather than from the Matron\u2019s Voice, Saint-Regent given its referent at last as the See\u2019s regency of the True Rite for a throne it holds vacant, and Academy faculty restyled Professor so the title stops colliding with the civil Magistrate; and a full pre-launch consistency audit across all eleven documents \u2014 Solacre Day reconciled to one convergent day in every timeline that states it, the Suthmark\u2019s governance separated into law and fact with the Dowager\u2019s sons entered as canon, the Zhuven put into the mouths of the people who actually spend it, and Book Three\u2019s register requirement carried into the party\u2019s own charter. That audit included the corpus\u2019s first mechanical validation against the SRD \u2014 thirty-two homebrew stat blocks, the ten Powers among them, every spell reference and every price \u2014 which found no genuine errors, and one scaling curve since corrected. Closed since, in the published-scale expansion: the faith\u2019s remaining half, which two centuries of schism had left implied rather than written \u2014 the Doctrine of Aspects, the seven the Matriarchate recognizes, the domains for which the empire deliberately has no Aspect at all, the three paladin oaths placed against existing institutions, and a canon of fourteen saints with feast days keyed to the calendar already in this book; and Standing, the six-tier record of what twelve institutions remember about a company, with its opposed pairs and its one faction whose favor is a liability. Published alongside this volume, and derived from it rather than rivalling it: a Gazetteer keying thirty settlements across the ten regions, with travel, hazards, regional encounter tables, and eight creatures the empire has that the manual does not; and a Player\u2019s Companion carrying backgrounds, names, downtime, and the faith as a worshipper meets it. Deliberately open by design (not gaps): Nyreeza\u2019s exact fate; Countess Ory\u2019s blood-rite mechanism; the coronation\u2019s metaphysical consequence; whether the Piso gun over Marshal Dane ever fires; whether any line of Threnvos survives; and warlock patron design (sign-off required when built \u2014 at least one patron option may trace to the thing beneath Aenodira)."));
 children.push(P("Next development priorities, in order:"));
 children.push(BUL("1. The Undercourt and the Binding Site:", "COMPLETE. Sessions Seven and Eight build the full descent \u2014 the price of the Seal, the Vesting Room, the Long Approach, the Witness Hall, and the Rite Floor \u2014 through the Vigil and the separation of grief from hunger. The campaign\u2019s next frontier is the second arc: the empire itself."));
 children.push(BUL("2. Tarnovar Deep Development:", "Well advanced (Kamenhold, Fencegate, Verath, the Stonesworn, the Old Wood) \u2014 still needs the Vosthren ballad cycle in full and the Voivode\u2019s court before the envoy thread matures into an arc."));
 children.push(BUL("3. The Twin Clocks:", "DESIGNED. Solacre Day now runs as one convergent set piece \u2014 the Marked ruling, the Grey-Gold Rising, and word of Karvel\u2019s coronation landing together (see Plot Hooks). The Rising\u2019s trigger is Book Three\u2019s registration requirement extended over Long Course commerce, not a new tax; its mercy-or-massacre outcome is live, tracked on the Branch Ledger exactly like Marked personhood. Still deliberately deferred: the coronation\u2019s metaphysical consequence, held until the arc is actually on the table. What remains is building the actual session."));
 children.push(BUL("4. The Greywell Module:", "The Girls of Greywell as a self-contained gothic horror arc (seeded via Session Five\u2019s optional Farrowgate client); decide Ory\u2019s mechanism at build time."));
 children.push(BUL("5. Sessions Nine and Beyond:", "Built against party divergences recorded in the DM Reference Guide\u2019s Branch Ledger."));
+children.push(BUL("6. Setting Feats and Subclasses:", "Deliberately not built. The Player\u2019s Companion stops at backgrounds and flavour, entirely inside 2014 RAW, so that nothing in it needs balancing before it can be used. An Oath of the Witness and a Domain of the Vigil are the obvious candidates and both want real playtest before they are canon \u2014 a signed-off pass of their own, not an addendum to this one."));
+children.push(BUL("7. Art in the Published Documents:", "The images directory serves the repository and not yet the corpus. Getting artwork into the documents means an image path added to both the docx-js generation and the Markdown shim, across nine generators \u2014 a deliberate later pass, and one worth doing once there is enough art to justify it."));
 // Closing
 children.push(new Paragraph({
   alignment: AlignmentType.CENTER,

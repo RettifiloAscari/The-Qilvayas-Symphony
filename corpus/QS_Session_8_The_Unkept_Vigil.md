@@ -16,7 +16,9 @@ Beyond the Witness Hall lies the Rite Floor, and on it, still speaking his half 
 
 The session’s work is the Vigil: someone sits, someone watches, someone speaks the responses nobody spoke. It takes the whole night — which means the party must commit to remaining in the dark until a dawn they cannot see. The hunger that shares his grave will try to stop them, because the Vigil is the only thing that can take anything away from it. And when the Vigil is kept, the grief goes out of the room, and the room gets colder, and what remains does not grieve, does not remember, and wants nothing except more.
 
-Designed for a five-hour core. Pacing budget: the arch and the first hearing (30 minutes); the Rite Floor and Threnvos (60 minutes); understanding what he needs (45 minutes); the Vigil, in three watches with interruptions (120 minutes); the parting and the ascent (45 minutes). Optional content adds roughly 60 minutes. Milestone: 8th level at the Vigil’s completion.
+Designed for a five-hour core. Pacing budget: the arch, the vestibule, and the first hearing (30 minutes); the Rite Floor and Threnvos (55 minutes); understanding what he needs, against three wrong answers that are all reasonable (45 minutes); setting the watch (15 minutes); the Vigil, in three watches with interruptions (75 minutes); the parting and the ascent (50 minutes). Optional content adds roughly 60 minutes. Milestone: 8th level at the Vigil’s completion.
+
+**On the Vigil’s timing.** The previous budget gave the Vigil a flat 120 minutes. It is now 15 for the setting and 75 for the three watches at 25 each, which is 30 minutes less and considerably tighter, because the watches now have written interruptions and decisions rather than an open stretch to fill. The 30 minutes goes to the diagnosis scene and the ascent, both of which were underfed. If a table wants the old length, the place to spend it is the second watch: the private offer to each character is the scene most likely to be worth double its budget.
 
 ## What Is Actually Happening (DM Only)
 
@@ -89,6 +91,70 @@ They come up into Aenodira with the vestments, the rubbing, Nyreeza’s notes, a
 - **Nobody:** Also a choice. The Hall taught them exactly what it costs, and they will make it anyway if they are frightened enough, which is the most human ending this arc has.
 
 Milestone: 8th level. The first arc of the campaign is closed: students, vision, Seeress, Proving, dead letters, the Seal, the Hall, and a funeral two thousand years late. The second arc is the empire itself.
+
+# The Rite Floor, Keyed
+
+Five areas, continuing the Undercourt’s numbering from Session Seven. This is the end of the descent and the end of the arc, and it is small on purpose: after three hundred feet of Approach and a hall seating four hundred, the place the whole structure was built for is a single room.
+
+**C8. The Vestibule.** Carried over from Session Seven. The dry basin, and the carving of two figures facing, one chiselled out. A party arriving here at the start of Session Eight should be given a moment to look at the remaining figure properly: it is Drow, and it is not Zhuvedus, because Zhuvedus is the one who was removed.
+
+**C9. The Rite Floor.** Circular, sixty feet, sunk three steps below the vestibule, floor worked in a spiral of black stone that is not decoration but a path. At the centre, the binding. The scene text carries this room; nothing in the keying replaces it.
+
+**C10. The Second Standing.** A recess in the Rite Floor’s western arc, at the spiral’s outer end, sized for one person to stand in and see the whole floor. It is where a witness would have stood. It is empty, it has always been empty, and that is the entire crime.
+
+**C11. The Lamp Niches.** Nine niches at head height around the floor’s circumference, each holding a stone lamp, all nine dry. They are Vigil lamps and they predate the Church that would recognize them by twenty centuries. If the party lights them — and they will need oil they have carried three hundred feet — the room changes, and the DM should let that be the most beautiful thing in the campaign so far.
+
+**C12. Behind the Binding.** There is nothing behind the binding. Stated here because parties will look, thoroughly, and a DM should be able to say so with total confidence and no hedging. The Undercourt has no secret door, no lower level, and no other exit. The way out is the way in, three hundred feet uphill, and everyone will feel every foot of it.
+
+# The Vigil (Set Piece, in Three Watches)
+
+The session’s climax is a Vigil, and a Vigil is a night kept. Run it as three watches with a decision at each transition and an interruption in each. Nobody has to fight and something will try to make them.
+
+**Before the first watch — the Setting (15 minutes).** The party decides how to keep it: who watches, in what order, with what light, and whether they speak. The lamps at C11 can be lit if they have oil. The decision here is the whole set piece in miniature — a party that assigns watches carelessly is telling the DM how seriously they are taking this, and the module should let carelessness cost them.
+
+**The First Watch — Grief (25 minutes).** What is here is grieving, and grief is loud. The interruption: the Rite Floor fills with the sound of a hall of four hundred people, all of them speaking at once, none of them audible, and the effaced benches upstairs are full. Nobody is there. The decision at the transition: does the watch hold? A character who leaves their post ends the watch and it must be restarted, and no mechanical penalty is needed — the other players will supply it.
+
+**The Second Watch — Hunger (25 minutes).** What is here is also hungry, and the two are tangled, and separating them is the session’s actual work. The interruption: an offer, made to whoever is on watch, individually and privately, in the voice of someone they trust. It is a real offer and it is specific to that character, and the DM should have prepared one per player. No save. Just the offer, and the silence after it. The decision at the transition: does the character tell the others?
+
+**The Third Watch — The Word (25 minutes).** The last watch, and the only one where the party can speak. What is needed here is not a spell, a weapon, or a rite: it is a witness, standing in the Second Standing at C10, saying what happened. Anyone can do it. It requires no proficiency, no check, and no lore the party does not have by now. The decision at the transition is who stands there — and the module must not choose. If nobody does, the Vigil ends unkept, and that is a real ending and the Branch Ledger records it.
+
+**DM Only:** the three watches are grief, hunger, and the word, and they map exactly onto what the campaign has been about since Session One: something was broken, something has been feeding on it, and the only thing that has ever repaired a broken oath in this world is somebody saying out loud what was actually done. There is no combat solution to the third watch. If the party attacks in the third watch, let them, let it be futile, and let the night end anyway at dawn, and let them live with it.
+
+# What He Needs (Puzzle)
+
+The session’s puzzle is not a lock. It is a diagnosis: the party has to work out what Threnvos actually requires, and every wrong answer is a reasonable answer that a competent adventuring party would try first.
+
+> *He is not attacking. He has not attacked. He has been here for two thousand years and the first thing he does is ask you a question, and the question is not the one you prepared for. Behind him the floor’s spiral runs out to an empty standing at the western arc, and nine dry lamps look down from the wall, and the whole room is arranged around a shape that is not there.*
+
+**Wrong answer one — destroy it.** Available, survivable, and it ends the campaign’s central thread badly. The thing here can be fought. It should be statted, it should be dangerous, and killing it accomplishes precisely nothing except that the Brekelands keep getting worse and nobody ever learns why.
+
+**Wrong answer two — release it.** Also available. A party can undo the binding, and a party that has been paying attention will be able to work out how. This is the worst available outcome and the module should not flinch from letting them choose it.
+
+**Wrong answer three — bargain.** It will bargain. It will bargain in good faith, because whatever else is true of him, Threnvos kept his word and was killed for it. The bargain will be honoured. It is still the wrong answer, because a new oath sworn on this floor is exactly how the first one went wrong.
+
+**Right answer one — the Vigil.** Keep the night. Watched, lit, never left alone. The thing on this floor was buried unwatched two thousand years ago and every doctrine in the empire says that is a wound rather than a burial. A party that has met a single Vigil Hall has everything they need to work this out.
+
+**Right answer two — the witness.** Stand in the Second Standing and say what was done. Not an apology and not a confession: testimony. The empty standing is the crime — there was supposed to be a witness at the founding and there was not — and a person filling it is the repair.
+
+**Right answer three — both.** Which is what the room was built for, and which no party will get to without doing the first two separately and realizing they are the same act. Give this the full weight.
+
+**A note on equal solutions.** The two right answers are genuinely equal and either alone is a complete ending. The Vigil without the witness leaves the grief settled and the account still open. The witness without the Vigil settles the account and leaves him unwatched. Both are good outcomes. Neither is the good outcome, and the Branch Ledger has a row for each.
+
+# Hazards and the Long Way Back
+
+**The Dry Lamps (C11).** No trap, one resource question. Nine lamps, and lighting all nine takes nine flasks of oil the party had to carry three hundred feet down. A party that brought four lights four. There is no penalty for lighting fewer and there is no bonus for lighting nine, and the DM should say nothing either way — but the room lit by nine and the room lit by two are different rooms, and the players will know which one they are in.
+
+**The Ascent.** Three hundred feet uphill, after a night without sleep, on whatever oil is left. If the party is out of light, they walk it in the dark, roped, at half speed, for an hour of game time. This is not a hazard with a saving throw. It is the last thing that happens to them down here and it should be quiet.
+
+**The Arch, Going Out (C1).** The dead wardline in the floor. Crossing it outbound, a character who kept the third watch feels nothing at all, and a character who did not feels the cold one last time. Say it to that player privately.
+
+# Handout — Session Eight
+
+## The Forty Legible Names
+
+> *(From the last forty benches in the Witness Hall, where the chisel broke. Forty names in an alphabet nobody at the table can read — but the party has a rubbing, and Session Six taught them who translates. Written out, they are ordinary names. Somebody’s daughter. Somebody’s neighbour. A cutler. Two children with the same family name.)*
+
+Note for the DM: these are the four hundred who were supposed to witness, and forty of whose names survive because a chisel broke. If the party reads them aloud during the Vigil, that is the third watch, and it counts, and the DM should recognize it immediately and without hesitation. It is the best available ending and no text anywhere in this module tells them it is possible.
 
 # Optional Content (Beyond the Five-Hour Core)
 

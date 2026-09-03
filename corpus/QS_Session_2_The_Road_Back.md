@@ -14,7 +14,9 @@
 
 The morning after the vision, the party must return to the capital regardless of what they decide about the dream — their field exercise concludes with a formal report to the academy, and graduation is weeks away. The road home becomes a tour of the fractured empire at ground level: a checkpoint that answers to no one in particular, refugees from a war nobody declared, and a toll collected on forged authority. In the capital, an old archivist points them toward the only person who might explain what happened to them — and the session ends in a modest apartment with blue shutters, across a table from Vaelindra of the Still Waters.
 
-Designed for a five-hour session, which comfortably fits all three road encounters — run them all, in any order. Suggested pacing budget: the morning after (45 minutes); the road encounters (50 minutes each, 150 total); arrival at the capital (20 minutes); the academy and the archivist (45 minutes); finding Vaelindra (40 minutes). The Vaelindra scene must end the session on her confirmation, not her explanation — hold the full conversation for Session Three’s opening. If time runs short, trim the toll bridge to its reveal-and-fold beat rather than cutting it entirely; its thematic note is worth thirty seconds even in passing.
+Designed for a five-hour session, which comfortably fits all three road encounters — run them all, in any order. Suggested pacing budget: the morning after (40 minutes); the road encounters (45 minutes each, 135 total); the approach to Aenodira, run as its six beats (30 minutes); the academy and the archivist, including the catalogue (55 minutes); finding Vaelindra (40 minutes). The Vaelindra scene must end the session on her confirmation, not her explanation — hold the full conversation for Session Three’s opening. If time runs short, trim the toll bridge to its reveal-and-fold beat rather than cutting it entirely; its thematic note is worth thirty seconds even in passing.
+
+**A note on the two expanded scenes.** The approach is thirty minutes that used to be twenty, and it earns the difference: everything the campaign later does to this city depends on the players having loved it once. The archivist’s catalogue is fifty-five minutes that used to be forty-five, and the extra ten are the search itself — do not resolve it on a single check to save them. If the whole session is running hot, the road encounters are the compressible part; the capital is not.
 
 # Scene 1: The Morning After
 
@@ -87,6 +89,73 @@ Only then does she hear the vision — and she takes it like a physician taking 
 > *“I am going to tell you three things tonight, and none of them is a comfort, and the rest will wait for daylight, because you are exhausted and this next part deserves your whole mind. The first thing: your vision is real. It is not stress, not shared fancy, not something you ate. I have taken accounts like a physician takes histories for fifty years, and yours has the pulse of the true ones. The second thing: it is not yours alone. I have heard these images before — not this vision, but its relatives. Fragments. Edges. The storm, the wrong-colored fire, the thing behind the sky. They have been arriving for a long time, from people who had never met, and lately they arrive more often. Whatever this is, it did not begin with you, and it is already in motion. The third thing — and hold to this one, because it is the only mercy I have for you tonight: in fifty years, I have never known a shared vision to show what must happen. They show what is coming if nothing changes. Nothing changes, that is, unless someone changes it. Go and sleep, if you can. Come back at the tenth bell. And children — ” she glances, once, at the pocket where the cold thing rides, “ — walk in the light on your way home.”*
 
 End the session there. Do not play the walk home. Session Three opens at the tenth bell, with tea going cold and Vaelindra deciding — based on everything the party said and did tonight — how much of the truth they can carry.
+
+# The Approach to Aenodira, Keyed
+
+Scene 3 is the party’s first sight of the capital and it deserves more than a paragraph, because everything the campaign will later do to this city depends on the players having loved it once. Six beats along the last four miles, each one a stop rather than a description. Run them in order; the whole sequence is thirty minutes and it is the best thirty minutes in the session.
+
+**A1. The Milestone.** Four miles out, a league-stone worn smooth, reading only AENODIRA and a number. Every stone on every imperial road gives the distance to this one place and nothing else, because there was a time when that was the only distance that mattered. Somebody has left a coin on top of it. There are always coins on top of it.
+
+**A2. The First Sight.** The road crests and the valley opens: three walls in ascending rings, the golden dome, the Long Course’s oval, and the river coming in from the north through haze. Give this its own moment and do not rush anyone through it.
+
+**A3. The Traffic.** A mile of it: carts, pilgrims, a Concord train, three separate arguments, a man selling water, a Watch post checking nothing in particular. The capital is loud before it is visible in detail, and the party will not have heard this much human noise in weeks.
+
+**A4. The Outer Gate.** The Long Wall, and a queue. Papers, or an academy letter, or a coin. Twenty minutes of standing in it, which is the correct amount of time to spend teaching players that this city processes people.
+
+**A5. Rivergate at the Waterline.** The road in runs past the district the campaign will spend Session Five in. Ink, cheap paper, wet stone, and a smell. Somebody watches the party go past and the party will not know until later that somebody always does.
+
+**A6. The Middle Gate and Scholar’s Row.** Up, through the second wall, and the noise changes register: students, booksellers, and the Patched Standard’s darned banner. This is home. They have been away six weeks and it is exactly as they left it, and that is the last time in this campaign that will be true.
+
+# The Archivist’s Catalogue (Puzzle)
+
+Scene 4 sends the party to Archivist Vell, and as written the scene resolves on a conversation. It should resolve on a search, because the Imperial Archive is the first genuinely interesting room in the campaign and because what the party learns to do here they will do again in Sessions Five, Six, and Eight.
+
+> *Vell does not fetch things. Vell explains the catalogue, once, in about ninety seconds, in a tone suggesting he has done this nine thousand times and remains willing to do it again. Shelf-marks run in four parts: the Book, the Hand, the Year, and the Leaf. The Book is what kind of thing it is. The Hand is who wrote it down, not who wrote it. The Year is the year it was deposited, not the year it happened. And the Leaf is where it physically is, which changes, which is why the Leaf is written in pencil. Then he goes back to his work and lets them get on with it.*
+
+The party want records of Redwatch, the signal chain, or the standard — whatever they came in holding. The puzzle is that the obvious search fails, and it fails informatively.
+
+**Why it fails.** Searching under Redwatch as a place returns nothing, because a fort is not a Book. Searching under the Hand of the clerk who filed the muster roll returns everything that clerk ever filed, which is four hundred items across sixty years, one of which is what they want. The trick is that the Year is the deposit year, not the event year, so the Silvasse material was filed decades after Silvasse — by the people who came back.
+
+**Solution one — ask Vell a better question.** He will not fetch, but he will answer precisely what he is asked. What Book would a dead garrison be in? gets an immediate, useful answer. A party that works out that the archivist is a search interface rather than an obstacle has learned the most valuable skill in the campaign.
+
+**Solution two — work the Hand.** DC 14 Intelligence (Investigation) to realize the clerk’s hand is the index. Then an hour, and the four hundred items, and the one that matters.
+
+**Solution three — work the Year.** DC 15 Intelligence (History): the deposit year for anything Silvasse-related will be decades after the event, because it took that long for anyone to file it. Search the right decade and the volume of material collapses to something manageable.
+
+**Solution four — the Leaf, in pencil.** A character who notices the pencil and asks why can be told by Vell that the collection is re-shelved every few years and that he keeps a working list of what has moved recently. That list is three pages and one of the entries is a thing that moved twelve years ago and has not been seen since. It is not what they came for. Note it.
+
+**DM Only:** the item that moved twelve years ago and was never re-shelved was pulled by Empress Nyreeza, during the years of her private inquiry. Vell does not know that; he knows only that a Leaf entry went stale and he has been mildly annoyed about it for over a decade. This is the campaign’s earliest available Nyreeza thread and it is available in Session Two to a party who asked about a pencil.
+
+# Traps and Hazards on the Road Back
+
+**The Ford at Height.** Environmental hazard, usable in any of the three road encounters. Spring melt has the crossing running fast and thigh-deep. DC 12 Strength (Athletics) to cross on foot; failure means swept 20 feet downstream and a second check or drop what you are carrying. Mounted crossing is DC 10. A rope belayed across drops both DCs by 5, takes one character ten minutes, and is the correct answer.
+
+**The Rotted Bridge.** Mechanical hazard on a provincial spur. Planking sound at the edges and rotten in the middle third. DC 13 Perception spots the discoloration. A creature of Medium size or larger crossing the middle without testing: DC 12 Dexterity save or a plank gives — 1d6 bludgeoning, and a leg through the deck, and a DC 12 Strength check to get free. A wagon that tries it loses a wheel through the deck, which is four hours and a genuinely funny scene.
+
+**Nightfall Without a Vigil.** Not a hazard with a saving throw. If the party is carrying anyone’s dead and camp falls without a lamp lit and a watch kept, every Zhuvedian NPC who learns of it afterward will treat them differently, and the DM should let that consequence arrive weeks later, from a stranger, without warning.
+
+# Encounters Between Dravenna and the Capital
+
+The three written road encounters are the spine of Scene 2. These are for the gaps between them, or for a table that wants a fourth. Roll a d8 per travel day.
+
+| **d8** | **What Happens** |
+| --- | --- |
+| 1 | A Concord wagon train that will hire the party for the last two days at fair rates, and whose factor talks the entire time. |
+| 2 | Refugees from the Brekelands, going the wrong way, who have been turned back at a gate and are trying a different road. |
+| 3 | An imperial post-rider at the gallop. He does not stop. What he is carrying is worth a Perception check and the party will never find out. |
+| 4 | A wayside shrine to the Watch at the Threshold with a lamp burning and no keeper in sight. |
+| 5 | A wolf pack crossing the road, and a carter who stops his team and waits, and will explain why to anyone who asks nicely. |
+| 6 | Two students of the Academy, a year below, on their own field exercise, going the other way and very pleased with themselves. |
+| 7 | A body at the roadside, laid out, lamp lit, nobody there. Somebody has to keep the night. |
+| 8 | A merchant who recognizes the party’s academy colors and wants, urgently, to talk about the new registration requirement, at length, without pausing. |
+
+# Handout — Session Two
+
+## The Shelf-Mark
+
+> *BOOK: MUSTERS AND ROLLS OF THE PROVINCIAL LEGIONS.   HAND: OSSIAN PELL THE ELDER, CLERK.   YEAR OF DEPOSIT: [a year forty-one years after Silvasse].   LEAF: (in pencil, twice crossed out, third entry current) IX.4.tertius.*
+
+Hand this over when the party solves the catalogue. The crossed-out Leaf entries are the collection moving twice in sixty years. It is also, quietly, the first time this campaign shows a player that the record and the truth are two different objects, which is the whole of Session Five.
 
 # Stat Blocks
 

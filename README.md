@@ -26,7 +26,7 @@ because the next build discards those edits.
 | `scripts/` | **The canon.** docx-js generators, `transplant.py`, and the encoded visual template. |
 | `corpus/` | **Generated Markdown** — readable and greppable on any device. Start here. |
 | `documents/` | **Generated PDF** — styled, embeds its fonts, reads on any device. |
-| `tools/` | `build.sh` regenerates and verifies everything; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible. |
+| `tools/` | `build.sh` regenerates and verifies everything; `docx-md-shim/` emits the Markdown; `normalize_pdf.py` makes the PDF reproducible; `normalize_escapes.py` converts typographic characters in the generators to `\uXXXX`. |
 | `reference/` | The mirrored instructions for the Claude Chat project. |
 | `drafts/` | Design drafts awaiting sign-off. **Not canon.** |
 | `images/` | Artwork, named for what it depicts. Serves the repository today and the documents eventually. **Outside the build** — see below. |
@@ -43,9 +43,11 @@ at the top of this page.
 
 ## The documents
 
-### Sourcebook
+### Core volumes
 
-- [The Qilvayas Symphony Campaign Setting](corpus/The_Qilvayas_Symphony_Campaign_Setting.md) — the canonical sourcebook · [PDF](documents/The_Qilvayas_Symphony_Campaign_Setting.pdf)
+- [The Qilvayas Symphony Campaign Setting](corpus/The_Qilvayas_Symphony_Campaign_Setting.md) — the canonical sourcebook: history, faith, law, the Powers, the Aspects and the saints, and faction standing · [PDF](documents/The_Qilvayas_Symphony_Campaign_Setting.pdf)
+- [Gazetteer of the Fractured Empire](corpus/Gazetteer_of_the_Fractured_Empire.md) — the DM's road-book: thirty keyed settlements, travel and hazards, regional encounter tables, and a native bestiary · [PDF](documents/Gazetteer_of_the_Fractured_Empire.pdf)
+- [The Player's Companion](corpus/QS_Players_Companion.md) — backgrounds, names, faith, downtime, and etiquette. **Safe to hand to players** · [PDF](documents/QS_Players_Companion.pdf)
 
 ### Session modules
 
@@ -62,8 +64,10 @@ at the top of this page.
 
 ### Guides
 
-- [DM Reference Guide](corpus/QS_DM_Reference_Guide.md) — quick-lookup tables, the Branch Ledger, the deliberately-open list · [PDF](documents/QS_DM_Reference_Guide.pdf)
+- [DM Reference Guide](corpus/QS_DM_Reference_Guide.md) — quick-lookup tables, the Aspects and saints, faction standing, the keyed-location index, the Branch Ledger, and the deliberately-open list · [PDF](documents/QS_DM_Reference_Guide.pdf)
 - [Player Guide](corpus/QS_Player_Guide.md) — the sanitized, shareable edition · [PDF](documents/QS_Player_Guide.pdf)
+
+The two documents to hand a player are the **Player Guide** and the **Player's Companion**. Both are authored player-facing from the first word rather than cut down from a DM document, and both are scanned for DM-only material before every publish.
 
 ## Rebuilding
 

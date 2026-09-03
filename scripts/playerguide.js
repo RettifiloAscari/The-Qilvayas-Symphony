@@ -10,10 +10,17 @@ const H3 = (t) => new Paragraph({ heading: HeadingLevel.HEADING_3, children: [ne
 const BULLET = (segs) => new Paragraph({ numbering: { reference: "bullets", level: 0 }, spacing: { after: 120 }, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
-const { Table, TableRow, TableCell, WidthType, ShadingType } = require('docx');
-const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
+const { Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = require('docx');
+// Column widths in twips. docx-js emits a dummy equal-width <w:tblGrid> when
+// columnWidths is absent, and LibreOffice honours that grid over the per-cell
+// percentages -- every table renders with evenly split columns. Passing the
+// grid explicitly, with a fixed layout, is what makes the widths array mean
+// anything. Proportions are what matter; tblW=100% governs the total.
+const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
+
+const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
 const row = (cells) => new TableRow({ children: cells });
-const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, rows: [ row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
+const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ row(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
 
 
 const children = [];
@@ -69,6 +76,48 @@ children.push(B("Church Doctrine:", "The Church of the Lupine Matron teaches tha
 children.push(B("The Imperial Cult:", "A smaller, older priesthood tied to the imperial household teaches otherwise \u2014 that Zhuvedus was elevated to divine or semi-divine status upon his death, and that the ruling bloodline carries a literal spark of his apotheosis. This doctrine underwrites the throne\u2019s claim to hereditary legitimacy."));
 children.push(P("The Church has no single supreme authority, and never has: the Matriarchate is collegial by design, so that no one voice holds the whole of the faith. The capital Church is governed by the Matriarchate \u2014 Matriarch Ilsevet Corvane as the Voice of the Matron in Aenodira \u2014 advised by the Synod of the Grey, a council of senior clergy. Beneath them: the seminaries of the Sanctum, the parish structure reaching into every loyalist district, and the Office of Omens, headed by Prelate Sarvin Odell, which claims sole legal authority to receive, examine, and rule on visions, portents, and claims of divine contact. Independent interpreters are known to exist, operating quietly outside the Office\u2019s sanction \u2014 tolerated uneasily, never fully accepted, found (if at all) through networks rather than any public sign."));
 children.push(P("The imperial cult\u2019s formal body, the Keepers of the Ascent, is small \u2014 perhaps forty priests, led by Hierophant Malzeth Corr, maintaining the dynastic shrine within Highcourt. The Church tolerates their existence, and both institutions understand exactly why."));
+
+children.push(H2("The Aspects"));
+children.push(P("The Matron is one, and she has offices. The Aspects are the different things she does, and the distinction is not decorative: saying the Matron in her Hunt is correct, and saying the Matron of the Hunt, as though there were another Matron somewhere doing something else, is a heresy with a name. The name is Division. A village priest will correct you gently. A Sanctum examiner will write it down."));
+children.push(P("A cleric\u2019s calling takes the shape of one of them. Sanction is issued against an Aspect, and the pewter warrant-medal is stamped on the reverse with its mark."));
+children.push(table(
+  ["Aspect", "Domain", "Who Serves It"],
+  [26, 18, 56],
+  [
+    ["The Watch at the Threshold", "Life", "Vigil-keepers, hospitallers, almoners, midwives. The commonest calling in the empire by a wide margin."],
+    ["The Long Hunt", "War", "Legion chaplains and the Church militant. Endurance rather than fury: the Matron does not sprint, she arrives."],
+    ["The Long Memory", "Knowledge", "Archivists, jurists, scriptoria. She remembers every promise made in her hearing."],
+    ["The Lamp Left Burning", "Light", "Vigil lamps, lighthouses, the night offices. Light kept through the night rather than sunrise \u2014 dawn is her gift, not her element."],
+    ["The Elder Range", "Nature", "The Old Observance: field-shrines, first-fruits, the wolf-watch on winter roads. Older than the Church and never quite reconciled to it."],
+    ["The Winter Voice", "Tempest", "The northern liturgies. The Sanctum finds it provincial and the north finds the Sanctum soft."],
+    ["The Limping Bitch", "Trickery", "The she-wolf who feigns a broken leg to lead the hunter from the den. Never formally recognized, never once suppressed, and painted on half the barn doors in the Suthmark."]
+  ]
+));
+children.push(B("Paladins swear, and it shows.", "Devotion is the Crown-sworn and the Church\u2019s own Oathwards; the Emperor is Crown-sworn. The Ancients is the Green Watch, the Old Observance\u2019s paladins, sworn at field-shrines and holding warrants nobody issued. Vengeance is the Wolf-Price made a vocation \u2014 respectable in the provinces, where blood debt is a working legal category, and awkward at court."));
+
+children.push(H2("The Saints"));
+children.push(P("Fourteen names carry the empire\u2019s devotion. Canonization takes a documented life, a testified act, and the passage of a full generation, so that nobody is made a saint by the people who liked them. Feast days are working holidays in the parishes that keep them."));
+children.push(table(
+  ["Feast", "Saint", "Patron Of"],
+  [26, 28, 46],
+  [
+    ["Wolfmoon 1", "Lupenna of the First Shrine", "Hospitality, guest-right, roadside shrines. Her feast opens the year."],
+    ["Wolfmoon 4", "Ivessa of the Ford", "Rearguards, ferrymen, and anyone who says go on without me."],
+    ["Thawtide 11", "Coren the Unhurried", "Vigil-keepers, night-workers, and the patient."],
+    ["Sowmonth 8", "Yenna Corvane", "Advocates and the badly represented."],
+    ["Sowmonth 27", "Perisse the Milkless", "Foundlings, nurses, and the bound-freed."],
+    ["Haymonth 9", "Vosk the Field-Cutter", "Surgeons, medics, and their consciences."],
+    ["Harvestide 2", "Bellara of Ambervale", "Harvests, almoners, and honest thieves."],
+    ["Vinmoon 3", "Ilvane the Sea-Kept", "Pilots, harbor-hands, and merchants who honor a bad contract."],
+    ["Fallowmonth 21", "Halvard of the Quiet Rite", "Stonewrights, record-keepers, unglamorous fidelity."],
+    ["Greywane 14", "Tobrin Ashfall", "The falsely accused."],
+    ["Greywane 30", "Elleth of the Grey Gate", "Gatekeepers, quarantine wardens, the unforgivable choice."],
+    ["Longdark 19", "Odarr of the Nine Winters", "Winter travelers, the maimed, the stubborn."],
+    ["Threshold 6", "Marek the Witness", "Witnesses, oath-keepers, inconvenient truth."],
+    ["\u2014 (suppressed)", "Ovric, Struck from the Canon", "Nothing, officially. Removed by decree of the Synod ninety years ago, for reasons the decree does not state. The Ostmark parishes never stopped."]
+  ]
+));
+children.push(P("Four pilgrim roads carry real traffic: the Matron\u2019s Road from Aenodira to Lupenna, two days on foot and lined the whole way with candle-stalls; the Penitent\u2019s Stair, the switchback ascent above Orlath, where crutches are left at the top and the town at the bottom sells them; the Nine Winters Way through Odarr\u2019s northern passes, walked in winter on purpose; and the Three Fords, because three towns claim Ivessa\u2019s crossing and the Church has never adjudicated, so serious pilgrims walk all three and let the Matron sort it out."));
 
 children.push(H1("Magic, As Lived"));
 children.push(P("Every educated Zhuvedian knows the shape of magic in the empire, even if they cannot cast a cantrip. Folk belief \u2014 old, universal, and taken seriously even by people who claim not to \u2014 holds that sworn words have weight: an oath is a real thing once spoken, stone holds what air forgets, and there are places where too many broken promises have soured the ground itself. The Church neither confirms nor mocks this. The Church, notably, treats vows as sacraments."));
@@ -262,7 +311,7 @@ children.push(table(["Item","Price","Notes"],[34,16,50],[
   ["Blessed taper (homebrew, common)","5 gp","Burns 1 hour; its light counts as the light of a shrine for purposes of the Old Observance \u2014 mostly bought for funerals and promises"]
 ]));
 children.push(H3("Rivergate Gray Market \u2014 \u2018Everything Certified\u2019"));
-children.push(table(["Item","Price","Notes"],[34,16,50],[
+children.push(table(["Item","Price","Notes"],[34, 19, 47],[
   ["Any Exchange-list item","\u221220%","Provenance flexible; quality genuine (the Inkhands guarantee it \u2014 their ledgers are their honor)"],
   ["Unstamped healing potion","35 gp","Works fine. The discount is the legal risk, priced honestly"],
   ["Unlicensed scrollwork, 1st","60\u201380 gp","roughly a 1-in-6 chance of a flawed casting \u2014 the scribe\u2019s risk, priced in; the good scribes cost Exchange prices anyway"],
@@ -283,7 +332,7 @@ children.push(H1("The Imperial Calendar"));
 children.push(P("Twelve months, beginning at Wolfmoon in deep winter \u2014 the Matron\u2019s own month \u2014 and running the ordinary agricultural year most people actually live by."));
 children.push(table(
   ["Month", "Season", "Known For"],
-  [20, 24, 56],
+  [21, 24, 55],
   [
     ["Wolfmoon", "Deep winter (year begins)", "The Matron\u2019s high month; the year turns in her keeping."],
     ["Thawtide", "Late winter", "Roads reopen for the year."],

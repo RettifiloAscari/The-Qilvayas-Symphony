@@ -14,7 +14,9 @@
 
 The party are graduates now: chartered, marked in sealed records as Proven, and open for business. Session Five is their first real contract — a deniable commission from the Lord Chamberlain’s office to trace who has been buying the seals of dead imperial institutions — and it walks them through Rivergate’s document underworld, into a chess match with the Office of Omens, through a dockside misunderstanding with professional consequences, and finally to a back office where the thread they have been pulling turns out to end in the hand of Mistress Averil Shen, the throne’s own spymaster — who has been walking the same trail from the other end, because the trail was first walked by Empress Nyreeza.
 
-Designed for a five-hour core. Pacing budget: the shingle and the clerk (45 minutes); Rivergate and the seal-dealer (75 minutes); the Office’s attention (60 minutes); the Inkhands complication (45 minutes); the Shen reveal (60 minutes); closing choices (15 minutes). Optional content adds up to two further hours — see Optional Content. This is deliberately a light-combat session: one avoidable brawl and one avoidable ambush. The city is the dungeon; the corridors are made of people.
+Designed for a five-hour core. Pacing budget: the shingle and the clerk (40 minutes); Rivergate — the district open to be walked, the seal-dealer among its nine locations (70 minutes); the dead letters, worked as a cipher rather than a translation (40 minutes); the Office’s attention (55 minutes); the Inkhands’ door (40 minutes); the Shen reveal (60 minutes); closing choices (15 minutes). Optional content adds up to two further hours — see Optional Content. This is deliberately a light-combat session: one avoidable brawl and one avoidable ambush. The city is the dungeon; the corridors are made of people.
+
+**On the forty minutes for the letters.** They are new to the budget and they are taken from the two big scenes, not added on top. The letters were previously read; now they are solved, and a cipher that resolves in five minutes is not a cipher. If the table is stuck at thirty minutes, Mosse sells them the concordance — that is what he is for, and buying the answer is one of the four intended solutions rather than a rescue.
 
 ## What Is Actually Happening (DM Only)
 
@@ -65,6 +67,94 @@ At gull-light, she comes — gray cloak, unhurried, professionally forgettable. 
 > *“Sit. The tea is good — unlike the Prelate’s, which I’m told you had the sense to refuse.” She is fifty, small, and stillness-made-flesh; the Gull stands at her shoulder like a folded letter. “You stalk like scholars, which is to say: loudly, but with excellent notes. So. The Chamberlain has hired children to find out what I am buying, and the children have actually found me, which is more than his last three attempts managed. Before we discuss what you will tell him — and we will — I am going to show you why the question matters, because someone in this city ought to know besides me.” She sets a single sheet on the table. “I have spent two years buying dead seals to learn how a living Empress vanished. She bought them first. She was cleverer than all of us. And on the last day anyone saw her, she filed one final document under a dead office’s authority — and I cannot read it.” The sheet is covered in a careful, hurried cipher. Whoever carries the Cold Door rubbing feels their pulse jump: it is the same hand.*
 
 Shen’s proposition: pool what they hold — her requisition trail and the ciphered document against the party’s rubbing and their academy access to Vell — and pursue the Empress’s trail together, quietly, off every book in the empire. Her terms are blunt: Kessin gets a cover story (she will even draft it — “the buyer was a Velmarene collector; the trail is cold”), Odell gets nothing, and the throne gets nothing until there is something worth a throne’s attention, because — and here she is honest in a way that costs her — “the Empress hid this from her own son. I have wondered for three years whether she was protecting the investigation from the court, or protecting him from the answer. Until I know which, neither will I.” What the party does with all of this — the alliance, the cover story, the truth owed or not owed to Pell and Kessin — is the session’s closing choice, and every option forks (see Diverging Paths). Pay them their 150 gp regardless: whatever they report, the commission was technically completed. Session ends on the walk home from the Bureau, the city lamplit, one of them carrying two documents in the same dead woman’s hand.
+
+# Rivergate, Keyed
+
+Session Five is an investigation, and an investigation needs a place with corners. Rivergate is the capital’s lowest district — below the waterline in every sense, built into the old river terraces so that its streets descend and its cellars are older than its houses. Nine locations, all within twenty minutes' walk of each other, all usable in any order.
+
+**Running it as a district, not a corridor.** The party has a thread and a name. Let them choose where to pull. Every location below yields something to a party who arrives with the right question and something else to a party who arrives with the wrong one, and none of them is a gate that must be opened before the next. If they never visit V4 at all, the session still works.
+
+**V1. The Shingle.** The river stair and the mud below it, where the district gets its name and where things wash up. The clerk’s scene opens here. At low water the shingle is forty feet of black silt and broken crockery; at high water it is not there.
+
+**V2. Defunct & Antiquarian.** Tirell Mosse’s shop: a seal-dealer’s premises, narrow, four storeys of stock in two rooms, smelling of shellac. Mosse buys and sells dead men’s seals, entirely legally, and knows precisely where the line is because he has spent thirty years standing on it.
+
+**V3. The Letter-House.** A public scriptorium where the unlettered pay to have letters written and read. Four desks, a queue, and the single richest source of local information in the district, because everyone in Rivergate who cannot write has told a stranger their business here.
+
+**V4. The Inkhands' Door.** Not a shop. A door in an alley off the fish market, with a chop nailed to it that means something. See the trap block; the door itself is the district’s first real test of whether the party can be trusted.
+
+**V5. The Fish Market.** Loud, wet, and the district’s only genuinely public space. Everyone passes through here. A party who wants to be seen comes here; a party who wants to see comes here and stands still.
+
+**V6. Brune Halloc’s Yard.** The dock boss’s ground: a timber yard that is not primarily about timber. Halloc holds the district’s labor and therefore its silence, and he is entirely open about the arrangement.
+
+**V7. The Waterline Cellars.** Beneath everything: a connected system of flooded and half-flooded undercrofts running under four streets. Where the wererat rumor lives. The Watch denies them; the Inkhands charge a surcharge for jobs below the waterline; both facts are true and neither is an explanation.
+
+**V8. The Gull.** A tavern on the stair with a view of the shingle, where Session Five’s last scene lands. Two rooms, one window, and a landlord who has never once been surprised.
+
+**V9. The Watch Post.** Two constables and a book. They are not corrupt; they are outnumbered, and they have made a series of reasonable decisions over twenty years that add up to not going below the waterline. A party that treats them as enemies loses the most useful ally in the district.
+
+# The Dead Letters (Puzzle)
+
+The letters are the session’s object and they should be an object at the table: paper, in hand, unreadable, and slowly yielding. This is the campaign’s first cipher and it is deliberately solvable in four different ways, none of them faster than the others.
+
+> *Six letters, water-stained, in a bundle tied with tarred string. The hand is small, fast, and educated. The words are Old Imperial and they are also not: every third word is a word, and the rest is a wall of legal shorthand, register abbreviations, and shelf-marks. There is no salutation and no signature. On the outside of the bundle, in the same hand, one line that is plainly a note to the writer’s own self rather than to anyone else: FOURTH BOOK, NOT THE THIRD.*
+
+The letters are written in a register cipher: the meaningful text is carried by the shelf-marks, and the surrounding shorthand is padding. FOURTH BOOK, NOT THE THIRD tells the reader which Book of the Laws supplies the numbering — Book Four, of Seals and Record, not Book Three. A reader who tries Book Three gets plausible nonsense, which is the trap and which should be allowed to run for a while.
+
+**Solution one — the Seal education.** A House of the Seal character who has held the bundle for an hour can identify the register-cipher form (it is a real archival practice, not a code invented for concealment) at DC 13 Intelligence (Investigation). They still need Book Four, and the note on the outside is the only thing that supplies it.
+
+**Solution two — Mosse.** Tirell Mosse (V2) has seen this before, will say so, will not read it for them, and will point them at what does: he sells the register concordance, secondhand, for eleven Zhuven, and he will not haggle because he thinks they are getting a bargain and he is right.
+
+**Solution three — the Letter-House.** The scriveners at V3 read and write for a living and one of them is far better educated than the work requires. She will do it for money, and she will read the letters while she does, and that is the cost — it is not a betrayal, it is just that she now knows.
+
+**Solution four — brute force.** Twelve hours, two characters, a copy of the Laws, and any Intelligence-based check the DM likes at DC 15 with advantage for anyone with a legal or clerical background. It works. It costs a day, and in this session a day is expensive, and a party who spends it should not be punished for it in any other way.
+
+**DM Only:** the letters are not a message to anyone. They are working notes — somebody’s private research, written in a cipher of professional convenience rather than secrecy, by a person who never expected to be read and who was therefore completely honest. That is why they are dangerous. The hand is the same hand as the SEE ALSO card from the Undervault registry, and a party who kept that card and lays it beside these has made the connection two sessions early, which is allowed and which should be met with silence.
+
+# Traps
+
+**The Inkhands' Door (V4).** Not a mechanical trap. A social one with mechanics, which is the district’s whole character.
+
+- **The chop:** the mark nailed to the door names the current arrangement. DC 13 Intelligence (Investigation), or automatic for an Inkhand background: it means open to trade, no Watch, no names. A party that knocks having read it is speaking the language.
+- **Knocking wrong:** any approach that names the Watch, produces a warrant, or mentions the academy gets a polite refusal and a door that does not open again for that party, ever. There is no check to reverse this. It is not a puzzle to be failed and retried; it is a first impression.
+- **Knocking right:** a coin, a chop of their own, or a name that carries — Halloc’s, Mosse’s, or anyone the party has already dealt with squarely — opens it. DC 12 Charisma (Deception or Persuasion) if they have none of those and are simply plausible.
+- **What is behind it:** unlicensed scrollwork at trade prices, and people who are very good or very quick. Both, in one case.
+
+**The Waterline Stair (V7).** Environmental hazard. The cellars flood on the tide, twice a day, without warning to anyone who does not know the tide.
+
+- **Effect:** water rises 3 feet over ten minutes and holds for two hours. In the lowest undercrofts that is chest-deep and the current in the connecting arches is strong: DC 12 Strength (Athletics) to move against it, and a failed check means swept one chamber along.
+- **Warning:** DC 12 Wisdom (Survival) or Intelligence (Nature) reads the tide-line on the wall before descending. Anyone from Rivergate, Velmareth, or the Skellvard knows without a roll and will mention it if asked.
+- **The point:** the cellars are a time limit rather than a monster. A party that goes down without checking the tide has two hours to work and does not know it.
+
+**The Surcharge.** Below the waterline the Inkhands charge double, and they have never explained why, and they will not. A party who asks gets a shrug. A party who asks a third time gets told to ask the Watch, which is a joke, and the constables at V9 will not laugh.
+
+# Encounters in Rivergate
+
+Roll a d8 whenever the party crosses the district, or when an investigation stalls and needs a shove.
+
+| **d8** | **What Happens** |
+| --- | --- |
+| 1 | A scrivener from the Letter-House, off shift, who will trade a drink for the district’s gossip and mean it. |
+| 2 | Two of Halloc’s men, not hostile, walking the same way the party is walking, for four streets. |
+| 3 | An Office of Omens examiner asking after somebody, politely, door to door, with a list. |
+| 4 | Giant rats (2d4) out of a cellar grate at dusk, and the way the street reacts — nobody screams, everybody moves. |
+| 5 | A body on the shingle at low water, three days in the river, and the question of whose Vigil this is. |
+| 6 | A Watch constable from V9 who recognizes the party and would rather they told him what they are doing than not. |
+| 7 | An unlicensed healer working out of a doorway, competent, terrified, and one denunciation from a Book Three prosecution. |
+| 8 | The tide, coming in, and a street that was passable an hour ago. |
+
+# Handouts — Session Five
+
+## Handout A — One of the Dead Letters
+
+> *...reg. IV.11.9 sub. iv — and the same again at IV.11.14, which cannot be an error twice. Sub-clause reads DEPOSITED, NOT RECEIVED. cf. IV.9.2, IV.9.7, IV.9.31 (all three, all the same season). Whoever kept this Book was not confused. Whoever kept this Book was being careful. Query the Leaf on all six. Query who had the Leaf. IV.11.9 again — the Hand is not the Hand it should be.*
+
+Hand this over as soon as the party opens the bundle, before they can read it, and let them stare at it. It is deliberately eighty percent noise. The three readable sentences are the whole session.
+
+## Handout B — The Bundle’s Outer Wrap
+
+> *FOURTH BOOK, NOT THE THIRD*
+
+Written on the outside, in the same hand, to nobody. This is the key and it is free, and the players will spend an hour deciding it must mean something more complicated.
 
 # Optional Content (Beyond the Five-Hour Core)
 

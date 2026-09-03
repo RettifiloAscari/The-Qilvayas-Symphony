@@ -14,7 +14,9 @@
 
 The party’s final field exercise: a provincial magistrate in the river town of Dravenna, in the loyalist eastern march called the Ostmark (see the sourcebook’s Atlas), has requested academy assistance with a string of caravan disappearances on the Ostmark trade road. The season is Harvestide — early autumn, the tail of the Academy’s traditional Hay–Harvestide exercise window, with the Suthmark’s harvest festival underway far to the south and the eastern roads in their last good weeks before Vinmoon turns them to mud. The culprits are deserters from a provincial legion — oath-breakers, in the campaign’s most literal sense — holed up in a ruined watch-fort and increasingly desperate. The party investigates, tracks them down, and resolves the situation by steel or by parley. That night, celebrating a job well done, they receive the shared vision that changes everything.
 
-Designed for a five-hour session. Suggested pacing budget: Dravenna and the briefing (45 minutes); the ambush site and Yanna (60 minutes); the trail and the scout picket (30 minutes); Redwatch, by whatever approach (90 minutes); resolution and the celebration at the Gilded Ford (45 minutes); the Vision (30 minutes, unhurried). At this length both the looter encounter and the scout picket are standard content, not optional. If the table runs long anyway, the celebration and Vision must not be cut — compress the road instead.
+Designed for a five-hour session. Suggested pacing budget: Dravenna and the briefing (40 minutes); the ambush site and Yanna (55 minutes); the trail and the scout picket (30 minutes); Redwatch — scouting the nine areas and choosing an approach (25 minutes) and the approach itself, however they take it (75 minutes); resolution and the celebration at the Gilded Ford (45 minutes); the Vision (30 minutes, unhurried). At this length both the looter encounter and the scout picket are standard content, not optional. If the table runs long anyway, the celebration and Vision must not be cut — compress the road instead.
+
+**Where the keyed fort fits.** The twenty-five scouting minutes above are the whole of the Redwatch keying: a party that circles the fort and finds the well shaft, the fallen west wall-walk, and the horses in R3 has bought itself three plans, and the approach that follows is faster and far better for it. The signal-tower puzzle at R9 sits outside the core budget and runs 20 to 30 minutes — take it from the celebration if the table has gone quiet, or hold it for the return journey, where it lands just as hard.
 
 ## What Is Actually Happening (DM Only)
 
@@ -115,6 +117,85 @@ Run this as follows: ask each player, one at a time, what their character dreams
 > *You stand on a high place you have never stood, above a city you know from engravings and lecture halls: the imperial capital, seat of the Lupine Throne. It is night, and the city is burning. The flames are the color of a dying ember and they move wrongly — upward too slowly, sideways when no wind blows, clinging to stone that should not burn. You try to cry out. Nothing in you obeys. You are present the way a witness is present: permitted to see, and nothing else. Storm clouds turn above the city, vast and slow, and your gaze is dragged upward against your will — and there, behind the clouds, something moves. Not a shape. A displacement, as if the sky were cloth and something on the far side pressed against it. It is vast beyond vastness, and it is aware, and when it sounds — not a roar heard, but a roar felt, in teeth and bone and the base of the skull — you understand that it is not arriving. It has always been here. It is waking. The dark takes everything, and you wake drenched in sweat, heart hammering, with the taste of ash on your tongue.*
 
 Then go around the table one final time: each character wakes in their room at the Gilded Ford. Let the players find each other — do not prompt it — and let them discover in their own words that the vision was identical, down to the smallest details. Characters who fought the Umbral Remnant may make the connection to the sound it made; do not confirm or deny. When the unease has fully landed, end the session. Do not run the morning after. That is Session Two’s opening, and this silence is the best cliffhanger the campaign will ever get for free.
+
+# Redwatch, Keyed
+
+The scenes above are the session. This is the fort it ends in. Nine areas, drawn so a DM can sketch it in three minutes: a square curtain wall about eighty feet on a side, a gatehouse on the south face, a two-storey keep in the northwest corner with its upper floor collapsed, a well and a stable along the east wall, and a signal-tower stump on the north-west angle that used to be twice its current height.
+
+**Why key it.** Because the three approaches in the scene text — the front door, the wall, and the parley — only mean anything if the fort has a geography the players can reason about. A party that scouts and finds that the postern is blocked from inside, that the well shaft goes down into a cistern with a grille, and that the signal-tower stump overlooks the yard has three plans instead of one, and every one of them is theirs.
+
+**R1. The Gate.** Double doors, one hanging. Barred from within with a beam Dren’s people put there, which means the front approach is loud by design. Murder-holes above are open to the sky now — the gatehouse roof is gone — so anything dropped from them can also be shot up at.
+
+**R2. The Yard.** Forty feet across, cobbled, with a fire pit near the center that has been in use for weeks. Two carts and a great deal of stolen property under canvas. This is where the fight happens if the party come through the gate, and it is bad ground: open, overlooked from R6 and R8, with the only cover being the carts.
+
+**R3. The Stable Range.** Along the east wall, roofed, holding six horses and the smell of six horses. The horses are the single best lever in the fort: freed or spooked, they empty the yard, and a party who thinks of this has found a way to win without killing anyone.
+
+**R4. The Well and Cistern.** The well works. Thirty feet down it opens into a barrel-vaulted cistern under the yard, half full, with a rusted grille at the far end opening into R5. A climb (DC 12 Athletics with a rope) and a squeeze. Nobody in the fort has been down here; it is on none of their watch rotations.
+
+**R5. The Undercroft.** Beneath the keep: stores, mostly empty, a rack of rotted spears, and the cistern grille. Comes up into R6 by a ladder. This is the quiet way in and it is genuinely available to anyone who looks at the well and asks the obvious question.
+
+**R6. The Keep, Ground Floor.** One room, a hearth, a table, Dren’s things. The Ninth’s business is conducted here. The stair to the upper floor is intact for eight feet and then is not.
+
+**R7. The Keep, Upper Floor (collapsed).** Reachable only by rope from the wall-walk. Floor joists over open air; DC 12 Acrobatics to cross, or move at half speed and be fine. Holds a locked strongbox nobody has been able to get to, which is why it is still locked.
+
+**R8. The Wall-Walk.** Runs the full circuit at fifteen feet, intact on three sides, fallen on the west. Two lookouts, when there are lookouts. The whole yard is in view from anywhere on it, which cuts both ways.
+
+**R9. The Signal-Tower Stump.** The northwest angle, eight feet of what was twenty. A stone brazier-cradle, cold for sixty years. It is the highest point in the fort, it overlooks everything, and it is the one place in Redwatch that is about the empire rather than about the bandits.
+
+# The Signal Chain (Puzzle)
+
+> *The brazier-cradle at the top of the stump is stone, waist-high, and packed with sixty years of rain-cemented ash. Set into its rim, worn but legible, are four notches at four points of the compass, each cut to a different depth, and beside them a line of shorthand: TO THE NEXT, AND THE NEXT, AND THE NEXT, AND HOME. Below, on the inner face where somebody had to lie down to carve it, in a different hand and much later: THEY DID NOT COME.*
+
+Redwatch was one of eleven forts in a signal chain, and the notches are the chain’s grammar: depth of notch is duration of flame, direction is which fort you are calling. The system worked by fire seen at distance, and it has not been lit in sixty years, and lighting it is the puzzle.
+
+**What it does.** A fire lit correctly in the cradle is visible from the two nearest surviving forts and from the Dravenna road. Nothing answers — the chain is dead. But the smoke is visible for fifteen miles, and everything within fifteen miles that can see it will come and look.
+
+**Solution one — read it.** DC 13 Intelligence (History), or automatic for a character with a legion or Legion Orphan background: the notches encode duration and direction. Anyone who served, or whose parent did, knows the chain existed.
+
+**Solution two — dig it out.** The cemented ash contains sixty years of stratigraphy, and at the bottom, the last fire. DC 12 Investigation over ten minutes turns up charred wood, a scrap of unburned cloth, and a legion button. Somebody lit this beacon at the end and nobody came, and the party is holding the proof.
+
+**Solution three — just light it.** Fill it, light it, and let it burn. This works. It does not do what the notches would have done, and it summons everything within fifteen miles indiscriminately, which in this session means a legion patrol from the Dravenna road arriving in ninety minutes — which may be exactly what the party wants and may be a disaster, depending on what is happening in the yard at the time.
+
+**Solution four — do not.** A party that reads the cradle, understands it, and chooses to leave it cold has understood the session. Give them the same credit.
+
+**DM Only:** the inner-face carving is from the Silvasse years. Whoever lit the last fire at Redwatch was calling for help that had already been destroyed sixty miles west, and they knew it by the time they finished carving. This is not a clue to anything. It is the Ostmark’s grief, at the scale of one man with a knife, and it is the first time this campaign shows a player what the fracture actually cost. Read the second line aloud slowly.
+
+# Traps and Hazards at Redwatch
+
+**The Barred Gate (R1).** Not a trap; an obstacle with mechanics, because parties will try to force it. The beam is oak, four inches thick, seated in iron brackets. Battering: DC 20 Strength check, or 30 damage to the doors (AC 15, resistance to piercing). Every attempt is audible throughout the fort. A knock spell opens it silently and is the single most useful 2nd-level spell in this session.
+
+**The Fallen Wall-Walk (R8 west).** Twenty feet of collapsed stone under a fifteen-foot drop. A creature moving along the west wall-walk without checking makes a DC 12 Dexterity save or falls: 1d6 bludgeoning and prone, in full view of the yard.
+
+**The Strongbox (R7).** Mechanical trap. The box is iron, locked (DC 15 thieves' tools), and fitted with a spring-loaded needle in the escutcheon. Trigger: opening the lock without first depressing the plate beneath it. Effect: DC 12 Dexterity save or 1 piercing damage and DC 11 Constitution save against poison — 2d6 poison damage on a failure, half on a success. Detect at DC 13 Investigation. It is sixty years old and the poison is half strength, which the party has no way of knowing and which is why they should be told the save DC only after they have decided.
+
+**What is in it.** Eleven Zhuven in obsolete coin, a fort-commander’s seal, and the muster roll of the garrison that died here — thirty-one names, with the last four added in a different hand. The seal is worth nothing and opens nothing. The muster roll is the Vigil’s guest list.
+
+# Encounters on the Eastern Road
+
+For the trail out from Dravenna, and for any return. Roll a d8 per half-day, or use these when the party is between beats.
+
+| **d8** | **What Happens** |
+| --- | --- |
+| 1 | A carter with a shed load and a bad axle, four hours from anywhere, who will pay in information about who else is on this road. |
+| 2 | Wolves at a distance, pacing the road, unhurried. Everybody present has an opinion about which way they crossed. |
+| 3 | A legion patrol of four, under-supplied, who want news and a look at anything the party is carrying east. |
+| 4 | Two of Dren’s scouts, out on picket, who have not yet been told the party is coming. |
+| 5 | An empty watch-fort on a height, one of the chain, with nothing in it but the same cold brazier-cradle. |
+| 6 | A pilgrim walking to Lupenna the long way round, on foot, for a reason he will explain at length. |
+| 7 | A dead horse, three days old, with the harness cut away and the brand burned out. |
+| 8 | Nothing, and the road is emptier than it should be for the season, and every local the party asks says so too. |
+
+# Handouts — Session One
+
+## Handout A — Ondrei’s Commission
+
+> *From the court of the Magistrate at Dravenna, in the Ostmark. To the bearers, being students of the Imperial Academy upon field exercise: you are asked, and not commanded, to determine what has become of the road traffic between this town and the eastern crossings, three trains being now overdue. You are not asked to fight anyone. You are asked to find out, and to come back, and the second of those is the part I care about. — C. ONDREI, Magistrate.*
+
+## Handout B — The Last Muster Roll (found at R7)
+
+> *REDWATCH, THE CHAIN, STATION SIX. Thirty-one names in a clerk’s hand, ruled and dated. Below them, four more, written larger, with a different pen and no date: OSRIC. HALE THE YOUNGER. TOBB. THE BOY FROM SERREN’S MILL, WHOSE NAME I DID NOT ASK.*
+
+Note for the DM: the last four were added by whoever carved THEY DID NOT COME. If the party keeps the Vigil at Redwatch, this roll is what they read the names from, and the fourth name is the one that will get somebody at the table.
 
 # Stat Blocks
 

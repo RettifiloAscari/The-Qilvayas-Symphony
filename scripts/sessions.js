@@ -1,5 +1,5 @@
 const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, LevelFormat,
-        Table, TableRow, TableCell, WidthType, ShadingType } = require('docx');
+        Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = require('docx');
 const fs = require('fs');
 
 // ---------- helpers ----------
@@ -21,9 +21,16 @@ const BULLET = (segs) => new Paragraph({
 });
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
-const { Table: LTable, TableRow: LRow, TableCell: LCell, WidthType: LW, ShadingType: LS } = require('docx');
-const lcell = (text, opts = {}) => new LCell({ width: { size: opts.w || 20, type: LW.PERCENTAGE }, shading: opts.head ? { type: LS.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 90, right: 90 }, children: [new Paragraph({ spacing: { after: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, rows: [ new LRow({ children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
+const { Table: LTable, TableRow: LRow, TableCell: LCell, WidthType: LW, ShadingType: LS, TableLayoutType: LL } = require('docx');
+// Column widths in twips. docx-js emits a dummy equal-width <w:tblGrid> when
+// columnWidths is absent, and LibreOffice honours that grid over the per-cell
+// percentages -- every table renders with evenly split columns. Passing the
+// grid explicitly, with a fixed layout, is what makes the widths array mean
+// anything. Proportions are what matter; tblW=100% governs the total.
+const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
+
+const lcell = (text, opts = {}) => new LCell({ width: { size: opts.w || 20, type: LW.PERCENTAGE }, shading: opts.head ? { type: LS.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 90, right: 90 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
+const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, columnWidths: CW(widths), layout: LL.FIXED, rows: [ new LRow({ children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
 
 
 // Boxed read-aloud text
@@ -56,6 +63,8 @@ const SB = (d) => {
   out.push(B("Speed:", d.speed));
   out.push(new Table({
     width: { size: 100, type: WidthType.PERCENTAGE },
+    columnWidths: CW([1, 1, 1, 1, 1, 1]),
+    layout: TableLayoutType.FIXED,
     rows: [
       new TableRow({ children: ["STR", "DEX", "CON", "INT", "WIS", "CHA"].map(h => abCell(h, true)) }),
       new TableRow({ children: [d.str, d.dex, d.con, d.int, d.wis, d.cha].map(v => abCell(v + " (" + mod(v) + ")")) })
@@ -169,6 +178,46 @@ cA.push(BUL(null, "Who first said, out loud, \u201Cwe should do this for ourselv
 cA.push(H2("The Company"));
 cA.push(P("Have the players name their future mercenary company during Session Zero, before the campaign begins. This is deliberate. The company is the party\u2019s shared dream \u2014 the plan the vision is about to interrupt \u2014 and it lands much harder if it is their invention rather than a line of backstory. Let them argue about the name. Let them design a charter, a motto, a rule (\u201Cwe never work for slavers,\u201D \u201Cequal shares, always\u201D). Every rule they write is a promise \u2014 and in this campaign, promises are load-bearing. Write them all down."));
 
+
+// ============ SESSION ZERO ADDITIONS ============
+cA.push(H1("Running Session Zero: A Two-Hour Plan"));
+cA.push(P("Session Zero is the only session in this campaign with no pacing budget, which is a gap, because it is the session most likely to sprawl. Two hours, six blocks. Everything below is in service of the five outputs named at the top."));
+cA.push(ltable(["Block", "Minutes", "What Happens"], [26, 14, 60], [
+  ["The pitch", "15", "The DM describes the setting in five sentences and the tone in three. Do not read the sourcebook aloud. Say: a fading empire, a young emperor trying to fix it, a school that trains its administrators, and a shared dream of the capital burning. Then stop talking."],
+  ["Tone and lines", "20", "The safety and tone conversation below. Do this before anybody has a character they are attached to."],
+  ["Houses and roles", "20", "Class, house, and the who-fights-who-talks-who-notices conversation. Aim for one Sword-primary and one Seal-flavored character in any group of four or more."],
+  ["Admission stories", "25", "Roll or choose, and go round the table so each player hears the others'. This is the block most likely to run long and it is the block most worth letting run."],
+  ["Forging the party", "30", "The four co-authoring questions. Answered aloud, in any order, building on each other."],
+  ["The Company", "10", "Name it, describe the sign, and write it down where everyone can see it."]
+]));
+
+cA.push(H1("Tone, Lines, and the Conversation Before the Campaign"));
+cA.push(P("This campaign includes an empire that keeps people in bound labor, a church that conducts trials for lycanthropy, a massacre of worshippers at a festival, a district burned to end a rebellion, and a village where servant girls do not come home. All of it is written to be taken seriously rather than used for shock, and none of it works if somebody at the table is enduring it politely."));
+cA.push(B("What to say.", "Name the heavy material out loud, before characters exist. The list above takes ninety seconds to read and it is the whole of the obligation. Then ask two questions and take the answers without discussion: is there anything here you would rather this campaign did not go near, and is there anything here you actively want it to."));
+cA.push(B("The second question matters as much as the first.", "A player who says I want the bound-labor material to be real is telling the DM where to aim, and the campaign is far better for knowing. The Bound-Freed background in the Player\u2019s Companion exists because somebody will want it."));
+cA.push(B("How to stop something mid-session.", "Agree one word, out loud, that any player including the DM can say to move the camera. It needs no explanation at the time and no discussion afterward unless the person wants one. Agree it now, in Session Zero, so that using it later is a procedure rather than an interruption."));
+cA.push(B("What this campaign will not do.", "State it plainly so nobody has to wonder: sexual violence is not depicted, described, or implied on screen anywhere in this corpus, and the Greywell material is written specifically to be horror about disappearance and complicity rather than about what happens to the girls. Harm to children happens off screen and is referred to rather than shown. If the table wants either line drawn differently, that is the table\u2019s to decide, and Session Zero is when."));
+
+cA.push(H1("What the Players Should Know, and What They Should Not"));
+cA.push(P("Hand out the Player Guide and the Player\u2019s Companion before or at Session Zero. Both are written to be read by players and neither contains a spoiler. Everything a character would plausibly have learned in eighteen years of imperial life is in them."));
+cA.push(B("Safe to know.", "The empire\u2019s history and its fracture. The Matron, the Aspects, the saints, the Vigil. The Atlas and the powers who hold each region. The calendar, the money, the titles, and how to address a Prelate without embarrassing yourself. The Academy, its houses, and the Proving\u2019s existence as a rumor students argue about."));
+cA.push(B("Not to know, and worth guarding.", "The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos\u2019s people. That the Proving is real, and that it is coming. Anything about the shadow\u2019s mechanism \u2014 the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does."));
+cA.push(PS([DM("DM Only: "), { t: "the single most common way this campaign gets spoiled is a DM who is proud of the mechanism and cannot resist signposting it. Do not. Seed it constantly, confirm it never, and let the first player who says it out loud at the table have that moment entirely to themselves." }]));
+
+cA.push(H1("Twelve Company Names, If the Table Stalls"));
+cA.push(P("The Company block asks the players to name themselves and it is the one part of Session Zero that reliably deadlocks. Offer these only after ten minutes of genuine deadlock, and offer them as bad examples \u2014 a table will name itself instantly out of spite, which is the intended effect."));
+cA.push(ltable(["d12", "Name", "d12", "Name"], [8, 42, 8, 42], [
+  ["1", "The Lector\u2019s Seal", "7", "The Eleventh Cohort"],
+  ["2", "The Patched Standard", "8", "Ondrei\u2019s Correspondents"],
+  ["3", "The Cold Door Company", "9", "The Unlicensed"],
+  ["4", "Three Houses", "10", "The Quiet Irregularity"],
+  ["5", "The Redwatch Concern", "11", "Kin of Great Timberwolf"],
+  ["6", "The Fourth Book", "12", "The Lamp Left Burning"]
+]));
+cA.push(B("A note on the sign.", "Whatever the company calls itself, decide what its sign looks like, because it will be painted on a door, stamped in wax, and eventually recognized across a street by somebody who wishes them harm. A company with a sign is a company the world can react to."));
+
+cA.push(H1("The First Five Minutes of Session One"));
+cA.push(P("End Session Zero by describing where Session One opens, so nobody arrives cold: the party is four days east of the capital, on a field exercise that has three days left to run, in a market town called Dravenna, and a magistrate is about to ask them for a favor he has no authority to ask. Nothing has gone wrong yet. That is the last time that sentence will be true."));
 cA.push(H1("Tone Check"));
 cA.push(P("Run a short, explicit conversation about tone. This campaign is built on moral complexity \u2014 an idealistic emperor whose methods may darken, factions with legitimate grievances on every side, and a central threat fed by betrayal. Confirm the table wants that, and establish lines and veils as normal. Two specific checks worth making: first, is the table comfortable with the campaign posing questions that have no clean answer (whether the empire should be restored at all is genuinely contestable); second, how much darkness is welcome around themes of institutional corruption, religious politics, and violence against civilians. Calibrate accordingly \u2014 the material flexes either direction."));
 
@@ -186,7 +235,8 @@ title(cB, "Session One: The Silent Road", "An adventure for 4\u20136 characters 
 
 cB.push(H1("Overview"));
 cB.push(P("The party\u2019s final field exercise: a provincial magistrate in the river town of Dravenna, in the loyalist eastern march called the Ostmark (see the sourcebook\u2019s Atlas), has requested academy assistance with a string of caravan disappearances on the Ostmark trade road. The season is Harvestide \u2014 early autumn, the tail of the Academy\u2019s traditional Hay\u2013Harvestide exercise window, with the Suthmark\u2019s harvest festival underway far to the south and the eastern roads in their last good weeks before Vinmoon turns them to mud. The culprits are deserters from a provincial legion \u2014 oath-breakers, in the campaign\u2019s most literal sense \u2014 holed up in a ruined watch-fort and increasingly desperate. The party investigates, tracks them down, and resolves the situation by steel or by parley. That night, celebrating a job well done, they receive the shared vision that changes everything."));
-cB.push(P("Designed for a five-hour session. Suggested pacing budget: Dravenna and the briefing (45 minutes); the ambush site and Yanna (60 minutes); the trail and the scout picket (30 minutes); Redwatch, by whatever approach (90 minutes); resolution and the celebration at the Gilded Ford (45 minutes); the Vision (30 minutes, unhurried). At this length both the looter encounter and the scout picket are standard content, not optional. If the table runs long anyway, the celebration and Vision must not be cut \u2014 compress the road instead."));
+cB.push(P("Designed for a five-hour session. Suggested pacing budget: Dravenna and the briefing (40 minutes); the ambush site and Yanna (55 minutes); the trail and the scout picket (30 minutes); Redwatch \u2014 scouting the nine areas and choosing an approach (25 minutes) and the approach itself, however they take it (75 minutes); resolution and the celebration at the Gilded Ford (45 minutes); the Vision (30 minutes, unhurried). At this length both the looter encounter and the scout picket are standard content, not optional. If the table runs long anyway, the celebration and Vision must not be cut \u2014 compress the road instead."));
+cB.push(B("Where the keyed fort fits.", "The twenty-five scouting minutes above are the whole of the Redwatch keying: a party that circles the fort and finds the well shaft, the fallen west wall-walk, and the horses in R3 has bought itself three plans, and the approach that follows is faster and far better for it. The signal-tower puzzle at R9 sits outside the core budget and runs 20 to 30 minutes \u2014 take it from the celebration if the table has gone quiet, or hold it for the return journey, where it lands just as hard."));
 
 cB.push(H2("What Is Actually Happening (DM Only)"));
 cB.push(P("Eight soldiers of the Third Provincial Legion deserted four months ago after their commander, Colonel Aurel Dessen, sold off the garrison\u2019s winter grain and blamed the shortfall on them. Led by Sergeant Varkos Dren, they fled east, turned to robbery to eat, and occupied the ruined imperial watch-fort called Redwatch. They have hit four caravans in six weeks. They have killed \u2014 twice, both times when a guard fought back \u2014 and the killings sit badly on most of them."));
@@ -250,6 +300,56 @@ cB.push(P("Run this as follows: ask each player, one at a time, what their chara
 cB.push(BOX("You stand on a high place you have never stood, above a city you know from engravings and lecture halls: the imperial capital, seat of the Lupine Throne. It is night, and the city is burning. The flames are the color of a dying ember and they move wrongly \u2014 upward too slowly, sideways when no wind blows, clinging to stone that should not burn. You try to cry out. Nothing in you obeys. You are present the way a witness is present: permitted to see, and nothing else. Storm clouds turn above the city, vast and slow, and your gaze is dragged upward against your will \u2014 and there, behind the clouds, something moves. Not a shape. A displacement, as if the sky were cloth and something on the far side pressed against it. It is vast beyond vastness, and it is aware, and when it sounds \u2014 not a roar heard, but a roar felt, in teeth and bone and the base of the skull \u2014 you understand that it is not arriving. It has always been here. It is waking. The dark takes everything, and you wake drenched in sweat, heart hammering, with the taste of ash on your tongue."));
 cB.push(P("Then go around the table one final time: each character wakes in their room at the Gilded Ford. Let the players find each other \u2014 do not prompt it \u2014 and let them discover in their own words that the vision was identical, down to the smallest details. Characters who fought the Umbral Remnant may make the connection to the sound it made; do not confirm or deny. When the unease has fully landed, end the session. Do not run the morning after. That is Session Two\u2019s opening, and this silence is the best cliffhanger the campaign will ever get for free."));
 
+
+// ============ REDWATCH, KEYED ============
+cB.push(H1("Redwatch, Keyed"));
+cB.push(P("The scenes above are the session. This is the fort it ends in. Nine areas, drawn so a DM can sketch it in three minutes: a square curtain wall about eighty feet on a side, a gatehouse on the south face, a two-storey keep in the northwest corner with its upper floor collapsed, a well and a stable along the east wall, and a signal-tower stump on the north-west angle that used to be twice its current height."));
+cB.push(B("Why key it.", "Because the three approaches in the scene text \u2014 the front door, the wall, and the parley \u2014 only mean anything if the fort has a geography the players can reason about. A party that scouts and finds that the postern is blocked from inside, that the well shaft goes down into a cistern with a grille, and that the signal-tower stump overlooks the yard has three plans instead of one, and every one of them is theirs."));
+cB.push(B("R1. The Gate.", "Double doors, one hanging. Barred from within with a beam Dren\u2019s people put there, which means the front approach is loud by design. Murder-holes above are open to the sky now \u2014 the gatehouse roof is gone \u2014 so anything dropped from them can also be shot up at."));
+cB.push(B("R2. The Yard.", "Forty feet across, cobbled, with a fire pit near the center that has been in use for weeks. Two carts and a great deal of stolen property under canvas. This is where the fight happens if the party come through the gate, and it is bad ground: open, overlooked from R6 and R8, with the only cover being the carts."));
+cB.push(B("R3. The Stable Range.", "Along the east wall, roofed, holding six horses and the smell of six horses. The horses are the single best lever in the fort: freed or spooked, they empty the yard, and a party who thinks of this has found a way to win without killing anyone."));
+cB.push(B("R4. The Well and Cistern.", "The well works. Thirty feet down it opens into a barrel-vaulted cistern under the yard, half full, with a rusted grille at the far end opening into R5. A climb (DC 12 Athletics with a rope) and a squeeze. Nobody in the fort has been down here; it is on none of their watch rotations."));
+cB.push(B("R5. The Undercroft.", "Beneath the keep: stores, mostly empty, a rack of rotted spears, and the cistern grille. Comes up into R6 by a ladder. This is the quiet way in and it is genuinely available to anyone who looks at the well and asks the obvious question."));
+cB.push(B("R6. The Keep, Ground Floor.", "One room, a hearth, a table, Dren\u2019s things. The Ninth\u2019s business is conducted here. The stair to the upper floor is intact for eight feet and then is not."));
+cB.push(B("R7. The Keep, Upper Floor (collapsed).", "Reachable only by rope from the wall-walk. Floor joists over open air; DC 12 Acrobatics to cross, or move at half speed and be fine. Holds a locked strongbox nobody has been able to get to, which is why it is still locked."));
+cB.push(B("R8. The Wall-Walk.", "Runs the full circuit at fifteen feet, intact on three sides, fallen on the west. Two lookouts, when there are lookouts. The whole yard is in view from anywhere on it, which cuts both ways."));
+cB.push(B("R9. The Signal-Tower Stump.", "The northwest angle, eight feet of what was twenty. A stone brazier-cradle, cold for sixty years. It is the highest point in the fort, it overlooks everything, and it is the one place in Redwatch that is about the empire rather than about the bandits."));
+
+cB.push(H1("The Signal Chain (Puzzle)"));
+cB.push(BOX("The brazier-cradle at the top of the stump is stone, waist-high, and packed with sixty years of rain-cemented ash. Set into its rim, worn but legible, are four notches at four points of the compass, each cut to a different depth, and beside them a line of shorthand: TO THE NEXT, AND THE NEXT, AND THE NEXT, AND HOME. Below, on the inner face where somebody had to lie down to carve it, in a different hand and much later: THEY DID NOT COME."));
+cB.push(P("Redwatch was one of eleven forts in a signal chain, and the notches are the chain\u2019s grammar: depth of notch is duration of flame, direction is which fort you are calling. The system worked by fire seen at distance, and it has not been lit in sixty years, and lighting it is the puzzle."));
+cB.push(B("What it does.", "A fire lit correctly in the cradle is visible from the two nearest surviving forts and from the Dravenna road. Nothing answers \u2014 the chain is dead. But the smoke is visible for fifteen miles, and everything within fifteen miles that can see it will come and look."));
+cB.push(B("Solution one \u2014 read it.", "DC 13 Intelligence (History), or automatic for a character with a legion or Legion Orphan background: the notches encode duration and direction. Anyone who served, or whose parent did, knows the chain existed."));
+cB.push(B("Solution two \u2014 dig it out.", "The cemented ash contains sixty years of stratigraphy, and at the bottom, the last fire. DC 12 Investigation over ten minutes turns up charred wood, a scrap of unburned cloth, and a legion button. Somebody lit this beacon at the end and nobody came, and the party is holding the proof."));
+cB.push(B("Solution three \u2014 just light it.", "Fill it, light it, and let it burn. This works. It does not do what the notches would have done, and it summons everything within fifteen miles indiscriminately, which in this session means a legion patrol from the Dravenna road arriving in ninety minutes \u2014 which may be exactly what the party wants and may be a disaster, depending on what is happening in the yard at the time."));
+cB.push(B("Solution four \u2014 do not.", "A party that reads the cradle, understands it, and chooses to leave it cold has understood the session. Give them the same credit."));
+cB.push(PS([DM("DM Only: "), { t: "the inner-face carving is from the Silvasse years. Whoever lit the last fire at Redwatch was calling for help that had already been destroyed sixty miles west, and they knew it by the time they finished carving. This is not a clue to anything. It is the Ostmark\u2019s grief, at the scale of one man with a knife, and it is the first time this campaign shows a player what the fracture actually cost. Read the second line aloud slowly." }]));
+
+cB.push(H1("Traps and Hazards at Redwatch"));
+cB.push(B("The Barred Gate (R1).", "Not a trap; an obstacle with mechanics, because parties will try to force it. The beam is oak, four inches thick, seated in iron brackets. Battering: DC 20 Strength check, or 30 damage to the doors (AC 15, resistance to piercing). Every attempt is audible throughout the fort. A knock spell opens it silently and is the single most useful 2nd-level spell in this session."));
+cB.push(B("The Fallen Wall-Walk (R8 west).", "Twenty feet of collapsed stone under a fifteen-foot drop. A creature moving along the west wall-walk without checking makes a DC 12 Dexterity save or falls: 1d6 bludgeoning and prone, in full view of the yard."));
+cB.push(B("The Strongbox (R7).", "Mechanical trap. The box is iron, locked (DC 15 thieves' tools), and fitted with a spring-loaded needle in the escutcheon. Trigger: opening the lock without first depressing the plate beneath it. Effect: DC 12 Dexterity save or 1 piercing damage and DC 11 Constitution save against poison \u2014 2d6 poison damage on a failure, half on a success. Detect at DC 13 Investigation. It is sixty years old and the poison is half strength, which the party has no way of knowing and which is why they should be told the save DC only after they have decided."));
+cB.push(B("What is in it.", "Eleven Zhuven in obsolete coin, a fort-commander\u2019s seal, and the muster roll of the garrison that died here \u2014 thirty-one names, with the last four added in a different hand. The seal is worth nothing and opens nothing. The muster roll is the Vigil\u2019s guest list."));
+
+cB.push(H1("Encounters on the Eastern Road"));
+cB.push(P("For the trail out from Dravenna, and for any return. Roll a d8 per half-day, or use these when the party is between beats."));
+cB.push(ltable(["d8", "What Happens"], [11, 89], [
+  ["1", "A carter with a shed load and a bad axle, four hours from anywhere, who will pay in information about who else is on this road."],
+  ["2", "Wolves at a distance, pacing the road, unhurried. Everybody present has an opinion about which way they crossed."],
+  ["3", "A legion patrol of four, under-supplied, who want news and a look at anything the party is carrying east."],
+  ["4", "Two of Dren\u2019s scouts, out on picket, who have not yet been told the party is coming."],
+  ["5", "An empty watch-fort on a height, one of the chain, with nothing in it but the same cold brazier-cradle."],
+  ["6", "A pilgrim walking to Lupenna the long way round, on foot, for a reason he will explain at length."],
+  ["7", "A dead horse, three days old, with the harness cut away and the brand burned out."],
+  ["8", "Nothing, and the road is emptier than it should be for the season, and every local the party asks says so too."]
+]));
+
+cB.push(H1("Handouts \u2014 Session One"));
+cB.push(H2("Handout A \u2014 Ondrei\u2019s Commission"));
+cB.push(BOX("From the court of the Magistrate at Dravenna, in the Ostmark. To the bearers, being students of the Imperial Academy upon field exercise: you are asked, and not commanded, to determine what has become of the road traffic between this town and the eastern crossings, three trains being now overdue. You are not asked to fight anyone. You are asked to find out, and to come back, and the second of those is the part I care about. \u2014 C. ONDREI, Magistrate."));
+cB.push(H2("Handout B \u2014 The Last Muster Roll (found at R7)"));
+cB.push(BOX("REDWATCH, THE CHAIN, STATION SIX. Thirty-one names in a clerk\u2019s hand, ruled and dated. Below them, four more, written larger, with a different pen and no date: OSRIC. HALE THE YOUNGER. TOBB. THE BOY FROM SERREN\u2019S MILL, WHOSE NAME I DID NOT ASK."));
+cB.push(P("Note for the DM: the last four were added by whoever carved THEY DID NOT COME. If the party keeps the Vigil at Redwatch, this roll is what they read the names from, and the fourth name is the one that will get somebody at the table."));
 cB.push(H1("Stat Blocks"));
 SB({ name: "Roadside Looter", meta: "Medium humanoid (any race), neutral",
   ac: "12 (leather armor)", hp: "11 (2d8 + 2)", speed: "30 ft.",
@@ -350,7 +450,8 @@ title(cC, "Session Two: The Road Back", "An adventure for 4\u20136 characters of
 
 cC.push(H1("Overview"));
 cC.push(P("The morning after the vision, the party must return to the capital regardless of what they decide about the dream \u2014 their field exercise concludes with a formal report to the academy, and graduation is weeks away. The road home becomes a tour of the fractured empire at ground level: a checkpoint that answers to no one in particular, refugees from a war nobody declared, and a toll collected on forged authority. In the capital, an old archivist points them toward the only person who might explain what happened to them \u2014 and the session ends in a modest apartment with blue shutters, across a table from Vaelindra of the Still Waters."));
-cC.push(P("Designed for a five-hour session, which comfortably fits all three road encounters \u2014 run them all, in any order. Suggested pacing budget: the morning after (45 minutes); the road encounters (50 minutes each, 150 total); arrival at the capital (20 minutes); the academy and the archivist (45 minutes); finding Vaelindra (40 minutes). The Vaelindra scene must end the session on her confirmation, not her explanation \u2014 hold the full conversation for Session Three\u2019s opening. If time runs short, trim the toll bridge to its reveal-and-fold beat rather than cutting it entirely; its thematic note is worth thirty seconds even in passing."));
+cC.push(P("Designed for a five-hour session, which comfortably fits all three road encounters \u2014 run them all, in any order. Suggested pacing budget: the morning after (40 minutes); the road encounters (45 minutes each, 135 total); the approach to Aenodira, run as its six beats (30 minutes); the academy and the archivist, including the catalogue (55 minutes); finding Vaelindra (40 minutes). The Vaelindra scene must end the session on her confirmation, not her explanation \u2014 hold the full conversation for Session Three\u2019s opening. If time runs short, trim the toll bridge to its reveal-and-fold beat rather than cutting it entirely; its thematic note is worth thirty seconds even in passing."));
+cC.push(B("A note on the two expanded scenes.", "The approach is thirty minutes that used to be twenty, and it earns the difference: everything the campaign later does to this city depends on the players having loved it once. The archivist\u2019s catalogue is fifty-five minutes that used to be forty-five, and the extra ten are the search itself \u2014 do not resolve it on a single check to save them. If the whole session is running hot, the road encounters are the compressible part; the capital is not."));
 
 cC.push(H1("Scene 1: The Morning After"));
 cC.push(P("Open at the Gilded Ford\u2019s common room at dawn. Do not summarize \u2014 let the party have the conversation. Useful questions to let hang in the air: Do they tell anyone? (Their exercise supervisor expects a report; does the dream go in it?) Do they still graduate and found the company as planned? Does anyone try to rationalize it \u2014 shared meal, shared stress, the thing at Redwatch preying on their minds? A character proposing the rational explanation should be allowed to \u2014 and should privately notice it does not survive contact with the details: six people do not dream the same engraving-perfect view of a city most have never visited, down to the count of the towers."));
@@ -396,6 +497,50 @@ cC.push(P("Only then does she hear the vision \u2014 and she takes it like a phy
 cC.push(BOX("\u201CI am going to tell you three things tonight, and none of them is a comfort, and the rest will wait for daylight, because you are exhausted and this next part deserves your whole mind. The first thing: your vision is real. It is not stress, not shared fancy, not something you ate. I have taken accounts like a physician takes histories for fifty years, and yours has the pulse of the true ones. The second thing: it is not yours alone. I have heard these images before \u2014 not this vision, but its relatives. Fragments. Edges. The storm, the wrong-colored fire, the thing behind the sky. They have been arriving for a long time, from people who had never met, and lately they arrive more often. Whatever this is, it did not begin with you, and it is already in motion. The third thing \u2014 and hold to this one, because it is the only mercy I have for you tonight: in fifty years, I have never known a shared vision to show what must happen. They show what is coming if nothing changes. Nothing changes, that is, unless someone changes it. Go and sleep, if you can. Come back at the tenth bell. And children \u2014 \u201D she glances, once, at the pocket where the cold thing rides, \u201C \u2014 walk in the light on your way home.\u201D"));
 cC.push(P("End the session there. Do not play the walk home. Session Three opens at the tenth bell, with tea going cold and Vaelindra deciding \u2014 based on everything the party said and did tonight \u2014 how much of the truth they can carry."));
 
+
+// ============ SESSION TWO ADDITIONS ============
+cC.push(H1("The Approach to Aenodira, Keyed"));
+cC.push(P("Scene 3 is the party\u2019s first sight of the capital and it deserves more than a paragraph, because everything the campaign will later do to this city depends on the players having loved it once. Six beats along the last four miles, each one a stop rather than a description. Run them in order; the whole sequence is thirty minutes and it is the best thirty minutes in the session."));
+cC.push(B("A1. The Milestone.", "Four miles out, a league-stone worn smooth, reading only AENODIRA and a number. Every stone on every imperial road gives the distance to this one place and nothing else, because there was a time when that was the only distance that mattered. Somebody has left a coin on top of it. There are always coins on top of it."));
+cC.push(B("A2. The First Sight.", "The road crests and the valley opens: three walls in ascending rings, the golden dome, the Long Course\u2019s oval, and the river coming in from the north through haze. Give this its own moment and do not rush anyone through it."));
+cC.push(B("A3. The Traffic.", "A mile of it: carts, pilgrims, a Concord train, three separate arguments, a man selling water, a Watch post checking nothing in particular. The capital is loud before it is visible in detail, and the party will not have heard this much human noise in weeks."));
+cC.push(B("A4. The Outer Gate.", "The Long Wall, and a queue. Papers, or an academy letter, or a coin. Twenty minutes of standing in it, which is the correct amount of time to spend teaching players that this city processes people."));
+cC.push(B("A5. Rivergate at the Waterline.", "The road in runs past the district the campaign will spend Session Five in. Ink, cheap paper, wet stone, and a smell. Somebody watches the party go past and the party will not know until later that somebody always does."));
+cC.push(B("A6. The Middle Gate and Scholar\u2019s Row.", "Up, through the second wall, and the noise changes register: students, booksellers, and the Patched Standard\u2019s darned banner. This is home. They have been away six weeks and it is exactly as they left it, and that is the last time in this campaign that will be true."));
+
+cC.push(H1("The Archivist\u2019s Catalogue (Puzzle)"));
+cC.push(P("Scene 4 sends the party to Archivist Vell, and as written the scene resolves on a conversation. It should resolve on a search, because the Imperial Archive is the first genuinely interesting room in the campaign and because what the party learns to do here they will do again in Sessions Five, Six, and Eight."));
+cC.push(BOX("Vell does not fetch things. Vell explains the catalogue, once, in about ninety seconds, in a tone suggesting he has done this nine thousand times and remains willing to do it again. Shelf-marks run in four parts: the Book, the Hand, the Year, and the Leaf. The Book is what kind of thing it is. The Hand is who wrote it down, not who wrote it. The Year is the year it was deposited, not the year it happened. And the Leaf is where it physically is, which changes, which is why the Leaf is written in pencil. Then he goes back to his work and lets them get on with it."));
+cC.push(P("The party want records of Redwatch, the signal chain, or the standard \u2014 whatever they came in holding. The puzzle is that the obvious search fails, and it fails informatively."));
+cC.push(B("Why it fails.", "Searching under Redwatch as a place returns nothing, because a fort is not a Book. Searching under the Hand of the clerk who filed the muster roll returns everything that clerk ever filed, which is four hundred items across sixty years, one of which is what they want. The trick is that the Year is the deposit year, not the event year, so the Silvasse material was filed decades after Silvasse \u2014 by the people who came back."));
+cC.push(B("Solution one \u2014 ask Vell a better question.", "He will not fetch, but he will answer precisely what he is asked. What Book would a dead garrison be in? gets an immediate, useful answer. A party that works out that the archivist is a search interface rather than an obstacle has learned the most valuable skill in the campaign."));
+cC.push(B("Solution two \u2014 work the Hand.", "DC 14 Intelligence (Investigation) to realize the clerk\u2019s hand is the index. Then an hour, and the four hundred items, and the one that matters."));
+cC.push(B("Solution three \u2014 work the Year.", "DC 15 Intelligence (History): the deposit year for anything Silvasse-related will be decades after the event, because it took that long for anyone to file it. Search the right decade and the volume of material collapses to something manageable."));
+cC.push(B("Solution four \u2014 the Leaf, in pencil.", "A character who notices the pencil and asks why can be told by Vell that the collection is re-shelved every few years and that he keeps a working list of what has moved recently. That list is three pages and one of the entries is a thing that moved twelve years ago and has not been seen since. It is not what they came for. Note it."));
+cC.push(PS([DM("DM Only: "), { t: "the item that moved twelve years ago and was never re-shelved was pulled by Empress Nyreeza, during the years of her private inquiry. Vell does not know that; he knows only that a Leaf entry went stale and he has been mildly annoyed about it for over a decade. This is the campaign\u2019s earliest available Nyreeza thread and it is available in Session Two to a party who asked about a pencil." }]));
+
+cC.push(H1("Traps and Hazards on the Road Back"));
+cC.push(B("The Ford at Height.", "Environmental hazard, usable in any of the three road encounters. Spring melt has the crossing running fast and thigh-deep. DC 12 Strength (Athletics) to cross on foot; failure means swept 20 feet downstream and a second check or drop what you are carrying. Mounted crossing is DC 10. A rope belayed across drops both DCs by 5, takes one character ten minutes, and is the correct answer."));
+cC.push(B("The Rotted Bridge.", "Mechanical hazard on a provincial spur. Planking sound at the edges and rotten in the middle third. DC 13 Perception spots the discoloration. A creature of Medium size or larger crossing the middle without testing: DC 12 Dexterity save or a plank gives \u2014 1d6 bludgeoning, and a leg through the deck, and a DC 12 Strength check to get free. A wagon that tries it loses a wheel through the deck, which is four hours and a genuinely funny scene."));
+cC.push(B("Nightfall Without a Vigil.", "Not a hazard with a saving throw. If the party is carrying anyone\u2019s dead and camp falls without a lamp lit and a watch kept, every Zhuvedian NPC who learns of it afterward will treat them differently, and the DM should let that consequence arrive weeks later, from a stranger, without warning."));
+
+cC.push(H1("Encounters Between Dravenna and the Capital"));
+cC.push(P("The three written road encounters are the spine of Scene 2. These are for the gaps between them, or for a table that wants a fourth. Roll a d8 per travel day."));
+cC.push(ltable(["d8", "What Happens"], [11, 89], [
+  ["1", "A Concord wagon train that will hire the party for the last two days at fair rates, and whose factor talks the entire time."],
+  ["2", "Refugees from the Brekelands, going the wrong way, who have been turned back at a gate and are trying a different road."],
+  ["3", "An imperial post-rider at the gallop. He does not stop. What he is carrying is worth a Perception check and the party will never find out."],
+  ["4", "A wayside shrine to the Watch at the Threshold with a lamp burning and no keeper in sight."],
+  ["5", "A wolf pack crossing the road, and a carter who stops his team and waits, and will explain why to anyone who asks nicely."],
+  ["6", "Two students of the Academy, a year below, on their own field exercise, going the other way and very pleased with themselves."],
+  ["7", "A body at the roadside, laid out, lamp lit, nobody there. Somebody has to keep the night."],
+  ["8", "A merchant who recognizes the party\u2019s academy colors and wants, urgently, to talk about the new registration requirement, at length, without pausing."]
+]));
+
+cC.push(H1("Handout \u2014 Session Two"));
+cC.push(H2("The Shelf-Mark"));
+cC.push(BOX("BOOK: MUSTERS AND ROLLS OF THE PROVINCIAL LEGIONS.   HAND: OSSIAN PELL THE ELDER, CLERK.   YEAR OF DEPOSIT: [a year forty-one years after Silvasse].   LEAF: (in pencil, twice crossed out, third entry current) IX.4.tertius."));
+cC.push(P("Hand this over when the party solves the catalogue. The crossed-out Leaf entries are the collection moving twice in sixty years. It is also, quietly, the first time this campaign shows a player that the record and the truth are two different objects, which is the whole of Session Five."));
 cC.push(H1("Stat Blocks"));
 SB({ name: "Provincial Soldier", meta: "Medium humanoid (any race), lawful neutral",
   ac: "16 (chain shirt, shield)", hp: "11 (2d8 + 2)", speed: "30 ft.",

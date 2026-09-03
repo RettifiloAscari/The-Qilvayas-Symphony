@@ -61,6 +61,60 @@ The academy houses students in mixed residential halls by year and cohort, so th
 
 Have the players name their future mercenary company during Session Zero, before the campaign begins. This is deliberate. The company is the party’s shared dream — the plan the vision is about to interrupt — and it lands much harder if it is their invention rather than a line of backstory. Let them argue about the name. Let them design a charter, a motto, a rule (“we never work for slavers,” “equal shares, always”). Every rule they write is a promise — and in this campaign, promises are load-bearing. Write them all down.
 
+# Running Session Zero: A Two-Hour Plan
+
+Session Zero is the only session in this campaign with no pacing budget, which is a gap, because it is the session most likely to sprawl. Two hours, six blocks. Everything below is in service of the five outputs named at the top.
+
+| **Block** | **Minutes** | **What Happens** |
+| --- | --- | --- |
+| The pitch | 15 | The DM describes the setting in five sentences and the tone in three. Do not read the sourcebook aloud. Say: a fading empire, a young emperor trying to fix it, a school that trains its administrators, and a shared dream of the capital burning. Then stop talking. |
+| Tone and lines | 20 | The safety and tone conversation below. Do this before anybody has a character they are attached to. |
+| Houses and roles | 20 | Class, house, and the who-fights-who-talks-who-notices conversation. Aim for one Sword-primary and one Seal-flavored character in any group of four or more. |
+| Admission stories | 25 | Roll or choose, and go round the table so each player hears the others'. This is the block most likely to run long and it is the block most worth letting run. |
+| Forging the party | 30 | The four co-authoring questions. Answered aloud, in any order, building on each other. |
+| The Company | 10 | Name it, describe the sign, and write it down where everyone can see it. |
+
+# Tone, Lines, and the Conversation Before the Campaign
+
+This campaign includes an empire that keeps people in bound labor, a church that conducts trials for lycanthropy, a massacre of worshippers at a festival, a district burned to end a rebellion, and a village where servant girls do not come home. All of it is written to be taken seriously rather than used for shock, and none of it works if somebody at the table is enduring it politely.
+
+**What to say.** Name the heavy material out loud, before characters exist. The list above takes ninety seconds to read and it is the whole of the obligation. Then ask two questions and take the answers without discussion: is there anything here you would rather this campaign did not go near, and is there anything here you actively want it to.
+
+**The second question matters as much as the first.** A player who says I want the bound-labor material to be real is telling the DM where to aim, and the campaign is far better for knowing. The Bound-Freed background in the Player’s Companion exists because somebody will want it.
+
+**How to stop something mid-session.** Agree one word, out loud, that any player including the DM can say to move the camera. It needs no explanation at the time and no discussion afterward unless the person wants one. Agree it now, in Session Zero, so that using it later is a procedure rather than an interruption.
+
+**What this campaign will not do.** State it plainly so nobody has to wonder: sexual violence is not depicted, described, or implied on screen anywhere in this corpus, and the Greywell material is written specifically to be horror about disappearance and complicity rather than about what happens to the girls. Harm to children happens off screen and is referred to rather than shown. If the table wants either line drawn differently, that is the table’s to decide, and Session Zero is when.
+
+# What the Players Should Know, and What They Should Not
+
+Hand out the Player Guide and the Player’s Companion before or at Session Zero. Both are written to be read by players and neither contains a spoiler. Everything a character would plausibly have learned in eighteen years of imperial life is in them.
+
+**Safe to know.** The empire’s history and its fracture. The Matron, the Aspects, the saints, the Vigil. The Atlas and the powers who hold each region. The calendar, the money, the titles, and how to address a Prelate without embarrassing yourself. The Academy, its houses, and the Proving’s existence as a rumor students argue about.
+
+**Not to know, and worth guarding.** The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos’s people. That the Proving is real, and that it is coming. Anything about the shadow’s mechanism — the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does.
+
+**DM Only:** the single most common way this campaign gets spoiled is a DM who is proud of the mechanism and cannot resist signposting it. Do not. Seed it constantly, confirm it never, and let the first player who says it out loud at the table have that moment entirely to themselves.
+
+# Twelve Company Names, If the Table Stalls
+
+The Company block asks the players to name themselves and it is the one part of Session Zero that reliably deadlocks. Offer these only after ten minutes of genuine deadlock, and offer them as bad examples — a table will name itself instantly out of spite, which is the intended effect.
+
+| **d12** | **Name** | **d12** | **Name** |
+| --- | --- | --- | --- |
+| 1 | The Lector’s Seal | 7 | The Eleventh Cohort |
+| 2 | The Patched Standard | 8 | Ondrei’s Correspondents |
+| 3 | The Cold Door Company | 9 | The Unlicensed |
+| 4 | Three Houses | 10 | The Quiet Irregularity |
+| 5 | The Redwatch Concern | 11 | Kin of Great Timberwolf |
+| 6 | The Fourth Book | 12 | The Lamp Left Burning |
+
+**A note on the sign.** Whatever the company calls itself, decide what its sign looks like, because it will be painted on a door, stamped in wax, and eventually recognized across a street by somebody who wishes them harm. A company with a sign is a company the world can react to.
+
+# The First Five Minutes of Session One
+
+End Session Zero by describing where Session One opens, so nobody arrives cold: the party is four days east of the capital, on a field exercise that has three days left to run, in a market town called Dravenna, and a magistrate is about to ask them for a favor he has no authority to ask. Nothing has gone wrong yet. That is the last time that sentence will be true.
+
 # Tone Check
 
 Run a short, explicit conversation about tone. This campaign is built on moral complexity — an idealistic emperor whose methods may darken, factions with legitimate grievances on every side, and a central threat fed by betrayal. Confirm the table wants that, and establish lines and veils as normal. Two specific checks worth making: first, is the table comfortable with the campaign posing questions that have no clean answer (whether the empire should be restored at all is genuinely contestable); second, how much darkness is welcome around themes of institutional corruption, religious politics, and violence against civilians. Calibrate accordingly — the material flexes either direction.

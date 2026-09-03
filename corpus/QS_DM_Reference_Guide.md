@@ -174,6 +174,74 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 | The Saltmaw | Weeping Strait | Dragon turtle; the Skell pay the salt-tithe. Adopted option: it is what the admiral’s squadrons fled — Aldrec’s people were spent as distraction. |
 | The Fjell Whites | Ardven ranges | Young white brood, ranger-culled; adult matriarch unconfirmed — the north’s quiet dread and a ready escalation near the coronation. |
 
+# The Aspects — Domains at a Glance
+
+| **Aspect** | **Domain** | **Serves** | **Note** |
+| --- | --- | --- | --- |
+| The Watch at the Threshold | Life | Vigil-keepers, hospitallers, almoners | Commonest calling in the empire. Grave, if the table uses it, is the same Aspect darker: the Threshold-Wardens. |
+| The Long Hunt | War | Legion chaplains, the Church militant | Endurance, not fury. The Matron does not sprint; she arrives. |
+| The Long Memory | Knowledge | Archivists, jurists, the Office of Omens | She remembers every promise made in her hearing. |
+| The Lamp Left Burning | Light | Vigil lamps, channel-lights, night offices | Light kept through the night, never sunrise. Orlath disputes the Aspect’s standing. |
+| The Elder Range | Nature | The Old Observance, druids, rangers | No icon: a bare stone, a marked tree. The Church’s studied non-comment. |
+| The Winter Voice | Tempest | Northern liturgies, Orlath, Ardven | The Sanctum finds it provincial. The north finds the Sanctum soft. |
+| The Limping Bitch | Trickery | Nobody officially. Everybody provincially | Never recognized, never suppressed. Deception in defence of the den — the campaign’s moral engine on a barn door. |
+| (no Aspect) | Death | — | DM ONLY: the absence is doctrine. Divine power answering to death is not answering from the Matron, and the honest question of who does is open. |
+| (no Aspect) | Arcana | — | Thaumaturgy is chartered, not blessed. A cleric of Arcana starts a decade-long jurisdictional war. |
+
+*Paladin oaths: Devotion = Crown-sworn and the Church’s Oathwards (Qilvayas). Ancients = the Green Watch, the Old Observance’s unlicensed paladins. Vengeance = the Wolf-Price as vocation (Dregan Morn). DM ONLY — Oathbreaker is not a subclass here, it is the Founder’s own road, and the thing beneath Aenodira notices immediately.*
+
+# The Saints — Feasts at a Glance
+
+| **Feast** | **Saint** | **Patron Of** |
+| --- | --- | --- |
+| Wolfmoon 1 | Lupenna of the First Shrine | Hospitality, guest-right. Her feast opens the year. The empire’s two worst crimes are both guest-right violations. |
+| Wolfmoon 4 | Ivessa of the Ford | Rearguards and ferrymen. Three towns claim the ford; the Church has never adjudicated. |
+| Thawtide 11 | Coren the Unhurried | Vigil-keepers and night-workers. Four thousand nights; refused ordination six times. |
+| Sowmonth 8 | Yenna Corvane | Advocates. Lost four hundred cases deliberately to build the precedent. Vhal keeps a copy. |
+| Sowmonth 27 | Perisse the Milkless | Foundlings and the bound-freed. Cult strongest among the fourth tier. |
+| Haymonth 9 | Vosk the Field-Cutter | Surgeons. Refused to triage by rank; broken for it twice. |
+| Harvestide 2 | Bellara of Ambervale | Harvests and honest thieves. The Ambervale procession, and the route that changed. |
+| Vinmoon 3 | Ilvane the Sea-Kept | Pilots and merchants who honor a bad contract. |
+| Fallowmonth 21 | Halvard of the Quiet Rite | Stonewrights. Stonesworn; the Crownlands has never canonized him, which is a concession it will not make. |
+| Greywane 14 | Tobrin Ashfall | The falsely accused. The Church’s uneasy conscience about the wolf-trial. |
+| Greywane 30 | Elleth of the Grey Gate | Gatekeepers. Venerated for the ones she turned away. |
+| Longdark 19 | Odarr of the Nine Winters | Winter travelers. Orlath claims him hardest. |
+| Threshold 6 | Marek the Witness | Witnesses and inconvenient truth. THE saint of the campaign’s mechanism, and nobody has noticed. |
+| suppressed | Ovric, Struck from the Canon | DM ONLY: struck ninety years ago because an archivist found what he witnessed. Touches the Founding. File is in the Archive’s closed levels. |
+
+# Standing — Faction Tiers
+
+*One number per faction, 0 to 5, moved by the DM at session end. Tier 2 grants advantage on Charisma checks against members; tier 3 opens the faction’s own asset; tier 5 is a promise, and in this world a promise is a weight.*
+
+| **Faction** | **Rises When** | **Tier 3 Opens** |
+| --- | --- | --- |
+| Throne and Court | You make the restoration look competent, publicly | An audience without the Lord Chamberlain arranging it |
+| The Church | You honor the Vigil; you resolve things it need not be seen to act on | Parish hospitality anywhere loyalist, and a sealed letter |
+| The Office of Omens | You are useful to them | NOTHING GOOD — this score should be kept low and the players should not be told so |
+| The Imperial Academy | Knowledge, students, or credit brought home | The deep stacks and an unquestioned requisition |
+| The Law Commission | Evidence that survives a hearing | Vhal’s ear and a Writ on a day’s notice |
+| The Legions | You stand where you said you would | A century who will listen; lost quartermaster paperwork |
+| Merchants' Concord | A route made safer, a contract made enforceable | Credit, a factor in every town, the second-best network in the empire |
+| The Inkhands | You pay, shut up, and bring no Watch | Unlicensed work at trade prices; a door out at any hour |
+| Vaelindra’s circle | You keep her confidence and your word | The others she has referred over fifty years |
+| The See of Orlath | You treat the schism as a disagreement among the faithful | Northern passage and the Second Treasury |
+| Tarnovar envoy | An oath kept at cost, where a Tarnovari sees it | A hearing at Kamenhold — nobody imperial has had one in a century |
+| Golds / Greys | Seen at the Course, on a side, in bad weather | Three thousand people who will chant your name |
+
+*Opposed pairs: Orlath vs. the Church. Vaelindra vs. the Office. Inkhands vs. the Law Commission. Tarnovar vs. the Court. Golds vs. Greys. Concord vs. the Legions. The Academy opposes nothing, which is why it is the best cover in the empire. The Church and the Throne are deliberately not opposed — the day one of them forces a choice is a campaign event.*
+
+# Keyed Locations — Where to Look
+
+| **Dungeon / District** | **Areas** | **Document** |
+| --- | --- | --- |
+| The Undervault (three levels) | U1–U23 | Sessions 3–4. Cipher Gate at U5, Registry Wall at U16, Cold Door at U18, Vault Nine at U22. |
+| Redwatch | R1–R9 | Session 1. Well and cistern at R4–R5 is the quiet way in; signal-tower puzzle at R9. |
+| The approach to Aenodira | A1–A6 | Session 2. Six beats over the last four miles. |
+| Rivergate | V1–V9 | Session 5. A district, not a corridor — any order, and V4 is skippable. |
+| The Descent (Bone Galleries) | D1–D7 | Session 6. Hoarding at D3 is a decision, not a lock. |
+| The Undercourt | C1–C12 | Sessions 7–8. Vesting Room at C2, Long Approach at C4, Witness Hall at C6, Rite Floor at C9. |
+| The empire’s thirty settlements | — | The Gazetteer, keyed six lines each with a named contact and a complication. |
+
 # Homebrew Items of Record
 
 - **Dren’s Oath-Medallion (uncommon, unique):** Cold near oath-breaking, shadow-residue, thin-written ground. Quieter with oath-keepers.

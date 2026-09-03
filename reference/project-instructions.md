@@ -162,6 +162,14 @@ Report discrepancies as findings for review, categorized by severity, with recom
 
 Closed: calendar, funerary custom and the Vigil, marriage/inheritance/succession, bound labor and legal personhood, gender and authority, the imperial law pass (the Zhuvedian Laws in seven Books, certification, jurisdiction, the legions' rank ladder, street-level justice, and the Golden Tablets quoted in fragment), language and literacy, currency (the Zhuven), and medicine and disease. **The Remaining Worldbuilding Gaps list is now fully closed.**
 
+Closed since, in the published-scale expansion: the theology's player-facing half — the
+Doctrine of Aspects, the seven recognized Aspects mapped to the 2014 cleric domains, the
+domains the empire deliberately has no Aspect for, the paladin oaths, and a canon of
+fourteen saints with feasts keyed to the existing calendar; faction standing as a
+six-tier, one-number-per-faction system with its opposed pairs; and, in the two new
+volumes, the gazetteer, travel and hazard rules, regional encounter tables, a native
+bestiary, setting backgrounds, name lists for ten cultures, and downtime.
+
 Live rather than closed — resolution deliberately handed to play, not pre-decided: the legal personhood of the Marked (tieflings), tracked as a Branch Ledger thread tied to the Twin Clocks' Solacre promulgation.
 
 ---
@@ -171,9 +179,11 @@ Live rather than closed — resolution deliberately handed to play, not pre-deci
 **Living documents, all published in the shared visual template:**
 
 1. **The Qilvayas Symphony Campaign Setting** — the canonical sourcebook. Not version-numbered: a living document, edited in place and rebuilt, with git history carrying the record of what changed and when.
-2. **Session modules** — Sessions 0 through 8 (Sessions 3–4 combined as The Proving Below).
-3. **QS DM Reference Guide** — quick-lookup cheat sheet in table form: Atlas regions, districts, NPCs by circle, the Powers, magic and faith, peoples, dragons, core mythology, timeline, items and threads, the Branch Ledger, and the deliberately-open list. Canon-derived, never a separate source of truth. **Update it in the same pass as any canon change** — when in doubt, include it. A stale reference guide is worse than none.
-4. **QS Player Guide** — the sanitized, shareable edition.
+2. **Gazetteer of the Fractured Empire** — the DM's road-book: thirty keyed settlements across the ten Atlas regions, travel and the road, overland hazards, a d12 encounter table per region, and a native bestiary. Derived from the sourcebook's Regions in Depth, never a rival source of truth for lore — if the two disagree, the sourcebook wins.
+3. **QS Player's Companion** — eight 2014-format backgrounds, name lists for ten cultures, the faith as a worshipper meets it, downtime, etiquette, trinkets, and twenty character questions. **Player-facing and fully shareable**, authored to the same rules as the Player Guide below.
+4. **Session modules** — Sessions 0 through 8 (Sessions 3–4 combined as The Proving Below). Each carries keyed map areas, at least one puzzle with several genuinely equal solutions, a set piece run in phases with a decision at each transition, trap blocks with full mechanics, an encounter table, handouts, and a pacing budget that accounts for all of it. **New module material that is not in the pacing budget is a continuity bug.**
+5. **QS DM Reference Guide** — quick-lookup cheat sheet in table form: Atlas regions, districts, NPCs by circle, the Powers, the Aspects and their domains, the saints' feasts, faction standing, the keyed-location index, magic and faith, peoples, dragons, core mythology, timeline, items and threads, the Branch Ledger, and the deliberately-open list. Canon-derived, never a separate source of truth. **Update it in the same pass as any canon change** — when in doubt, include it. A stale reference guide is worse than none.
+6. **QS Player Guide** — the sanitized, shareable edition.
 
 **Player Guide authoring rules.** This is authored as its own document, never produced by deleting paragraphs from the sourcebook — spoiler-safety lives in how sections are written, not just which are present. Cut all DM-only material and metaplot mechanisms; convert confirmed DM facts into in-world rumor or dispute where the flavor is worth keeping (the Vintage Night reads as disputed public tragedy, not confirmed truth); **omit by design** anything whose presence contradicts its own fiction (Vaelindra has no entry — she is findable only by referral); keep unresolved dread, since a hook is not a spoiler; and verify before publishing by scanning for DM-only strings and mechanical asides.
 

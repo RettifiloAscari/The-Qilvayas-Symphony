@@ -14,7 +14,9 @@
 
 The party opens the Second Seal and descends into the Undercourt’s deepest reach: three chambers of a sacred site built for a ceremony that two people were supposed to walk out of. This is not a dungeon crawl. It is an approach, and each chamber strips something away rather than throwing something at them — the practical wreckage of preparation, a corridor that makes them honest, and finally the Witness Hall, where several hundred people watched the empire’s founding and chose to see nothing. The session ends on the frieze and what it means, with the party holding proof that could end houses.
 
-Designed for a five-hour core. Pacing budget: the price of the Seal (45 minutes); the Vesting Room and Nyreeza’s camp (60 minutes); the Long Approach and the memory pressure (60 minutes); the Witness Hall (90 minutes, including the Turned); the frieze and the implications (45 minutes). Optional content adds roughly 90 minutes. Combat is deliberately sparse — one encounter, and it is a puzzle wearing a fight’s clothes. Milestone: the party reaches 7th level at the session’s close.
+Designed for a five-hour core. Pacing budget: the price of the Seal (40 minutes); the Threshold Arch and the Vesting Room, run as the four-solution puzzle it is (65 minutes); the Long Approach in its four phases (60 minutes); the Witness Hall (90 minutes, including the Turned); the frieze, the effaced benches, and the implications (45 minutes). Optional content adds roughly 90 minutes. Combat is deliberately sparse — one encounter, and it is a puzzle wearing a fight’s clothes. Milestone: the party reaches 7th level at the session’s close.
+
+**Where the keyed areas fit.** C1 through C7 are the same session at higher resolution, and the budget above already carries them: C1 is two minutes and a hesitation, C2 and C3 are the sixty-five, C4 and C5 are the Long Approach’s sixty, C6 is the ninety, and C7 is the last image before the session ends. Nothing is added on top. The Long Approach is the one block that must not be compressed — it has no combat, no checks that matter, and it is the best hour in the campaign.
 
 ## What Is Actually Happening (DM Only)
 
@@ -98,6 +100,76 @@ Give the table the silence. Then let them work out what they are looking at, and
 - **Evidence of the scourers:** DC 15 Investigation on the floor beneath the surviving frieze: two centuries of dust, and under it, a rust-stain the shape of a scaffold foot, and a single broken mason’s chisel of imperial make. Someone was paid to do this. The order has a name on it, and the name is in an archive the party can eventually reach.
 
 End the session in the Hall, under the faces. The way onward — a low arch on the western side, unscoured because nothing there bore a name — is visible, and the breathing comes from it, and it is slower than it was. Milestone: 7th level.
+
+# The Undercourt, Keyed
+
+Sessions Seven and Eight take place in one continuous structure, and it is the oldest built thing in the world. Twelve areas across both sessions — seven here, five in Session Eight. Key it, draw it, and let the players map it, because the Undercourt is the only dungeon in this campaign the party will never be able to come back to.
+
+**The shape of it.** Not a dungeon in the usual sense: a single ceremonial axis, descending, with rooms opening off it in the order a procession would have needed them. Vesting first, then approach, then witness, then rite. It was built for one event and it has been waiting to be used properly ever since. Nothing here is a corridor to somewhere else; every space is a stage in a ceremony, and the party is walking the ceremony in order without knowing the order.
+
+**On light and time.** Bring both. The Undercourt has no natural light, no water, and no exit but the way in. State the party’s oil and torch supply at the top of Session Seven, track it honestly, and let a party that has been careless find out about it at the worst moment — this is the one place in the campaign where resource management is a horror device rather than an accounting chore.
+
+**C1. The Threshold Arch.** Where the black stone stops being a wall and becomes an entrance. Twelve feet, unornamented, and cut with such precision that the joints will not take a knife. The Second Seal’s dead wardline runs across the floor here as a groove filled with a grey metal nobody can identify. Crossing it is a step, and everyone will hesitate.
+
+**C2. The Vesting Room.** Stone benches, ten niches, and the ceremonial dress of a rite that was never finished — two full sets, laid out, unworn. Nyreeza’s camp is here: a bedroll, a lamp, a folded coat, a working table with rubbings pinned to it, and a discipline about the arrangement that will tell the party more about her than any document. Session Seven’s first real room and its most human.
+
+**C3. The Instrument Store.** Off the Vesting Room. Racks for tools of a rite: a broken chisel with a masons' guild stamp still in use today, a set of copper bowls, and eleven pegs, three of them empty. Nobody will ever learn what hung on the three empty pegs and the DM should never decide.
+
+**C4. The Long Approach.** Three hundred feet, descending at a constant grade, proportioned for a procession of hundreds and walked by four to six people. The memory pressure lives here — see the phased set piece below. There is nothing to fight in the Long Approach. It is the hardest room in the module.
+
+**C5. The Standing Water.** A hundred feet in, the Approach’s floor dips and holds an inch of water that has been there for two thousand years and is perfectly clear. It reflects. What it reflects is not always what is standing over it, and the module never explains this, and a party that stops to investigate loses ten minutes and gains nothing but the memory.
+
+**C6. The Witness Hall.** Where Session Seven ends. Tiered stone benches on four sides of a floor, seating for perhaps four hundred, and every seat cut with a name that has been deliberately effaced — not weathered, effaced, with a tool, by somebody who went round all four hundred. See the scene text.
+
+**C7. The Vestibule of the Rite.** Between the Witness Hall and the Rite Floor. A short antechamber with a single stone basin, dry, and above it the only carving in the Undercourt that is decorative rather than functional: two figures, facing, one of them chiselled out. Session Seven ends before this room or at its threshold, depending on the table’s pace.
+
+# The Long Approach (Set Piece, in Phases)
+
+Three hundred feet of descending corridor with nothing in it, run in four phases over roughly an hour, with a decision at every transition. This is the module’s centrepiece and it contains no combat whatsoever. Do not add any.
+
+**Phase One — The First Hundred Feet (10 minutes).** Nothing happens. Describe the grade, the proportions, the way the party’s light does not reach the ceiling. Let them get comfortable and let them start talking about something else. The decision at the transition: marching order, and whether they rope together, and whether anyone says out loud that this is fine. Note who says it.
+
+**Phase Two — The Pressure Begins (15 minutes).** Each character begins to remember something they have not thought about in years, vividly, at the wrong moment. Not visions and not an attack: memory, unbidden and specific. Go around the table and ask each player what their character suddenly remembers, and take whatever they give you. The decision: does the party stop and talk about it, or push on and pretend? Both are correct. A party that stops loses twenty minutes of oil and gains something they will need in Session Eight.
+
+**Phase Three — The Selection (20 minutes).** The memories stop being random. Each character now remembers, specifically and in order, a promise they made and did not keep. Small ones. A DC 13 Wisdom saving throw resists the intensity, not the content — nobody gets to not remember. The decision, and it is the real one: does anyone say theirs out loud? Nothing mechanical rewards it. Everything about Session Eight is easier for a party who did.
+
+**Phase Four — The Last Fifty Feet (15 minutes).** The pressure stops, abruptly, as though something lost interest or got what it wanted. The relief is enormous and it should be played as relief. The decision at the transition into the Witness Hall: after what just happened, does the party still walk in together? Ask them to state marching order again. The answer will be different from Phase One and nobody will comment on it.
+
+**DM Only:** the Approach is not attacking them and it is not the shadow. It is the building doing what it was built to do: a processional route designed to bring celebrants to the Rite Floor already reckoning with their own broken words, because that was the price of admission to the thing that happened here. It is a liturgy, still running, with no congregation. Nothing in the corridor wants anything. That is the most frightening available reading and it is the true one.
+
+# The Vesting Room (Puzzle)
+
+Nyreeza’s camp is a puzzle in the shape of a room, and it is solved by inference rather than by checks. Everything in C2 is evidence about a person, and the question the room asks is: what was she doing, and did she leave, or did she go on?
+
+> *Ten niches, two sets of ceremonial dress, laid out and never worn. Between them, three years of somebody’s residence: a bedroll rolled tight in the way a soldier rolls one, a lamp with the wick trimmed and no oil, a coat folded on a bench, a working table with charcoal rubbings pinned flat and weighted at the corners with four identical stones. The rubbings are of the Approach’s walls. Along one edge of the table, a line of tally-marks — a great many of them — and at the end of the line, no mark, just the space where the next one would go.*
+
+**Solution one — the coat.** It is folded, not dropped. Nobody who fled folded their coat. DC 12 Wisdom (Insight) for a character to articulate this; most players get there without a roll, and should be allowed to.
+
+**Solution two — the tallies.** Count them. They are days, and the count is short of three years by a considerable margin — she stopped marking long before three years had passed, which means either she left, or she stopped caring about days. DC 13 Intelligence (Investigation) to get an accurate count; the number itself should be given as a number and its meaning withheld.
+
+**Solution three — the lamp.** The wick is trimmed and there is no oil. A person preparing to leave does not trim a wick. A person preparing to go further with no intention of coming back to this room might. This is the reading that hurts and it is entirely legitimate.
+
+**Solution four — the stones.** Four identical stones weighting the rubbings, and they are from the Long Approach’s standing water, and there are four of them because the rubbings are of four walls, and a person who went and fetched four matching stones for a table she was going to abandon was not abandoning it. She meant to come back to this table.
+
+**What the room does not answer.** Whether she did. Every solution above tells the party something about her intentions and none of them tells them her fate, and the module must not resolve it. A party that leaves the Vesting Room certain of what happened to the Empress has been given something this campaign does not have.
+
+# Hazards of the Undercourt
+
+**Scarred Ground (everywhere below C1).** The Undercourt is Scarred thin-written ground, the strongest degree in the setting. Wards will not anchor. Ritual casting fails, not sometimes but always. Long rests restore half the usual Hit Dice and no expended spell slots above 3rd level. Divination returns grief. State all of this to the players at C1, plainly, in the DM’s own voice, and then never soften it.
+
+**The Cold.** Not damage. A creature that spends more than an hour below C1 without a heat source has disadvantage on Constitution saving throws until it warms up. A fire can be lit and there is nothing here to burn, which is a supply problem the party must have solved above ground or must now solve badly.
+
+**The Standing Water (C5).** No mechanics. If a player asks what their character sees in the reflection, the honest answer is: describe them a half-second late. Do it once. Do not do it twice and do not explain it, ever.
+
+**The Effaced Benches (C6).** A character who examines the effacement closely can determine, DC 14 Intelligence (Investigation), that it was done from one end to the other in a single working, by one hand, with a chisel — the same gauge as the broken chisel in C3. Somebody sat in this hall, alone, and went along four hundred names, and stopped when the chisel broke, and the last forty names are still legible. They should be read aloud.
+
+# Handout — Session Seven
+
+## From the Working Table (C2)
+
+> *(In a small, fast, educated hand, on the back of a rubbing:) Third attempt at the west wall. The marks are not writing. I have been wrong about this for a year and I am writing it down so that I stop. They are a count. Something down here was counting, and it stopped counting, and the stopping is the only event recorded in this entire building. — Below, in the same hand, later, and much less carefully: it is not a building. it is a promise that somebody made in stone because stone holds what air forgets. I have to go down.*
+
+Note for the DM: hand this over when the party searches the table. The last four words are the session’s engine and they should be in the players' hands, in ink, for the whole of Session Eight.
 
 # Optional Content (Beyond the Five-Hour Core)
 

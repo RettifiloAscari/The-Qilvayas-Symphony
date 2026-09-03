@@ -59,4 +59,5 @@ module.exports = { Document, Packer, Paragraph, TextRun, Table, TableRow, TableC
   LevelFormat: { BULLET:'bullet', DECIMAL:'decimal' },
   BorderStyle:{SINGLE:'single',NONE:'none'}, VerticalAlign:{CENTER:'center'},
   PageNumber:{CURRENT:'cur'}, Footer:class{constructor(){}}, Header:class{constructor(){}},
-  TabStopType:{RIGHT:'right'}, UnderlineType:{SINGLE:'single'}, convertInchesToTwip:v=>v*1440 };
+  TabStopType:{RIGHT:'right'}, UnderlineType:{SINGLE:'single'}, convertInchesToTwip:v=>v*1440,
+  TableLayoutType:{ FIXED:'fixed', AUTOFIT:'autofit' } };

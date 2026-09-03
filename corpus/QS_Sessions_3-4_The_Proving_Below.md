@@ -16,7 +16,9 @@ Session Three opens at Vaelindra’s table for the conversation she promised, an
 
 One thing inside the dungeon, however, is not part of the test — a sealed pre-imperial door the staff’s own maps omit, cold to the touch in a way one party member’s pocket already understands. The Proving is a closed loop; the Cold Door is the campaign leaning in.
 
-Both sessions are designed for five hours. Session Three pacing budget: the tenth bell at Vaelindra’s (60 minutes); the summons and briefing (40 minutes); Undervault Level One (90 minutes); Level Two (90 minutes), ending on the discovery of the Cold Door (20 minutes, unhurried — it is the cliffhanger). Session Four: recap and the door (30 minutes); finishing Level Two (30 minutes); Level Three and the trials (60 minutes); the Vault Warden (75 minutes); the Reveal (45 minutes); aftermath and hooks (60 minutes). The party reaches 4th level at the start of Session Three and 5th at the end of Session Four, when the Proving concludes.
+Both sessions are designed for five hours. Session Three pacing budget: the tenth bell at Vaelindra’s (60 minutes); the summons and briefing (40 minutes); Undervault Level One — U1 to U9, the Cipher Gate among them (95 minutes); Level Two — U10 to U17, including the Registry Wall (85 minutes), ending on the discovery of the Cold Door at U18 (20 minutes, unhurried — it is the cliffhanger). Session Four: recap and the door (30 minutes); finishing Level Two (25 minutes); the Processional and the Gauntlet Walk (35 minutes); the Vault Warden in three phases (75 minutes); the Reveal (45 minutes); aftermath and hooks (50 minutes). The party reaches 4th level at the start of Session Three and 5th at the end of Session Four, when the Proving concludes.
+
+**If you are running the keyed dungeon:** the twenty-three areas below are the same two sessions at higher resolution, not extra content bolted on, and the budget above already assumes them. Level One’s ninety-five minutes covers U1 to U9 including the Cipher Gate at a real puzzle’s pace; Level Two’s eighty-five covers U10 to U17 with the Registry Wall. If the table is slow, U2, U3, and U8 are the three areas that can be described rather than played without losing anything the module needs. If the table is fast, the wandering table and the third solution to the Registry Wall will absorb an hour between them.
 
 ## What Is Actually Happening (DM Only)
 
@@ -123,6 +125,174 @@ The Proving concluded, events move quickly, and each beat below deserves table t
 - **The rubbing, read — partly.** Brought to Archivist Vell, the cipher stops him mid-motion, ledger half-closed. He identifies the hand in one sentence and will not be drawn further in the academy’s walls: “That is the Empress’s personal shorthand. I archived nine years of her academy correspondence. You will not repeat that in this building, and you will tell me — elsewhere — exactly where you found it.” Translation of the fragment itself is a future thread: partial, tantalizing, and the natural bridge to the Nyreeza trail. (Suggested partial reading, when the time comes: a survey notation — a depth, a bearing, and the single legible phrase “colder past the second seal.”)
 - **Vaelindra, told.** If the party reports to Coppergate — and after her tenth-bell counsel, they should think of it — she listens to the whole account without interrupting, and answers with the module’s closing line. See the epigraph. What she now knows, and they do not: Nyreeza went beneath the city through the academy at least once — which means the Empress’s trail and the party’s school have been the same building all along.
 - **Milestone.** The party reaches 5th level. The first arc of the campaign — students, vision, Seeress, Proving — is complete. They are graduates, chartered, marked by Highcourt, holding a dead man’s cold medallion and a dead-or-worse Empress’s cipher. The campaign proper is now open in every direction.
+
+# The Undervault, Keyed
+
+The scenes above are how the two sessions run. This is the dungeon they run in. Twenty-three areas across three levels, drawn so a DM can sketch the map in four minutes on grid paper and hand it to whoever volunteered to be the party’s cartographer.
+
+**Drawing it.** Level One is a rectangle, roughly 200 by 120 feet, cut into a grid of barrel-vaulted corridors ten feet wide with shelf-cages between them — think city blocks, not caves. Level Two is the same footprint gone wrong: the eastern third has subsided, so its corridors bend and its floors slope perhaps five degrees toward the east wall, which is where the black stone begins. Level Three is a single processional axis, ninety feet of columned corridor running dead straight to a domed rotunda sixty feet across. Everything descends by one broad stair at the western end, which is the only way in and, until the Reveal, the only way out.
+
+**Light.** Nothing down here is lit. This matters more than any trap in the module: the Undervault’s whole atmosphere is lantern-light pushing dark back exactly as far as lantern-light should and no further, and a party that solves the light problem cleverly has genuinely earned something. The faculty are watching from galleries in total darkness through observation slits that read as ventilation.
+
+## Level One — the Archive Halls
+
+**U1. The Stair Head.** Three locks on the door above, all of them opened for the party. The air changes on the fourth step: dry, cold, papery. A brass plate reads DEPOSIT OF THE ELEVENTH RECORD, LEVELS I TO III, and someone has scratched a tally of eleven marks beside it. The tally is the Proving’s count and nobody will explain it for two sessions.
+
+**U2. The Reading Floor.** A forty-foot hall of stone desks under a barrel vault, every desk with a candle-socket and none with a candle. Dust undisturbed except for one desk near the middle, which has been used within the month. Nothing here. That is the point of it: it teaches the party what undisturbed looks like, so U4 will read wrong.
+
+**U3. The Shelf-Cages (north run).** Iron cages of ledgers, floor to vault, aisles between. Difficult terrain if a fight happens here, and total cover in inconvenient places. A DC 12 Intelligence (Investigation) among the ledgers turns up a Third Legion muster roll from sixty years ago listing the Silvasse dead — which is not a clue, and is the kind of thing a party will remember for the rest of the campaign anyway.
+
+**U4. The Survey Camp.** Three bedrolls, a cold lamp, a half-written catalogue page ending mid-line, and dropped instruments. Staged with real skill. DC 13 Investigation: genuinely wrong-but-recent. DC 16: the lamp’s oil level and the dust say the camp is older than five days. The Warrant of Access is folded inside the catalogue page (see Handouts) and a party who searches properly finds it now and does not understand it for two hours.
+
+**U5. The Cipher Gate.** A bronze door across the central corridor, with a rotating-ring lock inscribed in Old Imperial legal shorthand. See The Cipher Gate, below — this is the module’s first real puzzle and it has four solutions.
+
+**U6. The Font Chapel.** A side chapel with a working restorative font: 1d4 + 1 charges of cure wounds at 1st level, self-administered. Fonts this old should not still be charged, and a party who says so out loud is doing exactly what the faculty hoped. (It was recharged last week.) Above the basin, a worn relief of the Watch at the Threshold.
+
+**U7. The Long Gallery.** Where the Drill Automatons patrol. Sixty feet of straight corridor with shelf-cages at both ends — deliberately built to be fought in, with a clean approach and no cover in the middle, because it is a drill hall pretending to be an archive.
+
+**U8. The Clerk’s Room.** A dead-end office with a desk, a chair, and two hundred years of unfiled requisitions. The room is a joke that pays off later: every requisition is for lamp oil, and the last one is dated last month.
+
+**U9. The Descent.** The stair to Level Two, behind a grille that is unlocked. The grille’s hinges have been oiled. Recently.
+
+## Level Two — the Menagerie Stacks
+
+**U10. The Sloping Hall.** The first sign the level is wrong: the floor tilts east, gently, and every dropped object rolls. Wetter air, and the animal smell — musk and straw, in a place sealed for lifetimes.
+
+**U11. The Crate Vaults.** Barred alcoves and crate-stacks, the Vault Hounds' hunting ground. Broken sightlines, climbable stacks (DC 10 Athletics), and three chokepoints a clever party can use. The hounds know this room; the party does not.
+
+**U12. The Records Cage.** Where Merla is found, locked in. The lock is old, real, and openable from outside with thieves' tools at DC 12 or by the key hanging forty feet away in U14 — which is a small, mean little test of whether anyone looks before breaking.
+
+**U13. The Custodian’s Reach.** A wide low chamber with a spill of ancient preservative across the flagstones, and the Custodian Ooze methodically scouring it. It ignores creatures and consumes messes. Crossing the room while it works is entirely safe and feels like the least safe thing in the module.
+
+**U14. The Kennel Office.** Collar-racks, feed bins, a work-bench, and the cage key on a nail. Also a leather-bound kennel log in a neat modern hand, current to last week, recording each hound by name. One of the names is Bartleby, which is not a dog.
+
+**U15. Bartleby’s Alcove.** A cleared alcove, theatrically lit by a shaft from a ventilation slit that is not a ventilation slit, containing one chest. See the scene text. Bartleby is old, fat, semi-tame, and the least subtle test in the Proving.
+
+**U16. The Registry Wall.** The module’s second puzzle. See below.
+
+**U17. The Eastern Stacks.** Collapsed shelving, and the stretch the hounds will not enter. The floor’s tilt is at its worst here and the cold begins about fifteen feet out.
+
+**U18. The Cold Door.** Where Session Three ends. Black stone, fitted without mortar, no handle, no keyhole, no seam. Frost on the iron in a corridor where nothing else is damp. The hinge-line marks are here (see Handouts). The mercy wards end ten feet behind the party and nothing here will hurt them, and the DM must not say so.
+
+## Level Three — the Vault Proper
+
+**U19. The Processional.** Paired columns, ninety feet, dead straight, built to be walked down by people who knew they were being watched. Sound carries here perfectly, which is a gift to a party who wants to talk to what is at the end of it.
+
+**U20. The Gauntlet Walk.** Forty feet of alternating pressure plates and arrow-loops. Full trap block below.
+
+**U21. The Bronze Doors.** Twelve feet tall, green-black, relief-carved with a wolf-standard two centuries older than it should be. The Warden’s challenge comes from behind them. The doors are not locked; they have never needed to be.
+
+**U22. Vault Nine.** A domed rotunda sixty feet across, empty shelving radiating from a central plinth, and the Lector’s Seal in a shaft of pale wardlight. The Warden stands between. The plinth carries the inscriptions that hold the stand-down phrase.
+
+**U23. The Gallery Wall.** The rotunda’s far wall, which is not a wall. It splits along seams that looked solid and folds outward into tiered galleries holding the entire senior faculty. Until it opens, a DC 20 Perception notices the seams — and a party that spots them before the Reveal has beaten the module, which the faculty will find delightful.
+
+# Puzzles
+
+Both puzzles below have several genuine solutions, and none of them is the intended one. This is stated here because it is easy for a DM to develop a favorite mid-session and start steering; do not. A party that gets through by a route this book did not think of has solved it correctly by definition.
+
+## The Cipher Gate (U5)
+
+> *The door is bronze, taller than a man, and set into it at chest height is a lock of five concentric rings, each ring bearing the same twenty-two marks. Above them, incised in the metal and worn shallow by two centuries of fingers tracing it, one line of Old Imperial legal shorthand. Below the rings, a shallow brass tray, empty, the size of a hand.*
+
+The line reads, in translation: WHAT IS PROMISED, WHERE IT IS WRITTEN, WHO STOOD BY, WHAT IT COST, WHEN IT WAS DONE. Five rings; five clauses; the marks are the shorthand for the five parts of a valid imperial covenant. Set each ring to its clause’s mark and the door opens.
+
+**Solution one — the education.** A House of the Seal character recognizes the phrasing instantly, because it is verbatim a first-year contracts exercise. Automatic for a Seal-primary character; the joke is that they had to memorize it for a grade.
+
+**Solution two — the scholarship.** DC 13 Intelligence (History) reconstructs the five-clause form from any legal education, imperial or otherwise. A Tarnovari or Orlathine character makes this at DC 15, because their own oath-forms are different and they have to translate first.
+
+**Solution three — the tray.** The brass tray takes a seal. Any genuine imperial seal pressed into it while the rings are wrong opens the door anyway, on the reasoning that a person carrying a seal is a person entitled to be here. The party has no seal yet. They will have one at the end of Session Four, and a DM who lets them realize this in retrospect has given them a free gift.
+
+**Solution four — the craft.** Thieves' tools at DC 15 defeats the lock outright. It also triggers a shrieking alarm glyph (see Traps) that costs the party surprise on this level for the next hour. This is not a failure state and should never be run as one — it is a legitimate answer with a price, and a party who takes it knowingly has made a choice, not a mistake.
+
+**DM Only:** the fifth solution is asking. If the party goes back up and asks Professor Dail what the shorthand means, he will tell them, because his instructions are to answer any question they actually think to ask. Nobody has ever gone back up. If this table does, give it to them warmly and note it: the faculty will regard it as the single most impressive thing the cohort did.
+
+## The Registry Wall (U16)
+
+> *The wall at the end of the eastern stacks is not shelving. It is a registry: nine hundred small square drawers, nine high and a hundred wide, each with a brass card-holder and a number, and every card is blank. In the middle of the wall, at the height of your chest, one drawer stands a finger’s width open. Behind you, the floor tilts east, and somewhere in the dark something with claws is not trying very hard to be quiet.*
+
+The open drawer holds a single iron key, too large for any lock on this level, and a card that is not blank. It reads, in a modern hand: SEE ALSO. Nothing else.
+
+The wall is a finding aid for a collection that was moved, and the puzzle is what a registry with nine hundred blank cards is for. The answer: the cards were never written. The drawers themselves are the index — their positions encode a shelf-mark, and the one standing open gives the party a coordinate. Read as row-and-column, the open drawer’s position points to a location: the eastern stacks, fifteen feet in, at floor level. That is U18. The registry is telling them where the Cold Door is.
+
+**Solution one — count it.** Anybody who counts the drawer’s position and thinks of it as a map coordinate gets it. DC 13 Intelligence (Investigation), and a character with a cartographer’s or navigator’s background does it without a roll.
+
+**Solution two — the key.** The key fits nothing on Level Two. It fits the grille at U9, which is already unlocked, and a party who tries it there learns that this key is older than that grille by a century — which tells them the registry predates the academy’s occupation, which is the actual finding.
+
+**Solution three — pull them all.** Nine hundred drawers, most empty, some holding a century of dust and four holding something. It takes an hour of game time and it works. Reward it: the four occupied drawers hold a dried flower, a child’s tooth, forty Zhuven in obsolete coin, and a lock of white hair tied with a black thread. None of them means anything. All of them will haunt the players, and the DM should refuse to explain any of it, forever.
+
+**Solution four — ask the hounds.** A freed Vault Hound will not go east past the registry. A party that notices the hound’s line and treats it as information rather than cowardice has been told exactly where the wrong thing is, by a dog, which is the most Zhuvedian solution available.
+
+**DM Only:** the SEE ALSO card is in Empress Nyreeza’s hand. It matches the hinge-line marks at U18 and it is three years old. Do not point at it. A party that keeps the card and later compares it to anything of hers has found her, and they will have found her by tidying up after a puzzle.
+
+# Traps
+
+**The Gauntlet Walk (U20).** Mechanical trap, forty feet of corridor.
+
+- **Trigger:** weight on any plate. The plates are obvious — DC 10 Perception spots the seams, and the arrow-loops are not concealed at all. This trap is not hiding.
+- **Effect:** the corridor discharges as a group. A party advancing in disciplined formation (shields forward, called steps; any Sword-primary character can direct it, granting the group advantage) makes a group DC 12 Dexterity saving throw. A disorganized rush is DC 14 with disadvantage. On a failure: 2d6 piercing damage. On a success: half.
+- **Duration:** the corridor discharges once per creature crossing, then resets over one minute.
+- **Countermeasures:** the plates can be jammed with anything rigid (DC 13 Dexterity with thieves' tools, one plate per attempt, four plates in the run). The arrow-loops can be blocked from the near side with a shield or a bedroll, two loops per action. Crossing the whole run prone at half speed avoids the loops entirely and takes four rounds, which is fine and which nobody ever thinks of.
+- **What it actually is:** a drill yard. In hindsight the whole thing is a formation exercise, the damage is nonlethal by ward though it does not feel it, and the arrow-loops are firing blunts. Do not tell them.
+
+**The Shrieking Glyph (U5).** Magical trap on the Cipher Gate, triggered only by forced entry.
+
+- **Trigger:** the lock is opened by any means other than setting the rings or pressing a seal into the tray.
+- **Effect:** a rising tone audible throughout Level One and faintly on Level Two, lasting one minute. No damage. For the next hour, the party cannot surprise anything on Level One and everything on Level One knows roughly where they are.
+- **Detect and disarm:** DC 15 Intelligence (Arcana) to spot before triggering; DC 15 thieves' tools or dispel magic to disarm. A character who spots it and chooses to trigger it anyway, having weighed the cost, should be told plainly that this is a legitimate call.
+
+**The Subsidence (U10 through U17).** Environmental hazard, the whole eastern third of Level Two.
+
+- **Effect:** the floor tilts about five degrees east. Any creature knocked prone slides 10 feet east before stopping. Any dropped object rolls east until it hits something. A creature running east makes a DC 10 Dexterity save or overruns by 10 feet.
+- **Why it is here:** so that the dungeon has a direction, and the direction is toward the Cold Door. Every accident in this level moves the party toward the thing the module is about. Nobody will notice, and it will work anyway.
+
+# The Vault Warden, In Three Phases
+
+The Warden is the module’s set piece and it should not be run as one long fight. It runs in three phases with a decision at each transition, and the party’s route through those decisions is what the faculty are actually grading.
+
+**Phase One — The Challenge (rounds 0 to 1).** The Warden repeats its demand once, and waits one full round. This is a real round: it will not attack during it, and the party can act freely. The decision at this transition is whether anyone answers. Presenting the Warrant here ends the encounter with full marks and the Warden bowing. Speaking the stand-down phrase ends it here too. Attacking during the waiting round is a legitimate choice and a bad one, and the DM should let it happen without a warning glance.
+
+**Phase Two — The Defense (rounds 2 to the halfway mark).** The Warden defends. It fights the way a bronze honor guard from two centuries ago fights: positionally, patiently, holding the plinth and never pursuing past the columns. It does not target the downed. The decision at this transition is whether anyone is still trying to solve the room while the fight is happening — the plinth inscriptions are readable during combat with a DC 15 Intelligence (History) check as an action, which costs a turn, in a fight the party thinks might kill them. That trade is the phase’s whole content.
+
+**Phase Three — The Yield (at half hit points).** The Warden grounds its halberd, kneels, and says SUFFICIENT. Its instructions were always to test, not to kill. The decision at this transition is the one the faculty care most about: does the party stop? A party that keeps swinging at a kneeling construct is not penalized mechanically and is watched, in silence, by forty people they cannot see.
+
+**Scaling.** Baseline (4 characters): the Warden alone. Five characters: one Drill Automaton enters from an alcove on round 2. Six characters: two automatons from round 1, and the Warden’s Bulwark trait is active until both automatons fall. Add exactly that many and no more — a second automaton at five characters crosses the encounter-multiplier boundary and nearly doubles the adjusted difficulty rather than nudging it, which is how a Proving that cannot kill anyone starts feeling like one that wants to.
+
+# Wandering the Undervault
+
+Roll a d8 once per hour of exploration, or whenever the party is dithering. Half of these are not fights, and three of them are the module quietly telling the truth.
+
+| **d8** | **What Happens** |
+| --- | --- |
+| 1 | A single Drill Automaton, off its patrol, walking a route that leads nowhere. It attacks and it fights badly, alone. |
+| 2 | Lamp oil. A sealed crock of it, fresh, in a place nobody has been for a century. |
+| 3 | Scratching behind a shelf-cage, at chest height, which stops when a light is brought near and resumes when it goes away. It is a rat. It is always a rat. |
+| 4 | A Vault Hound, alone, watching from an aisle and not attacking. If the party has freed one, this one is looking for that one. |
+| 5 | A draft from nowhere, moving the wrong way — out of the deep instead of into it. Follow it and it leads east. |
+| 6 | A ledger left open on a desk in a room the party already searched. |
+| 7 | Two Drill Automatons in formation, drilling. Not patrolling: drilling, in step, at nothing, in an empty hall. They will break off to attack and it is genuinely unsettling first. |
+| 8 | Faint applause, very far off, immediately gone. A party that hears this twice has been handed the twist for free, and that is allowed. |
+
+# Handouts
+
+Three pieces of paper. Copy them out, hand them over, and let the players hold the evidence.
+
+## Handout A — The Warrant of Access (found at U4)
+
+> *BY THE CHANCELLERY OF THE IMPERIAL ACADEMY OF THE LUPINE THRONE, under the Fourth Book, of Seals and Record: WARRANT OF ACCESS to the Deposit of the Eleventh Record, Levels I to III, granted to the bearer for the purpose of inventory, and to no other purpose. Present at challenge. The Deposit is defended. Sealed this day at Aenodira. — E. SORRAL, Chancellor.*
+
+Note for the DM: nothing on this paper says the bearer is a survey team. It says the bearer. The party is the bearer the moment they pick it up, and the Warden will accept it from them, and that is not a loophole — it is the correct answer, and the faculty wrote it that way.
+
+## Handout B — The Hinge-Line Marks (found at U18)
+
+> *//  . / // . . /// .. // / . //// . / .. // ///  — thirty-one such marks in four rows, scratched fine as ice-cracks along the hinge, each row ending in a small closed circle. Not letters. Not numbers in any base a first-year would recognize. Made with something harder than a knife, by somebody who had time, in the cold.*
+
+A rubbing is the obvious move; let a player think of it rather than suggesting it. The marks cannot be read in Sessions Three or Four by any means available, and a DM should be comfortable saying no to every attempt. They are Empress Nyreeza’s personal cipher, they are three years old, and they are read in Session Six.
+
+## Handout C — The Registry Card (found at U16)
+
+> *SEE ALSO*
+
+That is the entire handout. Write those two words on a scrap of paper in a hand nobody at the table uses, hand it over without comment, and say nothing else about it for eight sessions.
 
 # Optional Content (Beyond the Five-Hour Cores)
 
