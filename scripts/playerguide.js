@@ -1,6 +1,7 @@
 const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, LevelFormat } = require('docx');
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
@@ -384,6 +385,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  fs.writeFileSync("/home/claude/QS_Player_Guide.docx", buf);
+  fs.writeFileSync(stagePath("QS_Player_Guide.docx"), buf);
   console.log("Written.");
 });

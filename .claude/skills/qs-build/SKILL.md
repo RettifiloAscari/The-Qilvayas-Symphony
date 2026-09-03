@@ -54,6 +54,11 @@ straight apostrophe **only between two word characters** — `(\w)'(\w)`, narrow
 purpose, because any wider rule matches `require('docx')` and corrupts the generator
 on its first line. It is idempotent; `--check` reports without writing.
 
+The apostrophe rule cannot tell a comment from a string, so it fires on `King's` in a
+`//` line too. That is the right trade — the rule protects prose that reaches the PDF, and
+the cost of keeping it strict is only that comments avoid apostrophes. Rephrase the
+comment rather than loosening the pattern.
+
 ### `node --check` is not sufficient
 
 It validates syntax, not identifiers. A call to a helper the file does not define, or
@@ -170,14 +175,26 @@ breaks, table fits, and page count. `build.sh` refuses to run without all three.
 
 ## Adding a document
 
-1. New generator in `scripts/`, writing to `/home/claude/<Name>.docx`.
+1. New generator in `scripts/`, writing via `stagePath("<Name>.docx")` from
+   `require('./stage')`. Never hardcode a stage directory.
 2. Add its basename to `GENERATORS=(...)` in `tools/build.sh`.
 3. Add a row to the README index and a layout entry in `CLAUDE.md` **and** its mirror
    at `reference/project-instructions.md`, in the same pass.
 4. If it is player-facing, add it to the leak-scan loop in `tools/verify.sh`.
 
-The generators write to a hardcoded `/home/claude`. `build.sh` accommodates that path
-rather than patching it out of nine scripts — a historical quirk, not worth disturbing.
+**Output path.** Never hardcode a stage directory:
+
+```js
+const { stagePath } = require('./stage');
+fs.writeFileSync(stagePath("The_Qilvayas_Symphony_Campaign_Setting.docx"), buf);
+```
+
+`stagePath` resolves `$QS_STAGE` (set by `build.sh`) and falls back to `<repo>/.stage`, so
+a generator runs standalone from any working directory. `.stage/` is gitignored scratch and
+`build.sh` clears it each run. This was a hardcoded `/home/claude` in all nine generators
+until it was ported from the sister repository: a constant repeated in nine files can only
+be changed in nine files at once, and a generator missed in that pass writes somewhere
+nothing reads and drops out of the corpus silently.
 
 ## Reference
 

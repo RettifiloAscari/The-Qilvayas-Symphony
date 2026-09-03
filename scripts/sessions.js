@@ -2,6 +2,7 @@ const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Level
         Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = require('docx');
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 // ---------- helpers ----------
 const P = (text, opts = {}) => new Paragraph({
   spacing: { after: 200 }, ...opts,
@@ -612,7 +613,7 @@ cC.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun(
 
 // ---------- write all three ----------
 Promise.all([
-  Packer.toBuffer(docShell(cA)).then(b => fs.writeFileSync("/home/claude/QS_Session_0_Primer.docx", b)),
-  Packer.toBuffer(docShell(cB)).then(b => fs.writeFileSync("/home/claude/QS_Session_1_The_Silent_Road.docx", b)),
-  Packer.toBuffer(docShell(cC)).then(b => fs.writeFileSync("/home/claude/QS_Session_2_The_Road_Back.docx", b))
+  Packer.toBuffer(docShell(cA)).then(b => fs.writeFileSync(stagePath("QS_Session_0_Primer.docx"), b)),
+  Packer.toBuffer(docShell(cB)).then(b => fs.writeFileSync(stagePath("QS_Session_1_The_Silent_Road.docx"), b)),
+  Packer.toBuffer(docShell(cC)).then(b => fs.writeFileSync(stagePath("QS_Session_2_The_Road_Back.docx"), b))
 ]).then(() => console.log("All three written."));

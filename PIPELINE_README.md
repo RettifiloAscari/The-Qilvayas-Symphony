@@ -20,14 +20,14 @@ These files are the **actual production assets** for The Qilvayas Symphony. The 
 
 ## Setup
 
-Copy these files into the working directory (`/home/claude`). Several prerequisites are absent from a default sandbox and fail in ways that look like content bugs rather than environment problems — check all of them before generating:
+Copy these files into the working directory, keeping `scripts/stage.js` alongside the generators — every one of them requires it. Several prerequisites are absent from a default sandbox and fail in ways that look like content bugs rather than environment problems — check all of them before generating:
 
 ```bash
 npm install docx                              # generator dependency
 apt-get install -y libreoffice-writer         # see note below — core alone is not enough
 apt-get install -y ghostscript                # reproducible PDF rewrite (gs)
 apt-get install -y poppler-utils              # pdftotext, pdffonts, pdftoppm
-mkdir -p /home/claude                         # scripts write here; missing dir = write failure
+# scripts stage their .docx in <repo>/.stage, created automatically by scripts/stage.js
 ```
 
 **LibreOffice Writer specifically.** `libreoffice-core` is often present without `libreoffice-writer`. In that state *no document format loads at all* — every conversion fails with `Error: source file could not be loaded`, including files that are perfectly valid. If conversion fails on a document you know is good, check this first.

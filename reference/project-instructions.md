@@ -215,7 +215,7 @@ Live rather than closed — resolution deliberately handed to play, not pre-deci
 | poppler-utils | `apt-get install poppler-utils` | Supplies `pdftotext`, `pdffonts`, `pdftoppm` for verification |
 | Fonts: **Alegreya SC**, **Alegreya Sans SC**, **Lato** | Google Fonts TTFs into `~/.local/share/fonts`, then `fc-cache -f` | The template requests exactly these three. Missing fonts substitute silently and **change pagination** — verifying layout without them is meaningless |
 
-The generator scripts write output to `/home/claude/`. Create that directory if it does not exist, or the write fails.
+The generator scripts stage their `.docx` through `scripts/stage.js`, which resolves `$QS_STAGE` and otherwise writes to `<repo>/.stage`, creating it as needed. Copy `scripts/stage.js` out alongside the generators; without it every generator fails on its `require`.
 
 **Production practice:**
 - **The generation scripts are the source of truth.** The published PDFs are output. Never hand-edit a published document — edit the script and regenerate. This is what keeps the corpus consistent and lets content splice between documents without transcription drift.

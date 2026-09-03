@@ -9,6 +9,7 @@ const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => 
 
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 160 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 160 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
@@ -462,6 +463,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  fs.writeFileSync("/home/claude/QS_DM_Reference_Guide.docx", buf);
+  fs.writeFileSync(stagePath("QS_DM_Reference_Guide.docx"), buf);
   console.log("Written.");
 });

@@ -55,10 +55,10 @@ gitignored.
 - **Regenerate in the same commit as the script change.** Run `tools/build.sh` and commit
   `scripts/`, `corpus/`, and `documents/` together. A corpus that disagrees with its
   generator is worse than no corpus.
-- **The generators write to a hardcoded `/home/claude`.** `build.sh` accommodates that
-  path rather than patching it out of seven scripts — a historical quirk from when the
-  scripts round-tripped to a second surface, now simply not worth disturbing. Avoid
-  gratuitous reformatting of `scripts/` regardless: clean diffs keep canon changes reviewable.
+- **The generators stage their build intermediate through `scripts/stage.js`**, never a
+  hardcoded path. It resolves `$QS_STAGE` (set by `build.sh`) and falls back to
+  `<repo>/.stage`, so a generator also runs standalone. Avoid gratuitous reformatting of
+  `scripts/` regardless: clean diffs keep canon changes reviewable.
 - **Canon changes propagate in one pass.** A change to the sourcebook that affects the
   DM Reference Guide, the Player Guide, or any session module updates all of them in
   the same commit. A stale reference guide is worse than none.

@@ -1,6 +1,7 @@
 const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, LevelFormat } = require('docx');
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 // ---------- helpers ----------
 const P = (text, opts = {}) => new Paragraph({
   spacing: { after: 200 },
@@ -907,6 +908,6 @@ const doc = new Document({
 });
 
 Packer.toBuffer(doc).then(buf => {
-  fs.writeFileSync("/home/claude/Gazetteer_of_the_Fractured_Empire.docx", buf);
+  fs.writeFileSync(stagePath("Gazetteer_of_the_Fractured_Empire.docx"), buf);
   console.log("Written.");
 });

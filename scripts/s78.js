@@ -9,6 +9,7 @@ const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => 
 
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
@@ -361,6 +362,6 @@ c8.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 400,
 c8.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "\u201CThere is no monster to kill at the bottom of this hole. There is a civilization to fix.\u201D", italics: true })] }));
 
 Promise.all([
-  Packer.toBuffer(docShell(c7)).then(b => fs.writeFileSync("/home/claude/QS_Session_7_The_Turning_Away.docx", b)),
-  Packer.toBuffer(docShell(c8)).then(b => fs.writeFileSync("/home/claude/QS_Session_8_The_Unkept_Vigil.docx", b))
+  Packer.toBuffer(docShell(c7)).then(b => fs.writeFileSync(stagePath("QS_Session_7_The_Turning_Away.docx"), b)),
+  Packer.toBuffer(docShell(c8)).then(b => fs.writeFileSync(stagePath("QS_Session_8_The_Unkept_Vigil.docx"), b))
 ]).then(() => console.log("Both written."));

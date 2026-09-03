@@ -27,10 +27,11 @@ NORMALIZE="$ROOT/tools/normalize_pdf.py"
 VERIFY=1
 [[ "${1:-}" == "--no-verify" ]] && VERIFY=0
 
-# The generator scripts write to a hardcoded /home/claude. They are kept
-# byte-identical to the copies in the Claude Chat project so files round-trip
-# between the two surfaces without edits, so the path is accommodated, not patched.
-STAGE=/home/claude
+# Where the generators stage their .docx build intermediate. They read this from
+# $QS_STAGE via scripts/stage.js and fall back to <repo>/.stage when run standalone,
+# so the path is a parameter rather than a constant repeated in nine files.
+STAGE="${QS_STAGE:-$ROOT/.stage}"
+export QS_STAGE="$STAGE"
 mkdir -p "$STAGE" "$DOCS" "$CORPUS"
 
 GENERATORS=(campaign gazetteer companion sessions session34 s56 s78 refguide playerguide)

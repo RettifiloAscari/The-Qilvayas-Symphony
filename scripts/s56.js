@@ -2,6 +2,7 @@ const { Document, Packer, Paragraph, TextRun, HeadingLevel, AlignmentType, Level
         Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = require('docx');
 const fs = require('fs');
 
+const { stagePath } = require('./stage');
 const P = (text, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: [new TextRun({ text, ...(opts.run || {}) })] });
 const PS = (segs, opts = {}) => new Paragraph({ spacing: { after: 200 }, ...opts, children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c })) });
 const DM = (t) => ({ t, b: true, c: "5B1F1F" });   // DM-only marker: bold book-red
@@ -417,6 +418,6 @@ c6.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun(
 
 // ---------- write both ----------
 Promise.all([
-  Packer.toBuffer(docShell(c5)).then(b => fs.writeFileSync("/home/claude/QS_Session_5_Dead_Letters.docx", b)),
-  Packer.toBuffer(docShell(c6)).then(b => fs.writeFileSync("/home/claude/QS_Session_6_The_Second_Seal.docx", b))
+  Packer.toBuffer(docShell(c5)).then(b => fs.writeFileSync(stagePath("QS_Session_5_Dead_Letters.docx"), b)),
+  Packer.toBuffer(docShell(c6)).then(b => fs.writeFileSync(stagePath("QS_Session_6_The_Second_Seal.docx"), b))
 ]).then(() => console.log("Both written."));
