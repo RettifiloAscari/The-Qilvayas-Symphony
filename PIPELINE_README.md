@@ -101,6 +101,22 @@ The escape check catches the most common failure mode: double-escaped unicode (`
 
 The `pdffonts` check catches the quieter one described under **Fonts** above — the render succeeds, looks plausible, and is laid out in the wrong typeface at the wrong measure.
 
+## Bullets: the `ListParagraph` style, and indents sized to the measure
+
+docx-js stamps `<w:pStyle w:val="ListParagraph"/>` on every numbered paragraph, and the visual template defines no such style. LibreOffice answers the dangling reference by dropping the numbering with it: no glyph, no hanging indent, the bullet rendering as an ordinary body paragraph. Every bullet in every document did this until `transplant.py` grew `ensure_list_style()`, which injects the style so the numbering survives the transplant.
+
+This one is invisible from the corpus. The Markdown shim reads the numbering property off the paragraph object and emits `- ` regardless of how the PDF renders, so the Markdown said "bullet" and the page said "paragraph" and nothing compared the two. Verify on the page — the glyph count must equal the corpus count:
+
+```bash
+for f in documents/*.pdf; do b=$(basename "$f" .pdf)
+  printf '%-52s md:%3s pdf:%3s\n' "$b" \
+    "$(grep -c '^- ' corpus/$b.md)" "$(pdftotext "$f" - | grep -o '•' | wc -l)"; done
+```
+
+The indent itself is sized to the body type, not copied from the library default. docx-js ships `left: 720, hanging: 360` — half an inch, drawn for a 6.5in sheet, and 15% of this book's measured 4840-twip column. The rule is that the glyph sits at the text margin and the text about one em in, so `left` and `hanging` are equal and near 1.3em: **280** for the eight two-column generators (11pt body) and **260** for `refguide.js` (10pt body). They differ because the type differs, not because the measure does — a wide measure changes the cost of a wrong indent, not the right value.
+
+More generally, this was the third full-page default found sitting in a narrow column, after table `columnWidths` and table cell padding. When a two-column page reads loose or cramped, price the inherited numbers against the 3.36in measure before rewriting the prose.
+
 ## Known layout limitation
 
 Wide tables with prose-bearing columns crowd badly in the two-column body. The commerce and price tables are worst affected — the Notes column wraps to one or two words per line, and long tables split awkwardly across column breaks. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak. Treat it as a queued fix rather than patching individual tables.

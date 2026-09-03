@@ -878,7 +878,7 @@ const doc = new Document({
         format: LevelFormat.BULLET,
         text: "\u2022",
         alignment: AlignmentType.LEFT,
-        style: { paragraph: { indent: { left: 720, hanging: 360 } } }
+        style: { paragraph: { indent: { left: 280, hanging: 280 } } }
       }]
     }]
   },

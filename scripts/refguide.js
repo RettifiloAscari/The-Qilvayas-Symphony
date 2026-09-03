@@ -451,7 +451,7 @@ c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 300, 
 c.push(PS([{ t: "Update this guide whenever the sourcebook, session modules, or canon rulings change.", i: true }], { alignment: AlignmentType.CENTER }));
 
 const doc = new Document({
-  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 260, hanging: 260 } } } }] }] },
   styles: {
     default: { document: { run: { font: "Georgia", size: 20 } } },
     paragraphStyles: [

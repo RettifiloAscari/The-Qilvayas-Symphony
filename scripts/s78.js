@@ -49,7 +49,7 @@ const SB = (d) => {
   return out;
 };
 const docShell = (children) => new Document({
-  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 280, hanging: 280 } } } }] }] },
   styles: { default: { document: { run: { font: "Georgia", size: 22 } } },
     paragraphStyles: [
       { id: "Heading1", name: "Heading 1", basedOn: "Normal", next: "Normal", quickFormat: true, run: { size: 32, bold: true, font: "Georgia", color: "3B2F2F" }, paragraph: { spacing: { before: 320, after: 160 }, outlineLevel: 0 } },

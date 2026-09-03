@@ -122,6 +122,71 @@ text content, not on the presence of a `<w:t>` tag: docx-js emits an empty run a
 `table()` is deliberate — the helper returns a single Table, so a per-call fix would mean
 touching every call site in every generator and remembering it forever after.
 
+### Bullets need the `ListParagraph` style, and an indent sized to the column
+
+Two defects, found together, and the first hid the second for the life of the corpus.
+
+docx-js stamps `<w:pStyle w:val="ListParagraph"/>` on every numbered paragraph. The visual
+template defines no such style, and LibreOffice answers the dangling reference by dropping
+the numbering with it — no glyph, no hanging indent, the bullet rendering as an ordinary
+body paragraph carrying the first-line indent `docDefaults` gives everything. All 352
+bullets in all thirteen documents were doing this. `transplant.py`'s `ensure_list_style()`
+injects the style so the numbering survives; it sets no left or hanging of its own, so the
+measure stays where each generator declares it, and zeroes the inherited first-line indent,
+which would otherwise push the glyph's own line out of the hang.
+
+This is the failure mode the corpus cannot show you. The Markdown shim reads the numbering
+property off the paragraph object and emits `- ` whichever way the PDF renders, so
+`corpus/` said "bullet" and the page said "paragraph" for as long as both existed.
+**A count of `^- ` in the corpus is not evidence that a bullet rendered.** Count the glyph
+on the page instead — `pdftotext doc.pdf - | grep -c '•'` should equal the corpus count:
+
+```bash
+for f in documents/*.pdf; do b=$(basename "$f" .pdf)
+  printf '%-52s md:%3s pdf:%3s\n' "$b" \
+    "$(grep -c '^- ' corpus/$b.md)" "$(pdftotext "$f" - | grep -o '•' | wc -l)"; done
+```
+
+The indent is the second defect, and restoring the numbering is what would have exposed it.
+Every generator carried docx-js's default `indent: { left: 720, hanging: 360 }` — half an
+inch, sized for a 6.5in single-column sheet. Against the measured two-column column of
+4840 twips that is **15% of the line**, on every line of every bullet. Derive it from the
+body type instead: the glyph sits at the text margin and the text about one em in, so
+`left` and `hanging` are equal and near 1.3em of the body size.
+
+| Generators | Body | Em | Value | Share of measure |
+|---|---|---|---|---|
+| the eight two-column documents | `size: 22` = 11pt | 220tw | `left: 280, hanging: 280` | 5.8% of 4840tw |
+| `refguide.js`, single-column | `size: 20` = 10pt | 200tw | `left: 260, hanging: 260` | 2.6% of 10040tw |
+
+The two differ **because their body type differs**, not because their measure does. The
+hang's job is to relate a glyph to its own text, which is a function of type size; what the
+column width changes is the *cost* of getting it wrong, not the right answer. Rendered at
+360 on the wide single-column measure the gap reads as a well with nothing in it, and 260
+does not read as mean — so a wide measure is not a reason to indent further.
+
+### Suspect the inherited measurement before the writing
+
+The bullet indent is the third full-page default caught sitting in a 3.36in column, after
+table `columnWidths` and table cell padding. The pattern is worth naming, because all three
+looked like prose problems and none of them was: **a library's default is sized for a 6.5in
+single-column sheet, and this book sets a 3.36in measure, so every inherited number is
+roughly twice the fraction of the line it was designed to be.** When a two-column page
+reads loose, cramped, or held at arm's length, price the defaults against the measure
+before touching a sentence.
+
+Where the other two stand here:
+
+- **`columnWidths`** — already fixed; every generator passes `CW(widths)` with
+  `TableLayoutType.FIXED`, documented above.
+- **Cell padding** — fixed, but not uniformly, and worth a deliberate pass rather than a
+  silent one. The sourcebook family (`campaign`, `companion`, `gazetteer`, `playerguide`)
+  uses `left: 45, right: 45`; the four session generators use `90`; `refguide` uses `100`.
+  None is Word's raw 108 default, so none is untouched — but two two-column documents
+  disagreeing by 2× is not a decision anyone made, and `pipeline.conf`'s `COLUMN_WIDTH_IN`
+  subtracts 0.06in for cell margins, which assumes the 45. `check_columns.py` therefore
+  reads the session tables as very slightly wider than they are. Left as a finding.
+
 ### DM markers are bold book-red, never italic
 
 `const DM = (t) => ({ t, b: true, c: "5B1F1F" })`, used inside `PS([...])`:

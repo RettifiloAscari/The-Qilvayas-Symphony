@@ -372,7 +372,7 @@ children.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before
 children.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "\u201CWe are the Kin of Great Timberwolf\u201D", italics: true })] }));
 
 const doc = new Document({
-  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 280, hanging: 280 } } } }] }] },
   styles: {
     default: { document: { run: { font: "Georgia", size: 22 } } },
     paragraphStyles: [

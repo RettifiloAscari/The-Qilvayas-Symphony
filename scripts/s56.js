@@ -51,7 +51,7 @@ const SB = (d) => {
   return out;
 };
 const docShell = (children) => new Document({
-  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 280, hanging: 280 } } } }] }] },
   styles: {
     default: { document: { run: { font: "Georgia", size: 22 } } },
     paragraphStyles: [

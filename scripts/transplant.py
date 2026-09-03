@@ -96,6 +96,34 @@ _IS_HEADING = re.compile(r'w:pStyle w:val="(Heading\d|Title|Subtitle)"')
 _SPACING = re.compile(r'<w:spacing\b([^/>]*)/>')
 _TEXT = re.compile(r'<w:t[^>]*>([^<]*)</w:t>')
 
+# docx-js stamps every numbered paragraph with <w:pStyle w:val="ListParagraph"/>, and the
+# visual template defines no such style. LibreOffice answers the dangling reference by
+# dropping the numbering along with it: no glyph, no hanging indent, and the bullet renders
+# as an ordinary body paragraph carrying the first-line indent docDefaults gives everything.
+# Every bullet in the corpus was doing this, in all thirteen documents, invisibly -- the
+# Markdown half of the build reads the numbering property directly and emits "- " either
+# way, so corpus and PDF disagreed and only the PDF was wrong.
+#
+# The style therefore has to exist for the numbering to survive the transplant. It sets no
+# left or hanging of its own, so the measure stays where each generator declares it, and it
+# zeroes the inherited first-line indent, which would otherwise push the glyph's own line
+# out of the hang it is supposed to sit in.
+LIST_STYLE = (
+    '<w:style w:type="paragraph" w:styleId="ListParagraph">'
+    '<w:name w:val="List Paragraph"/><w:basedOn w:val="Normal"/><w:qFormat/>'
+    '<w:pPr><w:ind w:firstLine="0"/><w:contextualSpacing/></w:pPr>'
+    '</w:style>'
+)
+
+def ensure_list_style(work):
+    """Give the template the ListParagraph style docx-js's bullets refer to."""
+    path = os.path.join(work, "word", "styles.xml")
+    s = open(path, encoding="utf-8").read()
+    if 'w:styleId="ListParagraph"' in s:
+        return
+    open(path, "w", encoding="utf-8").write(
+        s.replace("</w:styles>", LIST_STYLE + "</w:styles>", 1))
+
 def gap_after_tables(doc):
     """Give the first paragraph after each table a space-before."""
     def fix(m):
@@ -137,6 +165,7 @@ def convert(src, dst, two_col=True):
         z.extractall(srcdir)
     doc = open(f"{srcdir}/word/document.xml", encoding="utf-8").read()
     shutil.copy(f"{srcdir}/word/numbering.xml", f"{work}/word/numbering.xml")
+    ensure_list_style(work)
 
     # --- section surgery on our document.xml ---
     # replace final sectPr with template-derived one (continuous so body starts on the title page)

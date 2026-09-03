@@ -335,7 +335,7 @@ c.push(new Paragraph({ alignment: AlignmentType.CENTER, spacing: { before: 400, 
 c.push(new Paragraph({ alignment: AlignmentType.CENTER, children: [new TextRun({ text: "\u201CSo the school sent you down after all. And you paid attention to what was cold. Good. Now sit, children, and tell me about the door \u2014 and I will tell you why the Empress\u2019s hand shakes in that cipher.\u201D", italics: true })] }));
 
 const doc = new Document({
-  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 720, hanging: 360 } } } }] }] },
+  numbering: { config: [{ reference: "bullets", levels: [{ level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 280, hanging: 280 } } } }] }] },
   styles: {
     default: { document: { run: { font: "Georgia", size: 22 } } },
     paragraphStyles: [
