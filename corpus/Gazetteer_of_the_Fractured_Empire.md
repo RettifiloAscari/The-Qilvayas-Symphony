@@ -260,6 +260,8 @@ Big-sky plains breaking into wooded hills eastward, watch-forts on the heights s
 | 11 | A funeral party on the road with a body and no lamp, having run out of oil. They will pay anything. It is nearly dark. |
 | 12 | Two men fighting on the road over a boundary, with a third holding the horses and no intention of stopping it. |
 
+*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
+
 # The Suthmark
 
 Golden grain to the horizon, vineyard terraces, chalk downs, and eastward the grey hollows of the Greywell hills where the light arrives late and leaves early. The empire’s breadbasket, genuinely loyal, and devout in the older and plainer way — harvest processions, field-shrines, saints' days kept by the planting calendar rather than the Sanctum’s.
@@ -619,6 +621,8 @@ What the capital has not understood is that Orlath is no longer a schism. It is 
 | 11 | Two Ardvenner scribes traveling to Orlath on Karvel’s business, cheerful, indiscreet, and carrying a sealed case. |
 | 12 | The Reconciliation Shrine at dusk, empty, and the extraordinary quality of the silence in it. |
 
+*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
+
 # Kingdom of Ardven
 
 Fjords and pine-clad steeps, longhouse towns turning to slate-roofed monastery burghs as Karvel’s new order spreads. The north mid-transformation: timber to stone, saga to script, and a king who plants schools the way other kings plant fortresses.
@@ -807,6 +811,8 @@ Rain-lashed headlands, drained polder-fields behind the Duke’s dikes, slate to
 | 10 | A Brekeland refugee family who have crossed into Normere and are being processed, kindly, thoroughly, and permanently. |
 | 11 | The Weld’s boundary at dusk: fenced fields, maintained road, and no lamp anywhere in twelve miles. |
 | 12 | Revenants† at the Weld’s edge, walking the old district line, who will not pursue past it and who are looking for somebody specific. |
+
+*† Monster Manual, outside the SRD — look the stat block up rather than pulling it from the open data, or substitute freely.*
 
 # A Bestiary of the Fractured Empire
 

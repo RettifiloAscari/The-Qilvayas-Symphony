@@ -170,10 +170,20 @@ const LOC = (d) => {
   return out;
 };
 
-const ENC = (region, rows) => [
-  PS([{ t: "Encounters \u2014 " + region + " (d12)", b: true }], { spacing: { before: 160, after: 100 } }),
-  table(["d12", "What Happens"], [11, 89], rows)
-];
+const ENC = (region, rows) => {
+  const out = [
+    PS([{ t: "Encounters \u2014 " + region + " (d12)", b: true }], { spacing: { before: 160, after: 100 } }),
+    table(["d12", "What Happens"], [11, 89], rows)
+  ];
+  // A dagger marks a Monster Manual creature outside the SRD. Repeat the key under any
+  // table that actually uses one: the legend at the front of the book is eight to eleven
+  // pages away by the time a DM has flipped to the Normere table, and a bare symbol with
+  // no key on the page reads as a corruption rather than a note.
+  if (rows.some((r) => r.some((cellText) => cellText.indexOf("\u2020") >= 0))) {
+    out.push(PS([{ t: "\u2020 Monster Manual, outside the SRD \u2014 look the stat block up rather than pulling it from the open data, or substitute freely.", i: true }], { spacing: { after: 200 } }));
+  }
+  return out;
+};
 
 // ============ THE CROWNLANDS ============
 children.push(H1("The Crownlands"));
