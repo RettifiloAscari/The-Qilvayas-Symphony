@@ -14,7 +14,7 @@ things in. `CLAUDE.md` holds the canon rules; this holds the mechanics.
 Nine generators in `scripts/` are the source of truth. `tools/build.sh` runs each one
 twice — once through `tools/docx-md-shim/` to emit Markdown into `corpus/`, once
 through real docx-js to emit `.docx`, which then goes through `transplant.py` (the
-visual template), LibreOffice (PDF), Ghostscript, and `normalize_pdf.py` (byte
+visual template), LibreOffice (PDF), and `normalize_pdf.py` (byte
 reproducibility). The `.docx` is an intermediate and is gitignored. Nothing in
 `corpus/` or `documents/` is ever hand-edited; the next build silently discards it.
 
@@ -37,7 +37,6 @@ carries the long form.
 | Node + `docx` | `npm install docx` | The generators |
 | Python 3 | stdlib only | `transplant.py`, `normalize_pdf.py` |
 | LibreOffice **Writer** | `apt-get install libreoffice-writer` | `libreoffice-core` alone loads *nothing* and every document fails with "source file could not be loaded" — a content-shaped error with an environment cause. Containers ship with core only. |
-| Ghostscript | `apt-get install ghostscript` | Reproducible PDF |
 | poppler-utils | `apt-get install poppler-utils` | `pdftotext`, `pdffonts`, `pdftoppm` |
 | Alegreya SC, Alegreya Sans SC, Lato | TTFs into `~/.local/share/fonts`, then `fc-cache -f` | Missing fonts **substitute silently and change pagination**, so layout verified without them is meaningless. `fonts.google.com/download` is blocked here — pull the static TTFs from `raw.githubusercontent.com/google/fonts/main/ofl/{alegreyasc,alegreyasanssc,lato}/`. |
 
@@ -242,7 +241,7 @@ newline lands inside a JS string literal and breaks the file.
 
 `tools/verify.sh` runs: every generator, the three escape greps, `check_columns.py`,
 the build, a drift check, and the player-facing leak scan. `--full` adds three builds
-and a byte comparison — the Ghostscript trailer failure mode is intermittent, which
+and a byte comparison — PDF reproducibility has had intermittent failure modes, which
 is why three rather than two.
 
 Then **render and look**. Layout and some content bugs are invisible in source and

@@ -1507,7 +1507,7 @@ Custom NPC blocks keyed to class archetypes, validated against the DMG Monster S
 
 **Armor Class:** 16 (breastplate, sea-worn)
 
-**Hit Points:** 105 (17d8 + 34)
+**Hit Points:** 110 (17d8 + 34)
 
 **Speed:** 30 ft.
 

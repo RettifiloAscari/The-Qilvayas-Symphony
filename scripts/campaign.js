@@ -263,7 +263,7 @@ children.push(H2("The Seven Recognized Aspects"));
 children.push(P("Seven Aspects hold formal recognition from the Matriarchate. The correspondence to a cleric\u2019s domain is exact and unremarkable to anyone in the world; the table below is for the table, not for the fiction."));
 children.push(table(
   ["Aspect", "Domain", "Who Serves It, and How She Is Shown"],
-  [28, 20, 52],
+  [28, 23, 49],
   [
     ["The Watch at the Threshold", "Life", "Vigil-keepers, hospitallers, almonry clergy, midwives \u2014 the commonest calling in the empire by a wide margin. Shown as a wolf lying across a doorway, a lamp behind it."],
     ["The Long Hunt", "War", "Legion chaplains, the Church militant, Censor-Captains, anyone whose duty is endurance rather than fury. Shown as a wolf at a steady trot, never at a sprint."],
@@ -597,7 +597,7 @@ children.push(P("The empire has never kept a single order of precedence, and the
 
 children.push(H2("The Throne and the Court"));
 children.push(P("Precedence at court is by access. This is the first thing a provincial learns in Aenodira and the last thing he believes: rank on paper decides where a man stands at a rite, but who reaches the Emperor decides everything else \u2014 and the man who decides who reaches the Emperor commands no soldiers, holds no land, and is one of the most powerful people in the empire."));
-children.push(table(["Style", "Office", "Held by"], [22, 44, 34], [
+children.push(table(["Style", "Office", "Held by"], [26, 40, 34], [
   ["Emperor / Empress", "The Lupine Throne", "Qilvayas; Nyreeza, missing three years"],
   ["Lord Chamberlain", "Keeper of access to the Emperor\u2019s person", "Vareth Kessin"],
   ["Archjurist", "Head of the Law Commission drafting the Zhuvedian Laws", "Senna Vhal"],
@@ -923,7 +923,7 @@ children.push(H1("The Imperial Calendar"));
 children.push(P("Twelve months, opening at the year\u2019s turn in deep winter with the Matron\u2019s own liturgical season, running the plain agricultural cycle everyone actually lives by, and closing with her second high month before the year turns again."));
 children.push(table(
   ["Month", "Season", "Character"],
-  [21, 22, 57],
+  [24, 22, 54],
   [
     ["Wolfmoon", "Deep winter (year begins)", "The Matron\u2019s high liturgical month; the year turns in her keeping, not the sun\u2019s."],
     ["Thawtide", "Late winter", "Roads reopen; the Ostmark\u2019s watch-forts change garrison."],
@@ -1082,7 +1082,7 @@ SB({ name: "Ban Dregan Morn, Lord of the Fence", meta: "Medium humanoid (human, 
   ] }).forEach(x => children.push(x));
 
 SB({ name: "Sea-King Aldrec the Landless", meta: "Medium humanoid (human, Skell), chaotic neutral \u2014 Fighter (raider-king, dying)",
-  ac: "16 (breastplate, sea-worn)", hp: "105 (17d8 + 34)", speed: "30 ft.",
+  ac: "16 (breastplate, sea-worn)", hp: "110 (17d8 + 34)", speed: "30 ft.",
   str: 18, dex: 14, con: 14, int: 14, wis: 13, cha: 17,
   saves: "Str +7, Con +5", skills: "Athletics +7, History +5, Intimidation +6, Persuasion +6",
   senses: "passive Perception 11", langs: "Common (courtly, better than most courtiers\u2019), Skell", cr: "7 (2,900 XP)",

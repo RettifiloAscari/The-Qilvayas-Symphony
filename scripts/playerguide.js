@@ -85,7 +85,7 @@ children.push(P("The Matron is one, and she has offices. The Aspects are the dif
 children.push(P("A cleric\u2019s calling takes the shape of one of them. Sanction is issued against an Aspect, and the pewter warrant-medal is stamped on the reverse with its mark."));
 children.push(table(
   ["Aspect", "Domain", "Who Serves It"],
-  [26, 18, 56],
+  [26, 21, 53],
   [
     ["The Watch at the Threshold", "Life", "Vigil-keepers, hospitallers, almoners, midwives. The commonest calling in the empire by a wide margin."],
     ["The Long Hunt", "War", "Legion chaplains and the Church militant. Endurance rather than fury: the Matron does not sprint, she arrives."],
@@ -335,7 +335,7 @@ children.push(H1("The Imperial Calendar"));
 children.push(P("Twelve months, beginning at Wolfmoon in deep winter \u2014 the Matron\u2019s own month \u2014 and running the ordinary agricultural year most people actually live by."));
 children.push(table(
   ["Month", "Season", "Known For"],
-  [21, 24, 55],
+  [24, 24, 52],
   [
     ["Wolfmoon", "Deep winter (year begins)", "The Matron\u2019s high month; the year turns in her keeping."],
     ["Thawtide", "Late winter", "Roads reopen for the year."],

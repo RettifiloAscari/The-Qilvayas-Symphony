@@ -25,7 +25,6 @@ Copy these files into the working directory, keeping `scripts/stage.js` alongsid
 ```bash
 npm install docx                              # generator dependency
 apt-get install -y libreoffice-writer         # see note below — core alone is not enough
-apt-get install -y ghostscript                # reproducible PDF rewrite (gs)
 apt-get install -y poppler-utils              # pdftotext, pdffonts, pdftoppm
 # scripts stage their .docx in <repo>/.stage, created automatically by scripts/stage.js
 ```
@@ -65,22 +64,34 @@ reproducible:
 node campaign.js                                            # writes a plain .docx
 python3 transplant.py <in>.docx <styled>.docx               # applies the template
 soffice --headless --convert-to pdf --outdir . <styled>.docx
-gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true \
-   -dSubsetFonts=true -dNOPAUSE -dBATCH -dQUIET -o final.pdf <styled>.pdf
 python3 normalize_pdf.py final.pdf                          # strips per-run randomness
 ```
 
-The `.docx` is discarded once the PDF exists. The `gs` pass re-embeds the fonts and
-collapses LibreOffice's nondeterministic font subsetting into a stable form;
-`normalize_pdf.py` then zeroes the timestamps, IDs, checksum, and subset tags so the same
-content always yields the same bytes.
+The `.docx` is discarded once the PDF exists. `normalize_pdf.py` zeroes the timestamps,
+IDs, checksum, and subset tags so the same content always yields the same bytes.
+
+**There is deliberately no Ghostscript pass.** One used to sit between LibreOffice and
+`normalize_pdf.py`, to collapse LibreOffice's nondeterministic font subsetting. It was
+removed because `pdfwrite` rebuilds every embedded font and loses the `ToUnicode` entries
+for the ligature glyphs as it goes. The page still *looked* correct — the defect was
+entirely in the text layer underneath, which read `OfÏce` for Office and `getÝng` for
+getting, 328 corrupted words across the thirteen documents. Searching a published PDF for
+"Office of Omens" returned nothing, and copy-paste carried the corruption with it.
+Neither `-dSubsetFonts=false` nor `-dPreserveToUnicode=true` avoids it in gs 10.02.
+
+Dropping the pass costs nothing that was actually being bought: `normalize_pdf.py` already
+canonicalises the subset tags that were the real source of run-to-run churn, three builds
+are byte-identical without gs, and LibreOffice's own export embeds and subsets every font
+(`pdffonts` shows `emb yes / sub yes` on all five faces). The PDFs are about half again
+larger without gs's recompression — roughly 1.8 MB to 2.7 MB across the corpus. Correct,
+searchable text is worth the megabyte.
 
 **The DM Reference Guide is the one exception** — it stays single-column, because its value is wide scannable tables:
 
 ```bash
 node refguide.js
 python3 transplant.py QS_DM_Reference_Guide.docx out_RG.docx --single
-# ...then the same soffice / gs / normalize_pdf.py steps
+# ...then the same soffice / normalize_pdf.py steps
 ```
 
 Everything else uses the default: full-width masthead, then continuous two-column body.

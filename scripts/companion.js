@@ -187,7 +187,7 @@ children.push(P("Ten naming cultures, all of them visible in the corpus already.
 children.push(H2("Given Names"));
 children.push(table(
   ["Culture", "Some Names"],
-  [21, 79],
+  [24, 76],
   [
     ["Crownlander", "Cassivar, Emeth, Vareth, Ossian, Ilsevet, Senna, Corvin, Dathenor, Liria, Merrit, Doria, Havel, Tobas, Anselm, Perisse, Yenna, Elleth, Marek, Coren"],
     ["Ostfolk", "Petra, Varkos, Gavric, Aurel, Wenna, Hobb, Alder, Bram, Kessin, Odric, Dren, Sarra, Malich, Bertic, Orell"],
@@ -205,7 +205,7 @@ children.push(table(
 children.push(H2("How Family Names Work"));
 children.push(table(
   ["Culture", "The Convention", "Example"],
-  [21, 53, 26],
+  [24, 50, 26],
   [
     ["Crownlander", "A house name, used from birth, and the older it is the less anyone explains it.", "Ilsevet Corvane"],
     ["Ostfolk", "A house name, or the village, or the legion your family served \u2014 often all three in a formal setting.", "Petra Malich of the Third"],
@@ -226,7 +226,7 @@ children.push(B("The Matron is one.", "She is a great wolf, she is the empire\u2
 children.push(B("She has offices, not parts.", "The Aspects are the different things she does. Saying the Matron in her Hunt is correct. Saying the Matron of the Hunt, as though there were another Matron somewhere doing something else, is a heresy with a name, and the name is Division, and a village priest will correct you gently and a Sanctum examiner will write it down."));
 children.push(table(
   ["Aspect", "For a Cleric", "Who Serves It"],
-  [24, 18, 58],
+  [24, 21, 55],
   [
     ["The Watch at the Threshold", "Life", "Vigil-keepers, hospitallers, almoners, midwives. The most ordinary calling in the empire."],
     ["The Long Hunt", "War", "Legion chaplains and the Church militant. Endurance rather than fury; the Matron does not sprint, she arrives."],
@@ -267,7 +267,7 @@ children.push(H1("Downtime"));
 children.push(P("Time between adventures is measured in weeks, and this empire gives a character plenty to do with them. Each activity below states its cost per week, what it takes, and what you get. Your DM decides how much downtime you have; these are the things worth spending it on here."));
 children.push(table(
   ["Activity", "Cost / Week", "What Happens"],
-  [22, 18, 60],
+  [25, 18, 57],
   [
     ["Keep a Vigil", "Free (you are fed)", "Sit the night watch at a local Hall. At the end of a week you have the trust of that parish, one genuinely useful piece of local information, and a standing welcome. Vigil-keepers talk to each other across the whole empire."],
     ["Sit an Examination", "5 gp in fees", "Present yourself for a certification \u2014 Charter, Sanction, physician\u2019s ticket under Book Three, a guild\u2019s letter. DC 15 check with the relevant skill, one attempt per week, and the paperwork takes a further week after you pass."],

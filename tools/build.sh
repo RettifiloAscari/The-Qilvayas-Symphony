@@ -4,12 +4,12 @@
 #
 #   corpus/      markdown  — the scripts run through tools/docx-md-shim
 #   documents/   PDF       — docx-js -> template (transplant.py) -> LibreOffice
-#                            -> Ghostscript -> tools/normalize_pdf.py
+#                            -> tools/normalize_pdf.py
 #
 # The .docx is a build intermediate, never committed. PDF is the deliverable:
-# it embeds its fonts, so it reads identically on any device, and the gs +
-# normalize passes make it byte-reproducible, so an unchanged document produces
-# an unchanged file and the git history stays clean.
+# it embeds its fonts, so it reads identically on any device, and the normalize
+# pass makes it byte-reproducible, so an unchanged document produces an unchanged
+# file and the git history stays clean.
 #
 # Both outputs come from the same untouched scripts, so they cannot drift apart.
 # Nothing in corpus/ or documents/ is ever edited by hand: edit scripts/ instead.
@@ -38,8 +38,16 @@ GENERATORS=(campaign gazetteer companion sessions session34 s56 s78 refguide pla
 # Only the DM Reference Guide stays single-column; its value is wide tables.
 SINGLE_COL_MATCH="QS_DM_Reference_Guide"
 
-GS_ARGS=(-sDEVICE=pdfwrite -dCompatibilityLevel=1.6 -dEmbedAllFonts=true
-         -dSubsetFonts=true -dNOPAUSE -dBATCH -dQUIET)
+# There is deliberately no Ghostscript pass. It used to sit between LibreOffice and
+# normalize_pdf.py to collapse LibreOffice's nondeterministic font subsetting, but
+# pdfwrite rebuilds every embedded font and loses the ToUnicode entries for the
+# ligature glyphs while doing it: the page still LOOKED right, and the text layer
+# underneath read "OfÏce" for Office and "getÝng" for getting -- 328 corrupted words
+# across the thirteen documents, so searching a published PDF for "Office of Omens"
+# found nothing. normalize_pdf.py already canonicalises the subset tags that were the
+# real source of run-to-run churn, and three builds are byte-identical without gs, so
+# the pass bought nothing that survived it. The PDFs are about half again larger
+# without gs's recompression; correct, searchable text is worth the megabyte.
 
 banner() { # $1 = source script basename
   printf '%s\n' '<!-- GENERATED FILE - DO NOT EDIT.'
@@ -54,7 +62,6 @@ command -v node >/dev/null    || { echo "FATAL: node not found"; exit 1; }
 command -v python3 >/dev/null || { echo "FATAL: python3 not found"; exit 1; }
 node -e "require('docx')" 2>/dev/null || { echo "FATAL: 'docx' not installed - run: npm install docx"; exit 1; }
 command -v soffice >/dev/null || { echo "FATAL: soffice not found - apt-get install libreoffice-writer"; exit 1; }
-command -v gs >/dev/null      || { echo "FATAL: gs not found - apt-get install ghostscript"; exit 1; }
 if [[ $VERIFY -eq 1 ]]; then
   command -v pdftotext >/dev/null || { echo "FATAL: pdftotext not found - apt-get install poppler-utils"; exit 1; }
   for f in "Alegreya SC" "Alegreya Sans SC" "Lato"; do
@@ -94,10 +101,13 @@ for f in "$STAGE"/*.docx; do
   args=()
   [[ "$base" == *"$SINGLE_COL_MATCH"* ]] && args+=(--single)
   ( cd "$SCRIPTS" && python3 transplant.py "$f" "$WORK/$base.docx" "${args[@]}" >/dev/null )
-  # styled docx -> PDF (LibreOffice) -> reproducible PDF (gs + normalize)
+  # styled docx -> PDF (LibreOffice) -> reproducible PDF (normalize)
   soffice --headless -env:UserInstallation="file://$WORK/lo" \
           --convert-to pdf --outdir "$WORK" "$WORK/$base.docx" >/dev/null 2>&1 || true
-  gs "${GS_ARGS[@]}" -o "$DOCS/$base.pdf" "$WORK/$base.pdf" >/dev/null 2>&1
+  # soffice swallows its own failures above, so say so here rather than letting the
+  # next step fail on a file that was never written.
+  [[ -s "$WORK/$base.pdf" ]] || { echo "FATAL: LibreOffice produced no PDF for $base"; exit 1; }
+  cp "$WORK/$base.pdf" "$DOCS/$base.pdf"
   python3 "$NORMALIZE" "$DOCS/$base.pdf"
 done
 rm -rf "$SCRIPTS/work_tpl" "$SCRIPTS/work_src" "$SCRIPTS/_template_decoded.docx"

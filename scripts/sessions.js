@@ -183,7 +183,7 @@ cA.push(P("Have the players name their future mercenary company during Session Z
 // ============ SESSION ZERO ADDITIONS ============
 cA.push(H1("Running Session Zero: A Two-Hour Plan"));
 cA.push(P("Session Zero is the only session in this campaign with no pacing budget, which is a gap, because it is the session most likely to sprawl. Two hours, six blocks. Everything below is in service of the five outputs named at the top."));
-cA.push(ltable(["Block", "Minutes", "What Happens"], [26, 14, 60], [
+cA.push(ltable(["Block", "Minutes", "What Happens"], [26, 17, 57], [
   ["The pitch", "15", "The DM describes the setting in five sentences and the tone in three. Do not read the sourcebook aloud. Say: a fading empire, a young emperor trying to fix it, a school that trains its administrators, and a shared dream of the capital burning. Then stop talking."],
   ["Tone and lines", "20", "The safety and tone conversation below. Do this before anybody has a character they are attached to."],
   ["Houses and roles", "20", "Class, house, and the who-fights-who-talks-who-notices conversation. Aim for one Sword-primary and one Seal-flavored character in any group of four or more."],
@@ -207,7 +207,7 @@ cA.push(PS([DM("DM Only: "), { t: "the single most common way this campaign gets
 
 cA.push(H1("Twelve Company Names, If the Table Stalls"));
 cA.push(P("The Company block asks the players to name themselves and it is the one part of Session Zero that reliably deadlocks. Offer these only after ten minutes of genuine deadlock, and offer them as bad examples \u2014 a table will name itself instantly out of spite, which is the intended effect."));
-cA.push(ltable(["d12", "Name", "d12", "Name"], [8, 42, 8, 42], [
+cA.push(ltable(["d12", "Name", "d12", "Name"], [11, 39, 11, 39], [
   ["1", "The Lector\u2019s Seal", "7", "The Eleventh Cohort"],
   ["2", "The Patched Standard", "8", "Ondrei\u2019s Correspondents"],
   ["3", "The Cold Door Company", "9", "The Unlicensed"],
