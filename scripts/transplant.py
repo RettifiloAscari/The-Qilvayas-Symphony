@@ -124,6 +124,50 @@ def ensure_list_style(work):
     open(path, "w", encoding="utf-8").write(
         s.replace("</w:styles>", LIST_STYLE + "</w:styles>", 1))
 
+# A heading is bound to what follows it by keepNext, in the template's heading styles
+# and again directly on every H1/H2/H3 the generators emit. That guarantees exactly one
+# line, which is enough while the paragraph beneath is ordinary prose: it runs to several
+# lines, and the Normal style's orphan control (2) keeps two of them with the heading or
+# moves the lot.
+#
+# It is not enough when the paragraph beneath is a single line -- a gazetteer entry's
+# "Population 6,000. Four days east of Aenodira.", a locator, a one-line gloss. There is
+# no second line for orphan control to hold back, the chain ends at that line, and the
+# section's actual content starts in the next column. The heading then sits at the foot of
+# a column with a scrap under it, which is the defect this fixes: bind the short lead
+# forward too, so the heading keeps its first real line of prose as well.
+#
+# Only short paragraphs qualify. About 55 characters fill the 3.36in two-column measure at
+# 11pt, so 110 is at most two lines there and fewer on the Reference Guide's wide one.
+# Above that the paragraph brings its own two lines and needs no help; binding it would
+# only pin its last line to the next paragraph for nothing.
+LEAD_MAX = 110
+_HEAD_THEN_LEAD = re.compile(
+    r'(<w:p\b(?:(?!</w:p>).)*?w:pStyle w:val="Heading\d"(?:(?!</w:p>).)*?</w:p>\s*)'
+    r'(<w:p\b(?:(?!</w:p>).)*?</w:p>)', re.S)
+
+def keep_lead_with_heading(doc):
+    """Bind a one-line paragraph under a heading to the paragraph after it."""
+    def fix(m):
+        head, lead = m.group(1), m.group(2)
+        if _IS_HEADING.search(lead) or 'w:keepNext' in lead:
+            return m.group(0)
+        text = ''.join(_TEXT.findall(lead)).strip()
+        if not text or len(text) > LEAD_MAX:
+            return m.group(0)
+        ppr = re.search(r'<w:pPr>', lead)
+        if ppr:
+            # keepNext follows pStyle in the pPr child order the schema fixes
+            style = re.search(r'<w:pStyle\b[^/]*/>', lead)
+            at = style.end() if style else ppr.end()
+            lead = lead[:at] + '<w:keepNext/>' + lead[at:]
+        else:
+            open_tag = re.match(r'<w:p\b[^>]*>', lead)
+            lead = (lead[:open_tag.end()] + '<w:pPr><w:keepNext/></w:pPr>'
+                    + lead[open_tag.end():])
+        return head + lead
+    return _HEAD_THEN_LEAD.sub(fix, doc)
+
 def gap_after_tables(doc):
     """Give the first paragraph after each table a space-before."""
     def fix(m):
@@ -192,6 +236,7 @@ def convert(src, dst, two_col=True):
         doc = doc.replace(p1, restyle(p1, "Subtitle"), 1)
 
     doc = gap_after_tables(doc)
+    doc = keep_lead_with_heading(doc)
 
     # ability-table cells: sz 20 -> 17 so headers fit two-column width
     doc = doc.replace('<w:sz w:val="20"/>', '<w:sz w:val="17"/>')

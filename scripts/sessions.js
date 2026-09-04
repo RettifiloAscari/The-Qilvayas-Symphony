@@ -22,6 +22,16 @@ const BULLET = (segs) => new Paragraph({
 });
 const B = (lead, rest) => PS([{ t: lead + " ", b: true }, { t: rest }]);
 const BUL = (lead, rest) => BULLET(lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }]);
+const NUMBERED = (segs, instance = 0) => new Paragraph({
+  numbering: { reference: "numbers", level: 0, instance }, spacing: { after: 120 },
+  children: segs.map(s => new TextRun({ text: s.t, bold: !!s.b, italics: !!s.i, color: s.c }))
+});
+// An enumerated list numbers itself. Writing the number into the text instead
+// leaves the glyph in place beside it, which is what "1." next to a bullet is.
+// Every list sharing an instance numbers straight through, so a second list in
+// the same document needs a fresh one.
+const NUM = (lead, rest, instance = 0) => NUMBERED(
+  lead ? [{ t: lead + " ", b: true }, { t: rest }] : [{ t: rest }], instance);
 const { Table: LTable, TableRow: LRow, TableCell: LCell, WidthType: LW, ShadingType: LS, TableLayoutType: LL } = require('docx');
 // Column widths in twips. docx-js emits a dummy equal-width <w:tblGrid> when
 // columnWidths is absent, and LibreOffice honours that grid over the per-cell
@@ -59,10 +69,11 @@ const abCell = (text, bold) => new TableCell({
 const SB = (d) => {
   const out = [];
   out.push(new Paragraph({
+    keepNext: true,
     spacing: { before: 240, after: 40 },
     children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })]
   }));
-  out.push(PS([{ t: d.meta, i: true }], { spacing: { after: 120 } }));
+  out.push(PS([{ t: d.meta, i: true }], { keepNext: true, spacing: { after: 120 } }));
   out.push(B("Armor Class:", d.ac));
   out.push(B("Hit Points:", d.hp));
   out.push(B("Speed:", d.speed));
@@ -85,11 +96,11 @@ const SB = (d) => {
   out.push(B("Challenge:", d.cr));
   (d.traits || []).forEach(t => out.push(PS([{ t: t.n + ". ", b: true, i: true }, { t: t.t }])));
   if (d.actions && d.actions.length) {
-    out.push(PS([{ t: "ACTIONS", b: true }], { spacing: { before: 80, after: 80 } }));
+    out.push(PS([{ t: "ACTIONS", b: true }], { keepNext: true, spacing: { before: 80, after: 80 } }));
     d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }])));
   }
   if (d.reactions && d.reactions.length) {
-    out.push(PS([{ t: "REACTIONS", b: true }], { spacing: { before: 80, after: 80 } }));
+    out.push(PS([{ t: "REACTIONS", b: true }], { keepNext: true, spacing: { before: 80, after: 80 } }));
     d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }])));
   }
   return out;
@@ -101,6 +112,12 @@ const docShell = (children) => new Document({
       reference: "bullets",
       levels: [{
         level: 0, format: LevelFormat.BULLET, text: "\u2022", alignment: AlignmentType.LEFT,
+        style: { paragraph: { indent: { left: 280, hanging: 280 } } }
+      }]
+    }, {
+      reference: "numbers",
+      levels: [{
+        level: 0, format: LevelFormat.DECIMAL, text: "%1.", alignment: AlignmentType.LEFT,
         style: { paragraph: { indent: { left: 280, hanging: 280 } } }
       }]
     }]
@@ -167,12 +184,12 @@ cA.push(P("Every character should also name one cross-training discipline from a
 
 cA.push(H1("Admission Stories"));
 cA.push(P("The capital academy admits through a lottery that is less fair than it appears. Each player chooses (or rolls d6) an admission story. Each one hands the DM a thread: a family, a patron, a debt, a home region, a resentment. Record these \u2014 they are the cheapest personal hooks the campaign will ever get. Anchor each story to a real place: the sourcebook\u2019s Atlas of the Fractured Empire names the regions (the loyalist Ostmark and Suthmark, the warlord Brekelands, the merchant delta of Velmareth, the See of Orlath, and the rest), and an admission story tied to a named territory becomes a plot hook the moment that territory enters play. One flag: a Drow character is now an even larger statement than before \u2014 the Drow are the Founder\u2019s Blood, the dynasty\u2019s own nearly-vanished people, and a Drow stranger will be read as dynastic kin, claimant, or something without a name (see the sourcebook, Peoples of the Empire, before allowing one). A character from Tarnovar is a statement of similar order, and worth a private conversation \u2014 the DM should read the Atlas entry\u2019s DM-only note before allowing it, and no Tarnovari character should begin play knowing anything their culture itself does not know."));
-cA.push(BUL("1 \u2014 Lottery Winner:", "A genuine winner. Talented, probably common-born, owes nobody anything \u2014 and is quietly resented by classmates who know how rare that is. Thread: the home community that celebrated them, and what it expects back."));
-cA.push(BUL("2 \u2014 The Donation:", "A wealthy family made a generous gift to the academy, and admission followed. The character knows it. Thread: the family\u2019s expectations, and whether the character intends to meet them."));
-cA.push(BUL("3 \u2014 The Hostage:", "A son or daughter of a border lord or ambitious noble, kept close to the capital to ensure a parent\u2019s good behavior. In law this is hostage-diplomacy, a formal category and emphatically not bondage: the character retains full legal personhood and is owed treatment as an honored, if constrained, guest (see the sourcebook, Law, Oath, and Bound Labor). Whether their actual experience has matched that standard is the character\u2019s to decide. Thread: the parent\u2019s politics, and what happens back home if relations with the throne sour."));
-cA.push(BUL("4 \u2014 The Prot\u00E9g\u00E9:", "A regional lord or power spotted talent and sponsored it, expecting a return on the investment. Thread: the patron, and the first favor they will eventually call in."));
-cA.push(BUL("5 \u2014 The True Believer:", "Sought admission out of genuine conviction \u2014 in the empire, the Lupine Matron, or the Emperor\u2019s restoration. Thread: what happens to faith when the institution disappoints it."));
-cA.push(BULLET([{ t: "6 \u2014 The Quiet Irregularity: ", b: true }, { t: "The paperwork says lottery. It wasn\u2019t \u2014 a forged record, a bribed clerk, a swapped name. The character may not even know who arranged it, or why. Thread: whoever did it, and what they wanted. (" }, DM("DM note: "), { t: "this one is a gift \u2014 it can be wired into any faction later.)" }]));
+cA.push(NUM("Lottery Winner:", "A genuine winner. Talented, probably common-born, owes nobody anything \u2014 and is quietly resented by classmates who know how rare that is. Thread: the home community that celebrated them, and what it expects back."));
+cA.push(NUM("The Donation:", "A wealthy family made a generous gift to the academy, and admission followed. The character knows it. Thread: the family\u2019s expectations, and whether the character intends to meet them."));
+cA.push(NUM("The Hostage:", "A son or daughter of a border lord or ambitious noble, kept close to the capital to ensure a parent\u2019s good behavior. In law this is hostage-diplomacy, a formal category and emphatically not bondage: the character retains full legal personhood and is owed treatment as an honored, if constrained, guest (see the sourcebook, Law, Oath, and Bound Labor). Whether their actual experience has matched that standard is the character\u2019s to decide. Thread: the parent\u2019s politics, and what happens back home if relations with the throne sour."));
+cA.push(NUM("The Prot\u00E9g\u00E9:", "A regional lord or power spotted talent and sponsored it, expecting a return on the investment. Thread: the patron, and the first favor they will eventually call in."));
+cA.push(NUM("The True Believer:", "Sought admission out of genuine conviction \u2014 in the empire, the Lupine Matron, or the Emperor\u2019s restoration. Thread: what happens to faith when the institution disappoints it."));
+cA.push(NUMBERED([{ t: "The Quiet Irregularity: ", b: true }, { t: "The paperwork says lottery. It wasn\u2019t \u2014 a forged record, a bribed clerk, a swapped name. The character may not even know who arranged it, or why. Thread: whoever did it, and what they wanted. (" }, DM("DM note: "), { t: "this one is a gift \u2014 it can be wired into any faction later.)" }]));
 
 cA.push(H1("Forging the Party"));
 cA.push(P("The academy houses students in mixed residential halls by year and cohort, so the party plausibly shared a dormitory for four years. Do not just assert the bond \u2014 co-author it. Put these questions to the table and let players answer in any order, building on each other:"));
@@ -257,12 +274,12 @@ cB.push(BUL(null, "Two dead across the four attacks, both caravan guards who res
 cB.push(BUL(null, "The latest attack was two days ago. One survivor unaccounted for \u2014 a teamster named Yanna, who fled into the brush and has not come into town."));
 cB.push(BUL(null, "Terms: 200 gp to the party for ending the attacks, plus a 25 gp bounty per bandit \u2014 payable equally for capture or proof of death. Ondrei prefers capture: \u201CDead men can\u2019t testify against whoever made them run.\u201D That line is deliberate \u2014 he already suspects deserters, and suspects their commander is the deeper rot."));
 cB.push(H2("Rumors in Town (d6, or feed as desired)"));
-cB.push(BUL("1.", "\u201CThird Legion pay wagon never came through this spring. First time in nine years.\u201D (True; connects to the grain scandal.)"));
-cB.push(BUL("2.", "\u201CThe attacks are ghosts from old Redwatch. That fort\u2019s been cursed since the old wars.\u201D (False, but points at the right location.)"));
-cB.push(BUL("3.", "\u201CThey took a whole crate of poppy-milk off Serren\u2019s wagon. Somebody\u2019s hurt bad, or can\u2019t sleep.\u201D (True. Dren cannot sleep.)"));
-cB.push(BUL("4.", "\u201COne driver swears the leader talked in his sleep by their fire \u2014 begging somebody\u2019s pardon, over and over.\u201D (True.)"));
-cB.push(BUL("5.", "\u201CMagistrate\u2019s cousin runs the ferry and raised his rates the week the attacks started. Convenient.\u201D (True but unrelated \u2014 a red herring with local color.)"));
-cB.push(BUL("6.", "\u201CDogs won\u2019t go east past the old milestone anymore. Haven\u2019t for weeks.\u201D (True. Animals dislike what is bleeding through Dren.)"));
+cB.push(NUM(null, "\u201CThird Legion pay wagon never came through this spring. First time in nine years.\u201D (True; connects to the grain scandal.)"));
+cB.push(NUM(null, "\u201CThe attacks are ghosts from old Redwatch. That fort\u2019s been cursed since the old wars.\u201D (False, but points at the right location.)"));
+cB.push(NUM(null, "\u201CThey took a whole crate of poppy-milk off Serren\u2019s wagon. Somebody\u2019s hurt bad, or can\u2019t sleep.\u201D (True. Dren cannot sleep.)"));
+cB.push(NUM(null, "\u201COne driver swears the leader talked in his sleep by their fire \u2014 begging somebody\u2019s pardon, over and over.\u201D (True.)"));
+cB.push(NUM(null, "\u201CMagistrate\u2019s cousin runs the ferry and raised his rates the week the attacks started. Convenient.\u201D (True but unrelated \u2014 a red herring with local color.)"));
+cB.push(NUM(null, "\u201CDogs won\u2019t go east past the old milestone anymore. Haven\u2019t for weeks.\u201D (True. Animals dislike what is bleeding through Dren.)"));
 
 cB.push(H1("Scene 2: The Ambush Site"));
 cB.push(P("Half a day east: an overturned wagon, scattered grain gone to birds, wheel ruts, and a burned cookfire. Investigation is tiered \u2014 every character who searches learns the DC 10 information automatically on a success; higher results stack additional detail."));

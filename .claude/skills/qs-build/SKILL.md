@@ -207,6 +207,70 @@ column width changes is the *cost* of getting it wrong, not the right answer. Re
 360 on the wide single-column measure the gap reads as a well with nothing in it, and 260
 does not read as mean — so a wide measure is not a reason to indent further.
 
+### An enumerated list numbers itself
+
+Three lists in the corpus were bullets carrying their own numbers in the run text —
+`BUL("1. The Undercourt and the Binding Site:", ...)`, the d6 admission stories, the d6
+rumor table. The bullet glyph does not go away because the text starts with a digit, so
+the page read `• 1. The Undercourt`, a glyph and an ordinal doing the same job side by
+side, and the second one wrapping under the first.
+
+The `numbers` reference is the fix: `LevelFormat.DECIMAL`, `text: "%1."`, declared beside
+`bullets` in the same numbering config, with `NUM(lead, rest)` and `NUMBERED(segs)` next to
+`BUL` and `BULLET`. **The indent is deliberately the same 280/280 as the bullets**, not
+sized separately: `1.` at 11pt Lato measures about 1em against the bullet glyph's third of
+one, so the number takes more of the hang and leaves a smaller gap — but both list kinds
+then share one text margin, and a page carrying a bulleted list above a numbered one keeps
+a single left edge instead of two that nearly agree. Alignment beats an optimal gap.
+
+Two things to know before adding one:
+
+- **Lists sharing an instance number straight through.** One `reference` is one numId, so a
+  second numbered list in the same document continues 8, 9, 10 rather than restarting.
+  `NUM` takes an `instance` argument for exactly this; the three lists in the corpus are in
+  three different documents, so they all use the default.
+- **The Markdown shim counts for itself.** The number lives in the numbering definition, not
+  in the run, so the shim keeps its own counter and emits `1. `, `2. `; anything that is not
+  an ordered item resets it. Without that the corpus would render the list as `- `.
+
+### Keep a label with what it introduces
+
+`keepNext` on the heading styles guarantees exactly **one** line beneath a heading. That is
+enough for ordinary prose, because the paragraph beneath runs several lines and the Normal
+style carries orphan control of 2 — LibreOffice sets `fo:orphans="2"` on import, which is
+worth knowing since neither the template nor the generators say so anywhere. Confirm it the
+way it was confirmed here, by converting a styled `.docx` to flat ODF and reading the
+attribute off the style:
+
+```bash
+soffice --headless --convert-to fodt out.docx     # then grep fo:orphans / fo:keep-with-next
+```
+
+It is not enough in two cases, and both were live in the corpus:
+
+- **A one-line paragraph under a heading.** A gazetteer entry's `Population 6,000. Four days
+  east of Aenodira.` is the whole of what keepNext holds; there is no second line for orphan
+  control to keep back, so the heading sat at the foot of a column with a locator under it
+  and the section's actual prose in the next. `transplant.py`'s `keep_lead_with_heading()`
+  binds a short lead forward as well. It is there rather than in the generators for the same
+  reason `gap_after_tables()` is: the call sites are everywhere and a rule applied at
+  transplant time cannot be forgotten at one of them. **110 characters** is the cutoff —
+  about 55 fill the 3.36in measure at 11pt, so that is at most two lines, and a longer
+  paragraph brings its own two and needs no help.
+- **A label that is not a styled heading.** The stat-block name, its type line, and the
+  ACTIONS and REACTIONS sub-heads are ordinary paragraphs, so nothing bound them to the line
+  they announce. `ACTIONS` alone at the foot of a column, `Oathless Deserter` alone at the
+  foot of another. They now carry `keepNext` in `SB()`, in all seven generators that define
+  one.
+
+Find them on the page, not in the source — `pdftohtml -xml` reports the face and colour of
+every run, so a heading is identifiable by typeface (Alegreya SC) and a stat-block name by
+its book-red, and a label is stranded when nothing but a page number follows it in its
+column. Two things that will fool a first attempt: poppler declares each `fontspec` once,
+on the page it first appears, so the table has to accumulate across pages or every heading
+after page 1 reads as body text; and a heading that wraps is several lines, so an H1 over
+two lines looks like a heading with a heading after it unless the lines are merged first.
+
 ### Suspect the inherited measurement before the writing
 
 The bullet indent is the third full-page default caught sitting in a 3.36in column, after

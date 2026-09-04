@@ -9,16 +9,24 @@ class TextRun {
     if (this.italics) return '*'+t.trim()+'* ';
     return t; }
 }
+// Ordered-list counter. The generators let docx-js number the items, so the
+// number exists only in the numbering definition -- the shim has to count for
+// itself to write the same list in Markdown. Anything that is not an ordered
+// item ends the run and resets it.
+let ORD = 0;
 class Paragraph {
   constructor(o){ o = o || {}; this.o = o; this.children = o.children || []; }
   md(){
     const body = this.children.map(c => (c.md ? c.md() : '')).join('').replace(/\s+$/,'');
+    const num = this.o.numbering;
+    if (num && num.reference === 'numbers' && body) return (++ORD) + '. ' + body;
+    ORD = 0;
     if (!body) return '';
     const h = this.o.heading;
     if (h === 'Heading1') return '# ' + body;
     if (h === 'Heading2') return '## ' + body;
     if (h === 'Heading3') return '### ' + body;
-    if (this.o.numbering) return '- ' + body;
+    if (num) return '- ' + body;
     if (this.o.shading) return '> ' + body;          // BOX read-aloud
     return body;
   }
@@ -43,8 +51,9 @@ function render(){
   const blocks = [];
   secs.forEach(s => (s.children||[]).forEach(n => { const m = n.md ? n.md() : ''; if (m) blocks.push(m); }));
   const out = []; let prev = '';
+  const item = (s) => s.startsWith('- ') || /^\d+\. /.test(s);
   blocks.forEach(b => {
-    if (prev.startsWith('- ') && b.startsWith('- ')) out.push(b);
+    if (item(prev) && item(b)) out.push(b);
     else if (prev.startsWith('|') && b.startsWith('|')) out.push(b);
     else out.push((out.length ? '\n' : '') + b);
     prev = b;

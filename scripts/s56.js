@@ -32,8 +32,8 @@ const mod = (v) => { const m = Math.floor((v - 10) / 2); return (m >= 0 ? "+" : 
 const abCell = (text, bold) => new TableCell({ width: { size: 16.6, type: WidthType.PERCENTAGE }, shading: bold ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, children: [new Paragraph({ keepNext: !!bold, alignment: AlignmentType.CENTER, spacing: { after: 40, before: 40 }, children: [new TextRun({ text, bold: !!bold, size: 20 })] })] });
 const SB = (d) => {
   const out = [];
-  out.push(new Paragraph({ spacing: { before: 240, after: 40 }, children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })] }));
-  out.push(PS([{ t: d.meta, i: true }], { spacing: { after: 120 } }));
+  out.push(new Paragraph({ keepNext: true, spacing: { before: 240, after: 40 }, children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })] }));
+  out.push(PS([{ t: d.meta, i: true }], { keepNext: true, spacing: { after: 120 } }));
   out.push(B("Armor Class:", d.ac)); out.push(B("Hit Points:", d.hp)); out.push(B("Speed:", d.speed));
   out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW([1, 1, 1, 1, 1, 1]), layout: TableLayoutType.FIXED, rows: [
     new TableRow({ cantSplit: true, children: ["STR", "DEX", "CON", "INT", "WIS", "CHA"].map(h => abCell(h, true)) }),
@@ -50,8 +50,8 @@ const SB = (d) => {
   if (d.langs) out.push(B("Languages:", d.langs));
   out.push(B("Challenge:", d.cr));
   (d.traits || []).forEach(t => out.push(PS([{ t: t.n + ". ", b: true, i: true }, { t: t.t }])));
-  if (d.actions && d.actions.length) { out.push(PS([{ t: "ACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); }
-  if (d.reactions && d.reactions.length) { out.push(PS([{ t: "REACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); }
+  if (d.actions && d.actions.length) { out.push(PS([{ t: "ACTIONS", b: true }], { keepNext: true, spacing: { before: 80, after: 80 } })); d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); }
+  if (d.reactions && d.reactions.length) { out.push(PS([{ t: "REACTIONS", b: true }], { keepNext: true, spacing: { before: 80, after: 80 } })); d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); }
   return out;
 };
 const docShell = (children) => new Document({

@@ -41,12 +41,12 @@ Magistrate Cassivar Ondrei receives the party in a hall that doubles as courtroo
 
 ## Rumors in Town (d6, or feed as desired)
 
-- **1.** “Third Legion pay wagon never came through this spring. First time in nine years.” (True; connects to the grain scandal.)
-- **2.** “The attacks are ghosts from old Redwatch. That fort’s been cursed since the old wars.” (False, but points at the right location.)
-- **3.** “They took a whole crate of poppy-milk off Serren’s wagon. Somebody’s hurt bad, or can’t sleep.” (True. Dren cannot sleep.)
-- **4.** “One driver swears the leader talked in his sleep by their fire — begging somebody’s pardon, over and over.” (True.)
-- **5.** “Magistrate’s cousin runs the ferry and raised his rates the week the attacks started. Convenient.” (True but unrelated — a red herring with local color.)
-- **6.** “Dogs won’t go east past the old milestone anymore. Haven’t for weeks.” (True. Animals dislike what is bleeding through Dren.)
+1. “Third Legion pay wagon never came through this spring. First time in nine years.” (True; connects to the grain scandal.)
+2. “The attacks are ghosts from old Redwatch. That fort’s been cursed since the old wars.” (False, but points at the right location.)
+3. “They took a whole crate of poppy-milk off Serren’s wagon. Somebody’s hurt bad, or can’t sleep.” (True. Dren cannot sleep.)
+4. “One driver swears the leader talked in his sleep by their fire — begging somebody’s pardon, over and over.” (True.)
+5. “Magistrate’s cousin runs the ferry and raised his rates the week the attacks started. Convenient.” (True but unrelated — a red herring with local color.)
+6. “Dogs won’t go east past the old milestone anymore. Haven’t for weeks.” (True. Animals dislike what is bleeding through Dren.)
 
 # Scene 2: The Ambush Site
 

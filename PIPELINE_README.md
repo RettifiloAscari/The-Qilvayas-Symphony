@@ -128,6 +128,35 @@ The indent itself is sized to the body type, not copied from the library default
 
 More generally, this was the third full-page default found sitting in a narrow column, after table `columnWidths` and table cell padding. When a two-column page reads loose or cramped, price the inherited numbers against the 3.36in measure before rewriting the prose.
 
+Numbered lists use a second reference, `numbers`, declared beside `bullets` in the same
+config: `LevelFormat.DECIMAL` with `text: "%1."`, and `NUM`/`NUMBERED` beside `BUL`/`BULLET`.
+Write the list items without their numbers — a bullet whose text begins `1.` still gets a
+glyph, and the page then carries a bullet and an ordinal doing the same job. The indent
+matches the bullets at 280/280 so both list kinds share one text margin. One reference is
+one numbering instance, so a second numbered list in the same document continues the first
+unless it is given a fresh `instance`.
+
+## Keeping headings and labels with their content
+
+`keepNext` on the heading styles holds one line under a heading, and LibreOffice's
+`fo:orphans="2"` on the Normal style holds two of an ordinary paragraph. Neither helps when
+what follows the heading is a **single line** — a locator, a population figure, a one-line
+gloss — so `transplant.py` runs `keep_lead_with_heading()`, which binds a lead of 110
+characters or fewer forward to the paragraph after it. Nor does either help a label that is
+not a styled heading: the stat-block name, its type line, and the ACTIONS and REACTIONS
+sub-heads are ordinary paragraphs and carry their own `keepNext` in `SB()`.
+
+To check the result, read faces and colours off the page rather than guessing from sizes:
+
+```bash
+pdftohtml -xml -stdout final.pdf | less    # every run with its box, family and colour
+```
+
+A heading is Alegreya SC; a stat-block name is Lato in book-red at 13pt. Either is stranded
+when nothing but the page number follows it in its column. Note that poppler declares each
+`fontspec` once, on the page it first appears — accumulate the table across pages or
+everything after page 1 reads as body text.
+
 ## Known layout limitation
 
 Wide tables with prose-bearing columns crowd badly in the two-column body. The commerce and price tables are worst affected — the Notes column wraps to one or two words per line, and long tables split awkwardly across column breaks. Letting wide tables span both columns is a structural change to the generators, not a formatting tweak. Treat it as a queued fix rather than patching individual tables.
