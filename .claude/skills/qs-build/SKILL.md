@@ -105,14 +105,24 @@ Gazetteer's Distances by Imperial Road table did exactly this — widening its `
 by even one point truncated it after its first row, losing eleven of twelve destinations
 and 232 words. The width was never the cause. `cantSplit` was.
 
-So: pass **`{ splittable: true }`** to `table()` for any table long enough to reach a
-column break. A row continuing in the next column is ordinary book typography; the header
-repeats above it, because `headerRow()` sets `tableHeader`. Losing the row is not ordinary
-anything. The distances table carries the flag now, and its `Days` column widened to 12%
-without losing a thing.
+**Body rows are splittable in all nine generators now**, so this cannot happen again.
+`row()` and the session generators' `ltable()` no longer set `cantSplit` on body rows; a
+row continuing in the next column is ordinary book typography, and the header repeats
+above it because `headerRow()` sets `tableHeader`. Losing the row is not ordinary anything.
 
-Only `gazetteer.js` has the flag so far. The same hazard is latent in every other
-generator, where it is currently masked by the tables happening to fit.
+Two things deliberately keep `cantSplit` and must go on keeping it:
+
+- **The header row.** It is one line, it should never be torn, and `tableHeader` is what
+  makes it repeat after a break.
+- **The stat-block ability tables**, which set it inline in `SB()` rather than through
+  `row()`. This is the binding that stops six ability labels sitting at the foot of one
+  column with their six numbers in the next. `tools/check_tearing.py` fails the build if
+  it breaks, and that check is what guards this whole arrangement.
+
+Making the change corpus-wide cost one page (the sourcebook packs to 42) and lost no
+content: three tables that reach a break — the Branch Ledger, a Session Six random table,
+and one in the Player Guide — now repeat their headers on the far side, which is why those
+documents gained a handful of words.
 
 Nothing in the pipeline catches this. `build.sh` reports thirteen documents "ok", the page
 census is unchanged, and `check_columns.py` rates the surviving break *marginal*. **Compare

@@ -20,7 +20,11 @@ const { Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = 
 const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
 
 const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const row = (cells) => new TableRow({ children: cells, cantSplit: true });
+// Body rows may split across a column break. cantSplit here would stop the whole table
+// from flowing into the next column, and LibreOffice answers that by dropping the rows
+// that no longer fit -- silently, with the build reporting clean. The header row keeps
+// cantSplit and repeats above the continuation instead.
+const row = (cells) => new TableRow({ children: cells });
 // The header row repeats when a long table spans a column or page break.
 const headerRow = (cells) => new TableRow({ children: cells, cantSplit: true, tableHeader: true });
 const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ headerRow(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });

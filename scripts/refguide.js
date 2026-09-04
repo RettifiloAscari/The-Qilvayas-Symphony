@@ -25,7 +25,11 @@ const cell = (text, opts = {}) => new TableCell({
   margins: { top: 60, bottom: 60, left: 100, right: 100 },
   children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, italics: !!opts.i, size: 19 })] })]
 });
-const row = (cells) => new TableRow({ children: cells, cantSplit: true });
+// Body rows may split across a column break. cantSplit here would stop the whole table
+// from flowing into the next column, and LibreOffice answers that by dropping the rows
+// that no longer fit -- silently, with the build reporting clean. The header row keeps
+// cantSplit and repeats above the continuation instead.
+const row = (cells) => new TableRow({ children: cells });
 // The header row repeats when a long table spans a column or page break.
 const headerRow = (cells) => new TableRow({ children: cells, cantSplit: true, tableHeader: true });
 const table = (headers, widths, rows) => new Table({

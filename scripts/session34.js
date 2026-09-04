@@ -21,7 +21,11 @@ const { Table: LTable, TableRow: LRow, TableCell: LCell, WidthType: LW, ShadingT
 const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
 
 const lcell = (text, opts = {}) => new LCell({ width: { size: opts.w || 20, type: LW.PERCENTAGE }, shading: opts.head ? { type: LS.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, columnWidths: CW(widths), layout: LL.FIXED, rows: [ new LRow({ cantSplit: true, tableHeader: true, children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ cantSplit: true, children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
+// Body rows may split across a column break. cantSplit here would stop the whole table
+// from flowing into the next column, and LibreOffice answers that by dropping the rows
+// that no longer fit -- silently, with the build reporting clean. The header row keeps
+// cantSplit and repeats above the continuation instead.
+const ltable = (headers, widths, rows) => new LTable({ width: { size: 100, type: LW.PERCENTAGE }, columnWidths: CW(widths), layout: LL.FIXED, rows: [ new LRow({ cantSplit: true, tableHeader: true, children: headers.map((h, i) => lcell(h, { head: true, w: widths[i] })) }), ...rows.map(r => new LRow({ children: r.map((v, i) => lcell(v, { w: widths[i] })) })) ] });
 
 const BOX = (text) => new Paragraph({ spacing: { after: 200 }, shading: { type: ShadingType.CLEAR, fill: "EFEAE0" }, indent: { left: 360, right: 360 }, children: [new TextRun({ text, italics: true })] });
 const mod = (v) => { const m = Math.floor((v - 10) / 2); return (m >= 0 ? "+" : "\u2212") + Math.abs(m); };
