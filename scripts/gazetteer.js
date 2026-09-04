@@ -38,10 +38,17 @@ const { Table, TableRow, TableCell, WidthType, ShadingType, TableLayoutType } = 
 const CW = (w) => { const t = w.reduce((a, b) => a + b, 0); return w.map((x) => Math.round(9026 * x / t)); };
 
 const cell = (text, opts = {}) => new TableCell({ width: { size: opts.w || 20, type: WidthType.PERCENTAGE }, shading: opts.head ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, margins: { top: 50, bottom: 50, left: 45, right: 45 }, children: [new Paragraph({ spacing: { after: 0 }, alignment: AlignmentType.LEFT, indent: { firstLine: 0 }, children: [new TextRun({ text, bold: !!opts.head, size: 18 })] })] });
-const row = (cells) => new TableRow({ children: cells, cantSplit: true });
+// cantSplit keeps the cells of one row from being torn across a column break. It is the
+// right default for short rows, and a trap for a table tall enough to reach a break:
+// a table whose rows may not split cannot flow into the next column, and LibreOffice
+// resolves that by DROPPING the rows that no longer fit -- silently, with the build
+// reporting clean and the page count unmoved. Pass { splittable: true } for any table
+// long enough to span a break; a row continuing in the next column is ordinary book
+// typography, and losing the row is not.
+const row = (cells, splittable) => new TableRow({ children: cells, cantSplit: !splittable });
 // The header row repeats when a long table spans a column or page break.
 const headerRow = (cells) => new TableRow({ children: cells, cantSplit: true, tableHeader: true });
-const table = (headers, widths, rows) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ headerRow(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })))) ] });
+const table = (headers, widths, rows, opts = {}) => new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW(widths), layout: TableLayoutType.FIXED, rows: [ headerRow(headers.map((h, i) => cell(h, { head: true, w: widths[i] }))), ...rows.map(r => row(r.map((v, i) => cell(v, { w: widths[i] })), opts.splittable)) ] });
 const mod = (v) => { const m = Math.floor((v - 10) / 2); return (m >= 0 ? "+" : "\u2212") + Math.abs(m); };
 const abCell = (text, bold) => new TableCell({ width: { size: 16.6, type: WidthType.PERCENTAGE }, shading: bold ? { type: ShadingType.CLEAR, fill: "E4DCCB" } : undefined, children: [new Paragraph({ keepNext: !!bold, alignment: AlignmentType.CENTER, spacing: { after: 40, before: 40 }, children: [new TextRun({ text, bold: !!bold, size: 20 })] })] });
 const SB = (d) => { const out = []; out.push(new Paragraph({ spacing: { before: 240, after: 40 }, children: [new TextRun({ text: d.name, bold: true, size: 26, color: "5B1F1F" })] })); out.push(PS([{ t: d.meta, i: true }], { spacing: { after: 120 } })); out.push(B("Armor Class:", d.ac)); out.push(B("Hit Points:", d.hp)); out.push(B("Speed:", d.speed)); out.push(new Table({ width: { size: 100, type: WidthType.PERCENTAGE }, columnWidths: CW([1, 1, 1, 1, 1, 1]), layout: TableLayoutType.FIXED, rows: [ new TableRow({ cantSplit: true, children: ["STR","DEX","CON","INT","WIS","CHA"].map(h => abCell(h, true)) }), new TableRow({ cantSplit: true, children: [d.str,d.dex,d.con,d.int,d.wis,d.cha].map(v => abCell(v + " (" + mod(v) + ")")) }) ] })); out.push(P("", { spacing: { after: 60 } })); if (d.saves) out.push(B("Saving Throws:", d.saves)); if (d.skills) out.push(B("Skills:", d.skills)); if (d.resist) out.push(B("Damage Resistances:", d.resist)); if (d.immune) out.push(B("Damage Immunities:", d.immune)); if (d.condimmune) out.push(B("Condition Immunities:", d.condimmune)); if (d.senses) out.push(B("Senses:", d.senses)); if (d.langs) out.push(B("Languages:", d.langs)); out.push(B("Challenge:", d.cr)); (d.traits||[]).forEach(t => out.push(PS([{ t: t.n + ". ", b: true, i: true }, { t: t.t }]))); if (d.actions && d.actions.length) { out.push(PS([{ t: "ACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.actions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } if (d.reactions && d.reactions.length) { out.push(PS([{ t: "REACTIONS", b: true }], { spacing: { before: 80, after: 80 } })); d.reactions.forEach(a => out.push(PS([{ t: a.n + ". ", b: true, i: true }, { t: a.t }]))); } return out; };
@@ -95,7 +102,7 @@ children.push(H2("Distances by Imperial Road"));
 children.push(P("From Aenodira, at normal pace, on the best surviving surface. Add a third to every figure in winter, half again in the Brekelands, and any number you like past the Fence."));
 children.push(table(
   ["To", "Days", "Route and Condition"],
-  [26, 10, 64],
+  [26, 12, 62],
   [
     ["Varn\u2019s Crossing", "1", "The eastern trunk road. Excellent surface, tolled at the bridge, patrolled twice daily."],
     ["Lupenna", "2", "The Matron\u2019s Road, walked not ridden. Excellent, crowded, and the only imperial road with a formal begging ordinance."],
@@ -109,7 +116,8 @@ children.push(table(
     ["Norr\u2019s Watch", "18", "West road through the Brekelands. The Brekeland stretch is the dangerous part; the Normere stretch is the best-maintained road in the world."],
     ["Kamenhold", "21", "West, then southwest into the highlands. Imperial road ends at the border; Tarnovari roads are stone, narrow, and older."],
     ["Karvholm", "26", "Overland through Orlath, or by sea from Velmareth in eleven days if the Skell are not out. They are usually out."]
-  ]
+  ],
+  { splittable: true }
 ));
 
 children.push(H2("Papers, Tolls, and the Gate"));

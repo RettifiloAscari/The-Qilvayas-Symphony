@@ -92,15 +92,27 @@ measurement spread and usually fine. Fix in this order:
    not. Merge columns, or convert to full-width `B()` entries — which is what the
    Factions list and the Canon of Saints became.
 
-**Widening a column can silently delete rows.** Widths are a zero-sum hundred, so widening
-one column narrows another, the narrowed column wraps to more lines, and the table gets
-taller. A table that then meets a column or page break does not always continue on the
-other side: LibreOffice can simply **drop the rows that no longer fit**, with no error and
-no page-count change. The Gazetteer's Distances by Imperial Road table sits on that edge
-today — its `Days` column is one twip-fraction too narrow for its own `Days` header, which
-breaks as `Day`/`s`, and every attempt to widen it (from the prose column *or* from the
-`To` column, at 11%, 12% and 13%) truncated the table after its first row, losing eleven
-of twelve destinations and 232 words. The 10% is load-bearing; leave it alone.
+**A tall table whose rows cannot split will silently lose rows.** `row()` sets `cantSplit`
+so the cells of one row are not torn across a column break. That is right for short rows
+and a trap for a tall table: a table whose rows may not split **cannot flow into the next
+column at all**, and LibreOffice resolves the impossibility by **dropping the rows that no
+longer fit** — no error, no page-count change, the build reporting clean.
+
+It presents as a width problem, because widening is what usually tips a table over the
+edge: widths are a zero-sum hundred, so widening one column narrows another, the narrowed
+column wraps to more lines, and the table grows tall enough to reach a break. The
+Gazetteer's Distances by Imperial Road table did exactly this — widening its `Days` column
+by even one point truncated it after its first row, losing eleven of twelve destinations
+and 232 words. The width was never the cause. `cantSplit` was.
+
+So: pass **`{ splittable: true }`** to `table()` for any table long enough to reach a
+column break. A row continuing in the next column is ordinary book typography; the header
+repeats above it, because `headerRow()` sets `tableHeader`. Losing the row is not ordinary
+anything. The distances table carries the flag now, and its `Days` column widened to 12%
+without losing a thing.
+
+Only `gazetteer.js` has the flag so far. The same hazard is latent in every other
+generator, where it is currently masked by the tables happening to fit.
 
 Nothing in the pipeline catches this. `build.sh` reports thirteen documents "ok", the page
 census is unchanged, and `check_columns.py` rates the surviving break *marginal*. **Compare
