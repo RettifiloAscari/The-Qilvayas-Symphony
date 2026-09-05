@@ -255,7 +255,7 @@ The Warden is the module’s set piece and it should not be run as one long figh
 
 **Phase Three — The Yield (at half hit points).** The Warden grounds its halberd, kneels, and says SUFFICIENT. Its instructions were always to test, not to kill. The decision at this transition is the one the faculty care most about: does the party stop? A party that keeps swinging at a kneeling construct is not penalized mechanically and is watched, in silence, by forty people they cannot see.
 
-**Scaling.** Baseline (4 characters): the Warden alone. Five characters: one Drill Automaton enters from an alcove on round 2. Six characters: two automatons from round 1, and the Warden’s Bulwark trait is active until both automatons fall. Add exactly that many and no more — a second automaton at five characters crosses the encounter-multiplier boundary and nearly doubles the adjusted difficulty rather than nudging it, which is how a Proving that cannot kill anyone starts feeling like one that wants to.
+**Scaling.** As Scene 6, and the numbers are there rather than repeated here: one Drill Automaton at five characters, two at six with Bulwark up until they fall, and not one more than that. What the phases add to it is where the additions land — the automatons arrive during Phase Two and never during the waiting round, because a Warden that ambushes a party mid-challenge is not the thing this encounter is testing.
 
 # Wandering the Undervault
 
