@@ -54,7 +54,7 @@ The party has every piece required. They have kept a Vigil (Session One, if they
 
 # Scene 3: The Vigil
 
-The Vigil requires the full night: light kept burning, the dead attended, never left alone, and — here — the responses spoken. Structure it as three watches, and put a real interruption in each. The hunger cannot stop them by force; it can only try to make them stop themselves.
+The Vigil requires the full night: light kept burning, the dead attended, never left alone, and — here — the responses spoken. Every character knows the form; a devout one knows the patron, and his name is worth saying aloud down here. Coren the Unhurried kept four thousand nights, refused ordination six times, and was canonized by the parishes over the Sanctum’s objection that his refusals were insubordinate — the empire’s saint of night-work is a man the Church did not want and could not stop. Tonight is night four thousand and one, and it is the one that was always owed. Structure it as three watches, and put a real interruption in each. The hunger cannot stop them by force; it can only try to make them stop themselves.
 
 ### Running the Watches
 
@@ -130,7 +130,7 @@ The session’s puzzle is not a lock. It is a diagnosis: the party has to work o
 
 **Wrong answer two — release it.** Also available. A party can undo the binding, and a party that has been paying attention will be able to work out how. This is the worst available outcome and the module should not flinch from letting them choose it.
 
-**Wrong answer three — bargain.** It will bargain. It will bargain in good faith, because whatever else is true of him, Threnvos kept his word and was killed for it. The bargain will be honoured. It is still the wrong answer, because a new oath sworn on this floor is exactly how the first one went wrong.
+**Wrong answer three — bargain.** It will bargain. It will bargain in good faith, because whatever else is true of him, Threnvos kept his word and was killed for it. The bargain will be honored. It is still the wrong answer, because a new oath sworn on this floor is exactly how the first one went wrong.
 
 **Right answer one — the Vigil.** Keep the night. Watched, lit, never left alone. The thing on this floor was buried unwatched two thousand years ago and every doctrine in the empire says that is a wound rather than a burial. A party that has met a single Vigil Hall has everything they need to work this out.
 
@@ -173,6 +173,7 @@ Record outcomes in the Branch Ledger.
 - **The responses, verbatim:** Whatever the players improvised as the covenant’s missing half is now canon — the actual second voice of the founding rite, spoken two thousand years late by people who were not there. Write it down. If the campaign ever needs a counter-oath, a binding, or words to end things with, use theirs.
 - **Who they told:** The single largest branch in the campaign. Vaelindra opens the mythology; Shen opens the archive and the politics; Vell opens the scholarship and the scandal; the throne opens everything at once and cannot be closed; nobody preserves the status quo at a cost the Hall already named. Sessions Nine onward are built from this answer.
 - **Did they keep the Redwatch Vigil (Session One)?** If yes, the party arrives at the solution here intuitively and the DM should reward the callback openly. If no, make the omission felt — not punitively, but the realization that they have done this wrong once before, to eight men in a ruined fort, should land somewhere in this session.
+- **Standing moved this session:** Standing moves only when they surface, and the Ascent is where. Vaelindra’s circle goes to the top of the band if they come to her first, which she asked for and has earned — and because her circle and the Office are an opposed pair, telling her first is a decision about the Office as well. The Lupine Throne and the Court is not a tier tonight but a gate: bringing any of this to Qilvayas is a different campaign, and the Ledger has a row for it. Telling nobody costs nothing on any track in the empire, and is the only outcome in this document that the Witness Hall has an opinion about.
 
 # Stat Blocks
 

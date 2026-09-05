@@ -202,10 +202,10 @@ children.push(...LOC({
   name: "Varn\u2019s Crossing", kind: "toll town",
   stat: "Population 900. One day east of Aenodira on the eastern trunk road.",
   what: "A stone bridge older than the fracture, a customs house, four inns, and a town that exists entirely because everything going east must cross here. The bridge has three arches and the middle one is original imperial work; the Roads Commission has replaced the outer two twice and will not touch the middle, on the grounds that nobody now living knows how it was done.",
-  runs: "The tollmaster, an imperial appointment, currently a tired and scrupulous man named Havel Ostrin who has held the post eleven years and has been offered a bribe on approximately four thousand occasions.",
+  runs: "The tollmaster, an imperial appointment, currently a tired and scrupulous man named Havel Corse who has held the post eleven years and has been offered a bribe on approximately four thousand occasions.",
   buy: "Anything a traveler forgot. Horse-hire and stabling at capital prices plus a third. A wheelwright who is genuinely excellent and knows it. No armor, no weapons above a hunting bow \u2014 the customs house takes a dim view of arms moving east in quantity, and it is watching.",
-  talk: "Ostrin, if you want to know what has crossed the bridge and when, which he records obsessively and will share for the asking because nobody ever asks. Merrit Sabb at the Three Arches, a carter\u2019s-widow innkeeper who hears everything and repeats most of it.",
-  comp: "Since Book Three\u2019s registration requirement, Ostrin has been instructed to record trade goods as well as tolls. He is doing it. The volume has tripled his workload, he is four weeks behind, and the backlog is a genuine vulnerability that at least three interested parties have noticed \u2014 an unregistered wagon is currently a very easy thing to be.",
+  talk: "Corse, if you want to know what has crossed the bridge and when, which he records obsessively and will share for the asking because nobody ever asks. Merrit Sabb at the Three Arches, a carter\u2019s-widow innkeeper who hears everything and repeats most of it.",
+  comp: "Since Book Three\u2019s registration requirement, Corse has been instructed to record trade goods as well as tolls. He is doing it. The volume has tripled his workload, he is four weeks behind, and the backlog is a genuine vulnerability that at least three interested parties have noticed \u2014 an unregistered wagon is currently a very easy thing to be.",
   dm: "Odric Hale works this bridge when the capital is too warm for him. The toll-in-strands line the party heard on the road out is his."
 }));
 
@@ -391,7 +391,7 @@ children.push(...LOC({
   what: "A village of singers, and the place where the Lament cycle is kept whole. Wood-elf and Tarnovari families mixed for so long the distinction has stopped being interesting to anyone living there. Longhouses under the canopy; no stone building; no shrine of any recognized faith.",
   runs: "Nobody. Precedence in Verath is by how much of the cycle you can sing.",
   buy: "Nothing, for money. Hospitality, for a song, a story, or news \u2014 and the exchange rate is real and taken seriously.",
-  talk: "Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and has never been further from the village than Kamenhold.",
+  talk: "Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and had never been further from the village than Kamenhold until the trade delegation came through asking the village for a singer. If the party met her in the capital (Session Six, optional content), she is home again by any later visit and remembers them; if they did not, she has never left.",
   comp: "The Old Wood\u2019s heart is a day further in, where the Hollow Hills stand and travelers' time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.",
   dm: "Ilinca does not know what she is carrying. The Lament\u2019s oldest verses are a survivor\u2019s account of the Founding, worn down by twenty centuries of transmission into a song about a betrayed lord called Vosthren. She will sing it to anyone who earns it. This is the single largest lore payload in the setting outside the Undercourt, and it is available to a party who is polite to a village."
 }));
@@ -500,7 +500,7 @@ children.push(...LOC({
 children.push(...LOC({
   name: "Halvenne", kind: "burned village",
   stat: "Population: none. Formerly 400.",
-  what: "Ashes and hedges, one season old, and the reason four refugee families were on the road in the party\u2019s first session. The wells are intact. The Vigil Hall\u2019s stone foundation is intact. Nothing else is.",
+  what: "Ashes and hedges, one season old, and the reason forty families were walking the imperial road in the party\u2019s second session. The wells are intact. The Vigil Hall\u2019s stone foundation is intact. Nothing else is.",
   runs: "Nothing.",
   buy: "Nothing.",
   talk: "Semya of Halvenne, if the party knows where she went \u2014 and she will want to know what they saw.",

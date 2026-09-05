@@ -74,11 +74,13 @@ Session Zero is the only session in this campaign with no pacing budget, which i
 | Forging the party | 30 | The four co-authoring questions. Answered aloud, in any order, building on each other. |
 | The Company | 10 | Name it, describe the sign, and write it down where everyone can see it. |
 
+The DM has one more thing to open tonight, and it is not a player-facing document: the standing sheet. Twelve factions, one number each from zero to five, all of them at zero this evening, moved once at the end of every session (see the sourcebook, Standing: What the Empire Remembers). Every session module closes with a note on what moved and why, and the whole system is a page of arithmetic that turns the campaign’s politics from a thing the DM remembers into a thing the DM can read. Open it beside the Branch Ledger before Session One and fill in both at the same time, or neither will get filled in at all. One warning, kept from the players for as long as possible: the Office of Omens is the score they should want low, and its number will go up whether they earn it or not.
+
 # Tone, Lines, and the Conversation Before the Campaign
 
 This campaign includes an empire that keeps people in bound labor, a church that conducts trials for lycanthropy, a massacre of worshippers at a festival, a district burned to end a rebellion, and a village where servant girls do not come home. All of it is written to be taken seriously rather than used for shock, and none of it works if somebody at the table is enduring it politely.
 
-**What to say.** Name the heavy material out loud, before characters exist. The list above takes ninety seconds to read and it is the whole of the obligation. Then ask two questions and take the answers without discussion: is there anything here you would rather this campaign did not go near, and is there anything here you actively want it to.
+**What to say.** Name the heavy material out loud, before characters exist. The list above takes ninety seconds to read and it is the whole of the obligation. Then ask two questions and take the answers without discussion: is there anything here you would rather this campaign did not go near, and is there anything here you actively want it to. One further check belongs in the same breath and is easy to forget, because it is about the shape of the campaign rather than its content: this campaign poses questions with no clean answer, and whether the empire should be restored at all is genuinely contestable rather than rhetorical. A table that wants a clear villain will be unhappy for eight sessions and it is far kinder to find that out now.
 
 **The second question matters as much as the first.** A player who says I want the bound-labor material to be real is telling the DM where to aim, and the campaign is far better for knowing. The Bound-Freed background in the Player’s Companion exists because somebody will want it.
 
@@ -92,7 +94,7 @@ Hand out the Player Guide and the Player’s Companion before or at Session Zero
 
 **Safe to know.** The empire’s history and its fracture. The Matron, the Aspects, the saints, the Vigil. The Atlas and the powers who hold each region. The calendar, the money, the titles, and how to address a Prelate without embarrassing yourself. The Academy, its houses, and the Proving’s existence as a rumor students argue about.
 
-**Not to know, and worth guarding.** The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos’s people. That the Proving is real, and that it is coming. Anything about the shadow’s mechanism — the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does.
+**Not to know, and worth guarding.** The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos’s people. That the Proving is real, and that it is coming. Anything about the shadow’s mechanism — the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does. And if a player builds a paladin or a cleric, resist the urge to foreshadow early. Their moment comes in the dark under the Old Forum, seven sessions out, and it will be worth the wait.
 
 **DM Only:** the single most common way this campaign gets spoiled is a DM who is proud of the mechanism and cannot resist signposting it. Do not. Seed it constantly, confirm it never, and let the first player who says it out loud at the table have that moment entirely to themselves.
 
@@ -114,14 +116,6 @@ The Company block asks the players to name themselves and it is the one part of 
 # The First Five Minutes of Session One
 
 End Session Zero by describing where Session One opens, so nobody arrives cold: the party is four days east of the capital, on a field exercise that has three days left to run, in a market town called Dravenna, and a magistrate is about to ask them for a favor he has no authority to ask. Nothing has gone wrong yet. That is the last time that sentence will be true.
-
-# Tone Check
-
-Run a short, explicit conversation about tone. This campaign is built on moral complexity — an idealistic emperor whose methods may darken, factions with legitimate grievances on every side, and a central threat fed by betrayal. Confirm the table wants that, and establish lines and veils as normal. Two specific checks worth making: first, is the table comfortable with the campaign posing questions that have no clean answer (whether the empire should be restored at all is genuinely contestable); second, how much darkness is welcome around themes of institutional corruption, religious politics, and violence against civilians. Calibrate accordingly — the material flexes either direction.
-
-# What the Players Should Not Know
-
-DM eyes only. The players should leave Session Zero knowing the setting material marked as public in the sourcebook: the empire’s decline, the academy, the Emperor’s restoration project, the Lupine Matron and the general shape of the faith, and the existence of theological dispute about the founder. They should know nothing of the Founding Myth’s buried account — Threnvos, the broken oath, the Oathbreaker — nothing of the shadow’s nature or its feeding mechanism, nothing of Vaelindra (she enters play in Session Two), and nothing about the truth of Empress Nyreeza’s disappearance beyond the public mystery. Above all, they must never hear the word Proving: the academy’s staged final examination (Sessions Three and Four) only works if no player has any reason to suspect the institution stages anything, ever. If a player builds a paladin or cleric, resist the urge to foreshadow early. Their moment comes later, and it will be worth the wait.
 
 ~
 

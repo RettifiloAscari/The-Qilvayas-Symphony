@@ -154,9 +154,11 @@ c.push(table(
     ["Magistrate Cassivar Ondrei", "Dravenna, the Ostmark", "Precise, tired, provincial-honest. Renewable ally; his complaint re: the Third Legion colonel is now sitting with Thorne."],
     ["Yanna", "Dravenna / the road", "Teamster survivor. Recurring contact if treated kindly; hears things on the roads."],
     ["Sergeant Varkos Dren (deceased)", "Redwatch", "Session 1 antagonist \u2014 Oathbreaker deserter. His defaced, permanently cold medallion is now a party item."],
-    ["Sgt. Petra Malich", "Varn\u2019s Crossing checkpoint", "Underpaid, privately ashamed of the illegal toll. Good soldier, bad arrangement."],
+    ["Sgt. Petra Malich", "Varn\u2019s Crossing checkpoint", "Of the Third \u2014 same legion as the Redwatch deserters, unpaid for a year, and the half that stayed. Privately ashamed of the toll. The Dessen case\u2019s best witness if asked directly by people who kept faith with her."],
     ["Semya of Halvenne", "The road / Farrowgate or Dravenna", "Refugee matriarch; delivered the \u201Cindrawn breath\u201D omen. Her people\u2019s fate tracks the party\u2019s choice to help or not."],
-    ["Odric Hale", "The road / Rivergate", "Racketeer with a dead Roads Commission seal. Thread points to a Rivergate seal-dealer."]
+    ["Odric Hale", "The road / Rivergate", "Racketeer with a dead Roads Commission seal. Thread points to a Rivergate seal-dealer."],
+    ["Havel Corse", "Varn\u2019s Crossing customs house", "Imperial tollmaster, 11 years, obsessive records. Will copy out a dated case against Ostrev for anyone who walks in and asks. Will not carry it himself."],
+    ["Hobb Tallow", "Kolvess \u2014 quartermaster\u2019s clerk", "Keeps Dessen\u2019s second set of books. Waiting three years for a direct question from someone who can survive the answer."]
   ]
 ));
 
@@ -312,7 +314,7 @@ c.push(table(
 c.push(H1("Homebrew Items of Record"));
 c.push(BUL("Dren\u2019s Oath-Medallion (uncommon, unique):", "Cold near oath-breaking, shadow-residue, thin-written ground. Quieter with oath-keepers."));
 c.push(BUL("Oathstone Charm (common, Kamenhold 5 gp):", "1/day advantage on one Insight vs. a sworn statement."));
-c.push(BUL("Pilgrim\u2019s Wolfstone (common, Lupenna):", "Wolves/dogs neutral; true north on clear nights. ~1 in 40 \u2019live\u2019; the Church insists otherwise."));
+c.push(BUL("Pilgrim\u2019s Wolfstone (common, Lupenna):", "Wolves/dogs neutral; true north on clear nights. ~1 in 40 \u2018live\u2019; the Church insists otherwise."));
 c.push(BUL("Wardstone Shard (common, unique source):", "Dim wolf-grey light 10 ft; gutters within 30 ft of Undercourt cold."));
 c.push(BUL("The Lector\u2019s Seal (rare, unique):", "Company stamp; academy-archive documents sealed with it read as authorized; unforgeable; every use logged in the deep stacks."));
 
@@ -347,7 +349,7 @@ c.push(BUL("The Proving:", "Real academy tradition \u2014 a staged final exam mi
 
 // ============ TIMELINE ============
 c.push(H1("Timeline at a Glance"));
-c.push(P("DM-only anchor (computational baseline; the in-world Reckoning figure stays soft and never appears player-facing): present day \u2248 YR 2000, the founding at YR 0 \u2014 so every \u2019~N years ago\u2019 resolves to YR (2000 \u2212 N)."));
+c.push(P("DM-only anchor (computational baseline; the in-world Reckoning figure stays soft and never appears player-facing): present day \u2248 YR 2000, the founding at YR 0 \u2014 so every \u2018~N years ago\u2019 resolves to YR (2000 \u2212 N)."));
 c.push(table(
   ["When", "Event"],
   [22, 78],
@@ -380,7 +382,8 @@ c.push(BUL("Dren\u2019s oath-medallion:", "Defaced, permanently cold, non-detect
 c.push(BUL("The Cold Door rubbing:", "Charcoal rubbing of cipher marks at the Undervault\u2019s sealed door \u2014 now the only copy in existence; the wing was re-sealed after. (Sessions 3\u20134)"));
 c.push(BUL("The Lector\u2019s Seal housing:", "Gifted to the party as their mercenary company\u2019s official sealing-stamp. (Sessions 3\u20134)"));
 c.push(BUL("Forty witnesses (Halvenne):", "If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)"));
-c.push(BUL("Ondrei\u2019s complaint vs. the Third Legion colonel:", "Currently sitting in Legate Thorne\u2019s inbox \u2014 background thread, can be developed or left as texture."));
+c.push(BUL("The Colonel\u2019s Reckoning (Dessen):", "Ondrei\u2019s complaint has sat unanswered in Legate Thorne\u2019s inbox for eleven months. The thread is fully routed now and runs on three pieces: surviving deserters who will testify (Session 1), Sgt. Malich \u2014 of the Third, unpaid a year, the half that stayed (Session 2), and Hobb Tallow\u2019s second set of books at Kolvess (Gazetteer). Any two of the three close it. Dessen has patrons in the capital and Tallow knows their names, which is the actual difficulty."));
+c.push(BUL("Ovric, Struck from the Canon:", "The blank on the Vigil Hall wall in Dravenna, lamp still lit, planted in the campaign\u2019s first hour (Session 1). The suppression file is in the Imperial Archive\u2019s closed levels; what he witnessed touches the Founding. A corroborating door, never the first one \u2014 reachable by a company holding the Lector\u2019s Seal."));
 c.push(BUL("Solacre Day:", "The promulgation, the Marked ruling, the Grey-Gold Rising, and word of Karvel\u2019s coronation all converge on one day, not just one season. See The Coronation Clock and The Grey-Gold Rising, below."));
 c.push(BUL("The Coronation Clock:", "Karvel\u2019s crowning in Orlath, landing the same day as the Laws\u2019 promulgation \u2014 not merely the same year. The campaign\u2019s second structural clock."));
 c.push(BUL("The Landless King\u2019s Fifth Petition:", "Aldrec\u2019s final overture to the throne \u2014 a closing window tied to his failing health."));
@@ -413,6 +416,7 @@ c.push(table(
     ["Deserters spared vs. killed (Dessen case strength)", "1", ""],
     ["Parley vs. assault reputation", "1", ""],
     ["Medallion carried, and by whom", "1", ""],
+    ["The Vigil at Redwatch \u2014 kept or not (Session 8 asks)", "1", ""],
     ["Semya\u2019s people: Dravenna vs. Farrowgate", "2", ""],
     ["Malich respected vs. Ostrev\u2019s enmity", "2", ""],
     ["Odric escorted vs. released (Mosse lead)", "2", ""],

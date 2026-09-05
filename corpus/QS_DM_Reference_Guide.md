@@ -99,9 +99,11 @@ Elderly human, ex-Church functionary sidelined after a vision the Church couldn�
 | Magistrate Cassivar Ondrei | Dravenna, the Ostmark | Precise, tired, provincial-honest. Renewable ally; his complaint re: the Third Legion colonel is now sitting with Thorne. |
 | Yanna | Dravenna / the road | Teamster survivor. Recurring contact if treated kindly; hears things on the roads. |
 | Sergeant Varkos Dren (deceased) | Redwatch | Session 1 antagonist — Oathbreaker deserter. His defaced, permanently cold medallion is now a party item. |
-| Sgt. Petra Malich | Varn’s Crossing checkpoint | Underpaid, privately ashamed of the illegal toll. Good soldier, bad arrangement. |
+| Sgt. Petra Malich | Varn’s Crossing checkpoint | Of the Third — same legion as the Redwatch deserters, unpaid for a year, and the half that stayed. Privately ashamed of the toll. The Dessen case’s best witness if asked directly by people who kept faith with her. |
 | Semya of Halvenne | The road / Farrowgate or Dravenna | Refugee matriarch; delivered the “indrawn breath” omen. Her people’s fate tracks the party’s choice to help or not. |
 | Odric Hale | The road / Rivergate | Racketeer with a dead Roads Commission seal. Thread points to a Rivergate seal-dealer. |
+| Havel Corse | Varn’s Crossing customs house | Imperial tollmaster, 11 years, obsessive records. Will copy out a dated case against Ostrev for anyone who walks in and asks. Will not carry it himself. |
+| Hobb Tallow | Kolvess — quartermaster’s clerk | Keeps Dessen’s second set of books. Waiting three years for a direct question from someone who can survive the answer. |
 
 ## The Powers of the Fractured Empire
 
@@ -246,7 +248,7 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 
 - **Dren’s Oath-Medallion (uncommon, unique):** Cold near oath-breaking, shadow-residue, thin-written ground. Quieter with oath-keepers.
 - **Oathstone Charm (common, Kamenhold 5 gp):** 1/day advantage on one Insight vs. a sworn statement.
-- **Pilgrim’s Wolfstone (common, Lupenna):** Wolves/dogs neutral; true north on clear nights. ~1 in 40 ’live’; the Church insists otherwise.
+- **Pilgrim’s Wolfstone (common, Lupenna):** Wolves/dogs neutral; true north on clear nights. ~1 in 40 ‘live’; the Church insists otherwise.
 - **Wardstone Shard (common, unique source):** Dim wolf-grey light 10 ft; gutters within 30 ft of Undercourt cold.
 - **The Lector’s Seal (rare, unique):** Company stamp; academy-archive documents sealed with it read as authorized; unforgeable; every use logged in the deep stacks.
 
@@ -285,7 +287,7 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 
 # Timeline at a Glance
 
-DM-only anchor (computational baseline; the in-world Reckoning figure stays soft and never appears player-facing): present day ≈ YR 2000, the founding at YR 0 — so every ’~N years ago’ resolves to YR (2000 − N).
+DM-only anchor (computational baseline; the in-world Reckoning figure stays soft and never appears player-facing): present day ≈ YR 2000, the founding at YR 0 — so every ‘~N years ago’ resolves to YR (2000 − N).
 
 | **When** | **Event** |
 | --- | --- |
@@ -315,7 +317,8 @@ DM-only anchor (computational baseline; the in-world Reckoning figure stays soft
 - **The Cold Door rubbing:** Charcoal rubbing of cipher marks at the Undervault’s sealed door — now the only copy in existence; the wing was re-sealed after. (Sessions 3–4)
 - **The Lector’s Seal housing:** Gifted to the party as their mercenary company’s official sealing-stamp. (Sessions 3–4)
 - **Forty witnesses (Halvenne):** If resettled in Dravenna, a standing, grateful contact network. If not, they surface later in Farrowgate. (Session 2)
-- **Ondrei’s complaint vs. the Third Legion colonel:** Currently sitting in Legate Thorne’s inbox — background thread, can be developed or left as texture.
+- **The Colonel’s Reckoning (Dessen):** Ondrei’s complaint has sat unanswered in Legate Thorne’s inbox for eleven months. The thread is fully routed now and runs on three pieces: surviving deserters who will testify (Session 1), Sgt. Malich — of the Third, unpaid a year, the half that stayed (Session 2), and Hobb Tallow’s second set of books at Kolvess (Gazetteer). Any two of the three close it. Dessen has patrons in the capital and Tallow knows their names, which is the actual difficulty.
+- **Ovric, Struck from the Canon:** The blank on the Vigil Hall wall in Dravenna, lamp still lit, planted in the campaign’s first hour (Session 1). The suppression file is in the Imperial Archive’s closed levels; what he witnessed touches the Founding. A corroborating door, never the first one — reachable by a company holding the Lector’s Seal.
 - **Solacre Day:** The promulgation, the Marked ruling, the Grey-Gold Rising, and word of Karvel’s coronation all converge on one day, not just one season. See The Coronation Clock and The Grey-Gold Rising, below.
 - **The Coronation Clock:** Karvel’s crowning in Orlath, landing the same day as the Laws’ promulgation — not merely the same year. The campaign’s second structural clock.
 - **The Landless King’s Fifth Petition:** Aldrec’s final overture to the throne — a closing window tied to his failing health.
@@ -349,6 +352,7 @@ Every session module now carries a Diverging Paths section. Track outcomes here 
 | Deserters spared vs. killed (Dessen case strength) | 1 |  |
 | Parley vs. assault reputation | 1 |  |
 | Medallion carried, and by whom | 1 |  |
+| The Vigil at Redwatch — kept or not (Session 8 asks) | 1 |  |
 | Semya’s people: Dravenna vs. Farrowgate | 2 |  |
 | Malich respected vs. Ostrev’s enmity | 2 |  |
 | Odric escorted vs. released (Mosse lead) | 2 |  |

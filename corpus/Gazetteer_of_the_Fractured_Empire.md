@@ -124,13 +124,13 @@ The Crownlands are also where a party will spend most of the campaign’s first 
 
 **What it is.** A stone bridge older than the fracture, a customs house, four inns, and a town that exists entirely because everything going east must cross here. The bridge has three arches and the middle one is original imperial work; the Roads Commission has replaced the outer two twice and will not touch the middle, on the grounds that nobody now living knows how it was done.
 
-**Who runs it.** The tollmaster, an imperial appointment, currently a tired and scrupulous man named Havel Ostrin who has held the post eleven years and has been offered a bribe on approximately four thousand occasions.
+**Who runs it.** The tollmaster, an imperial appointment, currently a tired and scrupulous man named Havel Corse who has held the post eleven years and has been offered a bribe on approximately four thousand occasions.
 
 **What you can get.** Anything a traveler forgot. Horse-hire and stabling at capital prices plus a third. A wheelwright who is genuinely excellent and knows it. No armor, no weapons above a hunting bow — the customs house takes a dim view of arms moving east in quantity, and it is watching.
 
-**Who to talk to.** Ostrin, if you want to know what has crossed the bridge and when, which he records obsessively and will share for the asking because nobody ever asks. Merrit Sabb at the Three Arches, a carter’s-widow innkeeper who hears everything and repeats most of it.
+**Who to talk to.** Corse, if you want to know what has crossed the bridge and when, which he records obsessively and will share for the asking because nobody ever asks. Merrit Sabb at the Three Arches, a carter’s-widow innkeeper who hears everything and repeats most of it.
 
-**The complication.** Since Book Three’s registration requirement, Ostrin has been instructed to record trade goods as well as tolls. He is doing it. The volume has tripled his workload, he is four weeks behind, and the backlog is a genuine vulnerability that at least three interested parties have noticed — an unregistered wagon is currently a very easy thing to be.
+**The complication.** Since Book Three’s registration requirement, Corse has been instructed to record trade goods as well as tolls. He is doing it. The volume has tripled his workload, he is four weeks behind, and the backlog is a genuine vulnerability that at least three interested parties have noticed — an unregistered wagon is currently a very easy thing to be.
 
 **DM Only:** Odric Hale works this bridge when the capital is too warm for him. The toll-in-strands line the party heard on the road out is his.
 
@@ -381,7 +381,7 @@ Nothing in this region is bought. Everything in it is agreed. A party that treat
 
 **What you can get.** Nothing, for money. Hospitality, for a song, a story, or news — and the exchange rate is real and taken seriously.
 
-**Who to talk to.** Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and has never been further from the village than Kamenhold.
+**Who to talk to.** Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and had never been further from the village than Kamenhold until the trade delegation came through asking the village for a singer. If the party met her in the capital (Session Six, optional content), she is home again by any later visit and remembers them; if they did not, she has never left.
 
 **The complication.** The Old Wood’s heart is a day further in, where the Hollow Hills stand and travelers' time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.
 
@@ -523,7 +523,7 @@ Broken hill country. Hedgerows gone wild between burned granges, mill-streams tu
 
 *Population: none. Formerly 400.*
 
-**What it is.** Ashes and hedges, one season old, and the reason four refugee families were on the road in the party’s first session. The wells are intact. The Vigil Hall’s stone foundation is intact. Nothing else is.
+**What it is.** Ashes and hedges, one season old, and the reason forty families were walking the imperial road in the party’s second session. The wells are intact. The Vigil Hall’s stone foundation is intact. Nothing else is.
 
 **Who runs it.** Nothing.
 
