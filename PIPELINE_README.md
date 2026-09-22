@@ -146,6 +146,11 @@ characters or fewer forward to the paragraph after it. Nor does either help a la
 not a styled heading: the stat-block name, its type line, and the ACTIONS and REACTIONS
 sub-heads are ordinary paragraphs and carry their own `keepNext` in `SB()`.
 
+A short read-aloud box under a heading is the third case. LibreOffice will strand a
+heading whose next paragraph is a splittable shaded box when not even two of its lines fit,
+keepNext or no, so the same pass sets `keepLines` on a box of 650 characters or fewer that
+directly follows a heading. The box then moves whole, and the heading with it.
+
 To check the result, read faces and colours off the page rather than guessing from sizes:
 
 ```bash

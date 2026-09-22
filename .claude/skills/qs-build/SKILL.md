@@ -262,6 +262,15 @@ It is not enough in two cases, and both were live in the corpus:
   they announce. `ACTIONS` alone at the foot of a column, `Oathless Deserter` alone at the
   foot of another. They now carry `keepNext` in `SB()`, in all seven generators that define
   one.
+- **A read-aloud box under a heading.** The heading's `keepNext` is present and LibreOffice
+  still left `Scene 4: Redwatch` alone at the foot of a page with its box overleaf: a
+  splittable shaded paragraph gives the keep nothing to hold on to when there is no room
+  for even its first two lines. `keep_lead_with_heading()` now also sets `keepLines` on a
+  shaded box directly under a heading when the box is **650 characters or fewer** (about
+  twelve italic lines at the measure). Held whole, the box moves and the heading moves with
+  it. A longer box may still split, which is ordinary; pinning a page of read-aloud together
+  costs more than it buys. Applying `keepLines` to every box instead was tried and cost
+  Session One a page for nothing the narrow rule does not already fix.
 
 Find them on the page, not in the source — `pdftohtml -xml` reports the face and colour of
 every run, so a heading is identifiable by typeface (Alegreya SC) and a stat-block name by

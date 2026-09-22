@@ -62,7 +62,7 @@ From Aenodira, at normal pace, on the best surviving surface. Add a third to eve
 The new Laws have made travel a documentary exercise, and Book Four’s seal-and-register requirements are the single most common friction a party will meet on the road. A DM should have three answers ready.
 
 - **At a bridge or gate in loyalist territory:** a toll (a Zhuven per wagon, two strands per walker at Varn’s Crossing; less elsewhere), and, since Book Three, a look at your charter if you are carrying trade goods. A party’s academy commission covers this. A party’s academy commission covering this is itself worth a scene the first time it works.
-- **At a provincial gate:** the toll is real and the paperwork is theatre. What the gate-sergeant actually wants is to know whether you are a problem. DC 12 Charisma (Persuasion), or a legion name, or a coin.
+- **At a provincial gate:** the toll is real and the paperwork is theater. What the gate-sergeant actually wants is to know whether you are a problem. DC 12 Charisma (Persuasion), or a legion name, or a coin.
 - **Past the loyalist border:** there is no toll, and that is not good news. Somebody is still collecting; they simply do it further along, without a gate, and there is no schedule of charges.
 
 # Hazards of the Road
@@ -116,7 +116,7 @@ A name followed by a bracketed dagger — (†) — is a Monster Manual creature
 
 The Ostrun’s broad valley: terraced grain, cypress windbreaks, poplar-lined imperial roads, and the capital’s three walls rising out of river haze. The only place in the world where imperial law functions at full strength, and the only place where everyone lives inside the restoration project whether they believe in it or not. Prosperous by current standards. Anxious by any other.
 
-The Crownlands are also where a party will spend most of the campaign’s first arc, which makes the two days' ride to Lupenna and the one day to Varn’s Crossing the most useful short journeys in this book: far enough to be out of the capital’s eye, near enough to be back for the tenth bell.
+The Crownlands are also where a party will spend most of the campaign’s first arc, which makes the two days’ ride to Lupenna and the one day to Varn’s Crossing the most useful short journeys in this book: far enough to be out of the capital’s eye, near enough to be back for the tenth bell.
 
 ### Varn’s Crossing — toll town
 
@@ -169,7 +169,7 @@ The Crownlands are also where a party will spend most of the campaign’s first 
 | 1 | An imperial post-rider at the gallop, changing horses at the league-stone. He will not stop. What he is carrying is worth a Perception check. |
 | 2 | A pilgrim family bound for Lupenna, one of them genuinely ill and hoping. They will share food and want company as far as the shrine. |
 | 3 | A Watch patrol, four strong, checking charters since Book Three. Polite, thorough, and bored. Papers or a plausible story. |
-| 4 | Wolves — four, crossing the road, unhurried. Sacred and protected. The encounter is the other travelers' reaction, not the wolves. |
+| 4 | Wolves — four, crossing the road, unhurried. Sacred and protected. The encounter is the other travelers’ reaction, not the wolves. |
 | 5 | A Concord wagon train, twelve wagons, hiring guards for the eastern leg at fair rates. They have been robbed once already this season. |
 | 6 | A surveyor’s stake driven into a field, and two farmers arguing about it. The Law Commission is remeasuring, and somebody is going to lose land. |
 | 7 | Bandits (4 Bandits, 1 Bandit Captain) working a wooded stretch. They are second-season deserters, not professionals, and they will take a good offer. |
@@ -264,7 +264,7 @@ Big-sky plains breaking into wooded hills eastward, watch-forts on the heights s
 
 # The Suthmark
 
-Golden grain to the horizon, vineyard terraces, chalk downs, and eastward the grey hollows of the Greywell hills where the light arrives late and leaves early. The empire’s breadbasket, genuinely loyal, and devout in the older and plainer way — harvest processions, field-shrines, saints' days kept by the planting calendar rather than the Sanctum’s.
+Golden grain to the horizon, vineyard terraces, chalk downs, and eastward the grey hollows of the Greywell hills where the light arrives late and leaves early. The empire’s breadbasket, genuinely loyal, and devout in the older and plainer way — harvest processions, field-shrines, saints’ days kept by the planting calendar rather than the Sanctum’s.
 
 The south is also the region that carries two scars it will not discuss with outsiders, and a party that spends time here will feel the shape of both long before anyone names them.
 
@@ -383,7 +383,7 @@ Nothing in this region is bought. Everything in it is agreed. A party that treat
 
 **Who to talk to.** Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and had never been further from the village than Kamenhold until the trade delegation came through asking the village for a singer. If the party met her in the capital (Session Six, optional content), she is home again by any later visit and remembers them; if they did not, she has never left.
 
-**The complication.** The Old Wood’s heart is a day further in, where the Hollow Hills stand and travelers' time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.
+**The complication.** The Old Wood’s heart is a day further in, where the Hollow Hills stand and travelers’ time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.
 
 **DM Only:** Ilinca does not know what she is carrying. The Lament’s oldest verses are a survivor’s account of the Founding, worn down by twenty centuries of transmission into a song about a betrayed lord called Vosthren. She will sing it to anyone who earns it. This is the single largest lore payload in the setting outside the Undercourt, and it is available to a party who is polite to a village.
 
@@ -602,7 +602,7 @@ What the capital has not understood is that Orlath is no longer a schism. It is 
 
 **The complication.** Olvesa’s four vengeances fell here. The town’s surviving families are the families of the people she killed, and they have lived under her See for fifty-eight years, and they attend her liturgy, and they do not sing.
 
-**DM Only:** The banshees on the Drevic moors are the clan-lands' unfinished grief and they are not hostile to anyone who comes without a weapon drawn. A party that treats them as a monster will learn nothing. A party that treats them as mourners will learn what Olvesa did, from the only witnesses left.
+**DM Only:** The banshees on the Drevic moors are the clan-lands’ unfinished grief and they are not hostile to anyone who comes without a weapon drawn. A party that treats them as a monster will learn nothing. A party that treats them as mourners will learn what Olvesa did, from the only witnesses left.
 
 **Encounters — the See of Orlath (d12)**
 
@@ -647,7 +647,7 @@ Fjords and pine-clad steeps, longhouse towns turning to slate-roofed monastery b
 
 *Population 3,000, of whom perhaps 900 can write.*
 
-**What it is.** The monastery town where forty schools' worth of scribes are teaching the north to write. The scriptorium is the largest single room north of Aenodira and it is full, at all hours, of people learning their letters at every age from six to sixty.
+**What it is.** The monastery town where forty schools’ worth of scribes are teaching the north to write. The scriptorium is the largest single room north of Aenodira and it is full, at all hours, of people learning their letters at every age from six to sixty.
 
 **Who runs it.** The Abbot-Rector, a royal appointment, and in practice the senior scribes.
 

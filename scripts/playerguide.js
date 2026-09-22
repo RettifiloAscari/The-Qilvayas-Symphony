@@ -322,13 +322,13 @@ children.push(table(["Item","Price","Notes"],[34, 19, 47],[
   ["Any Exchange-list item","\u221220%","Provenance flexible; quality genuine (the Inkhands guarantee it \u2014 their ledgers are their honor)"],
   ["Unstamped healing potion","35 gp","Works fine. The discount is the legal risk, priced honestly"],
   ["Unlicensed scrollwork, 1st","60\u201380 gp","roughly a 1-in-6 chance of a flawed casting \u2014 the scribe\u2019s risk, priced in; the good scribes cost Exchange prices anyway"],
-  ["\u2018Relic\u2019 of a named saint","10\u2013500 gp","Almost always false. Almost. (See Part I: the false-relic trade, and the terrifying occasional exception)"],
+  ["\u2018Relic\u2019 of a named saint","10\u2013500 gp","Almost always false. Almost. (See Relics and Mercy, under Magic, As Lived: the false-relic trade, and the terrifying occasional exception)"],
   ["Dead-office seals & instruments","Negotiable","Mosse\u2019s shop \u2014 see Session Five; prices are sentimental"]
 ]));
 children.push(H3("Regional Signature Vendors"));
 children.push(table(["Vendor","Where","Specialty & Sample Prices"],[26,18,56],[
   ["Ostwatch Outfitters (Yanna\u2019s cousin\u2019s house)","Dravenna","Road & cold-weather gear at book; caravan intelligence free with purchase; wolf-charms 1 sp (\u2018for luck, and it\u2019s bad luck not to\u2019)"],
-  ["The Stonewright\u2019s Yard","Kamenhold","Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (see Part VIII homebrew); dry-stone masonry consulting, priced in favors"],
+  ["The Stonewright\u2019s Yard","Kamenhold","Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (a thumb-sized standing stone on a cord, sworn over at carving; said to help a bearer judge a sworn word); dry-stone masonry consulting, priced in favors"],
   ["The Vintners\u2019 Hall","Caldessa","Suthmark vintages 1\u201350 gp; mourning-silk; and the Garland hears every order placed"],
   ["The Letter-House","Lettervik","Books 25 gp+, maps of the north 10 gp, copying services; Karvel\u2019s subsidy makes literacy cheap \u2014 the point is the point"],
   ["The Tithe-Factor","Saltmark","Ship passage, cargo insurance (Saltmaw exclusions in small print), Skell tally-sticks as negotiable instruments"]

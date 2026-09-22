@@ -186,7 +186,7 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 | The Lamp Left Burning | Light | Vigil lamps, channel-lights, night offices | Light kept through the night, never sunrise. Orlath disputes the Aspect’s standing. |
 | The Elder Range | Nature | The Old Observance, druids, rangers | No icon: a bare stone, a marked tree. The Church’s studied non-comment. |
 | The Winter Voice | Tempest | Northern liturgies, Orlath, Ardven | The Sanctum finds it provincial. The north finds the Sanctum soft. |
-| The Limping Bitch | Trickery | Nobody officially. Everybody provincially | Never recognized, never suppressed. Deception in defence of the den — the campaign’s moral engine on a barn door. |
+| The Limping Bitch | Trickery | Nobody officially. Everybody provincially | Never recognized, never suppressed. Deception in defense of the den — the campaign’s moral engine on a barn door. |
 | (no Aspect) | Death | — | DM ONLY: the absence is doctrine. Divine power answering to death is not answering from the Matron, and the honest question of who does is open. |
 | (no Aspect) | Arcana | — | Thaumaturgy is chartered, not blessed. A cleric of Arcana starts a decade-long jurisdictional war. |
 
@@ -223,7 +223,7 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 | The Imperial Academy | Knowledge, students, or credit brought home | The deep stacks and an unquestioned requisition |
 | The Law Commission | Evidence that survives a hearing | Vhal’s ear and a Writ on a day’s notice |
 | The Legions | You stand where you said you would | A century who will listen; lost quartermaster paperwork |
-| Merchants' Concord | A route made safer, a contract made enforceable | Credit, a factor in every town, the second-best network in the empire |
+| Merchants’ Concord | A route made safer, a contract made enforceable | Credit, a factor in every town, the second-best network in the empire |
 | The Inkhands | You pay, shut up, and bring no Watch | Unlicensed work at trade prices; a door out at any hour |
 | Vaelindra’s circle | You keep her confidence and your word | The others she has referred over fifty years |
 | The See of Orlath | You treat the schism as a disagreement among the faithful | Northern passage and the Second Treasury |
@@ -249,7 +249,7 @@ Five ladders, not one. The empire keeps no single order of precedence — a Voiv
 - **Dren’s Oath-Medallion (uncommon, unique):** Cold near oath-breaking, shadow-residue, thin-written ground. Quieter with oath-keepers.
 - **Oathstone Charm (common, Kamenhold 5 gp):** 1/day advantage on one Insight vs. a sworn statement.
 - **Pilgrim’s Wolfstone (common, Lupenna):** Wolves/dogs neutral; true north on clear nights. ~1 in 40 ‘live’; the Church insists otherwise.
-- **Wardstone Shard (common, unique source):** Dim wolf-grey light 10 ft; gutters within 30 ft of Undercourt cold.
+- **Wardstone Shard (common, unique source):** Dim wolf-gray light 10 ft; gutters within 30 ft of Undercourt cold.
 - **The Lector’s Seal (rare, unique):** Company stamp; academy-archive documents sealed with it read as authorized; unforgeable; every use logged in the deep stacks.
 
 # Social Foundations at a Glance

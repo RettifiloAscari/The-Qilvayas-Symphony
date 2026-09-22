@@ -14,7 +14,7 @@
 
 The party are graduates now: chartered, marked in sealed records as Proven, and open for business. Session Five is their first real contract — a deniable commission from the Lord Chamberlain’s office to trace who has been buying the seals of dead imperial institutions — and it walks them through Rivergate’s document underworld, into a chess match with the Office of Omens, through a dockside misunderstanding with professional consequences, and finally to a back office where the thread they have been pulling turns out to end in the hand of Mistress Averil Shen, the throne’s own spymaster — who has been walking the same trail from the other end, because the trail was first walked by Empress Nyreeza.
 
-Designed for a five-hour core. Pacing budget: the shingle and the clerk (40 minutes); Rivergate — the district open to be walked, the seal-dealer among its nine locations (70 minutes); the dead letters, worked as a cipher rather than a translation (40 minutes); the Office’s attention (55 minutes); the Inkhands’ door (40 minutes); the Shen reveal (60 minutes); closing choices (15 minutes). Optional content adds up to two further hours — see Optional Content. This is deliberately a light-combat session: one avoidable brawl and one avoidable ambush. The city is the dungeon; the corridors are made of people.
+Designed for a five-hour core. Pacing budget: the shingle and the clerk (40 minutes); Rivergate — the district open to be walked, the seal-dealer among its nine locations (55 minutes); the dead letters, worked as a cipher rather than a translation (40 minutes); the Office’s attention (55 minutes); the Inkhands’ door (40 minutes); the Shen reveal (55 minutes); closing choices (15 minutes). Optional content adds up to two further hours — see Optional Content. This is deliberately a light-combat session: one avoidable brawl and one avoidable ambush. The city is the dungeon; the corridors are made of people.
 
 **On the forty minutes for the letters.** They are new to the budget and they are taken from the two big scenes, not added on top. The letters were previously read; now they are solved, and a cipher that resolves in five minutes is not a cipher. If the table is stuck at thirty minutes, Mosse sells them the concordance — that is what he is for, and buying the answer is one of the four intended solutions rather than a rescue.
 
@@ -50,7 +50,7 @@ Between scenes — ideally as the party leaves Rivergate — let a sharp-eyed ch
 
 > *Prelate Sarvin Odell receives you in a room designed to make visitors feel filed: shelves of identical gray boxes to the ceiling, a desk with nothing on it but one folder, and a window placed to light your faces and not his. He is sixty, soft-spoken, and unfailingly kind in the way of a man who has never once needed to raise his voice to ruin anyone. “Sit, please. Tea? No? Wise — it’s terrible. Now.” He opens the folder. “Let us talk about your dream.”*
 
-Run the interview as verbal chess, sixty minutes of it, and let it be genuinely tense — Odell is not a fool and this is his arena. His two goals, never stated: first, to get any party member to agree, in any phrasing, that the vision’s significance was suggested to them by Vaelindra (each such statement is an evidentiary brick in the jurisdictional wall he is building around her — a claimant influenced by an unsanctioned interpreter is Church business); second, failing that, to have the party voluntarily register as claimants of divine contact, which places them — and everyone who counsels them — under the Office’s examination authority. He probes with soft, precise questions: When did you first believe the dream mattered? Who told you it was shared? Who benefits from your belief? A Seal-house character recognizes the trap structure outright (no check); others may make DC 15 Wisdom (Insight) to feel the questions herding them. Safe answers exist — the vision was self-evidently shared before any consultation; no interpretation was sought, only historical context; the party claims nothing and therefore registers nothing — and Odell receives good answers with unfeigned professional pleasure, like a fencer saluting. Divergence outcomes at the end of this document. However it ends, his last line is the same:
+Run the interview as verbal chess, fifty-five minutes of it, and let it be genuinely tense — Odell is not a fool and this is his arena. His two goals, never stated: first, to get any party member to agree, in any phrasing, that the vision’s significance was suggested to them by Vaelindra (each such statement is an evidentiary brick in the jurisdictional wall he is building around her — a claimant influenced by an unsanctioned interpreter is Church business); second, failing that, to have the party voluntarily register as claimants of divine contact, which places them — and everyone who counsels them — under the Office’s examination authority. He probes with soft, precise questions: When did you first believe the dream mattered? Who told you it was shared? Who benefits from your belief? A Seal-house character recognizes the trap structure outright (no check); others may make DC 15 Wisdom (Insight) to feel the questions herding them. Safe answers exist — the vision was self-evidently shared before any consultation; no interpretation was sought, only historical context; the party claims nothing and therefore registers nothing — and Odell receives good answers with unfeigned professional pleasure, like a fencer saluting. Divergence outcomes at the end of this document. However it ends, his last line is the same:
 
 > *“Thank you. You have been more helpful than you know — they always are, but you especially.” He closes the folder. “One kindness, freely given, because you are young and the woman is clever: whatever she is to you — historian, grandmother, oracle — the Matron’s law does not recognize the category. Categories are my work. I am very good at my work.”*
 
@@ -70,7 +70,7 @@ Shen’s proposition: pool what they hold — her requisition trail and the ciph
 
 # Rivergate, Keyed
 
-Session Five is an investigation, and an investigation needs a place with corners. Rivergate is the capital’s lowest district — below the waterline in every sense, built into the old river terraces so that its streets descend and its cellars are older than its houses. Nine locations, all within twenty minutes' walk of each other, all usable in any order.
+Session Five is an investigation, and an investigation needs a place with corners. Rivergate is the capital’s lowest district — below the waterline in every sense, built into the old river terraces so that its streets descend and its cellars are older than its houses. Nine locations, all within twenty minutes’ walk of each other, all usable in any order.
 
 **Running it as a district, not a corridor.** The party has a thread and a name. Let them choose where to pull. Every location below yields something to a party who arrives with the right question and something else to a party who arrives with the wrong one, and none of them is a gate that must be opened before the next. If they never visit V4 at all, the session still works.
 
@@ -80,7 +80,7 @@ Session Five is an investigation, and an investigation needs a place with corner
 
 **V3. The Letter-House.** A public scriptorium where the unlettered pay to have letters written and read. Four desks, a queue, and the single richest source of local information in the district, because everyone in Rivergate who cannot write has told a stranger their business here.
 
-**V4. The Inkhands' Door.** Not a shop. A door in an alley off the fish market, with a chop nailed to it that means something. See the trap block; the door itself is the district’s first real test of whether the party can be trusted.
+**V4. The Inkhands’ Door.** Not a shop. A door in an alley off the fish market, with a chop nailed to it that means something. See the trap block; the door itself is the district’s first real test of whether the party can be trusted.
 
 **V5. The Fish Market.** Loud, wet, and the district’s only genuinely public space. Everyone passes through here. A party who wants to be seen comes here; a party who wants to see comes here and stands still.
 
@@ -112,7 +112,7 @@ The letters are written in a register cipher: the meaningful text is carried by 
 
 # Traps
 
-**The Inkhands' Door (V4).** Not a mechanical trap. A social one with mechanics, which is the district’s whole character.
+**The Inkhands’ Door (V4).** Not a mechanical trap. A social one with mechanics, which is the district’s whole character.
 
 - **The chop:** the mark nailed to the door names the current arrangement. DC 13 Intelligence (Investigation), or automatic for an Inkhand background: it means open to trade, no Watch, no names. A party that knocks having read it is speaking the language.
 - **Knocking wrong:** any approach that names the Watch, produces a warrant, or mentions the academy gets a polite refusal and a door that does not open again for that party, ever. There is no check to reverse this. It is not a puzzle to be failed and retried; it is a first impression.
@@ -285,7 +285,7 @@ Human, 50s, dealer in defunct authorities and mourner of dead institutions. Spee
 
 ### Prelate Sarvin Odell
 
-Human, 60s, head of the Office of Omens; the antagonist of this arc and never once rude about it. Speech: soft, exact, kind in the way of surgeons; asks questions he has already answered in the file. He believes, sincerely, that unlicensed prophecy kills people — he has case files where it did — and that Vaelindra is a fifty-year failure of Church discipline he intends to correct before he retires. Thread: Odell is beatable by law, by politics, or by making his case collapse — but never by argument, and making it personal makes it worse. His file on the party survives every branch.
+Human, 60s, head of the Office of Omens; the antagonist of this movement and never once rude about it. Speech: soft, exact, kind in the way of surgeons; asks questions he has already answered in the file. He believes, sincerely, that unlicensed prophecy kills people — he has case files where it did — and that Vaelindra is a fifty-year failure of Church discipline he intends to correct before he retires. Thread: Odell is beatable by law, by politics, or by making his case collapse — but never by argument, and making it personal makes it worse. His file on the party survives every branch.
 
 ### Brune Halloc
 

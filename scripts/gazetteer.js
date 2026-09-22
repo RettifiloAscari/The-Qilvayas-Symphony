@@ -120,7 +120,7 @@ children.push(table(
 children.push(H2("Papers, Tolls, and the Gate"));
 children.push(P("The new Laws have made travel a documentary exercise, and Book Four\u2019s seal-and-register requirements are the single most common friction a party will meet on the road. A DM should have three answers ready."));
 children.push(BUL("At a bridge or gate in loyalist territory:", "a toll (a Zhuven per wagon, two strands per walker at Varn\u2019s Crossing; less elsewhere), and, since Book Three, a look at your charter if you are carrying trade goods. A party\u2019s academy commission covers this. A party\u2019s academy commission covering this is itself worth a scene the first time it works."));
-children.push(BUL("At a provincial gate:", "the toll is real and the paperwork is theatre. What the gate-sergeant actually wants is to know whether you are a problem. DC 12 Charisma (Persuasion), or a legion name, or a coin."));
+children.push(BUL("At a provincial gate:", "the toll is real and the paperwork is theater. What the gate-sergeant actually wants is to know whether you are a problem. DC 12 Charisma (Persuasion), or a legion name, or a coin."));
 children.push(BUL("Past the loyalist border:", "there is no toll, and that is not good news. Somebody is still collecting; they simply do it further along, without a gate, and there is no schedule of charges."));
 
 children.push(H1("Hazards of the Road"));
@@ -196,7 +196,7 @@ const ENC = (region, rows) => {
 // ============ THE CROWNLANDS ============
 children.push(H1("The Crownlands"));
 children.push(P("The Ostrun\u2019s broad valley: terraced grain, cypress windbreaks, poplar-lined imperial roads, and the capital\u2019s three walls rising out of river haze. The only place in the world where imperial law functions at full strength, and the only place where everyone lives inside the restoration project whether they believe in it or not. Prosperous by current standards. Anxious by any other."));
-children.push(P("The Crownlands are also where a party will spend most of the campaign\u2019s first arc, which makes the two days' ride to Lupenna and the one day to Varn\u2019s Crossing the most useful short journeys in this book: far enough to be out of the capital\u2019s eye, near enough to be back for the tenth bell."));
+children.push(P("The Crownlands are also where a party will spend most of the campaign\u2019s first arc, which makes the two days\u2019 ride to Lupenna and the one day to Varn\u2019s Crossing the most useful short journeys in this book: far enough to be out of the capital\u2019s eye, near enough to be back for the tenth bell."));
 
 children.push(...LOC({
   name: "Varn\u2019s Crossing", kind: "toll town",
@@ -233,7 +233,7 @@ children.push(...ENC("the Crownlands", [
   ["1", "An imperial post-rider at the gallop, changing horses at the league-stone. He will not stop. What he is carrying is worth a Perception check."],
   ["2", "A pilgrim family bound for Lupenna, one of them genuinely ill and hoping. They will share food and want company as far as the shrine."],
   ["3", "A Watch patrol, four strong, checking charters since Book Three. Polite, thorough, and bored. Papers or a plausible story."],
-  ["4", "Wolves \u2014 four, crossing the road, unhurried. Sacred and protected. The encounter is the other travelers' reaction, not the wolves."],
+  ["4", "Wolves \u2014 four, crossing the road, unhurried. Sacred and protected. The encounter is the other travelers\u2019 reaction, not the wolves."],
   ["5", "A Concord wagon train, twelve wagons, hiring guards for the eastern leg at fair rates. They have been robbed once already this season."],
   ["6", "A surveyor\u2019s stake driven into a field, and two farmers arguing about it. The Law Commission is remeasuring, and somebody is going to lose land."],
   ["7", "Bandits (4 Bandits, 1 Bandit Captain) working a wooded stretch. They are second-season deserters, not professionals, and they will take a good offer."],
@@ -307,7 +307,7 @@ children.push(...ENC("the Ostmark", [
 
 // ============ THE SUTHMARK ============
 children.push(H1("The Suthmark"));
-children.push(P("Golden grain to the horizon, vineyard terraces, chalk downs, and eastward the grey hollows of the Greywell hills where the light arrives late and leaves early. The empire\u2019s breadbasket, genuinely loyal, and devout in the older and plainer way \u2014 harvest processions, field-shrines, saints' days kept by the planting calendar rather than the Sanctum\u2019s."));
+children.push(P("Golden grain to the horizon, vineyard terraces, chalk downs, and eastward the grey hollows of the Greywell hills where the light arrives late and leaves early. The empire\u2019s breadbasket, genuinely loyal, and devout in the older and plainer way \u2014 harvest processions, field-shrines, saints\u2019 days kept by the planting calendar rather than the Sanctum\u2019s."));
 children.push(P("The south is also the region that carries two scars it will not discuss with outsiders, and a party that spends time here will feel the shape of both long before anyone names them."));
 
 children.push(...LOC({
@@ -392,7 +392,7 @@ children.push(...LOC({
   runs: "Nobody. Precedence in Verath is by how much of the cycle you can sing.",
   buy: "Nothing, for money. Hospitality, for a song, a story, or news \u2014 and the exchange rate is real and taken seriously.",
   talk: "Ilinca Verath, ballad-keeper, who carries more of the cycle than anyone alive and had never been further from the village than Kamenhold until the trade delegation came through asking the village for a singer. If the party met her in the capital (Session Six, optional content), she is home again by any later visit and remembers them; if they did not, she has never left.",
-  comp: "The Old Wood\u2019s heart is a day further in, where the Hollow Hills stand and travelers' time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.",
+  comp: "The Old Wood\u2019s heart is a day further in, where the Hollow Hills stand and travelers\u2019 time runs strange. Verath does not go there and does not stop anyone else, and is genuinely puzzled by the question of why not.",
   dm: "Ilinca does not know what she is carrying. The Lament\u2019s oldest verses are a survivor\u2019s account of the Founding, worn down by twenty centuries of transmission into a song about a betrayed lord called Vosthren. She will sing it to anyone who earns it. This is the single largest lore payload in the setting outside the Undercourt, and it is available to a party who is polite to a village."
 }));
 
@@ -557,7 +557,7 @@ children.push(...LOC({
   buy: "Ordinary provisions, sold correctly, without warmth.",
   talk: "Almost nobody. Drevholm answers questions and does not ask them.",
   comp: "Olvesa\u2019s four vengeances fell here. The town\u2019s surviving families are the families of the people she killed, and they have lived under her See for fifty-eight years, and they attend her liturgy, and they do not sing.",
-  dm: "The banshees on the Drevic moors are the clan-lands' unfinished grief and they are not hostile to anyone who comes without a weapon drawn. A party that treats them as a monster will learn nothing. A party that treats them as mourners will learn what Olvesa did, from the only witnesses left."
+  dm: "The banshees on the Drevic moors are the clan-lands\u2019 unfinished grief and they are not hostile to anyone who comes without a weapon drawn. A party that treats them as a monster will learn nothing. A party that treats them as mourners will learn what Olvesa did, from the only witnesses left."
 }));
 
 children.push(...ENC("the See of Orlath", [
@@ -593,7 +593,7 @@ children.push(...LOC({
 children.push(...LOC({
   name: "Lettervik", kind: "monastery town",
   stat: "Population 3,000, of whom perhaps 900 can write.",
-  what: "The monastery town where forty schools' worth of scribes are teaching the north to write. The scriptorium is the largest single room north of Aenodira and it is full, at all hours, of people learning their letters at every age from six to sixty.",
+  what: "The monastery town where forty schools\u2019 worth of scribes are teaching the north to write. The scriptorium is the largest single room north of Aenodira and it is full, at all hours, of people learning their letters at every age from six to sixty.",
   runs: "The Abbot-Rector, a royal appointment, and in practice the senior scribes.",
   buy: "Copying, translation, and fair copies of almost anything. Ink, vellum, and instruments. A scribe\u2019s services for a journey, which is worth more to a party than they will expect.",
   talk: "Scribe-Brother Halvig, who runs the copying floor, is fascinated by Old Imperial, and would trade a great deal for a look at a genuine pre-fracture document.",

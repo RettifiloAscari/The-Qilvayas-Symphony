@@ -23,7 +23,7 @@ The party begins as final-year students at the Imperial Academy of the Lupine Th
 - **Hit Points:** Maximum at 1st level, average (rounded up) at 2nd and 3rd.
 - **Races and Sources:** DM’s discretion. Note that Drow carry imperial resonance in this setting — the Emperor himself is Drow — so a Drow PC is a statement, not just a stat line. Worth a conversation if anyone picks one.
 - **Equipment:** Standard class and background starting equipment, plus the Academy Field Kit: an academy uniform and house insignia, a student signet (functions as identification in imperial-loyal territory), a writing kit, and a 25 gp field stipend remaining from the exercise advance.
-- **Advancement:** Milestone leveling recommended. Suggested pace: 4th level after the meeting with the Seeress concludes (early Session Three); 5th at the close of the Proving (end of Session Four); 6th at the Second Seal (end of Session Six). XP totals are listed in the session documents for tables that prefer XP.
+- **Advancement:** Milestone leveling recommended. Suggested pace: 4th level after the meeting with the Seeress concludes (early Session Three); 5th at the close of the Proving (end of Session Four); 6th at the Second Seal (end of Session Six); 7th in the Witness Hall (end of Session Seven); 8th when the Vigil is kept (end of Session Eight). XP totals are listed in the session documents for tables that prefer XP.
 
 # House Selection and Party Balance
 
@@ -70,7 +70,7 @@ Session Zero is the only session in this campaign with no pacing budget, which i
 | The pitch | 15 | The DM describes the setting in five sentences and the tone in three. Do not read the sourcebook aloud. Say: a fading empire, a young emperor trying to fix it, a school that trains its administrators, and a shared dream of the capital burning. Then stop talking. |
 | Tone and lines | 20 | The safety and tone conversation below. Do this before anybody has a character they are attached to. |
 | Houses and roles | 20 | Class, house, and the who-fights-who-talks-who-notices conversation. Aim for one Sword-primary and one Seal-flavored character in any group of four or more. |
-| Admission stories | 25 | Roll or choose, and go round the table so each player hears the others'. This is the block most likely to run long and it is the block most worth letting run. |
+| Admission stories | 25 | Roll or choose, and go round the table so each player hears the others’. This is the block most likely to run long and it is the block most worth letting run. |
 | Forging the party | 30 | The four co-authoring questions. Answered aloud, in any order, building on each other. |
 | The Company | 10 | Name it, describe the sign, and write it down where everyone can see it. |
 
@@ -92,9 +92,9 @@ This campaign includes an empire that keeps people in bound labor, a church that
 
 Hand out the Player Guide and the Player’s Companion before or at Session Zero. Both are written to be read by players and neither contains a spoiler. Everything a character would plausibly have learned in eighteen years of imperial life is in them.
 
-**Safe to know.** The empire’s history and its fracture. The Matron, the Aspects, the saints, the Vigil. The Atlas and the powers who hold each region. The calendar, the money, the titles, and how to address a Prelate without embarrassing yourself. The Academy, its houses, and the Proving’s existence as a rumor students argue about.
+**Safe to know.** The empire’s history and its fracture. The Matron, the Aspects, the saints, the Vigil. The Atlas and the powers who hold each region. The calendar, the money, the titles, and how to address a Prelate without embarrassing yourself. The Academy, its houses, its field exercises, and its commencement.
 
-**Not to know, and worth guarding.** The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos’s people. That the Proving is real, and that it is coming. Anything about the shadow’s mechanism — the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does. And if a player builds a paladin or a cleric, resist the urge to foreshadow early. Their moment comes in the dark under the Old Forum, seven sessions out, and it will be worth the wait.
+**Not to know, and worth guarding.** The content of the Founding Myth beyond its official version. The binding site and what is under the Old Forum. That Tarnovar descends from Threnvos’s people. The Proving at all — the word, the rumor, and the fact. Sessions Three and Four work only if nobody at the table has any reason to suspect the Academy stages anything, ever, and neither player book mentions it. Anything about the shadow’s mechanism — the campaign works because the players discover that broken oaths feed something, and a player who is told it in Session Zero has been robbed of the best thing this campaign does. And if a player builds a paladin or a cleric, resist the urge to foreshadow early. Their moment comes in the dark under the Old Forum, seven sessions out, and it will be worth the wait.
 
 **DM Only:** the single most common way this campaign gets spoiled is a DM who is proud of the mechanism and cannot resist signposting it. Do not. Seed it constantly, confirm it never, and let the first player who says it out loud at the table have that moment entirely to themselves.
 

@@ -111,11 +111,11 @@ Sessions Seven and Eight take place in one continuous structure, and it is the o
 
 **On light and time.** Bring both. The Undercourt has no natural light, no water, and no exit but the way in. State the party’s oil and torch supply at the top of Session Seven, track it honestly, and let a party that has been careless find out about it at the worst moment — this is the one place in the campaign where resource management is a horror device rather than an accounting chore.
 
-**C1. The Threshold Arch.** Where the black stone stops being a wall and becomes an entrance. Twelve feet, unornamented, and cut with such precision that the joints will not take a knife. The Second Seal’s dead wardline runs across the floor here as a groove filled with a grey metal nobody can identify. Crossing it is a step, and everyone will hesitate.
+**C1. The Threshold Arch.** Where the black stone stops being a wall and becomes an entrance. Twelve feet, unornamented, and cut with such precision that the joints will not take a knife. The Second Seal’s dead wardline runs across the floor here as a groove filled with a gray metal nobody can identify. Crossing it is a step, and everyone will hesitate.
 
 **C2. The Vesting Room.** Stone benches, ten niches, and the ceremonial dress of a rite that was never finished — two full sets, laid out, unworn. Nyreeza’s camp is here: a bedroll, a lamp, a folded coat, a working table with rubbings pinned to it, and a discipline about the arrangement that will tell the party more about her than any document. Session Seven’s first real room and its most human.
 
-**C3. The Instrument Store.** Off the Vesting Room. Racks for tools of a rite: a broken chisel with a masons' guild stamp still in use today, a set of copper bowls, and eleven pegs, three of them empty. Nobody will ever learn what hung on the three empty pegs and the DM should never decide.
+**C3. The Instrument Store.** Off the Vesting Room. Racks for tools of a rite: a broken chisel with a masons’ guild stamp still in use today, a set of copper bowls, and eleven pegs, three of them empty. Nobody will ever learn what hung on the three empty pegs and the DM should never decide.
 
 **C4. The Long Approach.** Three hundred feet, descending at a constant grade, proportioned for a procession of hundreds and walked by four to six people. The memory pressure lives here — see the phased set piece below. There is nothing to fight in the Long Approach. It is the hardest room in the module.
 
@@ -171,7 +171,7 @@ Nyreeza’s camp is a puzzle in the shape of a room, and it is solved by inferen
 
 > *(In a small, fast, educated hand, on the back of a rubbing:) Third attempt at the west wall. The marks are not writing. I have been wrong about this for a year and I am writing it down so that I stop. They are a count. Something down here was counting, and it stopped counting, and the stopping is the only event recorded in this entire building. — Below, in the same hand, later, and much less carefully: it is not a building. it is a promise that somebody made in stone because stone holds what air forgets. I have to go down.*
 
-Note for the DM: hand this over when the party searches the table. The last four words are the session’s engine and they should be in the players' hands, in ink, for the whole of Session Eight.
+Note for the DM: hand this over when the party searches the table. The last four words are the session’s engine and they should be in the players’ hands, in ink, for the whole of Session Eight.
 
 # Optional Content (Beyond the Five-Hour Core)
 
@@ -250,6 +250,10 @@ There are no living NPCs on the ceremonial floor, which is why this module has c
 | The frieze rubbing | The only above-ground record of the founding’s true shape. Identifiable faces and house-sigils. A political weapon and a moral test. |
 | The broken mason’s chisel | Imperial make, guild-stamped, two centuries old. The physical thread to the scouring order. |
 | Nyreeza’s surveyor’s chalk (second stub) | Mundane. Half-used. Free. Put it next to the first one. |
+
+# Rewards and Advancement
+
+Coin: none, and nobody should expect any. Items and intangibles: the vestments nobody put on; Nyreeza’s working notes, her nine names, and the dynastic shelf-mark that leads to Vaskaren’s scouring order; the frieze rubbing, which is the most dangerous object in the empire; the broken chisel; a second stub of chalk. Two things matter more than any of them and belong in the Branch Ledger tonight, in the players’ own words: the Seal-oath, verbatim, and each character’s unkept promise from the Long Approach. XP for tables using it: the Turned are worth 700 apiece, which is nowhere near the pace of 7th level, and that is deliberate — the Undercourt pays in something else. Award the level at the milestone regardless of the tally. Milestone: 7th level in the Witness Hall, under the faces.
 
 ~
 

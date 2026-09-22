@@ -463,7 +463,7 @@ Prices below are given in the familiar gp/sp/cp shorthand for ease of reference.
 | Any Exchange-list item | −20% | Provenance flexible; quality genuine (the Inkhands guarantee it — their ledgers are their honor) |
 | Unstamped healing potion | 35 gp | Works fine. The discount is the legal risk, priced honestly |
 | Unlicensed scrollwork, 1st | 60–80 gp | roughly a 1-in-6 chance of a flawed casting — the scribe’s risk, priced in; the good scribes cost Exchange prices anyway |
-| ‘Relic’ of a named saint | 10–500 gp | Almost always false. Almost. (See Part I: the false-relic trade, and the terrifying occasional exception) |
+| ‘Relic’ of a named saint | 10–500 gp | Almost always false. Almost. (See Relics and Mercy, under Magic, As Lived: the false-relic trade, and the terrifying occasional exception) |
 | Dead-office seals & instruments | Negotiable | Mosse’s shop — see Session Five; prices are sentimental |
 
 ### Regional Signature Vendors
@@ -471,7 +471,7 @@ Prices below are given in the familiar gp/sp/cp shorthand for ease of reference.
 | **Vendor** | **Where** | **Specialty & Sample Prices** |
 | --- | --- | --- |
 | Ostwatch Outfitters (Yanna’s cousin’s house) | Dravenna | Road & cold-weather gear at book; caravan intelligence free with purchase; wolf-charms 1 sp (‘for luck, and it’s bad luck not to’) |
-| The Stonewright’s Yard | Kamenhold | Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (see Part VIII homebrew); dry-stone masonry consulting, priced in favors |
+| The Stonewright’s Yard | Kamenhold | Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (a thumb-sized standing stone on a cord, sworn over at carving; said to help a bearer judge a sworn word); dry-stone masonry consulting, priced in favors |
 | The Vintners’ Hall | Caldessa | Suthmark vintages 1–50 gp; mourning-silk; and the Garland hears every order placed |
 | The Letter-House | Lettervik | Books 25 gp+, maps of the north 10 gp, copying services; Karvel’s subsidy makes literacy cheap — the point is the point |
 | The Tithe-Factor | Saltmark | Ship passage, cargo insurance (Saltmaw exclusions in small print), Skell tally-sticks as negotiable instruments |

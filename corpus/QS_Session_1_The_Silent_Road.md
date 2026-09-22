@@ -170,7 +170,7 @@ Redwatch was one of eleven forts in a signal chain, and the notches are the chai
 
 **The Fallen Wall-Walk (R8 west).** Twenty feet of collapsed stone under a fifteen-foot drop. A creature moving along the west wall-walk without checking makes a DC 12 Dexterity save or falls: 1d6 bludgeoning and prone, in full view of the yard.
 
-**The Strongbox (R7).** Mechanical trap. The box is iron, locked (DC 15 thieves' tools), and fitted with a spring-loaded needle in the escutcheon. Trigger: opening the lock without first depressing the plate beneath it. Effect: DC 12 Dexterity save or 1 piercing damage and DC 11 Constitution save against poison — 2d6 poison damage on a failure, half on a success. Detect at DC 13 Investigation. It is sixty years old and the poison is half strength, which the party has no way of knowing and which is why they should be told the save DC only after they have decided.
+**The Strongbox (R7).** Mechanical trap. The box is iron, locked (DC 15 thieves’ tools), and fitted with a spring-loaded needle in the escutcheon. Trigger: opening the lock without first depressing the plate beneath it. Effect: DC 12 Dexterity save or 1 piercing damage and DC 11 Constitution save against poison — 2d6 poison damage on a failure, half on a success. Detect at DC 13 Investigation. It is sixty years old and the poison is half strength, which the party has no way of knowing and which is why they should be told the save DC only after they have decided.
 
 **What is in it.** Eleven Zhuven in obsolete coin, a fort-commander’s seal, and the muster roll of the garrison that died here — thirty-one names, with the last four added in a different hand. The seal is worth nothing and opens nothing. The muster roll is the Vigil’s guest list.
 

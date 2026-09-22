@@ -98,7 +98,7 @@ Five areas, continuing the Undercourt’s numbering from Session Seven. This is 
 
 **C8. The Vestibule.** Carried over from Session Seven. The dry basin, and the carving of two figures facing, one chiselled out. A party arriving here at the start of Session Eight should be given a moment to look at the remaining figure properly: it is Drow, and it is not Zhuvedus, because Zhuvedus is the one who was removed.
 
-**C9. The Rite Floor.** Circular, sixty feet, sunk three steps below the vestibule, floor worked in a spiral of black stone that is not decoration but a path. At the centre, the binding. The scene text carries this room; nothing in the keying replaces it.
+**C9. The Rite Floor.** Circular, sixty feet, sunk three steps below the vestibule, floor worked in a spiral of black stone that is not decoration but a path. At the center, the binding. The scene text carries this room; nothing in the keying replaces it.
 
 **C10. The Second Standing.** A recess in the Rite Floor’s western arc, at the spiral’s outer end, sized for one person to stand in and see the whole floor. It is where a witness would have stood. It is empty, it has always been empty, and that is the entire crime.
 
@@ -152,7 +152,7 @@ The session’s puzzle is not a lock. It is a diagnosis: the party has to work o
 
 ## The Forty Legible Names
 
-> *(From the last forty benches in the Witness Hall, where the chisel broke. Forty names in an alphabet nobody at the table can read — but the party has a rubbing, and Session Six taught them who translates. Written out, they are ordinary names. Somebody’s daughter. Somebody’s neighbour. A cutler. Two children with the same family name.)*
+> *(From the last forty benches in the Witness Hall, where the chisel broke. Forty names in an alphabet nobody at the table can read — but the party has a rubbing, and Session Six taught them who translates. Written out, they are ordinary names. Somebody’s daughter. Somebody’s neighbor. A cutler. Two children with the same family name.)*
 
 Note for the DM: these are the four hundred who were supposed to witness, and forty of whose names survive because a chisel broke. If the party reads them aloud during the Vigil, that is the third watch, and it counts, and the DM should recognize it immediately and without hesitation. It is the best available ending and no text anywhere in this module tells them it is possible.
 
@@ -237,6 +237,10 @@ As in Session Seven: nothing living, and one thing worth knowing how to play.
 | The covenant’s second half | Whatever the players improvised, now canon and recorded. Arguably the most valuable object the campaign will ever produce. |
 | The Rite Floor vessels | Pre-imperial ceremonial silver, paired, undecayed — 400 gp to a collector, and the party will not sell them, and the DM should let them not sell them. |
 | The wolves’ return | Not an item. Not a reward. The only unambiguous good news in this arc (see Optional Content). |
+
+# Rewards and Advancement
+
+Coin: none, unless someone sells the Rite Floor silver for its 400 gp, and the DM should let the table decide that without comment. Items and intangibles: the vestments, warm now; the covenant’s second half, in whatever words the players improvised, recorded verbatim in the Branch Ledger; the knowledge of what the empire is standing on; and a decision about who to tell, which is the heaviest thing they carry up the stair. XP for tables using it: the Unwitnessed are worth 700 apiece, which again is nowhere near the pace of 8th level; as in Session Seven, the milestone governs and the tally does not. Milestone: 8th level when the Vigil is kept. The first arc of The Qilvayas Symphony is complete: forty hours, a funeral two thousand years late, and a civilization still to fix.
 
 ~
 

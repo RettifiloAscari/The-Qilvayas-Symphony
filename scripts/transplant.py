@@ -142,6 +142,9 @@ def ensure_list_style(work):
 # Above that the paragraph brings its own two lines and needs no help; binding it would
 # only pin its last line to the next paragraph for nothing.
 LEAD_MAX = 110
+# About twelve lines of italic at the two-column measure. A longer box may split, which
+# is ordinary; pinning a whole page of read-aloud together costs more than it buys.
+BOX_MAX = 650
 _HEAD_THEN_LEAD = re.compile(
     r'(<w:p\b(?:(?!</w:p>).)*?w:pStyle w:val="Heading\d"(?:(?!</w:p>).)*?</w:p>\s*)'
     r'(<w:p\b(?:(?!</w:p>).)*?</w:p>)', re.S)
@@ -153,6 +156,14 @@ def keep_lead_with_heading(doc):
         if _IS_HEADING.search(lead) or 'w:keepNext' in lead:
             return m.group(0)
         text = ''.join(_TEXT.findall(lead)).strip()
+        if text and '<w:shd ' in lead and len(text) <= BOX_MAX and 'w:keepLines' not in lead:
+            # A read-aloud box under a heading is the scene's first image. Held whole, the
+            # heading's own keepNext has something to move with; left splittable, LibreOffice
+            # will leave the heading alone at the foot of a page with the box overleaf.
+            ppr = re.search(r'<w:pPr>', lead)
+            style = re.search(r'<w:pStyle\b[^/]*/>', lead)
+            at = style.end() if style else ppr.end()
+            return head + lead[:at] + '<w:keepLines/>' + lead[at:]
         if not text or len(text) > LEAD_MAX:
             return m.group(0)
         ppr = re.search(r'<w:pPr>', lead)

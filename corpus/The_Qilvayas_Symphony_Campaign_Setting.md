@@ -135,7 +135,7 @@ The land: fjords and pine-clad steeps, longhouse towns turning to slate-roofed m
 
 ### The Skellvard
 
-The land: not land — the cold sea itself, island anchorages, whale-roads, and the drowned fjords the clans lost to Ardven’s expansion. The Skell live aboard; the fleets are the nation. Peoples: Skell humans — salt-cured, tally-keeping, courteous in the way of people who remember everything. Creatures: hunter sharks and killer whales (clan-omens), merrow war-bands (old enemies, old treaties), harpies on the guano stacks, a plesiosaurus breed the clans call sea-elk and herd — herd — and, beneath the Weeping Strait, the Saltmaw (see Part VI). Settlements (such as they are): the Gathering Roads, the great fleet-moot in the lee of the Broken Isles, a city that exists two months a year; Wrecksalt Isle, the beaching-ground, shipwright’s yard, and the closest thing the landless have to holy ground — no king is buried there; that is the point of it.
+The land: not land — the cold sea itself, island anchorages, whale-roads, and the drowned fjords the clans lost to Ardven’s expansion. The Skell live aboard; the fleets are the nation. Peoples: Skell humans — salt-cured, tally-keeping, courteous in the way of people who remember everything. Creatures: hunter sharks and killer whales (clan-omens), merrow war-bands (old enemies, old treaties), harpies on the guano stacks, a plesiosaurus breed the clans call sea-elk and herd — herd — and, beneath the Weeping Strait, the Saltmaw (see Dragons of the Fractured Age). Settlements (such as they are): the Gathering Roads, the great fleet-moot in the lee of the Broken Isles, a city that exists two months a year; Wrecksalt Isle, the beaching-ground, shipwright’s yard, and the closest thing the landless have to holy ground — no king is buried there; that is the point of it.
 
 ### The Duchy of Normere
 
@@ -213,7 +213,7 @@ All mundane prices pulled from the SRD equipment data (exact book values). Magic
 | Any Exchange-list item | −20% | Provenance flexible; quality genuine (the Inkhands guarantee it — their ledgers are their honor) |
 | Unstamped healing potion | 35 gp | Works fine. The discount is the legal risk, priced honestly |
 | Unlicensed scrollwork, 1st | 60–80 gp | 1-in-6 chance of a flawed casting (DM discretion); the good scribes cost Exchange prices anyway |
-| ‘Relic’ of a named saint | 10–500 gp | Almost always false. Almost. (See Part I: the false-relic trade, and the terrifying occasional exception) |
+| ‘Relic’ of a named saint | 10–500 gp | Almost always false. Almost. (See Relics and the Blessed Economy: the false-relic trade, and the terrifying occasional exception) |
 | Dead-office seals & instruments | Negotiable | Mosse’s shop — see Session Five; prices are sentimental |
 
 ### Regional Signature Vendors
@@ -221,7 +221,7 @@ All mundane prices pulled from the SRD equipment data (exact book values). Magic
 | **Vendor** | **Where** | **Specialty & Sample Prices** |
 | --- | --- | --- |
 | Ostwatch Outfitters (Yanna’s cousin’s house) | Dravenna | Road & cold-weather gear at book; caravan intelligence free with purchase; wolf-charms 1 sp (‘for luck, and it’s bad luck not to’) |
-| The Stonewright’s Yard | Kamenhold | Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (see Part VIII homebrew); dry-stone masonry consulting, priced in favors |
+| The Stonewright’s Yard | Kamenhold | Dwarven-forged tools +10% (worth it); Oathstone Charms 5 gp (see Appendix III, Homebrew Items of Record); dry-stone masonry consulting, priced in favors |
 | The Vintners’ Hall | Caldessa | Suthmark vintages 1–50 gp; mourning-silk; and the Garland hears every order placed |
 | The Letter-House | Lettervik | Books 25 gp+, maps of the north 10 gp, copying services; Karvel’s subsidy makes literacy cheap — the point is the point |
 | The Tithe-Factor | Saltmark | Ship passage, cargo insurance (Saltmaw exclusions in small print), Skell tally-sticks as negotiable instruments |
@@ -262,7 +262,7 @@ The Matron is one. This is the first thing a Zhuvedian child learns and the last
 
 An Aspect is an office the Matron holds, not a part she is divided into. The distinction sounds like hairsplitting and is in fact the sharpest doctrinal line in the empire, because two centuries of schism have taught the Church exactly how a metaphor becomes a second god. Orthodoxy is carried by a preposition: one says the Matron in her Hunt, never the Matron of the Hunt as though there were another Matron elsewhere doing something else. The heresy of Division — teaching the Aspects as distinct powers — was condemned four hundred years ago and is still the charge the Sanctum reaches for first, which tells you how often somebody drifts into it by accident on a cold night in a country parish.
 
-For a cleric, the Aspect is the shape of the calling rather than its source. The power is the Matron’s; the Aspect is which of her offices the caller was answered from, and it determines the color of the vestment, the wording of the daily office, and which shrine will feed you when you arrive wet and unannounced. Sanction is issued against an Aspect: a warrant-medal is stamped on its reverse with the Aspect’s mark, and a Watch cleric ministering as a Hunt cleric is committing a paperwork offence, not a sin.
+For a cleric, the Aspect is the shape of the calling rather than its source. The power is the Matron’s; the Aspect is which of her offices the caller was answered from, and it determines the color of the vestment, the wording of the daily office, and which shrine will feed you when you arrive wet and unannounced. Sanction is issued against an Aspect: a warrant-medal is stamped on its reverse with the Aspect’s mark, and a Watch cleric ministering as a Hunt cleric is committing a paperwork offense, not a sin.
 
 ## The Seven Recognized Aspects
 
@@ -278,7 +278,7 @@ Seven Aspects hold formal recognition from the Matriarchate. The correspondence 
 | The Winter Voice | Tempest | The northern liturgies, storm-country parishes, Orlath, and the Ardven monastery-burghs. Shown as an open throat, the howl drawn as visible breath. |
 | The Limping Bitch | Trickery | Nobody, officially. Everybody, in the provinces. Shown as a she-wolf dragging a hind leg. |
 
-**The Limping Bitch.** The seventh is the one worth a paragraph. She is the she-wolf who feigns a broken leg to draw the hunter away from the den — deception spent entirely in defence of what is behind her. She has never been formally recognized and has never once been suppressed. She is not painted in a single cathedral in the Crownlands and she is painted on roughly half the barn doors in the Suthmark. Ask a Prelate about her and you will get a careful sentence about folk piety; ask a village woman and she will tell you which of her neighbours the Matron limped for. A Trickery cleric in this empire is entirely real, entirely unlicensed, and entirely unsurprising to anyone outside the Sanctum.
+**The Limping Bitch.** The seventh is the one worth a paragraph. She is the she-wolf who feigns a broken leg to draw the hunter away from the den — deception spent entirely in defense of what is behind her. She has never been formally recognized and has never once been suppressed. She is not painted in a single cathedral in the Crownlands and she is painted on roughly half the barn doors in the Suthmark. Ask a Prelate about her and you will get a careful sentence about folk piety; ask a village woman and she will tell you which of her neighbors the Matron limped for. A Trickery cleric in this empire is entirely real, entirely unlicensed, and entirely unsurprising to anyone outside the Sanctum.
 
 **DM Only:** the Limping Bitch is the closest the orthodox faith comes to admitting that a lie told to protect the den is not the same crime as an oath broken for advantage. That distinction is the campaign’s whole moral engine, sitting in plain sight on a barn door, and no theologian in the empire has connected it to the Founding. If a player character ever draws the line out loud in front of clergy, the room should go very quiet.
 
@@ -545,11 +545,11 @@ Elsewhere the causes vary more than the pattern does. Velmareth’s reed-sea bre
 
 # Peoples of the Empire
 
-The empire is human-majority — right for its Byzantine texture — with the other peoples distributed where history put them. Distribution below; regional detail in Part V.
+The empire is human-majority — right for its Byzantine texture — with the other peoples distributed where history put them. Distribution below; regional detail in The Regions in Depth.
 
 **The Founder’s Blood (Drow):** Zhuvedus was Drow — the Matron’s chosen, first-favored child of her night — and the imperial dynasty is his surviving line. Threnvos was Drow as well (approved): twin champions of the same goddess, the same blood, one throne. There is no Underdark and no spider-cult in this world; Drow are simply the old blood of the founding, and they are nearly gone — a scattering of ancient noble houses claiming distant dynastic kinship, and the throne itself. The founder’s people dwindling to a single family on a single chair is the campaign’s decline theme in miniature. A Drow character outside the dynasty is therefore an enormous statement (Session Zero’s existing note, now with teeth): they will be read as dynastic kin, dynastic claimant, or something nobody has words for. DELIBERATELY OPEN: whether any line of Threnvos survives. If it does, it is Drow, it is rightful-claimant material of the highest order, and it should not be spent early — same handling class as the Tarnovar revelation.
 
-**Humans:** The overwhelming majority everywhere, in named regional cultures: Zhuvedians (Crownlands core), Ostfolk, Suthfolk, Tarnovari, Brekelanders, Velmarenes, Orlathines, Ardvenners, the Skell, Normerines. Human cultural texture per region in Part V.
+**Humans:** The overwhelming majority everywhere, in named regional cultures: Zhuvedians (Crownlands core), Ostfolk, Suthfolk, Tarnovari, Brekelanders, Velmarenes, Orlathines, Ardvenners, the Skell, Normerines. Human cultural texture per region in The Regions in Depth.
 
 **Dwarves:** The Stonesworn of Tarnovar’s highlands — the stone-oath culture and dwarven nature are a natural marriage, and roughly a third of Tarnovar is dwarven, fully Tarnovari in identity. Smaller populations: the Suthmark’s eastern hills (including the villages around Greywell, which is part of why the missing girls stay missing — hill-dwarf families have learned the valley’s law does not climb), Normere’s hired stonewrights, and the capital’s masons’ guild. Archivist Vell is a hill dwarf (which quietly explains a career that has outlasted four chancellors).
 
@@ -1299,7 +1299,7 @@ Pacing guidance: the Zhuvedian Laws promulgation is the campaign’s first struc
 
 # Appendix I — The Roster: Races and Classes
 
-Class entries are archetype keys for flavor and improvisation — NPC stat blocks remain custom-built per DMG practice, not class-leveled builds. ‘Statted’ marks the ten who receive full blocks in Part IV.
+Class entries are archetype keys for flavor and improvisation — NPC stat blocks remain custom-built per DMG practice, not class-leveled builds. ‘Statted’ marks the ten who receive full blocks in Appendix II.
 
 | **Name** | **Race** | **Class / Archetype** | **Standing** |
 | --- | --- | --- | --- |
@@ -1543,7 +1543,7 @@ Custom NPC blocks keyed to class archetypes, validated against the DMG Monster S
 
 **Armor Class:** 17 (half plate, unadorned)
 
-**Hit Points:** 120 (18d8 + 39)
+**Hit Points:** 117 (18d8 + 36)
 
 **Speed:** 30 ft.
 
@@ -1730,7 +1730,7 @@ Custom NPC blocks keyed to class archetypes, validated against the DMG Monster S
 | Dane (CR 7) | 18 / 110 (98–162) / +7 — in band | AC above band (plate, knight-standard, RAW). DPR reaches band only with For the Ninth! — leader-aura carries the rest. |
 | Dregan (CR 9) | 17 / 130 / +8 — in band | DPR ON band (55) vs. oath-breakers via Sanction; below vs. the innocent — which is the character. |
 | Aldrec (CR 7) | 16 / 105 / +7 — in band | DPR under band; Old Wound actively reduces output. Deliberate: a dying king should fight like one. |
-| Norr (CR 8) | 17 / 120 (102–170) / +7 — in band | DPR reaches band vs. Reckoned targets (~40). Information-warfare design. |
+| Norr (CR 8) | 17 / 117 (102–170) / +7 — in band | DPR reaches band vs. Reckoned targets (~40). Information-warfare design. |
 | Karvel (CR 8) | 18 / 127 / +8 — in band | DPR band-low + Sweep; Crowned Presence is the real weapon. |
 | Olvesa (CR 10) | 13 / 117 (116–194, floor) / DC 17 | AC far under band — control/support caster protected by the Reconciled (sanctuary-class defense replaces armor). Flame strike AoE meets damage expectations at half-per-target rule. |
 | Shen (CR 6) | 15 / 84 (84–140, floor) / +7 | Assassin-profile: burst (sneak attack) meets band on opener, under sustained — standard rogue NPC shape (cf. SRD Assassin, CR 8, same pattern). |
@@ -1744,7 +1744,7 @@ Custom NPC blocks keyed to class archetypes, validated against the DMG Monster S
 
 **Pilgrim’s Wolfstone (wondrous, common — Church):** A shrine-blessed river pebble bearing the Matron’s eye. While carried, wolves and dogs regard the bearer as neutral unless provoked, and the bearer knows true north on a clear night. Lupenna sells thousands; perhaps one in forty is ‘live.’ The Church insists they all are, in the way that matters.
 
-**Wardstone Shard (wondrous, common — unique source):** A fist-sized fragment of the First Seal’s dead wardline. Sheds dim wolf-grey light in a 10-foot radius — and gutters, unmistakably, within 30 feet of Undercourt cold. A canary made of history.
+**Wardstone Shard (wondrous, common — unique source):** A fist-sized fragment of the First Seal’s dead wardline. Sheds dim wolf-gray light in a 10-foot radius — and gutters, unmistakably, within 30 feet of Undercourt cold. A canary made of history.
 
 **The Lector’s Seal (wondrous, rare, unique — the company’s stamp):** The recovered archival master-key, gifted as the company’s sealing-stamp (canon). Documents sealed with it read as genuinely authorized to any mundane inspection within the academy’s records system, and the seal cannot be forged — its wax remembers. (Limits: academy archives and their dependencies only; it opens paper, not doors; and every use is, somewhere in the deep stacks, logged.)
 

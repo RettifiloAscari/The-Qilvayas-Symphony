@@ -124,7 +124,7 @@ The Proving concluded, events move quickly, and each beat below deserves table t
 - **The company, chartered.** The chancellery countersigns their mercenary charter as its graduation gift — but the countersignature is the smaller half of it, and a Seal-house character will say so. Under Book Three certification is always two things: the mark, and a matching entry in the certifying body’s own register. An academy chancellery is not one of the three registers, so the company is not truly chartered until the Capital Merchants’ Concord enters it in the Crown-guild books — a fee, a queue, a bored clerk, and one line of copperplate that is now the only thing standing between the company and a magistrate’s challenge. Play it in ten minutes as Optional Content if the table has appetite; it costs nothing and it is the rule the rest of the campaign runs on. With that entry made, the company they named in Session Zero is a legal entity of the empire — and grants a founding purse of 300 gp. If the party thinks to use the Lector’s Seal’s recovery as their first “completed contract” on the company’s ledger, allow it with delight; Sorral formally gifts them the Seal’s worn original housing as their company’s sealing-stamp, which means the party’s promises will henceforth literally be closed under a seal recovered from beneath the city. Say none of this aloud.
 - **The rubbing, read — partly.** Brought to Archivist Vell, the cipher stops him mid-motion, ledger half-closed. He identifies the hand in one sentence and will not be drawn further in the academy’s walls: “That is the Empress’s personal shorthand. I archived nine years of her academy correspondence. You will not repeat that in this building, and you will tell me — elsewhere — exactly where you found it.” Translation of the fragment itself is a future thread: partial, tantalizing, and the natural bridge to the Nyreeza trail. (Suggested partial reading, when the time comes: a survey notation — a depth, a bearing, and the single legible phrase “colder past the second seal.”)
 - **Vaelindra, told.** If the party reports to Coppergate — and after her tenth-bell counsel, they should think of it — she listens to the whole account without interrupting, and answers with the module’s closing line. See the epigraph. What she now knows, and they do not: Nyreeza went beneath the city through the academy at least once — which means the Empress’s trail and the party’s school have been the same building all along.
-- **Milestone.** The party reaches 5th level. The first arc of the campaign — students, vision, Seeress, Proving — is complete. They are graduates, chartered, marked by Highcourt, holding a dead man’s cold medallion and a dead-or-worse Empress’s cipher. The campaign proper is now open in every direction.
+- **Milestone.** The party reaches 5th level. The first movement of the campaign — students, vision, Seeress, Proving — is complete; the first arc runs on to the Unkept Vigil in Session Eight. They are graduates, chartered, marked by Highcourt, holding a dead man’s cold medallion and a dead-or-worse Empress’s cipher. The campaign proper is now open in every direction.
 
 # The Undervault, Keyed
 
@@ -158,9 +158,9 @@ The scenes above are how the two sessions run. This is the dungeon they run in. 
 
 **U10. The Sloping Hall.** The first sign the level is wrong: the floor tilts east, gently, and every dropped object rolls. Wetter air, and the animal smell — musk and straw, in a place sealed for lifetimes.
 
-**U11. The Crate Vaults.** Barred alcoves and crate-stacks, the Vault Hounds' hunting ground. Broken sightlines, climbable stacks (DC 10 Athletics), and three chokepoints a clever party can use. The hounds know this room; the party does not.
+**U11. The Crate Vaults.** Barred alcoves and crate-stacks, the Vault Hounds’ hunting ground. Broken sightlines, climbable stacks (DC 10 Athletics), and three chokepoints a clever party can use. The hounds know this room; the party does not.
 
-**U12. The Records Cage.** Where Merla is found, locked in. The lock is old, real, and openable from outside with thieves' tools at DC 12 or by the key hanging forty feet away in U14 — which is a small, mean little test of whether anyone looks before breaking.
+**U12. The Records Cage.** Where Merla is found, locked in. The lock is old, real, and openable from outside with thieves’ tools at DC 12 or by the key hanging forty feet away in U14 — which is a small, mean little test of whether anyone looks before breaking.
 
 **U13. The Custodian’s Reach.** A wide low chamber with a spill of ancient preservative across the flagstones, and the Custodian Ooze methodically scouring it. It ignores creatures and consumes messes. Crossing the room while it works is entirely safe and feels like the least safe thing in the module.
 
@@ -202,7 +202,7 @@ The line reads, in translation: WHAT IS PROMISED, WHERE IT IS WRITTEN, WHO STOOD
 
 **Solution three — the tray.** The brass tray takes a seal. Any genuine imperial seal pressed into it while the rings are wrong opens the door anyway, on the reasoning that a person carrying a seal is a person entitled to be here. The party has no seal yet. They will have one at the end of Session Four, and a DM who lets them realize this in retrospect has given them a free gift.
 
-**Solution four — the craft.** Thieves' tools at DC 15 defeats the lock outright. It also triggers a shrieking alarm glyph (see Traps) that costs the party surprise on this level for the next hour. This is not a failure state and should never be run as one — it is a legitimate answer with a price, and a party who takes it knowingly has made a choice, not a mistake.
+**Solution four — the craft.** Thieves’ tools at DC 15 defeats the lock outright. It also triggers a shrieking alarm glyph (see Traps) that costs the party surprise on this level for the next hour. This is not a failure state and should never be run as one — it is a legitimate answer with a price, and a party who takes it knowingly has made a choice, not a mistake.
 
 **DM Only:** the fifth solution is asking. If the party goes back up and asks Professor Dail what the shorthand means, he will tell them, because his instructions are to answer any question they actually think to ask. Nobody has ever gone back up. If this table does, give it to them warmly and note it: the faculty will regard it as the single most impressive thing the cohort did.
 
@@ -231,14 +231,14 @@ The wall is a finding aid for a collection that was moved, and the puzzle is wha
 - **Trigger:** weight on any plate. The plates are obvious — DC 10 Perception spots the seams, and the arrow-loops are not concealed at all. This trap is not hiding.
 - **Effect:** the corridor discharges as a group. A party advancing in disciplined formation (shields forward, called steps; any Sword-primary character can direct it, granting the group advantage) makes a group DC 12 Dexterity saving throw. A disorganized rush is DC 14 with disadvantage. On a failure: 2d6 piercing damage. On a success: half.
 - **Duration:** the corridor discharges once per creature crossing, then resets over one minute.
-- **Countermeasures:** the plates can be jammed with anything rigid (DC 13 Dexterity with thieves' tools, one plate per attempt, four plates in the run). The arrow-loops can be blocked from the near side with a shield or a bedroll, two loops per action. Crossing the whole run prone at half speed avoids the loops entirely and takes four rounds, which is fine and which nobody ever thinks of.
+- **Countermeasures:** the plates can be jammed with anything rigid (DC 13 Dexterity with thieves’ tools, one plate per attempt, four plates in the run). The arrow-loops can be blocked from the near side with a shield or a bedroll, two loops per action. Crossing the whole run prone at half speed avoids the loops entirely and takes four rounds, which is fine and which nobody ever thinks of.
 - **What it actually is:** a drill yard. In hindsight the whole thing is a formation exercise, the damage is nonlethal by ward though it does not feel it, and the arrow-loops are firing blunts. Do not tell them.
 
 **The Shrieking Glyph (U5).** Magical trap on the Cipher Gate, triggered only by forced entry.
 
 - **Trigger:** the lock is opened by any means other than setting the rings or pressing a seal into the tray.
 - **Effect:** a rising tone audible throughout Level One and faintly on Level Two, lasting one minute. No damage. For the next hour, the party cannot surprise anything on Level One and everything on Level One knows roughly where they are.
-- **Detect and disarm:** DC 15 Intelligence (Arcana) to spot before triggering; DC 15 thieves' tools or dispel magic to disarm. A character who spots it and chooses to trigger it anyway, having weighed the cost, should be told plainly that this is a legitimate call.
+- **Detect and disarm:** DC 15 Intelligence (Arcana) to spot before triggering; DC 15 thieves’ tools or dispel magic to disarm. A character who spots it and chooses to trigger it anyway, having weighed the cost, should be told plainly that this is a legitimate call.
 
 **The Subsidence (U10 through U17).** Environmental hazard, the whole eastern third of Level Two.
 
@@ -308,7 +308,7 @@ Outcomes here echo forward. Record them in the Branch Ledger.
 - **The freed hounds:** Hounds freed of their collars imprint on the party. The academy kennels will, if asked, formally gift one as a company animal — a living, tail-wagging consequence of mercy, and a quiet alarm system that reacts to Undercourt cold before any instrument the party owns.
 - **Fenn unmasked early vs. late:** Unmasked early, Fenn’s post-Proving notes become a standing offer: informal tutoring in reading institutional deception — mechanically, occasional advantage on Insight against official lies, at the cost of Fenn knowing the party’s tells. Deceived to the end, she is kinder about it than anyone expects, and more dangerous: she knows exactly which lies each character believed.
 - **The door, disclosed vs. withheld:** What the party tells the faculty about the Cold Door shapes Sorral. Full disclosure (marks, cold, the medallion’s reaction): he re-seals the wing within days and begins his own quiet inquiry — a potential ally or leak later. Partial disclosure: the re-sealing happens anyway (the observation galleries saw them find it), but Sorral does not know about the rubbing, which stays the party’s sole advantage. If anyone shows him the rubbing itself, he goes very still and asks to keep it — do not let the players miss that refusing the Chancellor of the academy is a choice.
-- **Standing moved this session:** The largest single move in the first arc. The Imperial Academy goes to Relied Upon or better on a completed Proving — the deep stacks, a laboratory, and a professor’s signature on a requisition nobody will question is precisely what the party has bought, and they should be told so and encouraged to spend it. A bloodless run takes it to the top of that band. The Lupine Throne and the Court rises a tier without the party doing anything at all: a Proven designation in a sealed record is read in Highcourt within the week. The Concord rises one for the register entry, which is a transaction rather than a favor, and the party should feel the difference. Note what else has happened: they are now internal to an institution that deceived them expertly, and Of the Body cuts both ways.
+- **Standing moved this session:** The largest single move in the campaign’s first arc. The Imperial Academy goes to Relied Upon or better on a completed Proving — the deep stacks, a laboratory, and a professor’s signature on a requisition nobody will question is precisely what the party has bought, and they should be told so and encouraged to spend it. A bloodless run takes it to the top of that band. The Lupine Throne and the Court rises a tier without the party doing anything at all: a Proven designation in a sealed record is read in Highcourt within the week. The Concord rises one for the register entry, which is a transaction rather than a favor, and the party should feel the difference. Note what else has happened: they are now internal to an institution that deceived them expertly, and Of the Body cuts both ways.
 
 # Stat Blocks
 
@@ -382,7 +382,7 @@ Outcomes here echo forward. Record them in the Branch Ledger.
 
 **Armor Class:** 6
 
-**Hit Points:** 50 (6d10 + 17)
+**Hit Points:** 51 (6d10 + 18)
 
 **Speed:** 15 ft.
 
@@ -519,7 +519,7 @@ Human, 40s, House of the Craft — rhetoric, stagecraft, and the propaganda arts
 
 # Rewards and Advancement
 
-Coin and goods: the 300 gp founding purse; the Lector’s Seal housing as the company’s official sealing-stamp; free graduate access to the academy’s open collections for life (the restricted stacks remain Vell’s to grant); and Bartleby’s sincere affection, redeemable in the Undervault for morale purposes only. The charcoal rubbing of the Cold Door cipher — now the only copy in existence — is the arc’s true treasure, and should be treated with exactly as much narrative weight as the party gives it. XP for tables using it: roughly 2,300–2,900 across both sessions depending on route and resolutions (award full value for the bloodless solutions; they are the harder path and the better marks). Milestone: 5th level when the Proving concludes and the arc closes.
+Coin and goods: the 300 gp founding purse; the Lector’s Seal housing as the company’s official sealing-stamp; free graduate access to the academy’s open collections for life (the restricted stacks remain Vell’s to grant); and Bartleby’s sincere affection, redeemable in the Undervault for morale purposes only. The charcoal rubbing of the Cold Door cipher — now the only copy in existence — is the movement’s true treasure, and should be treated with exactly as much narrative weight as the party gives it. XP for tables using it: roughly 2,300–2,900 across both sessions depending on route and resolutions (award full value for the bloodless solutions; they are the harder path and the better marks). Milestone: 5th level when the Proving concludes and the first movement closes.
 
 ~
 
