@@ -1,7 +1,7 @@
 # Continuation Handoff — The Qilvayas Symphony
 
-For a new Claude Code session picking this repository up. Written 2026-09-03, at
-commit `f4b8c3a`.
+For a new Claude Code session picking this repository up. Written 2026-10-12, at
+commit `6d9d8c3` on `main` — the go-live edition, finalized for Josh to run at the table.
 
 **Read this for state and history. Do not read it for rules.** `CLAUDE.md` loads
 automatically and holds the canon rules; the **`qs-build` skill** holds every production
@@ -10,55 +10,80 @@ here ever contradicts them, they win and this file is stale.
 
 ---
 
-## 1. Where the corpus stands
+## 0. Ask first
 
-Thirteen documents, nine generators, **150 pages and 129,037 words**, all building clean
-and byte-reproducible.
-
-| Document | Pages | Words |
-|---|---:|---:|
-| The Qilvayas Symphony Campaign Setting | 43 | 39,800 |
-| Gazetteer of the Fractured Empire | 17 | 14,964 |
-| QS DM Reference Guide | 13 | 7,443 |
-| QS Player Guide | 12 | 9,958 |
-| QS Player's Companion | 7 | 5,479 |
-| Sessions 3–4, The Proving Below | 11 | 10,184 |
-| Sessions 1, 2, 5, 6, 7, 8 | 6–8 each | ~38,500 total |
-| Session 0, Primer | 4 | 2,713 |
-
-**Measure it yourself before quoting it.** `tools/verify.sh` ends with a page census, and
-`wc -w corpus/*.md` gives the words. These figures go stale the moment anyone writes.
-
-**Honest scale.** A published 5e setting book runs 224–320 pages; the sourcebook is 43.
-Modules run 50–100; ours are 6–11. The *feature* gap against published 5e is closed —
-pantheon, gazetteer, faction standing, travel, hazards, encounter tables, downtime, names,
-backgrounds, bestiary, keyed maps, puzzles, traps, handouts all exist. The *volume* gap is
-not, and no single pass closes it. Do not tell Josh otherwise.
+The corpus was finalized for Josh to run the campaign at the table. **Before writing
+anything new, ask Josh how far the party has got and what they did.** The Branch Ledger in
+the DM Reference Guide has a blank column for exactly this, and Sessions Nine and beyond
+are built against it. Recording what happened at the table is the first job, and canon
+written before it risks contradicting play.
 
 ---
 
-## 2. What happened in the last session
+## 1. Where the corpus stands
 
-Eight commits, `b85bfac` through `f4b8c3a`. In order:
+Thirteen documents, nine generators, **152 pages and about 127,000 words** (counted from
+the PDFs as printed; `wc -w corpus/*.md` gives about 128,000). Everything builds clean and
+byte-reproducible, and `tools/verify.sh --full` passed on the final commit.
 
-1. **`b85bfac` — the content pass.** Four decisions taken by multiple choice, all four to
-   the recommended option: Saints and Aspects (strict monotheism preserved), backgrounds
-   and flavour only with no new mechanics, two new volumes rather than one big book, and
-   an even depth pass across all nine modules. Added the Doctrine of Aspects, seven Aspects
-   mapped to the 2014 PHB domains, fourteen saints with feasts on the existing calendar,
-   faction Standing, the Gazetteer, the Player's Companion, and keyed areas / puzzles /
-   traps / handouts across every module. Decision record in
-   `drafts/expansion-to-published-scale.RESOLVED.md`.
-2. **`67f22b8`, `e692f00` — the dagger.** The `(†)` mark for non-SRD creatures now
-   repeats its key under every table that uses one, and is bracketed so it reads as a
-   reference rather than part of the creature's name.
-3. **`666085c`, `a8739a6` — tooling.** Five authoring tools and `verify.sh`, the
-   `qs-build` skill, and `tools/pipeline.conf`.
-4. **`8130501` — torn stat blocks.** Three blocks were printing six ability labels at the
-   foot of one column and six numbers in the next. Fixed and encoded in
-   `tools/check_tearing.py`.
-5. **`d473fbe` — `scripts/stage.js`.** The hardcoded `/home/claude` is gone.
-6. **`f4b8c3a` — table spacing.** Prose after a table no longer butts against its border.
+| Document | Pages | Words |
+|---|---:|---:|
+| The Qilvayas Symphony Campaign Setting | 42 | 38,510 |
+| Gazetteer of the Fractured Empire | 17 | 14,199 |
+| QS DM Reference Guide | 13 | 6,733 |
+| QS Player Guide | 12 | 9,543 |
+| QS Player's Companion | 7 | 4,934 |
+| Session 0, Primer | 4 | 2,626 |
+| Session 1, The Silent Road | 9 | 7,149 |
+| Session 2, The Road Back | 8 | 7,221 |
+| Sessions 3–4, The Proving Below | 11 | 10,058 |
+| Session 5, Dead Letters | 8 | 6,474 |
+| Session 6, The Second Seal | 8 | 6,906 |
+| Session 7, The Turning Away | 7 | 6,450 |
+| Session 8, The Unkept Vigil | 6 | 5,958 |
+
+**Measure it yourself before quoting it.** These figures go stale the moment anyone writes.
+
+**Honest scale.** A published 5e setting book runs 224–320 pages; the sourcebook is 42.
+Modules run 50–100; ours are 4–11. The *feature* gap against published 5e is closed; the
+*volume* gap is not, and no single pass closes it. Do not tell Josh otherwise.
+
+---
+
+## 2. What happened since the last handoff
+
+Eleven commits, `e2d5712` through `6d9d8c3`, all on `main`. Grouped:
+
+1. **Readme and bullets (`e2d5712`, `8050792`, `bdeaefa`, `3190669`).** README leads with
+   the documents; bullets got their glyphs back with an indent sized to the column; a
+   polish pass the modules had never had.
+2. **The bug check (`5b2149e`, `2d3c463`, `971a8bf`).** Text-layer fixes, arithmetic
+   errors, columns that broke words. Every table may now break across a page; a table that
+   could not break was silently eating rows at a column foot.
+3. **Readability pass (`35bcf4a`).** Headings no longer strand at the foot of a column
+   (`keep_lead_with_heading()` in `scripts/transplant.py`); numbered lists number themselves.
+4. **Modules bound to later canon (`9f7bad4`, `678e39f`).** Every module checked against
+   the sourcebook, Gazetteer and Companion written after it. Added: Coren the Unhurried as
+   the Vigil's patron; Marek the Witness in Sessions 7–8; Ovric's blank icon on Dravenna's
+   Vigil Hall wall in Session One (planted, never explained); Malich "of the Third"; Havel
+   Corse at Varn's Crossing; Halvenne's unkept Vigil; the Dessen thread routed through
+   Kolvess, Tallow and Thorne; faction Standing bullets in every module; a standing-sheet
+   step in Session Zero. Session Zero's stranded duplicate sections removed.
+5. **Go-live audit (`6d9d8c3`).** The first arc is Sessions 1–8 everywhere, in three
+   *movements* (Academy, capital threads, Undercourt). Level milestones now run to 8th:
+   4th early in Session Three, 5th at the Proving's close, 6th at the Second Seal, 7th in
+   the Witness Hall, 8th when the Vigil is kept. Session Five's pacing budget fixed to 300
+   minutes. Session Zero again forbids the word *Proving* at the table. Session Two gained
+   its What Is Actually Happening section; Sessions Seven and Eight gained Rewards and
+   Advancement (milestone governs; the Undercourt's XP does not reach those levels). Seven
+   dead "Part N" references repointed; two HP formulas fixed (Custodian Ooze, Duke Norr);
+   typography and American spelling normalized. Read-aloud boxes of 650 characters or
+   fewer under a heading are now kept whole so the heading travels with them (documented
+   in the skill and `PIPELINE_README.md`).
+
+**Decided since, not to be reopened:** Josh reviewed Ovric, Struck from the Canon
+(invented in `b85bfac`; what he witnessed "touches the Founding" and is deliberately
+unstated) and kept it exactly as written.
 
 ---
 
@@ -77,33 +102,33 @@ tearing protections, `stage.js`, and three pipeline notes came *from* the Crusad
 
 ## 4. What to work on
 
-Canon states its own roadmap at the end of the sourcebook. In rough order of value:
+After the Branch Ledger (section 0), in rough order of value:
 
-**The obvious next content pass — regional depth.** The Gazetteer gives each of thirty
-settlements about 200 words where a published gazetteer gives its major cities two pages.
-Aenodira, Velmareth and Kamenhold would repay it most. This is the single largest step
-toward published scale and needs no new decisions.
+**Sessions Nine and beyond** — the second arc, built against the ledger.
 
-**Sessions Nine and beyond.** Built against the Branch Ledger in the DM Reference Guide,
-which records what actually happened at Josh's table. **Ask him what the party did before
-writing anything** — the ledger is the input, and it is blank until he fills it.
+**Regional depth.** Each of the Gazetteer's thirty settlements gets about 200 words where a
+published gazetteer gives a major city two pages. Aenodira, Velmareth and Kamenhold repay
+it most. Needs no new decisions.
 
-**The Greywell module.** Seeded in Session Five's optional Farrowgate client and in the
-Gazetteer's Greywell-under-Hill entry. A self-contained gothic horror arc. Countess Ory's
-blood-rite mechanism is deliberately undecided and needs sign-off at build time.
+**The Greywell module.** Seeded in Session Five's optional Farrowgate client and the
+Gazetteer's Greywell-under-Hill. Countess Ory's blood-rite mechanism needs sign-off at
+build time.
 
-**Tarnovar.** Well advanced. Still wants the Vosthren ballad cycle in full and the
-Voivode's court before the envoy thread matures into an arc.
+**Tarnovar.** Still wants the Vosthren ballad cycle and the Voivode's court.
 
-**Two things deliberately not built,** and both need Josh's explicit go-ahead:
+**Known, left alone on purpose** (raise only if Josh asks or a pass touches them):
 
-- *Setting feats and subclasses.* The Companion stops at backgrounds on purpose, entirely
-  inside 2014 RAW, so nothing in it needs balancing. An Oath of the Witness and a Domain
-  of the Vigil are the obvious candidates and both want real playtest.
-- *Art in the published documents.* `images/` serves the repository, not the corpus.
-  Getting artwork in means an image path added to both docx-js generation and the Markdown
-  shim across nine generators. The Crusade repo has already solved this with an `IMG()`
-  helper — port it rather than reinventing it.
+- Long H1s (Optional Content, the Loot titles) wrap to two or three lines at 22pt in the
+  two-column measure. A type-size decision for Josh, not a bug.
+- Session Zero, Session One and Session Five close on a short last page carrying the final
+  paragraph and the epigraph. Not worth cutting content for.
+- Vosk/Voss and Marec/Marek sit close in the name lists by cultural design.
+- A feast-day legal delay for the Writ was considered and not added: the sourcebook does
+  not grant feasts that legal force.
+
+**Still needing Josh's explicit go-ahead:** setting feats and subclasses (an Oath of the
+Witness, a Domain of the Vigil), and art in the published documents (port the Crusade
+repo's `IMG()` helper rather than reinventing it).
 
 ---
 
@@ -125,22 +150,22 @@ through play at the Twin Clocks' Solacre promulgation.
 From `CLAUDE.md`, and borne out in practice:
 
 - **Present forks as short multiple choice** with a stated recommendation, not open
-  questions. He picks quickly and decisively.
+  questions. Josh picks quickly and decisively.
 - **Large passes go through a design draft first** in `drafts/`, with per-item sign-off
   flags, an explicit split between natural extension and new invention, and a propagation
   plan. Rename it `*.RESOLVED.md` afterward with a header recording what changed on contact
   with the code.
-- **He notices layout.** The dagger reading as part of a creature's name, and prose butting
-  against a table border, were both his catches, not the pipeline's. When he reports
+- **Josh notices layout.** The dagger reading as part of a creature's name, and prose butting
+  against a table border, were both Josh's catches, not the pipeline's. When Josh reports
   something visual, render the page and look before theorising.
-- **He values honest scope reporting.** Say what was reached versus what was claimed, and
+- **Josh values honest scope reporting.** Say what was reached versus what was claimed, and
   say plainly what was left undecided and why.
 
 ---
 
 ## 7. The one thing most likely to go wrong
 
-Working from memory instead of the file. The corpus is 129,000 words and no session holds
+Working from memory instead of the file. The corpus is about 127,000 words and no session holds
 it. Every fabricated detail costs more to find and unpick than it saved. `grep` the corpus,
 read the entry, then write.
 
